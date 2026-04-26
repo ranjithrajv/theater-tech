@@ -1,0 +1,62 @@
+{
+  "ui": {
+    "responsiveBreakpoints": {
+      "mobile": 768,
+      "tablet": 1024
+    },
+    "margins": {
+      "mobile": {
+        "top": 20,
+        "right": 20,
+        "bottom": 60,
+        "left": 60
+      },
+      "desktop": {
+        "top": 40,
+        "right": 40,
+        "bottom": 80,
+        "left": 80
+      }
+    },
+    "dimensions": {
+      "mobileHeight": 500,
+      "desktopHeight": 700,
+      "containerWidth": 1000,
+      "scale": {
+        "mobile": 4,
+        "desktop": 7
+      }
+    },
+    "comparisonLimit": 3
+  },
+  "animations": {
+    "debounceDelay": 250,
+    "loadingDelay": 300,
+    "fadeDuration": 500,
+    "transitionDelay": 100
+  },
+  "colors": {
+    "primary": "#ffd60a",
+    "secondary": "#1D3557",
+    "accent": "#E63946",
+    "background": "#1a1a1a",
+    "surface": "#2a2a2a",
+    "border": "#444",
+    "text": "#fff",
+    "textSecondary": "#ccc",
+    "textMuted": "#888"
+  },
+  "sizeThresholds": {
+    "XXL": 6000,
+    "XL": 4000,
+    "L": 2000,
+    "M": 1200
+  },
+  "dataPaths": {
+    "screens": "../data/screens.json",
+    "config": "../data/config.json",
+    "constants": "../data/constants.json",
+    "icons": "../data/icons.json",
+    "tooltips": "../data/tooltips.json"
+  }
+}

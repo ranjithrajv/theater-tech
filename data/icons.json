@@ -1,0 +1,36 @@
+{
+  "icons": {
+    "projection": {
+      "Film": "\ud83c\udf9e\ufe0f",
+      "Laser": "\u26a1",
+      "LED": "\ud83d\udca1",
+      "70mm Film": "\ud83c\udf9e\ufe0f",
+      "4K": "\ud83d\udd39",
+      "2K": "\ud83d\udd38"
+    },
+    "sound": {
+      "Dolby Atmos": "\ud83c\udf2a\ufe0f",
+      "Dolby Digital": "\ud83c\udfb5",
+      "Digital Sound": "\ud83d\udcfb",
+      "Analog Surround": "\ud83d\udcdf"
+    },
+    "default": {
+      "projection": "\ud83d\udcfd\ufe0f",
+      "sound": "\ud83d\udd0a"
+    }
+  },
+  "techDescriptions": {
+    "projectionTypes": {
+      "70mm Film": "70mm",
+      "4K": "4K",
+      "Laser": "Laser",
+      "LED": "LED"
+    },
+    "soundFormats": {
+      "Dolby Atmos": "Atmos",
+      "Dolby Digital": "Digital",
+      "Digital Sound": "Sound",
+      "Analog Surround": "Analog"
+    }
+  }
+}

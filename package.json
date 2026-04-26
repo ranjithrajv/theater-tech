@@ -8,8 +8,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "knip": "knip"
+    "test": "node tests/quick-validate.js",
+    "validate": "node tests/quick-validate.js",
+    "knip": "knip",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/ranjithrajv/theater-tech#readme",
   "devDependencies": {
+    "husky": "^9.1.7",
     "knip": "^5.82.1",
     "puppeteer": "^24.37.3"
   },
