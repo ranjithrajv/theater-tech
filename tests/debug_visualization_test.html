@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Debug Test</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { background: #111; color: white; font-family: monospace; }
+        #output { white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>Visualization Debug Test</h1>
+    <div id="output"></div>
+
+    <script type="module">
+        const output = document.getElementById('output');
+        let logBuffer = '';
+
+        function log(message) {
+            console.log(message);
+            logBuffer += message + '\n';
+            output.textContent = logBuffer;
+        }
+
+        log('🚀 Starting visualization debug test...');
+
+        try {
+            // Import our modules
+            log('📦 Loading modules...');
+
+            // Load config first
+            const configResponse = await fetch('../data/config.json');
+            const config = await configResponse.json();
+            window.AppConfig = config;
+            log('✅ Config loaded');
+
+            // Load constants
+            const constantsResponse = await fetch('../data/constants.json');
+            const constants = await constantsResponse.json();
+            window.AppConstants = constants;
+            log('✅ Constants loaded');
+
+            // Load screens data
+            const screensResponse = await fetch('../data/screens.json');
+            const screens = await screensResponse.json();
+            log('✅ Screens data loaded: ' + screens.length + ' screens');
+
+            // Simulate UIManager for responsive dimensions
+            window.UIManager = {
+                getResponsiveDimensions() {
+                    return {
+                        isMobile: false,
+                        margin: { top: 20, right: 20, bottom: 60, left: 60 },
+                        width: 800,
+                        height: 500,
+                        scale: 4 // Reasonable scale for testing
+                    };
+                }
+            };
+
+            // Load visualization module
+            await import('./visualization.js');
+            log('✅ Visualization module loaded');
+
+            // Create chart container
+            const container = document.createElement('div');
+            container.id = 'chart-container';
+            container.style.width = '800px';
+            container.style.height = '500px';
+            container.style.border = '1px solid white';
+            document.body.appendChild(container);
+            log('✅ Chart container created');
+
+            // Initialize visualization
+            if (window.Visualization) {
+                log('🎯 Initializing visualization...');
+                window.Visualization.initialize(screens);
+                log('✅ Visualization initialization complete');
+
+                // Check if SVG was created
+                const svg = document.querySelector('#chart-container svg');
+                log('SVG exists: ' + !!svg);
+                if (svg) {
+                    log('SVG dimensions: ' + svg.getAttribute('width') + 'x' + svg.getAttribute('height'));
+                    const rects = svg.querySelectorAll('rect');
+                    log('Screen rectangles: ' + rects.length);
+                    const texts = svg.querySelectorAll('text');
+                    log('Text labels: ' + texts.length);
+                }
+
+            } else {
+                log('❌ Visualization object not found');
+            }
+
+        } catch (error) {
+            log('❌ Error: ' + error.message);
+            log('Stack: ' + error.stack);
+        }
+    </script>
+</body>
+</html>

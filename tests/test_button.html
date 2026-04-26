@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minimal Button Test</title>
+    <style>
+        .comparison-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #ffd60a;
+            color: #333;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .comparison-toggle:hover { transform: scale(1.05); }
+        .comparison-toggle.active { background: #ff6b6b; color: white; }
+    </style>
+</head>
+<body>
+    <button id="comparison-toggle">Compare Screens</button>
+
+    <script>
+        // Simulate the UIComponents updateComparisonToggle function
+        function updateComparisonToggle(selectedScreens) {
+            const buttonElement = document.getElementById('comparison-toggle');
+            if (!buttonElement) {
+                console.error('Button not found');
+                return;
+            }
+
+            const hasSelections = selectedScreens.length > 0;
+            const newText = hasSelections ? `Compare (${selectedScreens.length})` : 'Compare Screens';
+
+            console.log('Updating button text to:', newText);
+            buttonElement.textContent = newText;
+            buttonElement.classList.toggle('active', hasSelections);
+
+            console.log('Button text is now:', buttonElement.textContent);
+        }
+
+        // Test the function
+        console.log('Initial state:');
+        updateComparisonToggle([]);
+
+        setTimeout(() => {
+            console.log('Adding 1 selection:');
+            updateComparisonToggle([{name: 'Test', screen_number: 1}]);
+        }, 1000);
+
+        setTimeout(() => {
+            console.log('Adding 2 selections:');
+            updateComparisonToggle([{name: 'Test1', screen_number: 1}, {name: 'Test2', screen_number: 2}]);
+        }, 2000);
+
+        setTimeout(() => {
+            console.log('Clearing selections:');
+            updateComparisonToggle([]);
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Runtime Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .test-section {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .test-header {
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #007cba;
+            padding-bottom: 5px;
+        }
+        .success { color: #28a745; }
+        .error { color: #dc3545; }
+        .warning { color: #ffc107; }
+        .info { color: #17a2b8; }
+        .result {
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .summary {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Application Runtime Test</h1>
+    <p>Testing JavaScript runtime errors and module loading...</p>
+
+    <div id="results"></div>
+
+    <!-- Core Libraries -->
+    <script src="lib/json-schema-validator.js"></script>
+    <script src="lib/icon-manager.js"></script>
+    <script src="lib/html-templates.js"></script>
+
+    <script>
+        let testResults = {
+            passed: 0,
+            failed: 0,
+            warnings: 0,
+            tests: []
+        };
+
+        function log(message, type = 'info') {
+            console.log(`[${type.toUpperCase()}] ${message}`);
+        }
+
+        function addResult(testName, success, message = '', details = '') {
+            testResults.tests.push({ name: testName, success, message, details });
+
+            if (success) {
+                testResults.passed++;
+            } else {
+                testResults.failed++;
+            }
+
+            updateUI();
+        }
+
+        function updateUI() {
+            const resultsDiv = document.getElementById('results');
+            let html = '';
+
+            testResults.tests.forEach(test => {
+                const className = test.success ? 'success' : 'error';
+                html += `
+                    <div class="test-section">
+                        <div class="test-header">${test.success ? '✅' : '❌'} ${test.name}</div>
+                        <div class="result ${className}">${test.message}</div>
+                        ${test.details ? `<div class="result info">${test.details}</div>` : ''}
+                    </div>
+                `;
+            });
+
+            // Add summary
+            html += `
+                <div class="test-section summary">
+                    <div class="test-header">📊 Test Summary</div>
+                    <div class="result">
+                        <strong>Passed:</strong> ${testResults.passed} |
+                        <strong>Failed:</strong> ${testResults.failed} |
+                        <strong>Total:</strong> ${testResults.tests.length}
+                    </div>
+                    ${testResults.failed === 0 ?
+                        '<div class="result success">🎉 All tests passed! Application should work correctly.</div>' :
+                        '<div class="result error">💥 Some tests failed. Check console for details.</div>'
+                    }
+                </div>
+            `;
+
+            resultsDiv.innerHTML = html;
+        }
+
+        // Test 1: Check if core libraries loaded
+        function testLibraries() {
+            log('Testing core library loading...');
+
+            const libraries = [
+                { name: 'JSONSchemaValidator', obj: window.JSONSchemaValidator },
+                { name: 'IconManager', obj: window.IconManager },
+                { name: 'IconUtils', obj: window.IconUtils },
+                { name: 'TemplateEngine', obj: window.TemplateEngine },
+                { name: 'TemplateUtils', obj: window.TemplateUtils }
+            ];
+
+            libraries.forEach(lib => {
+                if (lib.obj) {
+                    addResult(`${lib.name} Library`, true, `${lib.name} loaded successfully`);
+                } else {
+                    addResult(`${lib.name} Library`, false, `${lib.name} failed to load`);
+                }
+            });
+        }
+
+        // Test 2: Test data loading
+        async function testDataLoading() {
+            log('Testing data file loading...');
+
+            const dataFiles = [
+                { name: 'Screens', path: 'data/screens.json' },
+                { name: 'Config', path: 'data/config.json' },
+                { name: 'Constants', path: 'data/constants.json' },
+                { name: 'Icons', path: 'data/icons.json' },
+                { name: 'Tooltips', path: 'data/tooltips.json' }
+            ];
+
+            for (const file of dataFiles) {
+                try {
+                    const response = await fetch(file.path);
+                    if (response.ok) {
+                        const data = await response.json();
+                        addResult(`${file.name} Data`, true, `${file.path} loaded successfully`);
+                    } else {
+                        addResult(`${file.name} Data`, false, `Failed to load ${file.path}: ${response.status}`);
+                    }
+                } catch (error) {
+                    addResult(`${file.name} Data`, false, `Error loading ${file.path}: ${error.message}`);
+                }
+            }
+        }
+
+        // Test 3: Test core functionality
+        async function testCoreFunctionality() {
+            log('Testing core functionality...');
+
+            // Test JSON validation
+            try {
+                const validator = JSONSchemaValidator.createCinemaScreenValidator();
+                const testData = [{
+                    name: "Test Cinema",
+                    location: "Test City",
+                    width: 50,
+                    height: 30,
+                    color: "#FF0000",
+                    plf_format: "Test",
+                    projection: { type: "Laser", resolution: "4K" },
+                    sound_system: { format: "Dolby Atmos" }
+                }];
+
+                const result = validator.validate(testData);
+                addResult('JSON Validation', result.success, 'Cinema screen validation works');
+            } catch (error) {
+                addResult('JSON Validation', false, `Validation error: ${error.message}`);
+            }
+
+            // Test icon management
+            try {
+                const icon = IconUtils.getProjectionIcon({ type: 'Laser' });
+                addResult('Icon Management', true, `Icon retrieved: ${icon}`);
+            } catch (error) {
+                addResult('Icon Management', false, `Icon error: ${error.message}`);
+            }
+
+            // Test template rendering
+            try {
+                const html = TemplateUtils.createScreenDetails({
+                    name: "Test",
+                    location: "City",
+                    width: 40,
+                    height: 25,
+                    color: "#000",
+                    plf_format: "Test",
+                    projection: { type: "Digital" },
+                    sound_system: { format: "Stereo" }
+                });
+                addResult('Template Rendering', html && html.includes('Test'), 'Template rendered successfully');
+            } catch (error) {
+                addResult('Template Rendering', false, `Template error: ${error.message}`);
+            }
+        }
+
+        // Test 4: Test application modules
+        function testApplicationModules() {
+            log('Testing application module loading...');
+
+            // Load application modules dynamically
+            const appModules = [
+                'js/config.js',
+                'js/utils.js',
+                'js/templates.js',
+                'js/tooltips.js',
+                'js/core.js',
+                'js/ui-components.js',
+                'js/visualization.js'
+            ];
+
+            let loadedCount = 0;
+            const totalModules = appModules.length;
+
+            appModules.forEach(modulePath => {
+                const script = document.createElement('script');
+                script.src = modulePath;
+                script.onload = () => {
+                    loadedCount++;
+                    if (loadedCount === totalModules) {
+                        // All modules loaded, test globals
+                        testGlobalObjects();
+                    }
+                };
+                script.onerror = () => {
+                    addResult(`Module ${modulePath}`, false, 'Failed to load module');
+                };
+                document.head.appendChild(script);
+            });
+        }
+
+        // Test 5: Test global objects
+        function testGlobalObjects() {
+            log('Testing global objects...');
+
+            const expectedGlobals = [
+                'AppConstants', 'IconUtils', 'TemplateUtils',
+                'UIManager', 'UIComponents', 'Visualization', 'App'
+            ];
+
+            expectedGlobals.forEach(globalName => {
+                if (window[globalName]) {
+                    addResult(`Global ${globalName}`, true, `${globalName} is available`);
+                } else {
+                    addResult(`Global ${globalName}`, false, `${globalName} is missing`);
+                }
+            });
+
+            // Final summary
+            setTimeout(() => {
+                console.log('🎯 Runtime test complete!');
+                console.log(`Results: ${testResults.passed} passed, ${testResults.failed} failed`);
+            }, 100);
+        }
+
+        // Run all tests
+        async function runTests() {
+            console.log('🚀 Starting runtime tests...');
+
+            // Test 1: Libraries
+            testLibraries();
+
+            // Test 2: Data loading
+            await testDataLoading();
+
+            // Test 3: Core functionality
+            await testCoreFunctionality();
+
+            // Test 4: Application modules
+            testApplicationModules();
+        }
+
+        // Start tests when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', runTests);
+        } else {
+            runTests();
+        }
+
+        // Global error handler
+        window.addEventListener('error', (event) => {
+            addResult('Global Error Handler', false, `JavaScript error: ${event.error.message}`, event.error.stack);
+        });
+
+        window.addEventListener('unhandledrejection', (event) => {
+            addResult('Unhandled Promise', false, `Promise rejection: ${event.reason}`);
+        });
+    </script>
+</body>
+</html>

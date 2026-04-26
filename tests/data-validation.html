@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation Tests - Hyderabad Theaters</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ffd60a;
+            border-bottom: 2px solid #ffd60a;
+            padding-bottom: 10px;
+        }
+
+        #console-output {
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 600px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+
+        .button {
+            background: #E63946;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 10px 10px 0;
+        }
+
+        .button:hover {
+            background: #c92a37;
+        }
+
+        .status {
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .status.pass {
+            background: #2e7d32;
+            color: white;
+        }
+
+        .status.fail {
+            background: #c62828;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Data Validation Tests</h1>
+    <p>Test suite for validating all JSON data files against their schemas.</p>
+
+    <button class="button" onclick="runTests()">▶ Run Tests</button>
+    <button class="button" onclick="clearOutput()">🗑️ Clear Output</button>
+
+    <div id="test-status" class="hidden"></div>
+
+    <div id="console-output">
+        <div style="color: #888;">Output will appear here...</div>
+    </div>
+
+    <script>
+        let originalConsoleLog = console.log;
+        let originalConsoleError = console.error;
+        let originalConsoleWarn = console.warn;
+
+        function clearOutput() {
+            document.getElementById('console-output').innerHTML = '<div style="color: #888;">Output will appear here...</div>';
+            document.getElementById('test-status').classList.add('hidden');
+        }
+
+        function appendOutput(message, isError = false) {
+            const output = document.getElementById('console-output');
+            const div = document.createElement('div');
+            div.style.color = isError ? '#ff6b6b' : '#4ecdc4';
+            div.style.whiteSpace = 'pre-wrap';
+            div.style.padding = '4px 0';
+            div.textContent = message;
+            output.appendChild(div);
+            output.scrollTop = output.scrollHeight;
+        }
+
+        async function runTests() {
+            clearOutput();
+
+            document.getElementById('test-status').textContent = '⏳ Running tests...';
+            document.getElementById('test-status').className = 'status';
+            document.getElementById('test-status').style.background = '#ffd60a';
+            document.getElementById('test-status').style.color = '#1a1a1a';
+            document.getElementById('test-status').classList.remove('hidden');
+
+            const consoleOutput = document.getElementById('console-output');
+            consoleOutput.innerHTML = '';
+
+            originalConsoleLog = console.log;
+            originalConsoleError = console.error;
+            originalConsoleWarn = console.warn;
+
+            console.log = function(...args) {
+                originalConsoleLog.apply(console, args);
+                appendOutput(args.join(' '));
+            };
+
+            console.error = function(...args) {
+                originalConsoleError.apply(console, args);
+                appendOutput(args.join(' '), true);
+            };
+
+            console.warn = function(...args) {
+                originalConsoleWarn.apply(console, args);
+                appendOutput('⚠️ ' + args.join(' '));
+            };
+
+            try {
+                const passed = await window.runValidationTests();
+
+                const statusDiv = document.getElementById('test-status');
+                if (passed) {
+                    statusDiv.textContent = '✅ All Tests Passed';
+                    statusDiv.className = 'status pass';
+                } else {
+                    statusDiv.textContent = '❌ Some Tests Failed';
+                    statusDiv.className = 'status fail';
+                }
+            } catch (error) {
+                appendOutput('💥 Fatal error: ' + error.message, true);
+                document.getElementById('test-status').textContent = '💥 Test Suite Error';
+                document.getElementById('test-status').className = 'status fail';
+            }
+        }
+    </script>
+
+    <!-- Load Dependencies -->
+    <script src="../lib/json-schema-validator.js"></script>
+    <script src="schemas/screens-schema.js"></script>
+    <script src="schemas/config-schema.js"></script>
+    <script src="schemas/constants-schema.js"></script>
+    <script src="schemas/tooltips-schema.js"></script>
+    <script src="schemas/icons-schema.js"></script>
+    <script src="schemas/schema-registry.js"></script>
+    <script src="js/data-validator.js"></script>
+    <script src="tests/data-validation-test.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Debug Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chart-container { border: 1px solid #ccc; width: 800px; height: 500px; }
+        svg { background: #f0f0f0; }
+        .screen-rect { fill: steelblue; stroke: white; stroke-width: 1px; }
+        .label-name { fill: black; font-size: 12px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Visualization Debug Test</h1>
+    <div id="status"></div>
+    <div id="chart-container"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        const status = document.getElementById('status');
+
+        function log(message) {
+            console.log(message);
+            status.innerHTML += '<div>' + message + '</div>';
+        }
+
+        log('Starting visualization test...');
+
+        // Test data
+        const testData = [
+            { name: "Test Cinema 1", width: 50, height: 30, color: "#FF0000" },
+            { name: "Test Cinema 2", width: 40, height: 25, color: "#00FF00" },
+            { name: "Test Cinema 3", width: 60, height: 35, color: "#0000FF" }
+        ];
+
+        log('Test data created: ' + testData.length + ' items');
+
+        try {
+            // Create SVG
+            const margin = { top: 20, right: 30, bottom: 40, left: 40 };
+            const width = 800 - margin.left - margin.right;
+            const height = 500 - margin.top - margin.bottom;
+
+            const svg = d3.select("#chart-container")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            log('SVG created');
+
+            // Create scales
+            const xScale = d3.scaleLinear()
+                .domain([0, 70])
+                .range([0, width]);
+
+            const yScale = d3.scaleLinear()
+                .domain([0, 40])
+                .range([height, 0]);
+
+            log('Scales created');
+
+            // Add axes
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(xScale));
+
+            svg.append("g")
+                .call(d3.axisLeft(yScale));
+
+            log('Axes added');
+
+            // Add data points
+            const circles = svg.selectAll("circle")
+                .data(testData)
+                .enter()
+                .append("circle")
+                .attr("cx", d => xScale(d.width))
+                .attr("cy", d => yScale(d.height))
+                .attr("r", 10)
+                .attr("fill", d => d.color)
+                .attr("stroke", "black")
+                .attr("stroke-width", 2);
+
+            log('Data points added: ' + circles.size());
+
+            // Add labels
+            const labels = svg.selectAll("text")
+                .data(testData)
+                .enter()
+                .append("text")
+                .attr("x", d => xScale(d.width) + 15)
+                .attr("y", d => yScale(d.height) + 5)
+                .text(d => d.name)
+                .attr("font-size", "12px")
+                .attr("fill", "black");
+
+            log('Labels added: ' + labels.size());
+            log('✅ Visualization test completed successfully!');
+
+        } catch (error) {
+            log('❌ Error creating visualization: ' + error.message);
+            console.error('Full error:', error);
+        }
+    </script>
+</body>
+</html>

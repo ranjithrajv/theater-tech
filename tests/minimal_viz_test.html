@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Visualization Test</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { background: #111; color: white; font-family: monospace; }
+        #chart-container {
+            width: 800px;
+            height: 500px;
+            border: 2px solid white;
+            margin: 20px;
+        }
+        svg { background: #222; }
+        .screen-rect { cursor: pointer; }
+        .screen-rect:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <h1>🎯 Minimal Visualization Test</h1>
+    <div id="chart-container"></div>
+    <div id="debug-info"></div>
+
+    <script>
+        const debugInfo = document.getElementById('debug-info');
+
+        function log(message) {
+            debugInfo.innerHTML += '<div>' + message + '</div>';
+            console.log(message);
+        }
+
+        // Mock dependencies
+        window.SizeUtils = {
+            getSizeCategory: (width, height) => {
+                const area = width * height;
+                if (area > 2000) return 'Large';
+                if (area > 1000) return 'Medium';
+                return 'Small';
+            }
+        };
+
+        window.UIManager = {
+            getResponsiveDimensions() {
+                return {
+                    isMobile: false,
+                    margin: { top: 20, right: 20, bottom: 60, left: 60 },
+                    width: 800,
+                    height: 500,
+                    scale: 4
+                };
+            }
+        };
+
+        window.debounce = (func, wait) => {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        };
+
+        // Mock data
+        const mockScreens = [
+            { name: "Test Cinema 1", width: 50, height: 30, color: "#FF6B6B" },
+            { name: "Test Cinema 2", width: 40, height: 25, color: "#4ECDC4" },
+            { name: "Test Cinema 3", width: 60, height: 35, color: "#45B7D1" }
+        ];
+
+        log('🚀 Starting minimal visualization test...');
+
+        // Load the visualization module
+        fetch('app/js/visualization.js')
+            .then(response => response.text())
+            .then(code => {
+                log('✅ Visualization code loaded');
+
+                // Execute the code in global scope
+                eval(code);
+
+                log('✅ Visualization module executed');
+
+                // Check if Visualization is available
+                if (window.Visualization) {
+                    log('✅ Visualization object available');
+
+                    // Initialize visualization
+                    log('🎯 Calling Visualization.initialize...');
+                    window.Visualization.initialize(mockScreens);
+
+                    log('✅ Initialization complete');
+
+                    // Check DOM after a delay
+                    setTimeout(() => {
+                        const svg = document.querySelector('#chart-container svg');
+                        const rects = document.querySelectorAll('#chart-container .screen-rect');
+
+                        log(`SVG exists: ${!!svg}`);
+                        if (svg) {
+                            log(`SVG dimensions: ${svg.getAttribute('width')} x ${svg.getAttribute('height')}`);
+                        }
+                        log(`Screen rectangles: ${rects.length}`);
+
+                        if (rects.length > 0) {
+                            rects.forEach((rect, i) => {
+                                log(`Rect ${i}: x=${rect.getAttribute('x')}, y=${rect.getAttribute('y')}, width=${rect.getAttribute('width')}, height=${rect.getAttribute('height')}`);
+                            });
+                        }
+
+                        if (svg && rects.length > 0) {
+                            log('🎉 SUCCESS: Visualization working!');
+                        } else {
+                            log('❌ Visualization not working');
+                        }
+                    }, 100);
+
+                } else {
+                    log('❌ Visualization object not found');
+                }
+            })
+            .catch(error => {
+                log('❌ Error: ' + error.message);
+            });
+    </script>
+</body>
+</html>

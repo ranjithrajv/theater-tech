@@ -1,0 +1,61 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Puppeteer
+.cache/
+.chrome/
+.chromium/
+
+# Linter/Formatter caches
+.ruff_cache/
+__pycache__/
+.pyc
+.pyo
+.pyd
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+
+# Databases - keep source JSON, ignore derived databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Export artifacts
+export/
+output/

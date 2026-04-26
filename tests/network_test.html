@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Network Test</title>
+    <script>
+        // Simple network logging script
+        const logs = [];
+        const originalFetch = window.fetch;
+
+        window.fetch = function(...args) {
+            const start = Date.now();
+            logs.push(`🌐 FETCH: ${args[0]} - START`);
+            return originalFetch.apply(this, args)
+                .then(response => {
+                    const duration = Date.now() - start;
+                    logs.push(`✅ FETCH: ${args[0]} - ${response.status} (${duration}ms)`);
+                    return response;
+                })
+                .catch(error => {
+                    const duration = Date.now() - start;
+                    logs.push(`❌ FETCH: ${args[0]} - ERROR: ${error.message} (${duration}ms)`);
+                    throw error;
+                });
+        };
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                console.log('=== NETWORK LOGS ===');
+                logs.forEach(log => console.log(log));
+                console.log('=== APP LOGS ===');
+                console.log('Application loaded successfully!');
+            }, 3000);
+        });
+
+        window.addEventListener('error', (e) => {
+            console.error('🚨 Global error:', e.error);
+        });
+
+        window.addEventListener('unhandledrejection', (e) => {
+            console.error('🚨 Unhandled promise rejection:', e.reason);
+        });
+    </script>
+</head>
+<body>
+    <div id="status">Testing network requests...</div>
+    <script src="js/index.js"></script>
+</body>
+</html>

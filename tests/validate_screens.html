@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Data Validator - JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .section h2 {
+            margin: 0 0 20px 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+
+        textarea {
+            min-height: 200px;
+            resize: vertical;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        #results {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .error-list {
+            margin-top: 15px;
+        }
+
+        .error-item {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 3px;
+            border-left: 4px solid #dc3545;
+        }
+
+        .summary {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border-left: 4px solid #6c757d;
+        }
+
+        .summary strong {
+            color: #495057;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            border-bottom-color: #3498db;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .deprecation-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .deprecation-notice h3 {
+            margin: 0 0 10px 0;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Screen Data Validator</h1>
+            <p>JavaScript implementation replacing Python validation</p>
+        </header>
+
+        <div class="content">
+            <div class="deprecation-notice">
+                <h3>📢 Deprecation Notice</h3>
+                <p>This JavaScript validator is the modern replacement for <code>scripts/validate_screens.py</code>.
+                The Python script will be deprecated and removed in a future version.</p>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('file')">Validate File</div>
+                <div class="tab" onclick="switchTab('text')">Validate Text</div>
+                <div class="tab" onclick="switchTab('about')">About</div>
+            </div>
+
+            <!-- File Validation Tab -->
+            <div id="file-tab" class="tab-content active">
+                <div class="section">
+                    <h2>📁 Validate JSON File</h2>
+                    <div class="input-group">
+                        <label for="fileUrl">JSON File URL:</label>
+                        <input type="text" id="fileUrl" value="../data/screens.json" placeholder="Enter file path or URL">
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="validateFile()">🔍 Validate File</button>
+                        <button class="btn-secondary" onclick="loadSampleData()">📋 Load Sample</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Validation Tab -->
+            <div id="text-tab" class="tab-content">
+                <div class="section">
+                    <h2>📝 Validate JSON Text</h2>
+                    <div class="input-group">
+                        <label for="jsonInput">JSON Data:</label>
+                        <textarea id="jsonInput" placeholder="Paste your JSON data here..."></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="validateText()">🔍 Validate Text</button>
+                        <button class="btn-secondary" onclick="clearText()">🗑️ Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div id="about-tab" class="tab-content">
+                <div class="section">
+                    <h2>ℹ️ About This Validator</h2>
+                    <p>This JavaScript validator provides the same functionality as the Python script <code>validate_screens.py</code>, but runs entirely in the browser.</p>
+
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>✅ Schema validation for screen data</li>
+                        <li>✅ Type checking for all fields</li>
+                        <li>✅ Business logic validation (positive numbers, valid colors)</li>
+                        <li>✅ Duplicate detection</li>
+                        <li>✅ Nested object validation (projection, sound_system)</li>
+                        <li>✅ Detailed error reporting</li>
+                        <li>✅ Browser-compatible (no Python dependency)</li>
+                    </ul>
+
+                    <h3>Validation Types:</h3>
+                    <ul>
+                        <li><strong>Missing Field:</strong> Required fields are absent</li>
+                        <li><strong>Type Error:</strong> Field has wrong data type</li>
+                        <li><strong>Business Logic:</strong> Values don't meet business rules</li>
+                        <li><strong>Duplicate:</strong> Same screen appears multiple times</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Results Area -->
+            <div id="results" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="../lib/json-schema-validator.js"></script>
+    <script src="validate_screens.js"></script>
+    <script>
+        let currentTab = 'file';
+
+        function switchTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[onclick="switchTab('${tabName}')"]`).classList.add('active');
+
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+
+            currentTab = tabName;
+        }
+
+        async function validateFile() {
+            const fileUrl = document.getElementById('fileUrl').value;
+            if (!fileUrl) {
+                showResults({ success: false, errors: [{ error: 'Please enter a file URL or path', type: 'user_error' }] });
+                return;
+            }
+
+            showLoading('Validating file...');
+            const result = await ScreenValidator.validateFile(fileUrl);
+            showResults(result);
+        }
+
+        function validateText() {
+            const jsonText = document.getElementById('jsonInput').value;
+            if (!jsonText.trim()) {
+                showResults({ success: false, errors: [{ error: 'Please enter JSON data to validate', type: 'user_error' }] });
+                return;
+            }
+
+            showLoading('Validating JSON text...');
+            const result = ScreenValidator.validateJsonText(jsonText);
+            showResults(result);
+        }
+
+        function loadSampleData() {
+            document.getElementById('fileUrl').value = '../data/screens.json';
+        }
+
+        function clearText() {
+            document.getElementById('jsonInput').value = '';
+            document.getElementById('results').className = 'hidden';
+        }
+
+        function showLoading(message) {
+            const results = document.getElementById('results');
+            results.className = '';
+            results.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    ${message}
+                </div>
+            `;
+        }
+
+        function showResults(result) {
+            const results = document.getElementById('results');
+            results.className = result.success ? 'success' : 'error';
+
+            const summary = ScreenValidator.generateSummary(result);
+
+            let html = `<div class="summary">${summary.message}</div>`;
+
+            if (!result.success && result.errors.length > 0) {
+                html += '<div class="error-list">';
+                result.errors.forEach(error => {
+                    const typeClass = `error-type-${error.type || 'unknown'}`;
+                    html += `<div class="error-item ${typeClass}">• ${error.error}</div>`;
+                });
+                html += '</div>';
+            }
+
+            if (summary.errorBreakdown) {
+                html += '<div class="summary"><strong>Error Breakdown:</strong> ';
+                const breakdown = Object.entries(summary.errorBreakdown)
+                    .map(([type, count]) => `${type}: ${count}`)
+                    .join(', ');
+                html += breakdown + '</div>';
+            }
+
+            results.innerHTML = html;
+        }
+
+        // Initialize with file tab active
+        switchTab('file');
+    </script>
+</body>
+</html>

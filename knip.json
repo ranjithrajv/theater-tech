@@ -1,0 +1,12 @@
+{
+  "project": [
+    "tests/test_app_loading.js",
+    "app/js/utils.js",
+    "app/js/config.js", 
+    "app/js/core.js",
+    "app/js/visualization.js",
+    "lib/**/*.js",
+    "tests/browser_test.js",
+    "tests/test_scaling.js"
+  ]
+}

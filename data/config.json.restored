@@ -1,0 +1,160 @@
+{
+  "title": "Hyderabad Theaters Technology Comparison",
+  "description": "Visual comparison of Hyderabad's theater technology including screens, projectors, sound systems, and premium large format (PLF) experiences",
+  "data_current_as_of": "2024",
+  "legend": {
+    "plf_formats": [
+      {
+        "format": "PCX",
+        "name": "Premium Cinema Experience",
+        "description": "India's Largest",
+        "color": "#E63946",
+        "best_for": ["Blockbuster action movies", "VFX-heavy films", "Epic scale productions"],
+        "ideal_experience": "Maximum immersion for grand spectacles like Avengers, Avatar, or Christopher Nolan films"
+      },
+      {
+        "format": "Superplex",
+        "name": "Ultra Premium",
+        "description": "with 4D Effects",
+        "color": "#1D3557",
+        "best_for": ["Action-adventure films", "Sci-fi blockbusters", "Family entertainment"],
+        "ideal_experience": "Immersive experience with moving seats, wind, water effects - great for Fast & Furious, Transformers, etc."
+      },
+      {
+        "format": "PXL",
+        "name": "Premium Extra Large Format",
+        "color": "#457B9D",
+        "best_for": ["Mainstream blockbusters", "Drama with visual impact", "High-budget productions"],
+        "ideal_experience": "Excellent balance of size, sound and technology for most new releases"
+      },
+      {
+        "format": "EPIQ",
+        "name": "Enhanced Premium",
+        "description": "LED/Laser",
+        "color": "#A8DADC",
+        "best_for": ["Documentaries", "Animated films", "Movies requiring color accuracy"],
+        "ideal_experience": "Perfect black levels and infinite contrast - ideal for visually stunning films like Planet Earth, Frozen, etc."
+      },
+      {
+        "format": "Standard",
+        "name": "Regular Large Format",
+        "color": "#666",
+        "best_for": ["Casual movie-going", "Comedy films", "First releases"],
+        "ideal_experience": "Great for enjoying the latest films at reasonable prices"
+      },
+      {
+        "format": "70mm",
+        "name": "Legacy Film Format",
+        "color": "#F77F00",
+        "best_for": ["Classic film lovers", "Film purists", "Nostalgic experiences"],
+        "ideal_experience": "Authentic film grain and vintage charm - perfect for classics like 2001: A Space Odyssey"
+      }
+    ],
+    "technical_specifications": {
+      "basic": {
+        "projection_types": ["Laser", "LED", "70mm Film"],
+        "sound_systems": ["Dolby Atmos", "Dolby Digital", "Analog"],
+        "content_support": ["3D", "4D", "HDR", "HFR"]
+      },
+      "advanced": {
+        "projection_details": ["⚡ Laser (35k-60k lumens)", "💡 LED (1,200 nits)", "🎞️ 70mm Film"],
+        "resolution_options": ["🔹 4K (Ultra HD)", "🔸 2K (HD)"],
+        "sound_formats": ["🌪️ Dolby Atmos (11.1/7.1)", "🎵 Dolby Digital (7.1/5.1)", "📟 Analog (4.1)"],
+        "screen_surfaces": ["Perforated/Micro-perforated (gain 1.8)", "LED Direct (gain 0)", "Matte (gain 1.2-1.7)"],
+        "advanced_content": "🎥 3D/4D/HFR (High Frame Rate)/HDR (HDR10/HDR10+/Dolby Vision)"
+      }
+    },
+    "screen_geometry": {
+      "basic": {
+        "size_range": "1,200-6,500 ft²",
+        "seating_range": "171-1,034 seats",
+        "aspect_ratios": ["1.90:1", "2.39:1"]
+      },
+      "advanced": {
+        "size_categories": ["XXL (>6,000ft²)", "XL (>4,000ft²)", "L (>2,000ft²)", "M (>1,200ft²)", "S"],
+        "seating_breakdown": {
+          "premium_multiplexes": "210-630 seats",
+          "heritage_cinemas": "850-1,034 seats"
+        },
+        "aspect_ratio_details": {
+          "1.90:1": "Modern Widescreen",
+          "2.39:1": "CinemaScope"
+        }
+      }
+    },
+    "visual_elements": {
+      "basic": {
+        "click_formats": "Click format names above to filter screens",
+        "hover_details": "Hover over screens for technical details",
+        "size_indicators": "Size indicators (XXL/XL/L/M/S) in screen corners"
+      },
+      "advanced": {
+        "screen_colors": "Each theater has unique color coding for easy identification",
+        "interactive_tooltips": "Hover reveals complete technical specifications",
+        "size_categories": "XXL/XL/L/M/S indicators show relative screen sizes",
+        "format_filtering": "Click any PLF format above to highlight matching screens"
+      }
+    },
+    "theater_categories": {
+      "basic": {
+        "luxury": ["Prasads PCX"],
+        "premium": ["PVR", "AAA", "ART"],
+        "standard": ["Asian Cinesquare"],
+        "heritage": ["70mm cinemas"]
+      },
+      "advanced": {
+        "luxury_multiplexes": ["Prasads PCX", "AMB Cinemas"],
+        "premium_multiplexes": ["PVR Inorbit", "AAA Cinemas", "ART Cinemas"],
+        "grand_format": ["PVR GFX"],
+        "standard_multiplex": ["Asian Cinesquare"],
+        "heritage_cinemas": ["Devi 70mm", "Anjaneya 70mm", "Sandhya 70mm"]
+      }
+    }
+  },
+  "glossary": [
+    {
+      "term": "Dolby Atmos",
+      "definition": "Immersive 3D audio technology that places sounds anywhere in a 3D space, creating a more realistic and enveloping sound experience compared to traditional surround sound systems."
+    },
+    {
+      "term": "4K",
+      "definition": "Ultra High Definition video resolution with approximately 4,000 pixels of horizontal resolution. Provides four times the detail of standard HD (1080p) and delivers sharper, more lifelike images."
+    },
+    {
+      "term": "Laser",
+      "definition": "Advanced projection technology using laser light sources instead of traditional lamps. Offers higher brightness (35,000-60,000 lumens), better color accuracy, and longer lifespan than traditional projectors."
+    },
+    {
+      "term": "LED",
+      "definition": "Direct-LED display technology where each pixel emits its own light. Provides exceptional brightness (1,200+ nits), perfect black levels, and infinite contrast ratio for stunning image quality."
+    },
+    {
+      "term": "70mm",
+      "definition": "Large-format film stock (70mm wide) used in premium cinemas. Offers superior image quality, higher resolution, and better color reproduction than standard 35mm film, though now mostly used in heritage cinemas."
+    },
+    {
+      "term": "HDR",
+      "definition": "Technology that expands the range of brightness levels and colors beyond traditional displays. Standards include HDR10, HDR10+, and Dolby Vision, providing more realistic contrast and color accuracy."
+    },
+    {
+      "term": "HFR",
+      "definition": "Playback at higher frame rates (48fps, 60fps, or higher) than standard cinema's 24fps. Reduces motion blur and creates smoother, more lifelike motion, especially beneficial for action sequences."
+    },
+    {
+      "term": "PLF",
+      "definition": "Modern cinema standard combining large screens (typically 40ft+ wide), advanced projection technology (laser/LED), immersive sound (Dolby Atmos), and premium seating for an enhanced movie-going experience."
+    },
+    {
+      "term": "Aspect Ratio",
+      "definition": "The proportional relationship between a screen's width and height. Modern cinemas use 1.90:1 (widescreen) or 2.39:1 (CinemaScope) ratios, compared to older 1.85:1 or 1.37:1 standards."
+    },
+    {
+      "term": "Screen Gain",
+      "definition": "Measure of how much a screen amplifies projected light. Higher gain screens (1.8) reflect more light toward the audience but have narrower viewing angles. Lower gain screens (1.2-1.7) provide more even brightness across the theater."
+    },
+    {
+      "term": "Premium Large Format",
+      "definition": "Modern cinema standard combining large screens (typically 40ft+ wide), advanced projection technology (laser/LED), immersive sound (Dolby Atmos), and premium seating for an enhanced movie-going experience."
+    }
+  ]
+}

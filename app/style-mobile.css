@@ -1,0 +1,736 @@
+/* ============================================
+   MOBILE RESPONSIVE ENHANCEMENTS
+   Optimized for perfect mobile experience
+   ============================================ */
+
+/* Mobile-first base improvements */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+/* Prevent text size adjustment on orientation change */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Base mobile styles (applies to all, enhanced for mobile) */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   MOBILE BREAKPOINT: 768px and below
+   ============================================ */
+@media (max-width: 768px) {
+    /* Typography */
+    header h1 {
+        font-size: 20px;
+        margin: 0 0 8px 0;
+        line-height: 1.3;
+    }
+    
+    header h2 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    
+    .info {
+        font-size: 13px;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    
+    /* Layout adjustments */
+    body {
+        padding: 8px;
+    }
+    
+    .main-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+    
+    .content-area {
+        width: 100%;
+    }
+    
+    /* City Selector - Mobile Optimized */
+    .city-selector-container {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 15px;
+        margin: 10px 0;
+    }
+    
+    .city-label {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .city-dropdown {
+        width: 100%;
+        min-width: unset;
+        font-size: 15px;
+        padding: 12px 15px;
+        height: 48px; /* Touch-friendly height */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffd60a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        padding-right: 40px;
+    }
+    
+    /* Chart Container - Mobile */
+    #chart-container {
+        min-height: 350px;
+        margin: 15px 0;
+        border-radius: 8px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* SVG Chart - Mobile optimizations */
+    svg {
+        min-width: 600px; /* Ensure chart is scrollable on small screens */
+        margin-top: 10px;
+    }
+    
+    /* Labels - Smaller on mobile */
+    .label-name {
+        font-size: 10px !important;
+    }
+    
+    .label-dims {
+        font-size: 8px !important;
+    }
+    
+    .label-tech,
+    .label-sound {
+        font-size: 9px !important;
+    }
+    
+    .label-format,
+    .label-seats,
+    .label-note {
+        font-size: 7px !important;
+    }
+    
+    /* Screen rects - Touch friendly */
+    .screen-rect {
+        cursor: pointer;
+    }
+    
+    /* Sidebar - Mobile Bottom Sheet */
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 65vh;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        border: none;
+        box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+        transform: translateY(100%);
+        transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+        opacity: 1;
+        visibility: visible;
+        touch-action: pan-y;
+    }
+    
+    .sidebar.show {
+        transform: translateY(0);
+    }
+    
+    /* Sidebar handle for mobile */
+    .sidebar::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 4px;
+        background: #555;
+        border-radius: 2px;
+        z-index: 10;
+    }
+    
+    .sidebar-header {
+        padding: 20px 15px 15px 15px;
+        position: relative;
+    }
+    
+    .sidebar-title {
+        font-size: 16px;
+    }
+    
+    .sidebar-toggle {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        line-height: 1;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        background: transparent;
+        color: #fff;
+        box-shadow: none;
+    }
+    
+    .sidebar-toggle:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: none;
+    }
+    
+    .sidebar-body {
+        padding: 10px 15px 30px 15px;
+        max-height: calc(65vh - 60px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Mobile sidebar content */
+    .screen-header {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .screen-name {
+        font-size: 16px;
+    }
+    
+    .screen-format-badge {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    
+    .detail-section {
+        margin-bottom: 12px;
+    }
+    
+    .detail-title {
+        font-size: 12px;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+    
+    .detail-item {
+        padding: 6px;
+    }
+    
+    .detail-label {
+        font-size: 10px;
+    }
+    
+    .detail-value {
+        font-size: 12px;
+    }
+    
+    .detail-row {
+        padding: 5px 0;
+    }
+    
+    .detail-row-label,
+    .detail-row-value {
+        font-size: 11px;
+    }
+    
+    .content-tags {
+        gap: 5px;
+        margin-top: 6px;
+    }
+    
+    .content-tag {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .screen-note {
+        font-size: 11px;
+        padding: 8px;
+        margin-top: 8px;
+    }
+    
+    /* Format Filter Bar - Mobile */
+    .format-filter-bar {
+        padding: 10px 12px;
+        gap: 6px;
+    }
+    
+    .filter-items {
+        gap: 5px;
+    }
+    
+    .filter-item {
+        padding: 5px 10px;
+        font-size: 11px;
+        border-radius: 15px;
+    }
+    
+    /* Tooltips - Mobile optimized */
+    .legend-tooltip,
+    .format-info-tooltip {
+        max-width: 280px;
+        font-size: 13px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    
+    /* Comparison Table - Mobile */
+    .comparison-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+    
+    .comparison-table {
+        font-size: 11px;
+        min-width: 500px;
+    }
+    
+    .comparison-table .screen-header {
+        min-width: 130px;
+        padding: 8px 6px;
+    }
+    
+    .comparison-table .field-label,
+    .comparison-table .field-value {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+    
+    .comparison-table .screen-name {
+        font-size: 11px;
+    }
+    
+    .comparison-table .screen-info {
+        font-size: 9px;
+    }
+    
+    /* Comparison Cards - Mobile */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .comparison-card {
+        padding: 12px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+    
+    .comparison-metrics {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        font-size: 13px;
+    }
+    
+    /* Screen Size Comparison - Mobile */
+    .visual-comparison {
+        padding: 12px;
+        margin: 15px 0;
+    }
+    
+    .visual-comparison h3 {
+        font-size: 16px;
+    }
+    
+    .screen-size-comparison {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .size-bar {
+        width: 70%;
+        max-width: 200px;
+        min-height: 30px;
+    }
+    
+    .size-label {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+    
+    .size-value {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+    
+    /* Action Buttons - Touch friendly */
+    .comparison-actions {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 15px;
+    }
+    
+    .action-btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 15px;
+        min-height: 48px;
+    }
+    
+    /* Page Loading - Mobile */
+    .page-loading-text {
+        font-size: 16px;
+    }
+    
+    /* Skeleton Loading - Mobile */
+    .skeleton-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .skeleton-item {
+        height: 40px;
+    }
+    
+    .skeleton-row {
+        height: 28px;
+    }
+    
+    /* Bottom sheet backdrop */
+    .sidebar-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    .sidebar-backdrop.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE BREAKPOINT: 480px and below
+   ============================================ */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+    
+    header h2 {
+        font-size: 13px;
+    }
+    
+    .info {
+        font-size: 12px;
+    }
+    
+    .city-dropdown {
+        font-size: 14px;
+        padding: 10px 12px;
+        height: 44px;
+    }
+    
+    #chart-container {
+        min-height: 300px;
+    }
+    
+    svg {
+        min-width: 500px;
+    }
+    
+    .label-name {
+        font-size: 9px !important;
+    }
+    
+    .sidebar {
+        max-height: 70vh;
+    }
+    
+    .sidebar-body {
+        max-height: calc(70vh - 60px);
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-item {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+}
+
+/* ============================================
+   TABLET BREAKPOINT: 769px - 1024px
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-container {
+        gap: 15px;
+    }
+    
+    .sidebar {
+        width: 280px;
+        min-width: 280px;
+    }
+    
+    .legend-item {
+        font-size: 11px;
+        margin: 3px 5px;
+        padding: 3px 6px;
+    }
+    
+    .plf-legend {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+/* ============================================
+   TOUCH DEVICE ENHANCEMENTS
+   ============================================ */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .legend-item:hover,
+    .filter-item:hover,
+    .detail-item:hover,
+    .detail-row:hover {
+        transform: none !important;
+    }
+    
+    /* Enhance touch feedback */
+    .legend-item:active,
+    .filter-item:active,
+    .action-btn:active,
+    .city-dropdown:active {
+        transform: scale(0.98);
+        opacity: 0.8;
+    }
+    
+    /* Larger touch targets */
+    .legend-item,
+    .filter-item {
+        min-height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Prevent double-tap zoom */
+    .legend-item,
+    .filter-item,
+    .action-btn,
+    .screen-rect {
+        touch-action: manipulation;
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION
+   ============================================ */
+@media (max-width: 768px) and (orientation: landscape) {
+    .sidebar {
+        max-height: 80vh;
+    }
+    
+    .sidebar-body {
+        max-height: calc(80vh - 60px);
+    }
+    
+    #chart-container {
+        min-height: 250px;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION PREFERENCE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .sidebar {
+        transition: none;
+    }
+}
+
+/* ============================================
+   DARK MODE ENHANCEMENTS
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    /* Already dark theme, but ensure consistency */
+    body {
+        background: #1a1a1a;
+        color: white;
+    }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+@media (prefers-contrast: high) {
+    .city-dropdown {
+        border-width: 3px;
+    }
+    
+    .filter-item.selected,
+    .legend-item.selected {
+        border-width: 3px;
+    }
+    
+    .screen-rect {
+        stroke-width: 2px;
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+    
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding-top: env(safe-area-inset-top)) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    
+    @media (max-width: 768px) {
+        .sidebar {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    }
+}
+
+/* ============================================
+   MOBILE FLOATING ACTION BUTTON
+   ============================================ */
+.mobile-fab {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffd60a 0%, #e6c200 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 214, 10, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 998;
+    font-size: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-fab:active {
+    transform: scale(0.92);
+    box-shadow: 0 2px 8px rgba(255, 214, 10, 0.3);
+}
+
+.mobile-fab.show {
+    display: flex;
+    animation: fabEnter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-fab.hide {
+    animation: fabExit 0.3s ease forwards;
+}
+
+@keyframes fabEnter {
+    from {
+        opacity: 0;
+        transform: scale(0) rotate(-180deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes fabExit {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-fab {
+        bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+        right: calc(20px + env(safe-area-inset-right, 0px));
+    }
+}

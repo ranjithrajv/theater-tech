@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Load Test</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { background: #111; color: white; font-family: monospace; padding: 20px; }
+        #status { margin: 20px 0; padding: 10px; border-radius: 4px; }
+        .success { background: #27ae60; }
+        .error { background: #e74c3c; }
+        .warning { background: #f39c12; }
+        #chart-container { width: 800px; height: 500px; border: 1px solid white; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>🔧 Application Load Test</h1>
+    <div id="status">Initializing...</div>
+    <div id="output"></div>
+
+    <!-- Chart container for visualization -->
+    <div id="chart-container"></div>
+
+    <script type="module">
+        const statusDiv = document.getElementById('status');
+        const outputDiv = document.getElementById('output');
+
+        function updateStatus(message, type = 'info') {
+            statusDiv.textContent = message;
+            statusDiv.className = type;
+            console.log(message);
+        }
+
+        function log(message) {
+            outputDiv.textContent += message + '\n';
+            console.log(message);
+        }
+
+        async function testApplication() {
+            try {
+                updateStatus('🚀 Starting application test...', 'warning');
+
+                // Test 1: Load configuration
+                updateStatus('📋 Loading configuration...', 'warning');
+                const configResponse = await fetch('data/config.json');
+                const config = await configResponse.json();
+                window.AppConfig = config;
+                log('✅ Config loaded');
+
+                // Test 2: Load constants
+                const constantsResponse = await fetch('data/constants.json');
+                const constants = await constantsResponse.json();
+                window.AppConstants = constants;
+                log('✅ Constants loaded');
+
+                // Test 3: Load screens data
+                const screensResponse = await fetch('data/screens.json');
+                const screens = await screensResponse.json();
+                log(`✅ Screens data loaded: ${screens.length} screens`);
+
+                // Test 4: Load modules
+                updateStatus('📦 Loading modules...', 'warning');
+
+                // Load utils first (for SizeUtils and debounce)
+                await loadScript('js/utils.js');
+                log('✅ Utils loaded');
+
+                // Load config module
+                await loadScript('js/config.js');
+                log('✅ Config module loaded');
+
+                // Load core module
+                await loadScript('js/core.js');
+                log('✅ Core module loaded');
+
+                // Load visualization module
+                await loadScript('js/visualization.js');
+                log('✅ Visualization module loaded');
+
+                // Test 5: Check global objects
+                updateStatus('🔍 Checking global objects...', 'warning');
+
+                const checks = [
+                    { name: 'Config', obj: window.Config },
+                    { name: 'App', obj: window.App },
+                    { name: 'Visualization', obj: window.Visualization },
+                    { name: 'SizeUtils', obj: window.SizeUtils },
+                    { name: 'debounce', obj: window.debounce },
+                    { name: 'UIManager', obj: window.UIManager }
+                ];
+
+                checks.forEach(check => {
+                    if (check.obj) {
+                        log(`✅ ${check.name} available`);
+                    } else {
+                        log(`❌ ${check.name} missing`);
+                    }
+                });
+
+                // Test 6: Initialize application
+                updateStatus('🎯 Initializing application...', 'warning');
+
+                if (window.App && typeof window.App.initialize === 'function') {
+                    await window.App.initialize();
+                    log('✅ Application initialized');
+                } else {
+                    throw new Error('App.initialize not available');
+                }
+
+                // Test 7: Check visualization
+                updateStatus('📊 Checking visualization...', 'warning');
+                setTimeout(() => {
+                    const svg = document.querySelector('#chart-container svg');
+                    const rects = document.querySelectorAll('#chart-container rect');
+
+                    log(`SVG exists: ${!!svg}`);
+                    log(`Screen rectangles: ${rects.length}`);
+
+                    if (svg && rects.length > 0) {
+                        updateStatus('🎉 SUCCESS: Application fully functional!', 'success');
+                    } else if (svg) {
+                        updateStatus('⚠️ WARNING: SVG created but no rectangles visible', 'warning');
+                    } else {
+                        updateStatus('❌ ERROR: No visualization created', 'error');
+                    }
+                }, 1000);
+
+            } catch (error) {
+                updateStatus(`💥 ERROR: ${error.message}`, 'error');
+                log(`Error details: ${error.stack}`);
+            }
+        }
+
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
+
+        // Start the test
+        testApplication();
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Comparison Button</title>
+</head>
+<body>
+    <button id="comparison-toggle">Compare Screens</button>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/tooltips.js"></script>
+    <script src="js/ui-components.js"></script>
+
+    <script>
+        // Initialize UIComponents
+        window.addEventListener('load', function() {
+            console.log('Initializing debug test...');
+            if (window.UIComponents && window.UIComponents.init) {
+                window.UIComponents.init();
+                console.log('UIComponents initialized');
+            }
+
+            // Test the function directly
+            setTimeout(() => {
+                console.log('Testing toggleScreenSelection...');
+                const mockScreen = {
+                    name: "Test Theater",
+                    screen_number: 1,
+                    width: 100,
+                    height: 50
+                };
+
+                if (window.UIComponents && window.UIComponents.toggleScreenSelection) {
+                    window.UIComponents.toggleScreenSelection(mockScreen);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
