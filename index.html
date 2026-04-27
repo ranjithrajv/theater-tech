@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>India Cinema Technology Comparison</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/style-mobile.css">
+    
+    <!-- Vite+ will handle D3.js import if it's in public/lib -->
+
+    <!-- Application Entry Point -->
+    <script type="module" src="/src/js/index.js"></script>
+</head>
+<body>
+    <!-- Tooltip elements for legend -->
+    <div class="legend-tooltip" id="legend-tooltip"></div>
+    <div class="format-info-tooltip" id="format-info-tooltip"></div>
+
+    <div class="main-container">
+        <div class="content-area">
+            <header>
+                <h1 id="page-title">India Cinema Technology Comparison</h1>
+                <h2>Movie buffs' go to place</h2>
+                
+                <!-- City Selector -->
+                <div class="city-selector-container">
+                    <label for="city-selector" class="city-label">🎬 Select City:</label>
+                    <select id="city-selector" class="city-dropdown">
+                        <option value="">Loading cities...</option>
+                    </select>
+                </div>
+                
+                <div class="info" id="page-description">Visual comparison of India's biggest cinema screens across metro cities with their dimensions and premium large format (PLF) technologies</div>
+            </header>
+
+            <div id="chart-container"></div>
+
+            <div class="plf-legend">
+                <div style="margin-bottom: 15px;">
+                    <h3 id="legend-title" style="margin: 0 0 10px 0; color: #fff; font-size: 16px;">🎬 Cinema Technology Comparison Legend</h3>
+
+                    <div class="legend-sections">
+                        <!-- Legend content will be dynamically generated here -->
+                    </div>
+                </div>
+
+                <div class="usage-info" style="font-size: 12px; color: #ccc; border-top: 1px solid #555; padding-top: 10px; margin-top: 10px;">
+                    <strong>💡 How to Use:</strong> Select a city above • Click screens to compare • Hover for details • Hover over <span style="color: #ffd60a; text-decoration: underline dotted;">highlighted terms</span> for explanations.
+                    <span id="data-attribution"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Backdrop (Mobile Only) -->
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">Theater Details</h3>
+                    <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Close sidebar">×</button>
+                </div>
+                <div class="sidebar-body" id="sidebar-body">
+                    <div class="sidebar-placeholder">
+                        <div class="placeholder-icon">🎬</div>
+                        <p>Tap a screen to see details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Floating Action Button -->
+        <button class="mobile-fab hide-desktop" id="mobile-fab" aria-label="Show sidebar">
+            <span>ℹ️</span>
+        </button>
+    </div>
+</body>
+</html>

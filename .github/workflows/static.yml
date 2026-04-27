@@ -15,20 +15,35 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-and-deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use the Node.js version from your package.json or a compatible version
+          cache: 'npm' # Cache npm dependencies
+
+      - name: Install Dependencies
+        run: npm install # Or use 'vp install' if 'vp' is globally available and set up
+
+      - name: Build Project
+        run: npm run build # This should now execute 'vp build' from package.json
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './dist' # Upload the build output directory
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,16 +1,15 @@
 {
   "name": "theater-tech",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This project is a data visualization that compares the cinema technology including screen sizes, projectors, sound systems, and technical specifications of various cinemas in Hyderabad, India.",
-  "main": "tests/test_app_loading.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
+  "type": "module",
   "scripts": {
-    "test": "node tests/quick-validate.js",
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "check": "vp check",
+    "test": "vp test",
     "validate": "node tests/quick-validate.js",
-    "knip": "knip",
     "prepare": "husky"
   },
   "repository": {
@@ -20,18 +19,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/ranjithrajv/theater-tech/issues"
-  },
-  "homepage": "https://github.com/ranjithrajv/theater-tech#readme",
-  "devDependencies": {
-    "husky": "^9.1.7",
-    "knip": "^5.82.1",
-    "puppeteer": "^24.37.3"
-  },
   "dependencies": {
+    "d3": "^7.9.0",
     "dotenv": "^17.3.1",
     "pg": "^8.20.0"
-  }
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "vite-plus": "latest"
+  },
+  "packageManager": "npm@11.13.0"
 }
