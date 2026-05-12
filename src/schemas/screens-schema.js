@@ -910,9 +910,9 @@ const ScreensSchema = {
 
 // Global export
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = ScreensSchema;
+    export const ScreensSchema;
 }
 
 if (typeof window !== 'undefined') {
-    window.ScreensSchema = ScreensSchema;
+    ScreensSchema = ScreensSchema;
 }

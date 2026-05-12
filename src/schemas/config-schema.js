@@ -192,9 +192,9 @@ const ConfigSchema = {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = ConfigSchema;
+    export const ConfigSchema;
 }
 
 if (typeof window !== 'undefined') {
-    window.ConfigSchema = ConfigSchema;
+    ConfigSchema = ConfigSchema;
 }

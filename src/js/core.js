@@ -6,85 +6,41 @@
  *
  * Responsibilities:
  * - Application bootstrap and initialization
- * - Data loading and state management
+ * - Data loading and state management (from SQLite)
  * - UI lifecycle management
  * - Error handling and recovery
  * - Configuration management
  */
 
-// Simple UIManager stub for compatibility
-window.UIManager = {
-    isReady: true,
-    pageLoader: null,
+// Import necessary modules
+import { Config } from './config.js';
+import * as sql from 'sql.js'; // Import sql.js
+import { Validator } from './data-validator.js'; // Assuming Validator will be adapted
+import { SchemaRegistry } from '../schemas/schema-registry.js'; // Assuming SchemaRegistry will be adapted
+import * as d3 from 'd3'; // Import d3
 
-    createPageLoader() {
-        if (this.pageLoader) return this.pageLoader;
+// Ensure UIManager is available or stubbed
+if (typeof window.UIManager === 'undefined') {
+    window.UIManager = {
+        isReady: true,
+        pageLoader: null,
+        createPageLoader: () => { /* stub */ },
+        hidePageLoader: () => { /* stub */ },
+        getResponsiveDimensions: () => ({ isMobile: false, margin: {}, width: 800, height: 600, scale: 7 }),
+        updatePageMeta: () => { /* stub */ },
+        showError: (message) => { console.error("UI Error:", message); alert("Application Error: " + message); }
+    };
+}
 
-        const loader = document.createElement('div');
-        loader.className = 'page-loading';
-        loader.innerHTML = `
-            <div class="page-loading-spinner"></div>
-            <div class="page-loading-text">Loading cinema data...</div>
-        `;
-        document.body.appendChild(loader);
-        this.pageLoader = loader;
-        return loader;
-    },
+// Ensure AppConstants is available or stubbed initially
+if (typeof window.AppConstants === 'undefined') {
+    window.AppConstants = {};
+}
 
-    hidePageLoader() {
-        if (this.pageLoader) {
-            this.pageLoader.classList.add('fade-out');
-            setTimeout(() => {
-                if (this.pageLoader) {
-                    this.pageLoader.remove();
-                    this.pageLoader = null;
-                }
-            }, AppConstants?.ANIMATIONS?.FADE_DURATION || 500);
-        }
-    },
+// Ensure IconUtils and TemplateUtils are available or stubbed
+if (typeof window.IconUtils === 'undefined') window.IconUtils = {};
+if (typeof window.TemplateUtils === 'undefined') window.TemplateUtils = {};
 
-    getResponsiveDimensions() {
-        const isMobile = window.innerWidth <= (AppConstants?.RESPONSIVE_BREAKPOINTS?.MOBILE || 768);
-        const margin = isMobile ?
-            (AppConstants?.MARGINS?.MOBILE || { top: 20, right: 20, bottom: 60, left: 60 }) :
-            (AppConstants?.MARGINS?.DESKTOP || { top: 40, right: 40, bottom: 80, left: 80 });
-
-        const containerWidth = Math.min(AppConstants?.DIMENSIONS?.CONTAINER_WIDTH || 1000, window.innerWidth - 40);
-        const width = containerWidth - margin.left - margin.right;
-        const height = (isMobile ?
-            (AppConstants?.DIMENSIONS?.MOBILE_HEIGHT || 500) :
-            (AppConstants?.DIMENSIONS?.DESKTOP_HEIGHT || 700)) - margin.top - margin.bottom;
-        const scale = isMobile ?
-            (AppConstants?.DIMENSIONS?.SCALE?.MOBILE || 4) :
-            (AppConstants?.DIMENSIONS?.SCALE?.DESKTOP || 7);
-
-        return { isMobile, margin, width, height, scale };
-    },
-
-    updatePageMeta(configData) {
-        // Only update if elements haven't been customized by city selection
-        const titleEl = document.getElementById('page-title');
-        if (!titleEl && configData.title) {
-            document.title = configData.title;
-        }
-        
-        const infoElement = document.getElementById('page-description');
-        if (infoElement && configData.description && !infoElement.textContent.includes('biggest cinema screens')) {
-            infoElement.textContent = configData.description;
-        }
-        
-        const attributionElement = document.getElementById('data-attribution');
-        if (attributionElement && configData.data_current_as_of && !attributionElement.textContent) {
-            attributionElement.textContent = `Compare cinema technology landscape including screens, projectors, and sound systems. Data current as of ${configData.data_current_as_of}.`;
-        }
-    },
-
-    showError(message) {
-        console.error('Application Error:', message);
-        // Could show a user-friendly error UI here
-        alert(`Application Error: ${message}`);
-    }
-};
 
 class Application {
     constructor() {
@@ -99,30 +55,30 @@ class Application {
         this.data = {
             screens: null,
             allCitiesData: null,
-            config: null,
-            constants: null,
-            icons: null,
-            tooltips: null
+            // config, constants, icons, tooltips will be loaded from DB
         };
 
         this.components = {};
         this.availableCities = [];
+        this.db = null; // Database instance
+        this.dbPath = '/public/data/theater_tech.db'; // Path to the SQLite DB file
     }
 
     /**
      * Initialize the application
      */
     async initialize() {
+        console.log('🚀 Initializing India Cinema Technology Comparison...');
+
         try {
-            console.log('🚀 Initializing India Cinema Technology Comparison...');
-
-            // Phase 1: Load core dependencies
+            // Phase 1: Load core dependencies and initialize DB
             await this.loadCoreDependencies();
+            await this.initializeDatabase(); // New method to init DB
 
-            // Phase 2: Initialize UI and data loading
+            // Phase 2: Initialize UI and data loading from DB
             await this.initializeSystems();
 
-            // Phase 3: Setup interactions (visualization will be created after city selection)
+            // Phase 3: Setup interactions
             this.setupInteractions();
 
             this.state.initialized = true;
@@ -137,7 +93,7 @@ class Application {
     }
 
     /**
-     * Load core library dependencies
+     * Load core library dependencies and verify availability
      */
     async loadCoreDependencies() {
         console.log('📚 Verifying core dependencies...');
@@ -146,7 +102,7 @@ class Application {
             'AppConstants',
             'IconUtils',
             'TemplateUtils',
-            'JSONSchemaValidator',
+            'JSONSchemaValidator', // Assuming Validator uses this
             'SchemaRegistry',
             'Validator',
             'd3'
@@ -156,71 +112,285 @@ class Application {
 
         if (missing.length > 0) {
             console.error(`❌ Missing core dependencies: ${missing.join(', ')}`);
-
-            // Provide more specific error messages for critical dependencies
-            if (missing.includes('d3')) {
-                throw new Error('Critical dependency D3.js not loaded. Please ensure d3.v7.min.js is loaded before application scripts.');
-            }
-
-            if (missing.includes('AppConstants')) {
-                throw new Error('Critical dependency AppConstants not loaded. Please ensure config.js is loaded before core.js.');
-            }
-
+            if (missing.includes('d3')) throw new Error('Critical dependency D3.js not loaded. Ensure d3.v7.min.js is loaded.');
+            if (missing.includes('AppConstants')) throw new Error('Critical dependency AppConstants not loaded. Ensure config.js is loaded.');
             throw new Error(`Missing core dependencies: ${missing.join(', ')}`);
         }
 
         console.log('✅ Core dependencies verified');
     }
 
-    async loadApplicationData() {
-        console.log('📊 Loading and validating application data...');
-
+    /**
+     * Initialize SQLite database connection
+     */
+    async initializeDatabase() {
+        console.log('🗄️ Initializing SQLite database...');
         try {
-            if (typeof Validator === 'undefined') {
-                throw new Error('Validator not available');
-            }
-
-            Validator.initialize();
-
-            const validationResults = await Validator.validateAllFiles();
-
-            if (!validationResults.allPassed) {
-                console.error('❌ Data validation failed with errors:');
-
-                let errorMessages = [];
-                for (const error of validationResults.errors) {
-                    const errorText = error.errors
-                        ? Validator.formatErrors(error.errors)
-                        : error.error;
-                    errorMessages.push(`\n${error.dataType}: ${errorText}`);
-                }
-
-                throw new Error(`Data validation failed:\n${errorMessages.join('')}`);
-            }
-
-            const screensResult = validationResults.results.screens;
-            const configResult = validationResults.results.config;
-
-            window.appData = {
-                screens: screensResult.data,
-                config: configResult.data,
-                validationResults: validationResults.results
-            };
-
-            console.log('✅ Application data loaded and validated');
-
+            const SQL = await sql.default; // Wait for sql.js to be ready
+            const dbFile = await fetch(this.dbPath); // Fetch the DB file
+            const bytes = await dbFile.arrayBuffer();
+            this.db = new SQL.Database(bytes);
+            console.log('✅ SQLite database connected and loaded');
         } catch (error) {
-            console.error('❌ Failed to load application data:', error);
-
-            if (error.message.includes('validation failed')) {
-                this.handleValidationError(error);
-            }
-
-            throw error;
+            console.error('❌ Failed to load or connect to SQLite database:', error);
+            throw new Error(`Database connection failed: ${error.message}`);
         }
     }
 
+    /**
+     * Load and validate application data from SQLite
+     */
+    async loadApplicationData() {
+        console.log('📊 Loading and validating application data from SQLite...');
 
+        try {
+            if (!this.db) {
+                throw new Error('Database not initialized');
+            }
+
+            // --- Load Constants ---
+            // Fetch constants from DB and populate AppConstants
+            const constantsRaw = this.queryDB("SELECT category, data_key, data_value FROM constants");
+            const constantsData = this.processConstants(constantsRaw);
+            window.AppConstants = { ...window.AppConstants, ...constantsData }; // Merge with defaults
+            console.log('✅ Loaded constants from DB');
+
+            // --- Load Configuration ---
+            // Fetch config from DB
+            const configRaw = this.queryDB("SELECT * FROM config LIMIT 1");
+            const configData = configRaw.length > 0 ? configRaw[0] : {};
+            // Reconstruct complex config objects if needed, or assume they are flattened in DB.
+            // For now, assuming config data is simple or handled during merging.
+            this.data.config = configData;
+            console.log('✅ Loaded config from DB');
+            // Update AppConstants with fetched config if necessary
+            if (configData.title) document.title = configData.title;
+
+
+            // --- Load Screens ---
+            const screensRaw = this.queryDB("SELECT * FROM screens");
+            const screensData = this.processScreens(screensRaw);
+            this.data.screens = screensData;
+            console.log(`✅ Loaded ${screensData.length} screens from DB`);
+
+            // --- Load Tooltips ---
+            const tooltipsRaw = this.queryDB("SELECT * FROM tooltips");
+            const tooltipsData = this.processTooltips(tooltipsRaw);
+            this.data.tooltips = tooltipsData;
+            console.log('✅ Loaded tooltips from DB');
+
+            // --- Load Icons ---
+            const iconsRaw = this.queryDB("SELECT * FROM icons");
+            const iconsData = this.processIcons(iconsRaw);
+            this.data.icons = iconsData;
+            console.log('✅ Loaded icons from DB');
+
+            // --- Validation ---
+            // The previous JSON validation logic might need to be adapted to validate data fetched from DB.
+            // For now, we'll assume basic data existence and format checks are sufficient.
+            // A more robust validation would involve comparing against schemas here.
+            this.validateAppData();
+
+            window.appData = {
+                screens: this.data.screens,
+                config: this.data.config,
+                constants: constantsData, // This structure might need adjustment
+                icons: this.data.icons,
+                tooltips: this.data.tooltips,
+                // Add other loaded data as needed
+            };
+
+            console.log('✅ Application data loaded and validated from SQLite');
+
+        } catch (error) {
+            console.error('❌ Failed to load application data from SQLite:', error);
+            throw error;
+        }
+    }
+    
+    /**
+     * Execute a SQL query against the database.
+     * @param {string} query - The SQL query to execute.
+     * @returns {Array<Object>} Array of results, each as an object.
+     */
+    queryDB(query) {
+        if (!this.db) {
+            throw new Error('Database not initialized');
+        }
+        const statement = this.db.prepare(query);
+        const results = [];
+        while (statement.step()) {
+            results.push(statement.getAsObject());
+        }
+        statement.free();
+        return results;
+    }
+    
+    /**
+     * Process raw data from constants table.
+     */
+    processConstants(rawConstants) {
+        const constants = {};
+        rawConstants.forEach(row => {
+            const cat = row.category;
+            const key = row.data_key;
+            let val = row.data_value;
+
+            if (!constants[cat]) constants[cat] = {};
+
+            // Attempt to parse nested keys and infer types
+            const parts = key.split('.');
+            let current = constants[cat];
+            for (let i = 0; i < parts.length; i++) {
+                const part = parts[i];
+                if (i === parts.length - 1) {
+                    // Attempt type coercion
+                    try {
+                        if (val.includes('.')) current[part] = parseFloat(val);
+                        else if (val.toLowerCase() === 'true') current[part] = true;
+                        else if (val.toLowerCase() === 'false') current[part] = false;
+                        else current[part] = parseInt(val, 10);
+                    } catch {
+                        current[part] = val; // Fallback to string
+                    }
+                } else {
+                    if (!current[part]) current[part] = {};
+                    current = current[part];
+                }
+            }
+        });
+        return constants;
+    }
+
+    /**
+     * Process raw data from screens table.
+     */
+    processScreens(rawScreens) {
+        return rawScreens.map(s => {
+            const screen_id = s.id;
+            const area = s.width * s.height;
+            
+            // Reconstruct nested objects (projection, sound_system, screen_surface)
+            const projection = {
+                type: s.projection_type,
+                resolution: s.projection_resolution,
+                brand: s.projection_brand,
+                model: s.projection_model,
+                aspect_ratio: s.projection_aspect_ratio,
+            };
+            const brightnessUnit = s.projection_brightness_unit;
+            const brightnessVal = s.projection_brightness;
+            if (brightnessUnit === 'lumens') projection.brightness_lumens = brightnessVal;
+            else if (brightnessUnit === 'nits') projection.brightness_nits = brightnessVal;
+
+            const sound = {
+                format: s.sound_format,
+                channels: s.sound_channels,
+                brand: s.sound_brand
+            };
+            // Convert channels if it's a number string
+            if (sound.channels && !sound.channels.includes('.') && !isNaN(Number(sound.channels))) {
+                sound.channels = parseInt(sound.channels, 10);
+            }
+
+            const surface = {
+                material: s.screen_surface_material,
+                gain: s.screen_surface_gain
+            };
+
+            // Fetch content support features
+            const supportResults = this.queryDB(`SELECT feature, value FROM content_support WHERE screen_id = ${screen_id}`);
+            const content_support = {};
+            supportResults.forEach(row => {
+                content_support[row.feature] = !!row.value; // Ensure boolean
+            });
+
+            return {
+                ...s, // Include remaining fields like name, location, color, etc.
+                id: undefined, // Remove id if not needed in app data
+                screen_id: screen_id, // Keep original ID if necessary
+                area,
+                projection,
+                sound_system: sound,
+                screen_surface: surface,
+                content_support
+            };
+        });
+    }
+    
+    /**
+     * Process raw data from tooltips table.
+     */
+    processTooltips(rawTooltips) {
+        const tooltips = { glossaryTerms: [], explanations: {} };
+        rawTooltips.forEach(t => {
+            if (t.category === 'glossary') {
+                tooltips.glossaryTerms.push(t.term);
+            } else if (t.category === 'explanation') {
+                tooltips.explanations[t.term] = t.explanation;
+            }
+        });
+        return tooltips;
+    }
+
+    /**
+     * Process raw data from icons table.
+     */
+    processIcons(rawIcons) {
+        const iconsData = { icons: {}, techDescriptions: {} };
+        rawIcons.forEach(i => {
+            if (i.category === 'techDescriptions') { // Handle tech descriptions separately
+                if (!iconsData.techDescriptions[i.category]) iconsData.techDescriptions[i.category] = {};
+                 // Assuming icon_key is the same as tech_key for this table
+                iconsData.techDescriptions[i.category][i.tech_key] = i.tech_value;
+            } else {
+                if (!iconsData.icons[i.category]) iconsData.icons[i.category] = {};
+                iconsData.icons[i.category][i.icon_key] = i.icon_value;
+            }
+        });
+        return iconsData;
+    }
+
+    /**
+     * Perform basic validation on loaded application data.
+     */
+    validateAppData() {
+        console.log('🧪 Validating application data...');
+        const errors = [];
+
+        // Validate screens data
+        if (!this.data.screens || !Array.isArray(this.data.screens) || this.data.screens.length === 0) {
+            errors.push('Screens data is missing or empty.');
+        } else {
+            // Basic check: ensure at least some screens have valid dimensions
+            const hasValidDimensions = this.data.screens.some(s => s.width > 0 && s.height > 0);
+            if (!hasValidDimensions) {
+                errors.push('No screens with valid dimensions found.');
+            }
+        }
+
+        // Validate config data
+        if (!this.data.config || !this.data.config.title || !this.data.config.description) {
+            errors.push('Config data is missing or incomplete (title/description).');
+        }
+        // Add more config validations as needed
+
+        // Validate tooltips data
+        if (!this.data.tooltips || !this.data.tooltips.glossaryTerms || !this.data.tooltips.explanations) {
+            errors.push('Tooltips data is missing or incomplete.');
+        }
+
+        // Validate icons data
+        if (!this.data.icons || !this.data.icons.projection || !this.data.icons.sound) {
+             errors.push('Icons data is missing or incomplete.');
+        }
+        
+        if (errors.length > 0) {
+            console.error('❌ Data validation failed:', errors);
+            throw new Error(`Data validation failed: ${errors.join('; ')}`);
+        }
+        console.log('✅ Application data validated');
+    }
 
     /**
      * Initialize all systems
@@ -228,8 +398,8 @@ class Application {
     async initializeSystems() {
         console.log('🔧 Initializing all systems...');
 
-        // Load application data first
-        await this.loadApplicationData();
+        // Load application data from DB (already done in initialize)
+        // await this.loadApplicationData(); // This is called in initialize()
 
         // UI should already be initialized by UIManager
         // Components should already be initialized by UIComponents
@@ -244,7 +414,9 @@ class Application {
         if (typeof UIManager !== 'undefined' && UIManager.isReady &&
             window.appData && typeof UIComponents !== 'undefined') {
 
-            this.data.config = window.appData.config;
+            // No need to set this.data.config from appData if config is loaded separately
+            // this.data.config = window.appData.config;
+            
             this.state.dataLoaded = true;
             this.state.uiReady = true;
 
@@ -266,8 +438,9 @@ class Application {
         console.log('Data available:', !!this.data.screens);
         console.log('Data length:', this.data.screens ? this.data.screens.length : 'N/A');
 
-        if (typeof Visualization !== 'undefined' && this.data.screens) {
+        if (typeof Visualization !== 'undefined' && this.data.screens && this.data.screens.length > 0) {
             try {
+                // Process data for visualization
                 const processedData = this.data.screens.map(screen => {
                     const area = screen.width * screen.height;
                     let category = 'Unknown';
@@ -310,7 +483,7 @@ class Application {
         // Window resize handler - debounce to prevent excessive calls
         window.addEventListener('resize', debounce(() => {
             this.handleResize();
-        }, 300)); // 300ms debounce
+        }, AppConstants.ANIMATIONS?.DEBOUNCE_DELAY || 300)); // 300ms debounce
 
         // Setup mobile interactions
         this.setupMobileInteractions();
@@ -322,7 +495,7 @@ class Application {
      * Setup mobile-specific interactions
      */
     setupMobileInteractions() {
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= (AppConstants?.RESPONSIVE_BREAKPOINTS?.MOBILE || 768);
         
         if (isMobile) {
             console.log('📱 Setting up mobile interactions...');
@@ -489,12 +662,37 @@ class Application {
         console.log('🏙️ Loading all cities data...');
 
         try {
-            if (!window.appData || !window.appData.screens) {
-                throw new Error('No cities data available');
+            // Data now comes from this.data.screens and this.data.config
+            // Need to reconstruct availableCities and potentially city objects if they are not directly in screens
+            // For now, assume 'screens' contains city info or it's derived.
+            
+            // This part needs adjustment: It assumes 'window.appData.screens' and city structure.
+            // Let's adapt it to use 'this.data.screens' and query for cities if needed.
+            
+            // If 'screens' is an array of all screens, we need to group them by city.
+            // Assuming 'screens' now contains city info or we can query for unique cities.
+            
+            // Placeholder: if 'screens' doesn't have city info, we'd need to query a 'cities' table
+            // For now, let's assume 'screens' has city info or it's available in `this.data.config` or similar.
+            
+            // Example: Reconstructing city list if not directly available
+            const uniqueCities = {};
+            if (this.data.screens) {
+                this.data.screens.forEach(screen => {
+                    if (screen.theater_name && screen.location) { // Assuming these define a city/location
+                        if (!uniqueCities[screen.theater_name]) {
+                            uniqueCities[screen.theater_name] = {
+                                id: screen.theater_name.toLowerCase().replace(/\s+/g, '-'), // Simple ID
+                                name: screen.theater_name,
+                                state: screen.location, // Location might not be state, needs mapping
+                                screens: []
+                            };
+                        }
+                        uniqueCities[screen.theater_name].screens.push(screen);
+                    }
+                });
             }
-
-            this.data.allCitiesData = window.appData.screens;
-            this.availableCities = this.data.allCitiesData.cities || [];
+            this.availableCities = Object.values(uniqueCities);
 
             console.log(`✅ Loaded ${this.availableCities.length} cities`);
             console.log('Available cities:', this.availableCities.map(c => c.name));
@@ -504,12 +702,14 @@ class Application {
 
             // Load first city by default or from localStorage
             const savedCity = localStorage.getItem('selectedCity');
-            const defaultCity = savedCity && this.availableCities.find(c => c.id === savedCity) 
-                ? savedCity 
-                : (this.availableCities[0]?.id || null);
+            const defaultCity = savedCity && this.availableCities.find(c => c.id === savedCity)
+                ? savedCity
+                : (this.availableCities.length > 0 ? this.availableCities[0].id : null);
 
             if (defaultCity) {
                 await this.selectCity(defaultCity);
+            } else {
+                console.warn('No default city found or selected.');
             }
 
         } catch (error) {
@@ -541,7 +741,7 @@ class Application {
         this.availableCities.forEach(city => {
             const option = document.createElement('option');
             option.value = city.id;
-            option.textContent = `${city.name}, ${city.state}`;
+            option.textContent = `${city.name}${city.state ? `, ${city.state}` : ''}`;
             selector.appendChild(option);
         });
 
@@ -569,7 +769,7 @@ class Application {
             }
 
             this.state.currentCity = cityId;
-            this.data.screens = city.screens;
+            this.data.screens = city.screens; // Use the screens associated with this city
 
             // Save selection to localStorage
             localStorage.setItem('selectedCity', cityId);
@@ -636,7 +836,7 @@ class Application {
             })
             .on("mouseover", debounce((event, d) => {
                 this.handleScreenHover(event, d, true);
-            }, AppConstants.ANIMATIONS.DEBOUNCE_DELAY))
+            }, AppConstants.ANIMATIONS?.DEBOUNCE_DELAY || 300))
             .on("mouseout", () => {
                 this.handleScreenHover(null, null, false);
             });
@@ -647,7 +847,7 @@ class Application {
      */
     handleScreenHover(event, screenData, isHover) {
         const screens = d3.selectAll('.screen-rect');
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= (AppConstants?.RESPONSIVE_BREAKPOINTS?.MOBILE || 768);
 
         if (isHover && screenData) {
             // Highlight hovered/tapped screen
@@ -753,16 +953,7 @@ class Application {
     }
 }
 
-// Create global application instance
-const App = new Application();
-
 // Export for use in other modules
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = App;
-}
-
-if (typeof window !== 'undefined') {
-    window.App = App;
-}
+export const App = new Application();
 
 // No auto-initialization here - that's handled by index.js

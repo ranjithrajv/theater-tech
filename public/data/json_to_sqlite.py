@@ -298,13 +298,10 @@ def insert_tooltips_data(conn, tooltips_data):
 
 def main():
     # Define paths
-    data_dir = Path(__file__).parent.parent / 'public' / 'data'
+    data_dir = Path('.')
     db_path = data_dir / 'theater_tech.db'
     
     # Load JSON files
-    # NOTE: The original project had config.json, constants.json, icons.json, screens.json, tooltips.json
-    # We are loading these to populate the DB.
-    
     with open(data_dir / 'config.json', 'r') as f:
         config_data = json.load(f)
     
@@ -314,18 +311,8 @@ def main():
     with open(data_dir / 'icons.json', 'r') as f:
         icons_data = json.load(f)
     
-    # screens.json is legacy, all_cities_screens.json is primary
-    # If all_cities_screens.json exists, use it. Otherwise, fall back to screens.json.
-    screens_file_path = data_dir / 'all_cities_screens.json'
-    if not screens_file_path.exists():
-        screens_file_path = data_dir / 'screens.json'
-        
-    if screens_file_path.exists():
-        with open(screens_file_path, 'r') as f:
-            screens_data = json.load(f)
-    else:
-        screens_data = [] # Provide empty list if neither file exists
-        print("Warning: Neither 'all_cities_screens.json' nor 'screens.json' found. Screens data will be empty.")
+    with open(data_dir / 'screens.json', 'r') as f:
+        screens_data = json.load(f)
     
     with open(data_dir / 'tooltips.json', 'r') as f:
         tooltips_data = json.load(f)

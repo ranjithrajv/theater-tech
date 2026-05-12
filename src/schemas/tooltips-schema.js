@@ -138,9 +138,9 @@ const TooltipsSchema = {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = TooltipsSchema;
+    export const TooltipsSchema;
 }
 
 if (typeof window !== 'undefined') {
-    window.TooltipsSchema = TooltipsSchema;
+    TooltipsSchema = TooltipsSchema;
 }

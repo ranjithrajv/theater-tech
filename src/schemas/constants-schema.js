@@ -272,9 +272,9 @@ const ConstantsSchema = {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = ConstantsSchema;
+    export const ConstantsSchema;
 }
 
 if (typeof window !== 'undefined') {
-    window.ConstantsSchema = ConstantsSchema;
+    ConstantsSchema = ConstantsSchema;
 }

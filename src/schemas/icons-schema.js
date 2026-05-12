@@ -69,9 +69,9 @@ const IconsSchema = {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = IconsSchema;
+    export const IconsSchema;
 }
 
 if (typeof window !== 'undefined') {
-    window.IconsSchema = IconsSchema;
+    IconsSchema = IconsSchema;
 }
