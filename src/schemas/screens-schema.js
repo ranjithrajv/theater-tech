@@ -908,11 +908,4 @@ const ScreensSchema = {
     }
 };
 
-// Global export
-if (typeof module !== 'undefined' && module.exports) {
-    export const ScreensSchema;
-}
-
-if (typeof window !== 'undefined') {
-    ScreensSchema = ScreensSchema;
-}
+export { ScreensSchema };

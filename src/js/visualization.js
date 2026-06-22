@@ -11,6 +11,8 @@
  * - Chart updates and interactions
  */
 
+import * as d3 from 'd3';
+
 class VisualizationManager {
     constructor() {
         this.svg = null;
@@ -475,19 +477,11 @@ class VisualizationManager {
     }
 }
 
-// Create global instance
 const Visualization = new VisualizationManager();
-
-// Export for use in other modules
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Visualization;
-}
 
 if (typeof window !== 'undefined') {
     window.Visualization = Visualization;
-}
-
-// Also export the class for instantiation if needed
-if (typeof window !== 'undefined') {
     window.VisualizationManager = VisualizationManager;
 }
+
+export { Visualization, VisualizationManager };

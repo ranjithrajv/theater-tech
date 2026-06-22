@@ -8,13 +8,13 @@
  * modular application architecture.
  */
 
-// ===== MODULE IMPORTS =====
-// Load core libraries (these should be loaded first)
-importScripts([
-    '../lib/json-schema-validator.js',
-    '../lib/icon-manager.js',
-    '../lib/html-templates.js'
-]);
+import { Config } from './config.js';
+import './utils.js';
+import './templates.js';
+import './tooltips.js';
+import { App } from './core.js';
+import { UIComponents } from './ui-components.js';
+import { Visualization } from './visualization.js';
 
 // ===== APPLICATION INITIALIZATION =====
 
@@ -27,23 +27,15 @@ async function initializeApplication() {
     try {
         // Phase 1: Initialize configuration
         console.log('⚙️ Initializing configuration...');
-        if (typeof Config !== 'undefined') {
-            await Config.initialize();
-            console.log('✅ Configuration initialized');
-        } else {
-            throw new Error('Config module not loaded');
-        }
+        await Config.initialize();
+        console.log('✅ Configuration initialized');
 
         // Phase 2: Application data will be loaded by App.initialize()
         console.log('📊 Application data loading delegated to core module');
 
         // Phase 3: Initialize core application
         console.log('🏗️ Initializing core application...');
-        if (typeof App !== 'undefined') {
-            await App.initialize();
-        } else {
-            throw new Error('App module not loaded');
-        }
+        await App.initialize();
 
         console.log('✅ Application fully initialized and ready!');
 
@@ -53,46 +45,6 @@ async function initializeApplication() {
         // Show user-friendly error message
         showCriticalError(error);
     }
-}
-
-
-
-/**
- * Helper function to load scripts dynamically
- * @param {Array<string>} scripts - Array of script paths to load
- * @returns {Promise} Promise that resolves when all scripts are loaded
- */
-function importScripts(scripts) {
-    return new Promise((resolve, reject) => {
-        let loadedCount = 0;
-        const totalScripts = scripts.length;
-
-        if (totalScripts === 0) {
-            resolve();
-            return;
-        }
-
-        scripts.forEach(scriptPath => {
-            const script = document.createElement('script');
-            script.src = scriptPath;
-            script.onload = () => {
-                loadedCount++;
-                console.log(`📦 Loaded ${scriptPath} (${loadedCount}/${totalScripts})`);
-                if (loadedCount === totalScripts) {
-                    // Give a small delay to ensure all scripts have initialized
-                    setTimeout(() => {
-                        console.log('✅ All scripts loaded');
-                        resolve();
-                    }, 100);
-                }
-            };
-            script.onerror = (error) => {
-                console.error(`❌ Failed to load script: ${scriptPath}`, error);
-                reject(new Error(`Failed to load script: ${scriptPath}`));
-            };
-            document.head.appendChild(script);
-        });
-    });
 }
 
 /**
@@ -167,53 +119,16 @@ window.addEventListener('unhandledrejection', (event) => {
 
 // ===== START APPLICATION =====
 
-/**
- * Bootstrap the application with proper loading sequence
- */
-async function bootstrapApplication() {
-    try {
-        console.log('🔧 Bootstrapping application...');
-
-        // Phase 1: Load all scripts
-        console.log('📦 Loading application scripts...');
-        await importScripts([
-            'js/config.js',
-            'js/utils.js',
-            'js/templates.js',
-            'js/tooltips.js',
-            'schemas/screens-schema.js',
-            'schemas/config-schema.js',
-            'schemas/constants-schema.js',
-            'schemas/tooltips-schema.js',
-            'schemas/icons-schema.js',
-            'schemas/schema-registry.js',
-            'js/data-validator.js',
-            'js/core.js',
-            'js/ui-components.js',
-            'js/visualization.js'
-        ]);
-
-        // Phase 2: Initialize application
-        console.log('🚀 Starting application...');
-        await initializeApplication();
-
-    } catch (error) {
-        console.error('💥 Bootstrap failed:', error);
-        showCriticalError(error);
-    }
-}
-
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bootstrapApplication);
+    document.addEventListener('DOMContentLoaded', initializeApplication);
 } else {
-    bootstrapApplication();
+    initializeApplication();
 }
 
 // Export for debugging/development
 if (typeof window !== 'undefined') {
     window.AppInitializer = {
-        initializeApplication,
-        importScripts
+        initializeApplication
     };
 }

@@ -1,9 +1,5 @@
-/**
- * Data Validator Module
- * 
- * Provides centralized data validation using JSON schemas.
- * Integrates with SchemaRegistry to validate all application data files.
- */
+import { SchemaRegistry } from '../schemas/schema-registry.js';
+import { JSONSchemaValidator } from '../lib/json-schema-validator.js';
 
 class DataValidator {
     constructor() {
@@ -16,20 +12,12 @@ class DataValidator {
     initialize() {
         if (this.initialized) return;
 
-        if (typeof JSONSchemaValidator === 'undefined') {
-            throw new Error('JSONSchemaValidator not available');
-        }
-
-        if (typeof SchemaRegistry === 'undefined') {
-            throw new Error('SchemaRegistry not available');
-        }
-
         this.validator = new JSONSchemaValidator();
         this.schemaRegistry = SchemaRegistry;
         this.schemaRegistry.initialize();
         this.initialized = true;
 
-        console.log('✅ DataValidator initialized');
+        console.log('\u2705 DataValidator initialized');
     }
 
     async validateFile(dataType, filePath) {
@@ -47,9 +35,9 @@ class DataValidator {
         this.validationResults.set(dataType, result);
 
         if (!result.success) {
-            console.error(`❌ Validation failed for ${dataType}:`, result.errors);
+            console.error(`\u274C Validation failed for ${dataType}:`, result.errors);
         } else {
-            console.log(`✅ Validation passed for ${dataType}`);
+            console.log(`\u2705 Validation passed for ${dataType}`);
         }
 
         return result;
@@ -69,9 +57,9 @@ class DataValidator {
         this.validationResults.set(dataType, result);
 
         if (!result.success) {
-            console.error(`❌ Validation failed for ${dataType}:`, result.errors);
+            console.error(`\u274C Validation failed for ${dataType}:`, result.errors);
         } else {
-            console.log(`✅ Validation passed for ${dataType}`);
+            console.log(`\u2705 Validation passed for ${dataType}`);
         }
 
         return result;
@@ -103,7 +91,7 @@ class DataValidator {
                     error: error.message,
                     stack: error.stack
                 });
-                console.error(`❌ Failed to validate ${dataType}:`, error);
+                console.error(`\u274C Failed to validate ${dataType}:`, error);
             }
         }
 
@@ -132,9 +120,9 @@ class DataValidator {
 
         return errors.map(err => {
             if (err.path) {
-                return `  • ${err.error} (path: ${err.path})`;
+                return `  \u2022 ${err.error} (path: ${err.path})`;
             }
-            return `  • ${err.error}`;
+            return `  \u2022 ${err.error}`;
         }).join('\n');
     }
 
@@ -146,17 +134,15 @@ class DataValidator {
 
     reset() {
         this.validationResults.clear();
-        console.log('🔄 DataValidator reset');
+        console.log('\uD83D\uDD04 DataValidator reset');
     }
 }
 
 const Validator = new DataValidator();
 
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Validator;
-}
-
 if (typeof window !== 'undefined') {
     window.Validator = Validator;
     window.DataValidator = DataValidator;
 }
+
+export { Validator, DataValidator };

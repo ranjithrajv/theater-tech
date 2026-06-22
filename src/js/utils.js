@@ -1,37 +1,16 @@
-/**
- * Utility functions for Hyderabad Cinema Technology Comparison
- * Consolidates icon generation and other reusable utilities
- */
+import { IconManager } from '../lib/icon-manager.js';
 
-// Load the generic IconManager and create cinema-specific instance
 let IconUtils = null;
 let IconManagerInstance = null;
 
-// Note: IconUtils will be loaded from lib/icon-manager.js, we'll use that
-
 async function loadIconUtils() {
     try {
-        // Load the generic IconManager
-        let IconManager;
-        if (typeof require !== 'undefined') {
-            ({ IconManager } = require('../lib/icon-manager.js'));
-        } else {
-            IconManager = window.IconManager;
-        }
-
-        if (!IconManager) {
-            throw new Error('IconManager not found');
-        }
-
-        // Create cinema-specific icon manager
         IconManagerInstance = IconManager.createCinemaIconManager();
 
-        // Load additional icons from JSON if available
         try {
-            const response = await fetch('../data/icons.json');
+            const response = await fetch(`${import.meta.env.BASE_URL}data/icons.json`);
             if (response.ok) {
                 const iconsData = await response.json();
-                // Extend existing icon sets with JSON data
                 Object.entries(iconsData).forEach(([setName, icons]) => {
                     if (typeof icons === 'object' && !Array.isArray(icons)) {
                         IconManagerInstance.addIconSet(setName, icons);
@@ -42,47 +21,39 @@ async function loadIconUtils() {
             console.warn('Could not load icons.json, using defaults:', jsonError.message);
         }
 
-        // Create backward-compatible IconUtils interface
         IconUtils = {
             icons: IconManagerInstance.getIconSet(),
 
-            // Get projection icon based on projection data
             getProjectionIcon(projection) {
                 if (!projection) return IconManagerInstance.getIcon('unknown', 'projection');
                 return IconManagerInstance.getIcon(projection.type, 'projection') ||
                        IconManagerInstance.getIcon(projection.resolution, 'projection');
             },
 
-            // Get sound icon based on sound system data
             getSoundIcon(sound) {
                 if (!sound) return IconManagerInstance.getIcon('unknown', 'sound');
                 return IconManagerInstance.getIcon(sound.format, 'sound');
             },
 
-            // Get short technology description
             getTechShort(projection, sound) {
                 if (!projection || !sound) return 'N/A';
-
                 const projType = IconManagerInstance.getIcon(projection.resolution || projection.type, 'projection');
                 const soundType = IconManagerInstance.getIcon(sound.format, 'sound');
-
                 return `${projType} ${soundType}`;
             }
         };
 
-        // Export for global use
         window.IconUtils = IconUtils;
         window.IconManagerInstance = IconManagerInstance;
         return IconUtils;
 
     } catch (error) {
         console.error('Error loading icon utilities:', error);
-        // Fallback implementation
         IconUtils = {
             icons: {
-                projection: { 'Film': '🎞️', 'Laser': '⚡', 'LED': '💡', '70mm Film': '🎞️', '4K': '🔹', '2K': '🔸' },
-                sound: { 'Dolby Atmos': '🌪️', 'Dolby Digital': '🎵', 'Digital Sound': '📻', 'Analog Surround': '📟' },
-                default: { projection: '📽️', sound: '🔊' }
+                projection: { 'Film': '\uD83C\uDF9E\uFE0F', 'Laser': '\u26A1', 'LED': '\uD83D\uDCA1', '70mm Film': '\uD83C\uDF9E\uFE0F', '4K': '\uD83D\uDD39', '2K': '\uD83D\uDD38' },
+                sound: { 'Dolby Atmos': '\uD83C\uDF2A\uFE0F', 'Dolby Digital': '\uD83C\uDFB5', 'Digital Sound': '\uD83D\uDCFB', 'Analog Surround': '\uD83D\uDCDF' },
+                default: { projection: '\uD83D\uDCFD\uFE0F', sound: '\uD83D\uDD0A' }
             },
             getProjectionIcon(projection) {
                 if (!projection) return this.icons.default.projection;
@@ -112,15 +83,12 @@ async function loadIconUtils() {
     }
 }
 
-// Initialize icon utils loading
 loadIconUtils();
 
-// Size category utilities
 const SizeUtils = {
     getSizeCategory(width, height) {
         const area = width * height;
         const thresholds = window.AppConstants?.SIZE_THRESHOLDS || { XXL: 6000, XL: 4000, L: 2000, M: 1200 };
-
         if (area > thresholds.XXL) return 'XXL';
         if (area > thresholds.XL) return 'XL';
         if (area > thresholds.L) return 'L';
@@ -129,7 +97,6 @@ const SizeUtils = {
     }
 };
 
-// Debounce utility
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -142,15 +109,12 @@ function debounce(func, wait) {
     };
 }
 
-// Set basic globals immediately
-console.log('🔗 Setting global utilities...');
 window.IconUtils = IconUtils;
 window.SizeUtils = SizeUtils;
 window.debounce = debounce;
-console.log('✅ Global utilities set:', { IconUtils: !!window.IconUtils, SizeUtils: !!window.SizeUtils, debounce: !!window.debounce });
 
-// Load enhanced functionality asynchronously
 loadIconUtils().catch(error => {
     console.warn('Failed to load enhanced icon utilities:', error.message);
-    // Basic functionality remains available
 });
+
+export { SizeUtils, debounce, IconUtils, loadIconUtils };

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite-plus';
 import wasm from 'vite-plugin-wasm'; // Assuming vite-plugin-wasm is available or can be configured
 
 export default defineConfig({
+  base: '/theater-tech/', // GitHub Pages project site is served from this subpath
   root: '.', // Project root directory
   publicDir: 'public', // Directory for static assets
   build: {

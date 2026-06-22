@@ -68,10 +68,4 @@ const IconsSchema = {
     }
 };
 
-if (typeof module !== 'undefined' && module.exports) {
-    export const IconsSchema;
-}
-
-if (typeof window !== 'undefined') {
-    IconsSchema = IconsSchema;
-}
+export { IconsSchema };

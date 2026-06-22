@@ -271,10 +271,4 @@ const ConstantsSchema = {
     }
 };
 
-if (typeof module !== 'undefined' && module.exports) {
-    export const ConstantsSchema;
-}
-
-if (typeof window !== 'undefined') {
-    ConstantsSchema = ConstantsSchema;
-}
+export { ConstantsSchema };

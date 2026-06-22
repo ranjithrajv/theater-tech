@@ -11,6 +11,8 @@
  * - UI state management
  */
 
+import * as d3 from 'd3';
+
 class UIComponentsManager {
     constructor() {
         this.state = {
@@ -802,16 +804,10 @@ class UIComponentsManager {
     }
 }
 
-// Create global instance
 const UIComponents = new UIComponentsManager();
 
-// Export for global use
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = UIComponents;
+if (typeof window !== 'undefined') {
+    window.UIComponents = UIComponents;
 }
 
-if (typeof window !== 'undefined') {
-    console.log('🔗 Setting window.UIComponents');
-    window.UIComponents = UIComponents;
-    console.log('✅ window.UIComponents set:', !!window.UIComponents);
-}
+export { UIComponents, UIComponentsManager };

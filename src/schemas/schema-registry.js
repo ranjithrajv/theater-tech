@@ -5,6 +5,12 @@
  * Provides easy access to schemas for validation.
  */
 
+import { ScreensSchema } from './screens-schema.js';
+import { ConfigSchema } from './config-schema.js';
+import { ConstantsSchema } from './constants-schema.js';
+import { TooltipsSchema } from './tooltips-schema.js';
+import { IconsSchema } from './icons-schema.js';
+
 const SchemaRegistry = {
     screens: null,
     config: null,
@@ -21,11 +27,11 @@ const SchemaRegistry = {
     },
 
     dataPaths: {
-        screens: '/data/all_cities_screens.json',
-        config: '/data/config.json',
-        constants: '/data/constants.json',
-        tooltips: '/data/tooltips.json',
-        icons: '/data/icons.json'
+        screens: `${import.meta.env.BASE_URL}data/all_cities_screens.json`,
+        config: `${import.meta.env.BASE_URL}data/config.json`,
+        constants: `${import.meta.env.BASE_URL}data/constants.json`,
+        tooltips: `${import.meta.env.BASE_URL}data/tooltips.json`,
+        icons: `${import.meta.env.BASE_URL}data/icons.json`
     },
 
     initialize() {
@@ -55,10 +61,4 @@ const SchemaRegistry = {
     }
 };
 
-if (typeof module !== 'undefined' && module.exports) {
-    export const SchemaRegistry;
-}
-
-if (typeof window !== 'undefined') {
-    SchemaRegistry = SchemaRegistry;
-}
+export { SchemaRegistry };

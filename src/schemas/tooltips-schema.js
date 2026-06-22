@@ -137,10 +137,4 @@ const TooltipsSchema = {
     }
 };
 
-if (typeof module !== 'undefined' && module.exports) {
-    export const TooltipsSchema;
-}
-
-if (typeof window !== 'undefined') {
-    TooltipsSchema = TooltipsSchema;
-}
+export { TooltipsSchema };

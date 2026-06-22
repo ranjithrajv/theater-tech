@@ -12,12 +12,15 @@
  * - Configuration management
  */
 
-// Import necessary modules
 import { Config } from './config.js';
-import * as sql from 'sql.js'; // Import sql.js
-import { Validator } from './data-validator.js'; // Assuming Validator will be adapted
-import { SchemaRegistry } from '../schemas/schema-registry.js'; // Assuming SchemaRegistry will be adapted
-import * as d3 from 'd3'; // Import d3
+import initSqlJs from 'sql.js';
+import sqlWasmUrl from 'sql.js/dist/sql-wasm.wasm?url';
+import { Validator } from './data-validator.js';
+import { SchemaRegistry } from '../schemas/schema-registry.js';
+import * as d3 from 'd3';
+import { UIComponents } from './ui-components.js';
+import { Visualization } from './visualization.js';
+import { SizeUtils, debounce } from './utils.js';
 
 // Ensure UIManager is available or stubbed
 if (typeof window.UIManager === 'undefined') {
@@ -26,7 +29,13 @@ if (typeof window.UIManager === 'undefined') {
         pageLoader: null,
         createPageLoader: () => { /* stub */ },
         hidePageLoader: () => { /* stub */ },
-        getResponsiveDimensions: () => ({ isMobile: false, margin: {}, width: 800, height: 600, scale: 7 }),
+        getResponsiveDimensions: () => ({
+            isMobile: false,
+            margin: { top: 40, right: 40, bottom: 80, left: 80 },
+            width: 800,
+            height: 600,
+            scale: 7
+        }),
         updatePageMeta: () => { /* stub */ },
         showError: (message) => { console.error("UI Error:", message); alert("Application Error: " + message); }
     };
@@ -61,7 +70,7 @@ class Application {
         this.components = {};
         this.availableCities = [];
         this.db = null; // Database instance
-        this.dbPath = '/public/data/theater_tech.db'; // Path to the SQLite DB file
+        this.dbPath = `${import.meta.env.BASE_URL}data/theater_tech.db`; // Path to the SQLite DB file
     }
 
     /**
@@ -74,6 +83,7 @@ class Application {
             // Phase 1: Load core dependencies and initialize DB
             await this.loadCoreDependencies();
             await this.initializeDatabase(); // New method to init DB
+            await this.loadApplicationData();
 
             // Phase 2: Initialize UI and data loading from DB
             await this.initializeSystems();
@@ -98,21 +108,19 @@ class Application {
     async loadCoreDependencies() {
         console.log('📚 Verifying core dependencies...');
 
+        // SchemaRegistry, Validator, and d3 are real ES imports above, not window
+        // globals — if those failed to resolve, the import itself would have thrown.
         const systems = [
             'AppConstants',
             'IconUtils',
             'TemplateUtils',
-            'JSONSchemaValidator', // Assuming Validator uses this
-            'SchemaRegistry',
-            'Validator',
-            'd3'
+            'JSONSchemaValidator'
         ];
 
         const missing = systems.filter(sys => !window[sys]);
 
         if (missing.length > 0) {
             console.error(`❌ Missing core dependencies: ${missing.join(', ')}`);
-            if (missing.includes('d3')) throw new Error('Critical dependency D3.js not loaded. Ensure d3.v7.min.js is loaded.');
             if (missing.includes('AppConstants')) throw new Error('Critical dependency AppConstants not loaded. Ensure config.js is loaded.');
             throw new Error(`Missing core dependencies: ${missing.join(', ')}`);
         }
@@ -126,9 +134,9 @@ class Application {
     async initializeDatabase() {
         console.log('🗄️ Initializing SQLite database...');
         try {
-            const SQL = await sql.default; // Wait for sql.js to be ready
+            const SQL = await initSqlJs({ locateFile: () => sqlWasmUrl }); // Wait for sql.js to be ready
             const dbFile = await fetch(this.dbPath); // Fetch the DB file
-            const bytes = await dbFile.arrayBuffer();
+            const bytes = new Uint8Array(await dbFile.arrayBuffer());
             this.db = new SQL.Database(bytes);
             console.log('✅ SQLite database connected and loaded');
         } catch (error) {
@@ -381,7 +389,7 @@ class Application {
         }
 
         // Validate icons data
-        if (!this.data.icons || !this.data.icons.projection || !this.data.icons.sound) {
+        if (!this.data.icons || !this.data.icons.icons?.projection || !this.data.icons.icons?.sound) {
              errors.push('Icons data is missing or incomplete.');
         }
         
@@ -398,21 +406,18 @@ class Application {
     async initializeSystems() {
         console.log('🔧 Initializing all systems...');
 
-        // Load application data from DB (already done in initialize)
-        // await this.loadApplicationData(); // This is called in initialize()
+        // Application data is loaded from DB in initialize(), before this runs.
 
         // UI should already be initialized by UIManager
         // Components should already be initialized by UIComponents
 
-        // Initialize UIComponents if available
-        if (typeof UIComponents !== 'undefined' && typeof UIComponents.init === 'function') {
+        if (UIComponents.init) {
             UIComponents.init();
             console.log('✅ UIComponents initialized');
         }
 
-        // Just verify everything is ready
         if (typeof UIManager !== 'undefined' && UIManager.isReady &&
-            window.appData && typeof UIComponents !== 'undefined') {
+            window.appData) {
 
             // No need to set this.data.config from appData if config is loaded separately
             // this.data.config = window.appData.config;
@@ -438,16 +443,13 @@ class Application {
         console.log('Data available:', !!this.data.screens);
         console.log('Data length:', this.data.screens ? this.data.screens.length : 'N/A');
 
-        if (typeof Visualization !== 'undefined' && this.data.screens && this.data.screens.length > 0) {
+        if (this.data.screens && this.data.screens.length > 0) {
             try {
-                // Process data for visualization
                 const processedData = this.data.screens.map(screen => {
                     const area = screen.width * screen.height;
                     let category = 'Unknown';
                     try {
-                        if (typeof SizeUtils !== 'undefined' && SizeUtils.getSizeCategory) {
-                            category = SizeUtils.getSizeCategory(screen.width, screen.height);
-                        }
+                        category = SizeUtils.getSizeCategory(screen.width, screen.height);
                     } catch (error) {
                         console.warn('SizeUtils not available for category calculation:', error);
                     }
@@ -643,7 +645,7 @@ class Application {
         console.log('📱 Window resized, updating responsive elements...');
 
         // Check if visualization exists and update it
-        if (typeof Visualization !== 'undefined' && this.data.screens) {
+        if (this.data.screens) {
             try {
                 Visualization.updateData(this.data.screens);
                 console.log('✅ Visualization updated for new window size');

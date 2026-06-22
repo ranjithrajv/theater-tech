@@ -164,7 +164,7 @@ body {
         transform: translateX(-50%);
         width: 40px;
         height: 4px;
-        background: #555;
+        background: var(--color-border-2);
         border-radius: 2px;
         z-index: 10;
     }
@@ -188,7 +188,7 @@ body {
         top: 12px;
         right: 10px;
         background: transparent;
-        color: #fff;
+        color: var(--color-text);
         box-shadow: none;
     }
     
@@ -600,7 +600,7 @@ body {
 @media (prefers-color-scheme: dark) {
     /* Already dark theme, but ensure consistency */
     body {
-        background: #1a1a1a;
+        background: var(--color-bg);
         color: white;
     }
 }
@@ -681,7 +681,7 @@ body {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ffd60a 0%, #e6c200 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
     border: none;
     box-shadow: 0 4px 15px rgba(255, 214, 10, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;

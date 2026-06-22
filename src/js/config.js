@@ -85,11 +85,11 @@ class ConfigManager {
                 M: 1200
             },
             dataPaths: {
-                screens: '/data/screens.json',
-                config: '/data/config.json',
-                constants: '/data/constants.json',
-                icons: '/data/icons.json',
-                tooltips: '/data/tooltips.json'
+                screens: `${import.meta.env.BASE_URL}data/screens.json`,
+                config: `${import.meta.env.BASE_URL}data/config.json`,
+                constants: `${import.meta.env.BASE_URL}data/constants.json`,
+                icons: `${import.meta.env.BASE_URL}data/icons.json`,
+                tooltips: `${import.meta.env.BASE_URL}data/tooltips.json`
             }
         };
 
@@ -344,11 +344,6 @@ class ConfigManager {
 // Create global instance
 export const Config = new ConfigManager();
 
-// Export for use in other modules
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Config;
-}
-
 if (typeof window !== 'undefined') {
     window.Config = Config;
 
@@ -385,8 +380,8 @@ if (typeof window !== 'undefined') {
         },
         SIZE_THRESHOLDS: { XXL: 6000, XL: 4000, L: 2000, M: 1200 },
         DATA_PATHS: {
-            SCREENS: '/data/screens.json',
-            CONFIG: '/data/config.json'
+            SCREENS: `${import.meta.env.BASE_URL}data/screens.json`,
+            CONFIG: `${import.meta.env.BASE_URL}data/config.json`
         }
     };
 
