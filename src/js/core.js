@@ -136,6 +136,9 @@ class Application {
         try {
             const SQL = await initSqlJs({ locateFile: () => sqlWasmUrl }); // Wait for sql.js to be ready
             const dbFile = await fetch(this.dbPath); // Fetch the DB file
+            if (!dbFile.ok) {
+                throw new Error(`Failed to fetch database file at ${this.dbPath}: ${dbFile.status} ${dbFile.statusText}`);
+            }
             const bytes = new Uint8Array(await dbFile.arrayBuffer());
             this.db = new SQL.Database(bytes);
             console.log('✅ SQLite database connected and loaded');

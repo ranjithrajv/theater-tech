@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev",
+    "prebuild": "python3 data/json_to_sqlite.py",
     "build": "vp build",
     "preview": "vp preview",
     "check": "vp check",
