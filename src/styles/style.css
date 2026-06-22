@@ -137,6 +137,56 @@ header h2 {
     background: rgba(0, 0, 0, 0.3);
 }
 
+#chart-container:has(.sound-radial-legend) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.sound-radial-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.sound-radial-legend-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--color-text);
+    transition: background 0.15s;
+}
+
+.sound-radial-legend-row:hover {
+    background: var(--color-surface);
+}
+
+.sound-radial-legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.sound-radial-legend-name {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sound-radial-legend-value {
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+}
+
 .info { max-width: 1000px; text-align: center; margin-bottom: 20px; color: var(--color-text-secondary); padding: 0 15px; }
 
 .plf-legend { margin-top: 20px; padding: 20px; background: var(--color-surface-2); border-radius: 8px; max-width: 1000px; width: 100%; box-sizing: border-box; border: 1px solid var(--color-border-2); }

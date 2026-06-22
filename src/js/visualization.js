@@ -205,11 +205,15 @@ class VisualizationManager {
     }
 
     /**
-     * Initialize the sound-system bar chart
+     * Initialize the sound-system radial chart: one concentric ring per
+     * theater, each ring's arc sweeping clockwise from 12 o'clock by an
+     * angle proportional to its channel count. Highest channel count gets
+     * the outermost ring. A full-circle "track" behind each arc shows the
+     * 100% reference, and radial gridlines mark 25/50/75% of the max.
      * @param {Array} data - Screen data, pre-sorted by channelCount desc
      */
     initializeSoundChart(data) {
-        console.log('📊 Initializing sound system chart...');
+        console.log('📊 Initializing sound system radial chart...');
 
         if (!data || !Array.isArray(data) || data.length === 0) {
             console.error('❌ No valid data provided to sound chart');
@@ -218,10 +222,9 @@ class VisualizationManager {
 
         try {
             this.calculateDimensions();
-            this.createSeatingSVG(data); // same layout (band of theater names + linear value axis)
-            this.setupSoundScales(data);
-            this.createSoundAxes();
-            this.renderSoundBars(data);
+            this.createRadialSoundSVG(data);
+            this.renderSoundGridlines(data);
+            this.renderSoundRings(data);
             this.setupInteractions();
 
             console.log('✅ Sound chart initialized successfully');
@@ -232,84 +235,149 @@ class VisualizationManager {
     }
 
     /**
-     * Setup scales for the sound chart (band scale for theaters, linear for channel count)
+     * Create the SVG container for the radial sound chart, centered, with
+     * a small margin for the gridline value labels just outside the rings.
      */
-    setupSoundScales(data) {
-        const { width, height } = this.dimensions;
+    createRadialSoundSVG(data) {
+        const ringThickness = 10;
+        const ringGap = 1;
+        const innerRadius = 50;
+        const outerRadius = innerRadius + data.length * (ringThickness + ringGap);
+        const labelMargin = 40;
+        const size = (outerRadius + labelMargin) * 2;
+
+        this.soundRadial = { innerRadius, ringThickness, ringGap, outerRadius };
+
+        const container = document.getElementById('chart-container');
+        if (!container) {
+            console.error('❌ Chart container not found!');
+            return;
+        }
+
+        d3.select("#chart-container svg").remove();
+
+        this.svg = d3.select("#chart-container")
+            .append("svg")
+            .attr("width", size)
+            .attr("height", size)
+            .append("g")
+            .attr("transform", `translate(${size / 2},${size / 2})`);
+    }
+
+    /**
+     * Render faint radial gridlines (25/50/75/100% of max channel count)
+     * with value labels, for reading approximate magnitude.
+     */
+    renderSoundGridlines(data) {
+        const { svg } = this;
+        const { innerRadius, outerRadius } = this.soundRadial;
+        const maxChannels = Math.max(...data.map(d => d.channelCount));
+        const fractions = [0.25, 0.5, 0.75, 1];
+
+        fractions.forEach(fraction => {
+            const angle = fraction * 2 * Math.PI;
+            const x1 = Math.sin(angle) * innerRadius;
+            const y1 = -Math.cos(angle) * innerRadius;
+            const x2 = Math.sin(angle) * outerRadius;
+            const y2 = -Math.cos(angle) * outerRadius;
+
+            svg.append("line")
+                .attr("class", "sound-gridline")
+                .attr("x1", x1).attr("y1", y1)
+                .attr("x2", x2).attr("y2", y2)
+                .attr("stroke", "rgba(255,255,255,0.15)");
+
+            svg.append("text")
+                .attr("x", x2)
+                .attr("y", y2)
+                .attr("dy", fraction === 1 ? "-0.6em" : "0.35em")
+                .attr("fill", "rgba(255,255,255,0.6)")
+                .style("font-size", "10px")
+                .style("text-anchor", "middle")
+                .text(Math.round(fraction * maxChannels));
+        });
+    }
+
+    /**
+     * Render the concentric value rings and tip labels.
+     * @param {Array} data - Screen data with channelCount, pre-sorted desc
+     */
+    renderSoundRings(data) {
+        const { innerRadius, ringThickness, ringGap } = this.soundRadial;
         const maxChannels = Math.max(...data.map(d => d.channelCount));
 
-        this.scales = {
-            x: d3.scaleLinear()
-                .domain([0, maxChannels * 1.1])
-                .range([0, width]),
-            y: d3.scaleBand()
-                .domain(data.map(d => d.name))
-                .range([0, height])
-                .padding(0.25)
-        };
-    }
+        const ringData = data.map((d, i) => {
+            const ringIndex = data.length - 1 - i; // highest value -> outermost ring
+            const inner = innerRadius + ringIndex * (ringThickness + ringGap);
+            const outer = inner + ringThickness;
+            const fraction = d.channelCount / maxChannels;
+            return { ...d, inner, outer, endAngle: fraction * 2 * Math.PI };
+        });
 
-    /**
-     * Create and render axes for the sound chart
-     */
-    createSoundAxes() {
-        const { width, height } = this.dimensions;
-        const { svg, scales } = this;
-
-        this.axes.x = svg.append("g")
-            .attr("transform", `translate(0,${height})`)
-            .call(d3.axisBottom(scales.x).ticks(8));
-
-        this.axes.x.append("text")
-            .attr("x", width / 2)
-            .attr("y", 40)
-            .attr("fill", "white")
-            .style("text-anchor", "middle")
-            .text("Sound Channels (Dolby Atmos / Surround)");
-
-        this.axes.y = svg.append("g")
-            .call(d3.axisLeft(scales.y));
-
-        this.axes.y.selectAll("text")
-            .attr("fill", "white")
-            .style("font-size", "12px");
-    }
-
-    /**
-     * Render sound-system channel-count bars
-     * @param {Array} data - Screen data with channelCount
-     */
-    renderSoundBars(data) {
-        const { scales } = this;
-
-        this.screens = this.svg.selectAll(".sound-bar")
-            .data(data)
+        // Background full-circle tracks (100% reference)
+        this.svg.selectAll(".sound-ring-track")
+            .data(ringData)
             .enter()
-            .append("rect")
-            .attr("class", "screen-rect sound-bar")
-            .attr("x", 0)
-            .attr("y", d => scales.y(d.name))
-            .attr("width", d => scales.x(d.channelCount))
-            .attr("height", scales.y.bandwidth())
+            .append("path")
+            .attr("class", "sound-ring-track")
+            .attr("d", d3.arc().innerRadius(d => d.inner).outerRadius(d => d.outer).startAngle(0).endAngle(2 * Math.PI))
+            .attr("fill", "rgba(255,255,255,0.06)");
+
+        // Foreground value arcs
+        this.screens = this.svg.selectAll(".sound-ring")
+            .data(ringData)
+            .enter()
+            .append("path")
+            .attr("class", "screen-rect sound-ring")
+            .attr("d", d3.arc().innerRadius(d => d.inner).outerRadius(d => d.outer).startAngle(0).endAngle(d => d.endAngle))
             .attr("fill", d => d.color)
             .attr("stroke", "white")
             .attr("stroke-width", 1)
-            .attr("opacity", 0.7)
+            .attr("opacity", 0.8)
             .attr("data-theater", d => d.name)
             .attr("data-screen", d => d.screen_number);
 
-        this.svg.selectAll(".sound-label")
-            .data(data)
-            .enter()
-            .append("text")
-            .attr("class", "sound-label")
-            .attr("x", d => scales.x(d.channelCount) + 8)
-            .attr("y", d => scales.y(d.name) + scales.y.bandwidth() / 2 + 4)
-            .attr("fill", "white")
-            .style("font-size", "12px")
-            .text(d => `${d.sound_system.format} ${d.sound_system.channels}`);
+        this.renderSoundLegend(data);
 
-        console.log(`📐 Rendered ${this.screens.size()} sound bars`);
+        console.log(`📐 Rendered ${this.screens.size()} sound rings`);
+    }
+
+    /**
+     * Render a textual legend (outermost ring first) next to the radial
+     * chart, since many theaters share identical channel counts and would
+     * collide if labeled directly on the rings.
+     * @param {Array} data - Screen data, pre-sorted by channelCount desc
+     */
+    renderSoundLegend(data) {
+        const container = document.getElementById('chart-container');
+        if (!container) return;
+
+        container.querySelector('.sound-radial-legend')?.remove();
+
+        const legend = document.createElement('div');
+        legend.className = 'sound-radial-legend';
+
+        data.forEach(d => {
+            const row = document.createElement('div');
+            row.className = 'sound-radial-legend-row';
+            row.dataset.theater = d.name;
+            row.dataset.screen = d.screen_number;
+            row.innerHTML = `
+                <span class="sound-radial-legend-swatch" style="background:${d.color}"></span>
+                <span class="sound-radial-legend-name">${d.name}</span>
+                <span class="sound-radial-legend-value">${d.sound_system.format} ${d.sound_system.channels}</span>
+            `;
+            row.addEventListener('click', () => {
+                if (window.UIComponents) {
+                    window.UIComponents.toggleScreenSelection(d);
+                }
+            });
+            row.addEventListener('mouseover', () => this.handleScreenHover(null, d, true));
+            row.addEventListener('mouseout', () => this.handleScreenHover(null, null, false));
+            legend.appendChild(row);
+        });
+
+        container.appendChild(legend);
     }
 
     /**
