@@ -48,6 +48,14 @@
         "color": "#F77F00",
         "best_for": ["Classic film lovers", "Film purists", "Nostalgic experiences"],
         "ideal_experience": "Authentic film grain and vintage charm - perfect for classics like 2001: A Space Odyssey"
+      },
+      {
+        "format": "Dolby Cinema",
+        "name": "Dolby Cinema",
+        "description": "Asia's Largest Dolby Screen",
+        "color": "#4C1D95",
+        "best_for": ["HDR-mastered films", "Films with Dolby Atmos mixes", "Premium cinematic experiences"],
+        "ideal_experience": "Dual 4K laser projection with Dolby Vision HDR and studio-grade Dolby Atmos - ideal for films mastered in Dolby Vision/Atmos"
       }
     ],
     "technical_specifications": {

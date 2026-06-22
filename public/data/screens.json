@@ -1793,5 +1793,38 @@
       "hdr_support": true,
       "hfr_support": true
     }
+  },
+  {
+    "name": "Allu Cinemas",
+    "location": "Kokapet",
+    "width": 75.0,
+    "height": 40.5,
+    "color": "#4C1D95",
+    "plf_format": "Dolby Cinema",
+    "screen_number": 1,
+    "seating_capacity": 644,
+    "note": "Asia's largest Dolby Cinema screen",
+    "chain": "Allu",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "E3LH",
+      "aspect_ratio": "1.85:1",
+      "brightness_nits": 108.0
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "64",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {
+      "hdr_support": true
+    }
   }
 ]
