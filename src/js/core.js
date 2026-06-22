@@ -53,6 +53,8 @@ if (typeof window.TemplateUtils === 'undefined') window.TemplateUtils = {};
 
 class Application {
     constructor() {
+        this.vizMode = 'screen-size'; // 'screen-size' | 'seating' -- set before initialize()
+
         this.state = {
             initialized: false,
             dataLoaded: false,
@@ -441,6 +443,11 @@ class Application {
      * Create the main visualization
      */
     createVisualization() {
+        if (this.vizMode === 'seating') {
+            this.createSeatingVisualization();
+            return;
+        }
+
         console.log('🎨 Attempting to create visualization...');
         console.log('Visualization available:', typeof Visualization);
         console.log('Data available:', !!this.data.screens);
@@ -476,6 +483,24 @@ class Application {
             console.error('❌ Visualization system or data not available');
             console.error('Visualization type:', typeof Visualization);
             console.error('Data exists:', !!this.data.screens);
+        }
+    }
+
+    /**
+     * Create the seating-capacity comparison visualization
+     */
+    createSeatingVisualization() {
+        if (!this.data.screens || this.data.screens.length === 0) {
+            console.error('❌ No screen data available for seating visualization');
+            return;
+        }
+
+        try {
+            const processedData = [...this.data.screens].sort((a, b) => b.seating_capacity - a.seating_capacity);
+            Visualization.initializeSeatingChart(processedData);
+            console.log(`📊 Seating visualization created with ${processedData.length} screens`);
+        } catch (error) {
+            console.error('❌ Error creating seating visualization:', error);
         }
     }
 

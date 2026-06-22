@@ -68,6 +68,143 @@ class VisualizationManager {
     }
 
     /**
+     * Initialize the seating-capacity bar chart
+     * @param {Array} data - Screen data, pre-sorted by seating_capacity desc
+     */
+    initializeSeatingChart(data) {
+        console.log('📊 Initializing seating capacity chart...');
+
+        if (!data || !Array.isArray(data) || data.length === 0) {
+            console.error('❌ No valid data provided to seating chart');
+            return;
+        }
+
+        try {
+            this.calculateDimensions();
+            this.createSeatingSVG(data);
+            this.setupSeatingScales(data);
+            this.createSeatingAxes();
+            this.renderSeatingBars(data);
+            this.setupInteractions();
+
+            console.log('✅ Seating chart initialized successfully');
+        } catch (error) {
+            console.error('❌ Error during seating chart initialization:', error);
+            console.error('Stack trace:', error.stack);
+        }
+    }
+
+    /**
+     * Create the SVG container for the seating chart (wider left margin for theater names)
+     */
+    createSeatingSVG(data) {
+        const { height } = this.dimensions;
+        const barHeight = 36;
+        const seatingMargins = { top: 20, right: 60, bottom: 50, left: 160 };
+        const chartHeight = Math.max(height, data.length * barHeight);
+
+        this.dimensions.height = chartHeight;
+        this.margins = seatingMargins;
+
+        const container = document.getElementById('chart-container');
+        if (!container) {
+            console.error('❌ Chart container not found!');
+            return;
+        }
+
+        d3.select("#chart-container svg").remove();
+
+        const { width } = this.dimensions;
+        this.svg = d3.select("#chart-container")
+            .append("svg")
+            .attr("width", width + seatingMargins.left + seatingMargins.right)
+            .attr("height", chartHeight + seatingMargins.top + seatingMargins.bottom)
+            .append("g")
+            .attr("transform", `translate(${seatingMargins.left},${seatingMargins.top})`);
+    }
+
+    /**
+     * Setup scales for the seating chart (band scale for theaters, linear for seat counts)
+     */
+    setupSeatingScales(data) {
+        const { width, height } = this.dimensions;
+        const maxSeats = Math.max(...data.map(d => d.seating_capacity));
+
+        this.scales = {
+            x: d3.scaleLinear()
+                .domain([0, maxSeats * 1.1])
+                .range([0, width]),
+            y: d3.scaleBand()
+                .domain(data.map(d => d.name))
+                .range([0, height])
+                .padding(0.25)
+        };
+    }
+
+    /**
+     * Create and render axes for the seating chart
+     */
+    createSeatingAxes() {
+        const { width, height } = this.dimensions;
+        const { svg, scales } = this;
+
+        this.axes.x = svg.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(scales.x).ticks(8));
+
+        this.axes.x.append("text")
+            .attr("x", width / 2)
+            .attr("y", 40)
+            .attr("fill", "white")
+            .style("text-anchor", "middle")
+            .text("Seating Capacity (seats)");
+
+        this.axes.y = svg.append("g")
+            .call(d3.axisLeft(scales.y));
+
+        this.axes.y.selectAll("text")
+            .attr("fill", "white")
+            .style("font-size", "12px");
+    }
+
+    /**
+     * Render seating-capacity bars
+     * @param {Array} data - Screen data
+     */
+    renderSeatingBars(data) {
+        const { scales } = this;
+
+        this.screens = this.svg.selectAll(".seating-bar")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("class", "screen-rect seating-bar")
+            .attr("x", 0)
+            .attr("y", d => scales.y(d.name))
+            .attr("width", d => scales.x(d.seating_capacity))
+            .attr("height", scales.y.bandwidth())
+            .attr("fill", d => d.color)
+            .attr("stroke", "white")
+            .attr("stroke-width", 1)
+            .attr("opacity", 0.7)
+            .attr("data-theater", d => d.name)
+            .attr("data-screen", d => d.screen_number);
+
+        this.svg.selectAll(".seating-label")
+            .data(data)
+            .enter()
+            .append("text")
+            .attr("class", "seating-label")
+            .attr("x", d => scales.x(d.seating_capacity) + 8)
+            .attr("y", d => scales.y(d.name) + scales.y.bandwidth() / 2 + 4)
+            .attr("fill", "white")
+            .style("font-size", "12px")
+            .text(d => d.seating_capacity);
+
+        console.log(`📐 Rendered ${this.screens.size()} seating bars`);
+    }
+
+    /**
      * Calculate responsive dimensions
      */
     calculateDimensions() {

@@ -6,12 +6,11 @@
     <meta name="theme-color" content="#1a1a1a">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>India Cinema Technology Comparison</title>
-    <link rel="manifest" href="/theater-tech/manifest.json">
+    <title>India Cinema Seating Capacity Comparison</title>
     <link rel="stylesheet" href="/src/styles/style.css">
     <link rel="stylesheet" href="/src/styles/style-mobile.css">
 
-    <script type="module" src="/src/js/index.js"></script>
+    <script type="module" src="/src/js/seating-entry.js"></script>
 </head>
 <body>
     <!-- Tooltip elements for legend -->
@@ -22,11 +21,11 @@
         <div class="content-area">
             <header>
                 <nav class="page-nav">
-                    <a href="./index.html" class="page-nav-link active">Screen Size</a>
-                    <a href="./seating.html" class="page-nav-link">Seating Capacity</a>
+                    <a href="./index.html" class="page-nav-link">Screen Size</a>
+                    <a href="./seating.html" class="page-nav-link active">Seating Capacity</a>
                 </nav>
 
-                <h1 id="page-title">India Cinema Technology Comparison</h1>
+                <h1 id="page-title">India Cinema Seating Capacity Comparison</h1>
                 <h2>Movie buffs' go to place</h2>
 
                 <!-- City Selector -->
@@ -37,7 +36,7 @@
                     </select>
                 </div>
 
-                <div class="info" id="page-description">Visual comparison of India's biggest cinema screens across metro cities with their dimensions and premium large format (PLF) technologies</div>
+                <div class="info" id="page-description">Comparison of India's biggest cinema screens by seating capacity</div>
             </header>
 
             <div id="chart-container"></div>
@@ -52,7 +51,7 @@
                 </div>
 
                 <div class="usage-info" style="font-size: 12px; color: #ccc; border-top: 1px solid #555; padding-top: 10px; margin-top: 10px;">
-                    <strong>💡 How to Use:</strong> Select a city above • Click screens to compare • Hover for details • Hover over <span style="color: #ffd60a; text-decoration: underline dotted;">highlighted terms</span> for explanations.
+                    <strong>💡 How to Use:</strong> Select a city above • Click a bar for details • Hover over <span style="color: #ffd60a; text-decoration: underline dotted;">highlighted terms</span> for explanations.
                     <span id="data-attribution"></span>
                 </div>
             </div>
@@ -60,7 +59,7 @@
 
         <!-- Sidebar Backdrop (Mobile Only) -->
         <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
-        
+
         <!-- Sidebar -->
         <div class="sidebar" id="sidebar">
             <div class="sidebar-content">
@@ -71,12 +70,12 @@
                 <div class="sidebar-body" id="sidebar-body">
                     <div class="sidebar-placeholder">
                         <div class="placeholder-icon">🎬</div>
-                        <p>Tap a screen to see details</p>
+                        <p>Tap a bar to see details</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile Floating Action Button -->
         <button class="mobile-fab hide-desktop" id="mobile-fab" aria-label="Show sidebar">
             <span>ℹ️</span>

@@ -9,7 +9,8 @@ export default defineConfig({
     outDir: 'dist', // Output directory for build
     rollupOptions: {
       input: {
-        main: './index.html' // Entry point for the application
+        main: './index.html', // Entry point for the application
+        seating: './seating.html' // Seating capacity comparison page
       },
       // Handle WASM files
       plugins: [
