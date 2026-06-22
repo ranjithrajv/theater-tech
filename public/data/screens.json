@@ -36,8 +36,8 @@
   {
     "name": "AMB Cinemas",
     "location": "Gachibowli",
-    "width": 76.0,
-    "height": 42.0,
+    "width": 60.3,
+    "height": 25.2,
     "color": "#1D3557",
     "plf_format": "Superplex",
     "screen_number": 1,
@@ -48,10 +48,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "Christie",
-      "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 35000.0
+      "brand": "Barco",
+      "model": "HDR",
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -484,8 +483,8 @@
   {
     "name": "AMB Cinemas",
     "location": "Gachibowli",
-    "width": 76.0,
-    "height": 42.0,
+    "width": 60.3,
+    "height": 25.2,
     "color": "#1D3557",
     "plf_format": "Superplex",
     "screen_number": 1,
@@ -496,10 +495,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "Christie",
-      "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 35000.0
+      "brand": "Barco",
+      "model": "HDR",
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -933,8 +931,8 @@
   {
     "name": "AMB Cinemas",
     "location": "Gachibowli",
-    "width": 76.0,
-    "height": 42.0,
+    "width": 60.3,
+    "height": 25.2,
     "color": "#1D3557",
     "plf_format": "Superplex",
     "screen_number": 1,
@@ -945,10 +943,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "Christie",
-      "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 35000.0
+      "brand": "Barco",
+      "model": "HDR",
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -1382,8 +1379,8 @@
   {
     "name": "AMB Cinemas",
     "location": "Gachibowli",
-    "width": 76.0,
-    "height": 42.0,
+    "width": 60.3,
+    "height": 25.2,
     "color": "#1D3557",
     "plf_format": "Superplex",
     "screen_number": 1,
@@ -1394,10 +1391,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "Christie",
-      "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 35000.0
+      "brand": "Barco",
+      "model": "HDR",
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",

@@ -4,6 +4,10 @@ from pathlib import Path
 
 def create_database(db_path):
     """Create SQLite database with tables for all JSON data"""
+    db_path = Path(db_path)
+    if db_path.exists():
+        db_path.unlink()  # Start fresh each run; CREATE TABLE IF NOT EXISTS would
+                           # otherwise leave stale rows from previous runs in place.
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
