@@ -413,5 +413,249 @@
     "content_support": {
       "hdr_support": true
     }
+  },
+  {
+    "name": "Bramaramba 70mm",
+    "location": "Kukatpally",
+    "width": 70.0,
+    "height": 30.0,
+    "color": "#0EA5E9",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 861,
+    "note": "Single-screen heritage theater",
+    "chain": "Bramaramba",
+    "theater_name": "70mm",
+    "projection": {
+      "type": "Xenon Lamp",
+      "resolution": "4K",
+      "brand": null,
+      "model": null,
+      "aspect_ratio": "2.39:1"
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "Sree Ramulu 70mm",
+    "location": "Moosapet",
+    "width": 70.0,
+    "height": 30.0,
+    "color": "#65A30D",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 900,
+    "note": "Renovated single-screen heritage theater",
+    "chain": "Sree Ramulu",
+    "theater_name": "70mm",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-55B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 52000.0
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "Mythri Vimal 70mm",
+    "location": "Balanagar",
+    "width": 70.0,
+    "height": 30.0,
+    "color": "#C026D3",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 1010,
+    "note": "Renovated single-screen heritage theater",
+    "chain": "Mythri Vimal",
+    "theater_name": "70mm",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": null,
+      "model": null,
+      "aspect_ratio": "2.39:1"
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "64",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "Viswanath 70mm",
+    "location": "Kukatpally",
+    "width": 66.0,
+    "height": 27.0,
+    "color": "#B45309",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 700,
+    "note": "Single-screen heritage theater",
+    "chain": "Viswanath",
+    "theater_name": "70mm",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": null,
+      "aspect_ratio": "2.39:1"
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "AAA Cinemas",
+    "location": "Ameerpet",
+    "width": 67.0,
+    "height": 28.0,
+    "color": "#0D9488",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 422,
+    "note": "Flagship Scope screen",
+    "chain": "AAA",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 60000.0
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "INOX Ashoka One",
+    "location": "Kukatpally",
+    "width": 60.0,
+    "height": 25.1,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 310,
+    "note": "Flagship screen",
+    "chain": "INOX",
+    "theater_name": "Ashoka One",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": null,
+      "aspect_ratio": "2.39:1"
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "Aparna Cinemas",
+    "location": "Nallagandla",
+    "width": 60.0,
+    "height": 25.1,
+    "color": "#BE123C",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 289,
+    "note": "Flagship Scope screen",
+    "chain": "Aparna",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-35B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 36000.0
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
+  },
+  {
+    "name": "Sudarshan 35mm",
+    "location": "RTC X Roads",
+    "width": 55.0,
+    "height": 23.0,
+    "color": "#581C87",
+    "plf_format": "35mm",
+    "screen_number": 1,
+    "seating_capacity": 1216,
+    "note": "Renovated single-screen heritage theater",
+    "chain": "Sudarshan",
+    "theater_name": "35mm",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-55B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 52000.0
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "32",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": null,
+      "gain": null
+    },
+    "content_support": {}
   }
 ]

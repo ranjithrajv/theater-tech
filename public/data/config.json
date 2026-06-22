@@ -50,6 +50,13 @@
         "ideal_experience": "Authentic film grain and vintage charm - perfect for classics like 2001: A Space Odyssey"
       },
       {
+        "format": "35mm",
+        "name": "Renovated Heritage Format",
+        "color": "#581C87",
+        "best_for": ["Classic single-screen experience", "Large seating capacity", "Big openings"],
+        "ideal_experience": "Heritage single-screen halls modernized with laser projection and Dolby Atmos"
+      },
+      {
         "format": "Dolby Cinema",
         "name": "Dolby Cinema",
         "description": "Asia's Largest Dolby Screen",
