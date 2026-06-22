@@ -205,6 +205,114 @@ class VisualizationManager {
     }
 
     /**
+     * Initialize the sound-system bar chart
+     * @param {Array} data - Screen data, pre-sorted by channelCount desc
+     */
+    initializeSoundChart(data) {
+        console.log('📊 Initializing sound system chart...');
+
+        if (!data || !Array.isArray(data) || data.length === 0) {
+            console.error('❌ No valid data provided to sound chart');
+            return;
+        }
+
+        try {
+            this.calculateDimensions();
+            this.createSeatingSVG(data); // same layout (band of theater names + linear value axis)
+            this.setupSoundScales(data);
+            this.createSoundAxes();
+            this.renderSoundBars(data);
+            this.setupInteractions();
+
+            console.log('✅ Sound chart initialized successfully');
+        } catch (error) {
+            console.error('❌ Error during sound chart initialization:', error);
+            console.error('Stack trace:', error.stack);
+        }
+    }
+
+    /**
+     * Setup scales for the sound chart (band scale for theaters, linear for channel count)
+     */
+    setupSoundScales(data) {
+        const { width, height } = this.dimensions;
+        const maxChannels = Math.max(...data.map(d => d.channelCount));
+
+        this.scales = {
+            x: d3.scaleLinear()
+                .domain([0, maxChannels * 1.1])
+                .range([0, width]),
+            y: d3.scaleBand()
+                .domain(data.map(d => d.name))
+                .range([0, height])
+                .padding(0.25)
+        };
+    }
+
+    /**
+     * Create and render axes for the sound chart
+     */
+    createSoundAxes() {
+        const { width, height } = this.dimensions;
+        const { svg, scales } = this;
+
+        this.axes.x = svg.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(scales.x).ticks(8));
+
+        this.axes.x.append("text")
+            .attr("x", width / 2)
+            .attr("y", 40)
+            .attr("fill", "white")
+            .style("text-anchor", "middle")
+            .text("Sound Channels (Dolby Atmos / Surround)");
+
+        this.axes.y = svg.append("g")
+            .call(d3.axisLeft(scales.y));
+
+        this.axes.y.selectAll("text")
+            .attr("fill", "white")
+            .style("font-size", "12px");
+    }
+
+    /**
+     * Render sound-system channel-count bars
+     * @param {Array} data - Screen data with channelCount
+     */
+    renderSoundBars(data) {
+        const { scales } = this;
+
+        this.screens = this.svg.selectAll(".sound-bar")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("class", "screen-rect sound-bar")
+            .attr("x", 0)
+            .attr("y", d => scales.y(d.name))
+            .attr("width", d => scales.x(d.channelCount))
+            .attr("height", scales.y.bandwidth())
+            .attr("fill", d => d.color)
+            .attr("stroke", "white")
+            .attr("stroke-width", 1)
+            .attr("opacity", 0.7)
+            .attr("data-theater", d => d.name)
+            .attr("data-screen", d => d.screen_number);
+
+        this.svg.selectAll(".sound-label")
+            .data(data)
+            .enter()
+            .append("text")
+            .attr("class", "sound-label")
+            .attr("x", d => scales.x(d.channelCount) + 8)
+            .attr("y", d => scales.y(d.name) + scales.y.bandwidth() / 2 + 4)
+            .attr("fill", "white")
+            .style("font-size", "12px")
+            .text(d => `${d.sound_system.format} ${d.sound_system.channels}`);
+
+        console.log(`📐 Rendered ${this.screens.size()} sound bars`);
+    }
+
+    /**
      * Calculate responsive dimensions
      */
     calculateDimensions() {

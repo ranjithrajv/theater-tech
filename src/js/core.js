@@ -447,6 +447,10 @@ class Application {
             this.createSeatingVisualization();
             return;
         }
+        if (this.vizMode === 'sound') {
+            this.createSoundVisualization();
+            return;
+        }
 
         console.log('🎨 Attempting to create visualization...');
         console.log('Visualization available:', typeof Visualization);
@@ -501,6 +505,29 @@ class Application {
             console.log(`📊 Seating visualization created with ${processedData.length} screens`);
         } catch (error) {
             console.error('❌ Error creating seating visualization:', error);
+        }
+    }
+
+    /**
+     * Create the sound-system comparison visualization (ranked by Dolby Atmos/surround channel count)
+     */
+    createSoundVisualization() {
+        if (!this.data.screens || this.data.screens.length === 0) {
+            console.error('❌ No screen data available for sound visualization');
+            return;
+        }
+
+        try {
+            const processedData = this.data.screens
+                .map(screen => ({
+                    ...screen,
+                    channelCount: parseFloat(screen.sound_system?.channels) || 0
+                }))
+                .sort((a, b) => b.channelCount - a.channelCount);
+            Visualization.initializeSoundChart(processedData);
+            console.log(`📊 Sound visualization created with ${processedData.length} screens`);
+        } catch (error) {
+            console.error('❌ Error creating sound visualization:', error);
         }
     }
 

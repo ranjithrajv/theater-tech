@@ -10,7 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html', // Entry point for the application
-        seating: './seating.html' // Seating capacity comparison page
+        seating: './seating.html', // Seating capacity comparison page
+        sound: './sound.html' // Sound system comparison page
       },
       // Handle WASM files
       plugins: [
