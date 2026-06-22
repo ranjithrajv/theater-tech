@@ -667,37 +667,18 @@ class Application {
         console.log('🏙️ Loading all cities data...');
 
         try {
-            // Data now comes from this.data.screens and this.data.config
-            // Need to reconstruct availableCities and potentially city objects if they are not directly in screens
-            // For now, assume 'screens' contains city info or it's derived.
-            
-            // This part needs adjustment: It assumes 'window.appData.screens' and city structure.
-            // Let's adapt it to use 'this.data.screens' and query for cities if needed.
-            
-            // If 'screens' is an array of all screens, we need to group them by city.
-            // Assuming 'screens' now contains city info or we can query for unique cities.
-            
-            // Placeholder: if 'screens' doesn't have city info, we'd need to query a 'cities' table
-            // For now, let's assume 'screens' has city info or it's available in `this.data.config` or similar.
-            
-            // Example: Reconstructing city list if not directly available
-            const uniqueCities = {};
-            if (this.data.screens) {
-                this.data.screens.forEach(screen => {
-                    if (screen.theater_name && screen.location) { // Assuming these define a city/location
-                        if (!uniqueCities[screen.theater_name]) {
-                            uniqueCities[screen.theater_name] = {
-                                id: screen.theater_name.toLowerCase().replace(/\s+/g, '-'), // Simple ID
-                                name: screen.theater_name,
-                                state: screen.location, // Location might not be state, needs mapping
-                                screens: []
-                            };
-                        }
-                        uniqueCities[screen.theater_name].screens.push(screen);
-                    }
-                });
-            }
-            this.availableCities = Object.values(uniqueCities);
+            // The only screen data that exists today is Hyderabad's, with no
+            // per-screen city field — group everything under one city entry
+            // rather than grouping by theater_name (which produced bogus
+            // "cities" like individual theaters/neighborhoods).
+            this.availableCities = (this.data.screens && this.data.screens.length > 0)
+                ? [{
+                    id: 'hyderabad',
+                    name: 'Hyderabad',
+                    state: 'Telangana',
+                    screens: this.data.screens
+                }]
+                : [];
 
             console.log(`✅ Loaded ${this.availableCities.length} cities`);
             console.log('Available cities:', this.availableCities.map(c => c.name));
