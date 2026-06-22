@@ -67,7 +67,7 @@
     "name": "PVR Inorbit",
     "location": "Madhapur",
     "width": 55.0,
-    "height": 31.0,
+    "height": 29.0,
     "color": "#457B9D",
     "plf_format": "PXL",
     "screen_number": 4,
@@ -78,7 +78,7 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": null,
+      "brand": "Christie",
       "model": null,
       "aspect_ratio": "1.77:1",
       "brightness_lumens": 28000.0
@@ -97,39 +97,41 @@
   {
     "name": "Devi 70mm",
     "location": "RTC X Roads",
-    "width": 70.0,
-    "height": 35.0,
+    "width": 83.0,
+    "height": 34.7,
     "color": "#F77F00",
     "plf_format": "70mm",
     "screen_number": 1,
-    "seating_capacity": 850,
+    "seating_capacity": 1034,
     "note": "Heritage Cinema",
     "chain": "Devi",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": null,
-      "model": null,
-      "aspect_ratio": "2.00:1",
-      "brightness_lumens": 25000.0
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-55B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 52000.0
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "32",
       "brand": null
     },
     "screen_surface": {
       "material": "Silver Screen",
       "gain": 1.4
     },
-    "content_support": {}
+    "content_support": {
+      "3d_capability": true
+    }
   },
   {
     "name": "PVR Cyberabad",
     "location": "Hi-Tech City",
-    "width": 62.0,
-    "height": 35.0,
+    "width": 55.0,
+    "height": 29.0,
     "color": "#2A9D8F",
     "plf_format": "PXL",
     "screen_number": 8,
@@ -140,10 +142,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "NEC",
+      "brand": "Christie",
       "model": null,
-      "aspect_ratio": "1.90:1",
-      "brightness_lumens": 30000.0
+      "aspect_ratio": "1.90:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -162,7 +163,7 @@
   },
   {
     "name": "Asian Jyothi",
-    "location": "Banjara Hills",
+    "location": "Chanda Nagar",
     "width": 58.0,
     "height": 32.0,
     "color": "#264653",
@@ -192,42 +193,8 @@
     "content_support": {}
   },
   {
-    "name": "Miraj Cinemas",
-    "location": "Jubilee Hills",
-    "width": 52.0,
-    "height": 29.0,
-    "color": "#8B5CF6",
-    "plf_format": "EPIQ",
-    "screen_number": 6,
-    "seating_capacity": 220,
-    "note": "LED Screen Technology",
-    "chain": "Miraj",
-    "theater_name": "Cinemas",
-    "projection": {
-      "type": "LED",
-      "resolution": "4K",
-      "brand": "Samsung",
-      "model": null,
-      "aspect_ratio": "1.79:1",
-      "brightness_nits": 1000.0
-    },
-    "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "7.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": null,
-      "gain": null
-    },
-    "content_support": {
-      "3d_capability": true,
-      "hdr_support": true
-    }
-  },
-  {
     "name": "Carnival Cinemas",
-    "location": "Kondapur",
+    "location": "Ameerpet",
     "width": 48.0,
     "height": 27.0,
     "color": "#DC2626",
@@ -288,59 +255,27 @@
     "content_support": {}
   },
   {
-    "name": "Anjaneya 70mm",
-    "location": "Kavadiguda",
-    "width": 65.0,
-    "height": 32.0,
-    "color": "#7C2D12",
-    "plf_format": "70mm",
-    "screen_number": 1,
-    "seating_capacity": 800,
-    "note": "Classic Heritage Theater",
-    "chain": "Anjaneya",
-    "theater_name": "70mm",
-    "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": "Century",
-      "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 22000.0
-    },
-    "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": "Curved Screen",
-      "gain": 1.6
-    },
-    "content_support": {}
-  },
-  {
     "name": "Sandhya 70mm",
-    "location": "Dilsukhnagar",
-    "width": 60.0,
-    "height": 30.0,
+    "location": "RTC X Roads",
+    "width": 68.0,
+    "height": 28.0,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 2,
-    "seating_capacity": 750,
+    "seating_capacity": 1323,
     "note": "Traditional Cinema",
     "chain": "Sandhya",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
+      "type": "Laser",
+      "resolution": "4K",
       "brand": null,
       "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 20000.0
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "7.1",
       "brand": null
     },
     "screen_surface": {
@@ -386,19 +321,18 @@
     "width": 56.0,
     "height": 31.0,
     "color": "#7C3AED",
-    "plf_format": "PXL",
+    "plf_format": "Standard",
     "screen_number": 5,
-    "seating_capacity": 260,
+    "seating_capacity": 299,
     "note": "Luxury Mall Cinema",
     "chain": "INOX",
     "theater_name": "GVK One",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Christie",
+      "type": "Xenon Lamp",
+      "resolution": "2K",
+      "brand": null,
       "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 28000.0
+      "aspect_ratio": "1.81:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -413,7 +347,7 @@
   },
   {
     "name": "Cinepolis Lulu",
-    "location": "Malkajgiri",
+    "location": "Kukatpally",
     "width": 54.0,
     "height": 30.0,
     "color": "#DB2777",
@@ -514,7 +448,7 @@
     "name": "PVR Inorbit",
     "location": "Madhapur",
     "width": 55.0,
-    "height": 31.0,
+    "height": 29.0,
     "color": "#457B9D",
     "plf_format": "PXL",
     "screen_number": 4,
@@ -525,7 +459,7 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": null,
+      "brand": "Christie",
       "model": null,
       "aspect_ratio": "1.77:1",
       "brightness_lumens": 28000.0
@@ -544,39 +478,41 @@
   {
     "name": "Devi 70mm",
     "location": "RTC X Roads",
-    "width": 70.0,
-    "height": 35.0,
+    "width": 83.0,
+    "height": 34.7,
     "color": "#F77F00",
     "plf_format": "70mm",
     "screen_number": 1,
-    "seating_capacity": 850,
+    "seating_capacity": 1034,
     "note": "Heritage Cinema",
     "chain": "Devi",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": null,
-      "model": null,
-      "aspect_ratio": "2.00:1",
-      "brightness_lumens": 25000.0
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-55B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 52000.0
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "32",
       "brand": null
     },
     "screen_surface": {
       "material": "Silver Screen",
       "gain": 1.4
     },
-    "content_support": {}
+    "content_support": {
+      "3d_capability": true
+    }
   },
   {
     "name": "PVR Cyberabad",
     "location": "Hi-Tech City",
-    "width": 62.0,
-    "height": 35.0,
+    "width": 55.0,
+    "height": 29.0,
     "color": "#2A9D8F",
     "plf_format": "PXL",
     "screen_number": 8,
@@ -587,10 +523,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "NEC",
+      "brand": "Christie",
       "model": null,
-      "aspect_ratio": "1.90:1",
-      "brightness_lumens": 30000.0
+      "aspect_ratio": "1.90:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -609,7 +544,7 @@
   },
   {
     "name": "Asian Jyothi",
-    "location": "Banjara Hills",
+    "location": "Chanda Nagar",
     "width": 58.0,
     "height": 32.0,
     "color": "#264653",
@@ -639,42 +574,8 @@
     "content_support": {}
   },
   {
-    "name": "Miraj Cinemas",
-    "location": "Jubilee Hills",
-    "width": 52.0,
-    "height": 29.0,
-    "color": "#8B5CF6",
-    "plf_format": "EPIQ",
-    "screen_number": 6,
-    "seating_capacity": 220,
-    "note": "LED Screen Technology",
-    "chain": "Miraj",
-    "theater_name": "Cinemas",
-    "projection": {
-      "type": "LED",
-      "resolution": "4K",
-      "brand": "Samsung",
-      "model": null,
-      "aspect_ratio": "1.79:1",
-      "brightness_nits": 1000.0
-    },
-    "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "7.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": null,
-      "gain": null
-    },
-    "content_support": {
-      "3d_capability": true,
-      "hdr_support": true
-    }
-  },
-  {
     "name": "Carnival Cinemas",
-    "location": "Kondapur",
+    "location": "Ameerpet",
     "width": 48.0,
     "height": 27.0,
     "color": "#DC2626",
@@ -735,59 +636,27 @@
     "content_support": {}
   },
   {
-    "name": "Anjaneya 70mm",
-    "location": "Kavadiguda",
-    "width": 65.0,
-    "height": 32.0,
-    "color": "#7C2D12",
-    "plf_format": "70mm",
-    "screen_number": 1,
-    "seating_capacity": 800,
-    "note": "Classic Heritage Theater",
-    "chain": "Anjaneya",
-    "theater_name": "70mm",
-    "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": "Century",
-      "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 22000.0
-    },
-    "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": "Curved Screen",
-      "gain": 1.6
-    },
-    "content_support": {}
-  },
-  {
     "name": "Sandhya 70mm",
-    "location": "Dilsukhnagar",
-    "width": 60.0,
-    "height": 30.0,
+    "location": "RTC X Roads",
+    "width": 68.0,
+    "height": 28.0,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 2,
-    "seating_capacity": 750,
+    "seating_capacity": 1323,
     "note": "Traditional Cinema",
     "chain": "Sandhya",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
+      "type": "Laser",
+      "resolution": "4K",
       "brand": null,
       "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 20000.0
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "7.1",
       "brand": null
     },
     "screen_surface": {
@@ -833,19 +702,18 @@
     "width": 56.0,
     "height": 31.0,
     "color": "#7C3AED",
-    "plf_format": "PXL",
+    "plf_format": "Standard",
     "screen_number": 5,
-    "seating_capacity": 260,
+    "seating_capacity": 299,
     "note": "Luxury Mall Cinema",
     "chain": "INOX",
     "theater_name": "GVK One",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Christie",
+      "type": "Xenon Lamp",
+      "resolution": "2K",
+      "brand": null,
       "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 28000.0
+      "aspect_ratio": "1.81:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -860,7 +728,7 @@
   },
   {
     "name": "Cinepolis Lulu",
-    "location": "Malkajgiri",
+    "location": "Kukatpally",
     "width": 54.0,
     "height": 30.0,
     "color": "#DB2777",
@@ -962,7 +830,7 @@
     "name": "PVR Inorbit",
     "location": "Madhapur",
     "width": 55.0,
-    "height": 31.0,
+    "height": 29.0,
     "color": "#457B9D",
     "plf_format": "PXL",
     "screen_number": 4,
@@ -973,7 +841,7 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": null,
+      "brand": "Christie",
       "model": null,
       "aspect_ratio": "1.77:1",
       "brightness_lumens": 28000.0
@@ -992,39 +860,41 @@
   {
     "name": "Devi 70mm",
     "location": "RTC X Roads",
-    "width": 70.0,
-    "height": 35.0,
+    "width": 83.0,
+    "height": 34.7,
     "color": "#F77F00",
     "plf_format": "70mm",
     "screen_number": 1,
-    "seating_capacity": 850,
+    "seating_capacity": 1034,
     "note": "Heritage Cinema",
     "chain": "Devi",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": null,
-      "model": null,
-      "aspect_ratio": "2.00:1",
-      "brightness_lumens": 25000.0
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-55B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 52000.0
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "32",
       "brand": null
     },
     "screen_surface": {
       "material": "Silver Screen",
       "gain": 1.4
     },
-    "content_support": {}
+    "content_support": {
+      "3d_capability": true
+    }
   },
   {
     "name": "PVR Cyberabad",
     "location": "Hi-Tech City",
-    "width": 62.0,
-    "height": 35.0,
+    "width": 55.0,
+    "height": 29.0,
     "color": "#2A9D8F",
     "plf_format": "PXL",
     "screen_number": 8,
@@ -1035,10 +905,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "NEC",
+      "brand": "Christie",
       "model": null,
-      "aspect_ratio": "1.90:1",
-      "brightness_lumens": 30000.0
+      "aspect_ratio": "1.90:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -1057,7 +926,7 @@
   },
   {
     "name": "Asian Jyothi",
-    "location": "Banjara Hills",
+    "location": "Chanda Nagar",
     "width": 58.0,
     "height": 32.0,
     "color": "#264653",
@@ -1087,42 +956,8 @@
     "content_support": {}
   },
   {
-    "name": "Miraj Cinemas",
-    "location": "Jubilee Hills",
-    "width": 52.0,
-    "height": 29.0,
-    "color": "#8B5CF6",
-    "plf_format": "EPIQ",
-    "screen_number": 6,
-    "seating_capacity": 220,
-    "note": "LED Screen Technology",
-    "chain": "Miraj",
-    "theater_name": "Cinemas",
-    "projection": {
-      "type": "LED",
-      "resolution": "4K",
-      "brand": "Samsung",
-      "model": null,
-      "aspect_ratio": "1.79:1",
-      "brightness_nits": 1000.0
-    },
-    "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "7.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": null,
-      "gain": null
-    },
-    "content_support": {
-      "3d_capability": true,
-      "hdr_support": true
-    }
-  },
-  {
     "name": "Carnival Cinemas",
-    "location": "Kondapur",
+    "location": "Ameerpet",
     "width": 48.0,
     "height": 27.0,
     "color": "#DC2626",
@@ -1183,59 +1018,27 @@
     "content_support": {}
   },
   {
-    "name": "Anjaneya 70mm",
-    "location": "Kavadiguda",
-    "width": 65.0,
-    "height": 32.0,
-    "color": "#7C2D12",
-    "plf_format": "70mm",
-    "screen_number": 1,
-    "seating_capacity": 800,
-    "note": "Classic Heritage Theater",
-    "chain": "Anjaneya",
-    "theater_name": "70mm",
-    "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": "Century",
-      "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 22000.0
-    },
-    "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": "Curved Screen",
-      "gain": 1.6
-    },
-    "content_support": {}
-  },
-  {
     "name": "Sandhya 70mm",
-    "location": "Dilsukhnagar",
-    "width": 60.0,
-    "height": 30.0,
+    "location": "RTC X Roads",
+    "width": 68.0,
+    "height": 28.0,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 2,
-    "seating_capacity": 750,
+    "seating_capacity": 1323,
     "note": "Traditional Cinema",
     "chain": "Sandhya",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
+      "type": "Laser",
+      "resolution": "4K",
       "brand": null,
       "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 20000.0
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "7.1",
       "brand": null
     },
     "screen_surface": {
@@ -1281,19 +1084,18 @@
     "width": 56.0,
     "height": 31.0,
     "color": "#7C3AED",
-    "plf_format": "PXL",
+    "plf_format": "Standard",
     "screen_number": 5,
-    "seating_capacity": 260,
+    "seating_capacity": 299,
     "note": "Luxury Mall Cinema",
     "chain": "INOX",
     "theater_name": "GVK One",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Christie",
+      "type": "Xenon Lamp",
+      "resolution": "2K",
+      "brand": null,
       "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 28000.0
+      "aspect_ratio": "1.81:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -1308,7 +1110,7 @@
   },
   {
     "name": "Cinepolis Lulu",
-    "location": "Malkajgiri",
+    "location": "Kukatpally",
     "width": 54.0,
     "height": 30.0,
     "color": "#DB2777",
@@ -1410,7 +1212,7 @@
     "name": "PVR Inorbit",
     "location": "Madhapur",
     "width": 55.0,
-    "height": 31.0,
+    "height": 29.0,
     "color": "#457B9D",
     "plf_format": "PXL",
     "screen_number": 4,
@@ -1421,7 +1223,7 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": null,
+      "brand": "Christie",
       "model": null,
       "aspect_ratio": "1.77:1",
       "brightness_lumens": 28000.0
@@ -1440,39 +1242,41 @@
   {
     "name": "Devi 70mm",
     "location": "RTC X Roads",
-    "width": 70.0,
-    "height": 35.0,
+    "width": 83.0,
+    "height": 34.7,
     "color": "#F77F00",
     "plf_format": "70mm",
     "screen_number": 1,
-    "seating_capacity": 850,
+    "seating_capacity": 1034,
     "note": "Heritage Cinema",
     "chain": "Devi",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": null,
-      "model": null,
-      "aspect_ratio": "2.00:1",
-      "brightness_lumens": 25000.0
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-55B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 52000.0
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "32",
       "brand": null
     },
     "screen_surface": {
       "material": "Silver Screen",
       "gain": 1.4
     },
-    "content_support": {}
+    "content_support": {
+      "3d_capability": true
+    }
   },
   {
     "name": "PVR Cyberabad",
     "location": "Hi-Tech City",
-    "width": 62.0,
-    "height": 35.0,
+    "width": 55.0,
+    "height": 29.0,
     "color": "#2A9D8F",
     "plf_format": "PXL",
     "screen_number": 8,
@@ -1483,10 +1287,9 @@
     "projection": {
       "type": "Laser",
       "resolution": "4K",
-      "brand": "NEC",
+      "brand": "Christie",
       "model": null,
-      "aspect_ratio": "1.90:1",
-      "brightness_lumens": 30000.0
+      "aspect_ratio": "1.90:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -1505,7 +1308,7 @@
   },
   {
     "name": "Asian Jyothi",
-    "location": "Banjara Hills",
+    "location": "Chanda Nagar",
     "width": 58.0,
     "height": 32.0,
     "color": "#264653",
@@ -1535,42 +1338,8 @@
     "content_support": {}
   },
   {
-    "name": "Miraj Cinemas",
-    "location": "Jubilee Hills",
-    "width": 52.0,
-    "height": 29.0,
-    "color": "#8B5CF6",
-    "plf_format": "EPIQ",
-    "screen_number": 6,
-    "seating_capacity": 220,
-    "note": "LED Screen Technology",
-    "chain": "Miraj",
-    "theater_name": "Cinemas",
-    "projection": {
-      "type": "LED",
-      "resolution": "4K",
-      "brand": "Samsung",
-      "model": null,
-      "aspect_ratio": "1.79:1",
-      "brightness_nits": 1000.0
-    },
-    "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "7.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": null,
-      "gain": null
-    },
-    "content_support": {
-      "3d_capability": true,
-      "hdr_support": true
-    }
-  },
-  {
     "name": "Carnival Cinemas",
-    "location": "Kondapur",
+    "location": "Ameerpet",
     "width": 48.0,
     "height": 27.0,
     "color": "#DC2626",
@@ -1631,59 +1400,27 @@
     "content_support": {}
   },
   {
-    "name": "Anjaneya 70mm",
-    "location": "Kavadiguda",
-    "width": 65.0,
-    "height": 32.0,
-    "color": "#7C2D12",
-    "plf_format": "70mm",
-    "screen_number": 1,
-    "seating_capacity": 800,
-    "note": "Classic Heritage Theater",
-    "chain": "Anjaneya",
-    "theater_name": "70mm",
-    "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
-      "brand": "Century",
-      "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 22000.0
-    },
-    "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
-      "brand": null
-    },
-    "screen_surface": {
-      "material": "Curved Screen",
-      "gain": 1.6
-    },
-    "content_support": {}
-  },
-  {
     "name": "Sandhya 70mm",
-    "location": "Dilsukhnagar",
-    "width": 60.0,
-    "height": 30.0,
+    "location": "RTC X Roads",
+    "width": 68.0,
+    "height": 28.0,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 2,
-    "seating_capacity": 750,
+    "seating_capacity": 1323,
     "note": "Traditional Cinema",
     "chain": "Sandhya",
     "theater_name": "70mm",
     "projection": {
-      "type": "Film",
-      "resolution": "70mm Film",
+      "type": "Laser",
+      "resolution": "4K",
       "brand": null,
       "model": null,
-      "aspect_ratio": "2.39:1",
-      "brightness_lumens": 20000.0
+      "aspect_ratio": "2.39:1"
     },
     "sound_system": {
-      "format": "Analog Surround",
-      "channels": "4.1",
+      "format": "Dolby Atmos",
+      "channels": "7.1",
       "brand": null
     },
     "screen_surface": {
@@ -1729,19 +1466,18 @@
     "width": 56.0,
     "height": 31.0,
     "color": "#7C3AED",
-    "plf_format": "PXL",
+    "plf_format": "Standard",
     "screen_number": 5,
-    "seating_capacity": 260,
+    "seating_capacity": 299,
     "note": "Luxury Mall Cinema",
     "chain": "INOX",
     "theater_name": "GVK One",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Christie",
+      "type": "Xenon Lamp",
+      "resolution": "2K",
+      "brand": null,
       "model": null,
-      "aspect_ratio": "1.81:1",
-      "brightness_lumens": 28000.0
+      "aspect_ratio": "1.81:1"
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -1756,7 +1492,7 @@
   },
   {
     "name": "Cinepolis Lulu",
-    "location": "Malkajgiri",
+    "location": "Kukatpally",
     "width": 54.0,
     "height": 30.0,
     "color": "#DB2777",
