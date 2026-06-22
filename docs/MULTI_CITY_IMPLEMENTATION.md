@@ -1,5 +1,14 @@
 # Multi-City Support Implementation
 
+> **⚠️ Correction (see project history):** the "8 metro cities" data described below
+> turned out to be fabricated — there is no verified screen data for Mumbai, Delhi
+> NCR, Bangalore, Chennai, Kolkata, Pune, or Ahmedabad anywhere in this repo's
+> history. A later data audit found similar fabrication in several of the
+> Hyderabad-only entries too (wrong locations, invented projector specs). The app
+> currently supports Hyderabad only, with 21 real, individually-sourced theaters.
+> This document is kept for historical context, not as a description of the
+> current app.
+
 ## Summary
 
 Successfully expanded the Theater-Tech app to support cinema technology comparison across all major metro cities in India. Users can now select a city from a dropdown and view cinema screen comparisons for that specific city.

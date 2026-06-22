@@ -1,219 +1,92 @@
 # India Cinema Technology Comparison
 
-A comprehensive data visualization tool that compares cinema technology including screen sizes, projectors, sound systems, and technical specifications across major theaters in **8 metro cities in India**.
+A data visualization tool comparing cinema screen technology — size, seating capacity, and sound systems — across major theaters in Hyderabad, India.
 
-## 🌆 Supported Cities
-
-- **Hyderabad** (Telangana) - 9 screens including Prasads PCX (India's largest)
-- **Mumbai** (Maharashtra) - 4 screens including PVR IMAX BKC
-- **Delhi NCR** (Delhi) - 4 screens including PVR Vegas Dwarka
-- **Bangalore** (Karnataka) - 4 screens including PVR Nexus Koramangala
-- **Chennai** (Tamil Nadu) - 4 screens including Palazzo IMAX
-- **Kolkata** (West Bengal) - 2 screens including INOX South City
-- **Pune** (Maharashtra) - 2 screens including PVR IMAX PMC
-- **Ahmedabad** (Gujarat) - 2 screens including Gujarat Science City IMAX
+**Live site:** https://ranjithrajv.github.io/theater-tech/
 
 ## ✨ Features
 
-*   **City Selector:** Choose from 8 major Indian metro cities to view local cinema data
-*   **Visual Comparison:** Uses D3.js to render to-scale charts comparing cinema screens
-*   **Detailed Information:** Hover over any screen to see technical specs like projection type, sound system, screen surface, and more
-*   **Interactive Legend:** Filter screens by Premium Large Format (PLF) to highlight them on the chart
-*   **Progressive Disclosure:** The legend provides both basic and advanced technical details
-*   **Glossary:** Interactive glossary explains technical terms like "Dolby Atmos" and "4K Resolution"
-*   **Responsive Design:** Layout adapts to mobile, tablet, and desktop screens
-*   **LocalStorage Persistence:** Your city selection is saved and restored on your next visit
+Three comparison views, sharing the same theater dataset and a click-for-details sidebar:
 
-## 🚀 How to Use
+- **Screen Size** (`index.html`) — to-scale rectangles showing each screen's actual width × height in feet.
+- **Seating Capacity** (`seating.html`) — horizontal bars ranking theaters by seat count.
+- **Sound System** (`sound.html`) — a radial chart of concentric rings, each ring's arc length proportional to its Dolby Atmos / surround channel count (highest count = outermost ring), with a side legend since several theaters tie on channel count.
 
-1. Clone this repository
-2. Open the `app/index.html` file in your web browser
-3. Select your city from the dropdown menu
-4. Explore the visual comparison of cinema screens
-5. Hover over screens to see detailed technical specifications
+Click any screen, bar, or ring to see full specs in the sidebar: projection type/resolution/brand, brightness, sound format/channels, screen surface, and content support (3D/4D/HDR).
 
-No special build steps or servers are required. All the magic happens directly in your browser!
+## 🎬 Data Coverage
 
-## 📊 Data Sources
+21 real Hyderabad theaters, individually researched and sourced (not generated) — including the city's biggest screens (Prasads PCX, Allu Cinemas' Dolby Cinema, the RTC X Roads single-screen halls), major multiplex chains (PVR, INOX, AMB, Aparna), and renovated heritage 70mm/35mm theaters. Each entry's dimensions, seating, and projection/sound specs are cross-checked against published theater listings rather than estimated.
 
-The cinema technology data is stored in two locations:
+The dropdown currently lists Hyderabad only — there is no verified multi-city data yet (see `docs/MULTI_CITY_IMPLEMENTATION.md` for historical context on why that's the case).
 
-1. **Primary JSON Source**: `data/all_cities_screens.json` - Contains comprehensive data for 8 metro cities in India
-2. **Legacy JSON Source**: `data/screens.json` - Contains Hyderabad-only data (maintained for backward compatibility)
+## 💻 Tech Stack
 
-Both datasets contain:
-- Screen dimensions (width, height in feet)
-- Projection systems (type, resolution, brand, brightness)
-- Sound systems (format, channels)
-- Screen surfaces (material, gain)
-- Content support (3D, HDR, HFR capabilities)
-- Seating capacity and location details
+- **Vite** (via `vite-plus`) — multi-page build, dev server, WASM support
+- **D3.js v7** — charts for all three comparison views
+- **sql.js** — reads a SQLite database directly in the browser (no backend)
+- **Vanilla JS (ES modules)** — no framework
+- **Python** (`data/json_to_sqlite.py`) — regenerates the SQLite DB from the JSON source data at build time
 
-### Data Storage Options
+## 🚀 Getting Started
 
-The project supports multiple data storage backends:
-
-1. **SQLite** (default): Located at `data/theater_tech.db`
-2. **PostgreSQL**: Requires separate setup (see instructions below)
-
-#### SQLite Migration
-The SQLite database is automatically created/updated by running:
 ```bash
-cd data && python3 json_to_sqlite.py
+npm install
+npm run dev      # starts the Vite dev server
 ```
 
-#### PostgreSQL Setup Instructions
+```bash
+npm run build    # regenerates the SQLite DB, then builds dist/
+npm run preview  # serve the production build locally
+```
 
-1. **Install PostgreSQL** (if not already installed):
-   ```bash
-   # Ubuntu/Debian
-   sudo apt-get install postgresql postgresql-contrib
-   
-   # macOS (using Homebrew)
-   brew install postgresql
-   
-   # Start the service
-   sudo service postgresql start  # Linux
-   brew services start postgresql  # macOS
-   ```
+```bash
+npm test         # validates the SQLite DB's row counts
+```
 
-2. **Create a database and user**:
-   ```bash
-   sudo -u postgres psql
-   ```
-   Then in the PostgreSQL prompt:
-   ```sql
-   CREATE DATABASE theater_tech;
-   CREATE USER theater_user WITH PASSWORD 'your_secure_password';
-   GRANT ALL PRIVILEGES ON DATABASE theater_tech TO theater_user;
-   \q
-   ```
+## 📦 Deployment
 
-3. **Configure environment variables**:
-   Copy the example environment file and update with your credentials:
-   ```bash
-   cp data/.env.example data/.env
-   # Edit data/.env with your actual database credentials
-   ```
+Pushing to `master` triggers `.github/workflows/static.yml`, which builds the project and deploys `dist/` to GitHub Pages. The workflow ignores commits that only touch documentation (`*.md`, `docs/**`) so doc-only changes don't trigger a redeploy.
 
-4. **Run the PostgreSQL migration**:
-   ```bash
-   cd data && python3 json_to_postgres.py
-   ```
-
-### Adding New Cities or Screens
-
-To add or update cinema information:
-
-1. Edit the `data/all_cities_screens.json` file (primary source)
-2. Follow the existing JSON structure with city objects containing:
-    - `id`: Unique city identifier
-    - `name`: Display name
-    - `state`: State name
-    - `screens`: Array of screen objects with complete technical specifications
-3. Use the JavaScript validator at `tests/validate_screens.html` to validate the structure
-4. **After updating JSON data, re-run the migration script** to update your database:
-   - For SQLite: `cd data && python3 json_to_sqlite.py`
-   - For PostgreSQL: `cd data && python3 json_to_postgres.py`
-
-## 🏆 Notable Screens
-
-- **Prasads PCX** (Hyderabad) - India's largest commercial cinema screen at 101.6 × 64 feet
-- **Gujarat Science City IMAX** (Ahmedabad) - India's largest IMAX screen at 95.1 × 66.8 feet (documentaries only)
-- **PVR IMAX Jio World Plaza** (Mumbai) - Premium IMAX with Laser experience
-- **PVR IMAX Priya** (Delhi) - India's first standalone IMAX property
-- **Palazzo IMAX** (Chennai) - Chennai's premier IMAX experience
-
-## 💻 Technologies Used
-
-*   **HTML5** - Semantic markup and structure
-*   **CSS3** - Responsive styling and animations
-*   **JavaScript (ES6+)** - Application logic and interactivity
-*   **D3.js (v7)** - Data visualization and interactive charts
-*   **JSON Schema** - Data validation and structure enforcement
-
-## 📱 Browser Support
-
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
-
-## 🔧 Development
-
-### Project Structure
+## 🗂️ Project Structure
 
 ```
 theater-tech/
-├── app/
-│   ├── index.html          # Main application entry point
-│   ├── style.css           # Application styles
-│   └── js/                 # JavaScript modules
-│       ├── index.js        # Application bootstrap
-│       ├── core.js         # Core application logic
-│       ├── visualization.js # D3.js visualization
-│       └── ...
+├── index.html              # Screen size comparison (entry: src/js/index.js)
+├── seating.html             # Seating capacity comparison (entry: src/js/seating-entry.js)
+├── sound.html                # Sound system comparison (entry: src/js/sound-entry.js)
+├── vite.config.ts            # Multi-page build config (base path, WASM plugin)
+├── src/
+│   ├── js/
+│   │   ├── config.js          # ConfigManager — loads app config/constants
+│   │   ├── core.js             # Application class — data loading, city selection, viz dispatch
+│   │   ├── visualization.js    # D3 rendering for all three chart types
+│   │   ├── ui-components.js    # Sidebar, comparison, selection state
+│   │   ├── data-validator.js, utils.js, templates.js, tooltips.js
+│   │   └── index.js / seating-entry.js / sound-entry.js  # per-page bootstraps
+│   ├── schemas/                # JSON Schema definitions + registry
+│   ├── lib/                    # Bundled icon/template/validator helper libs
+│   └── styles/                 # style.css, style-mobile.css
+├── public/data/
+│   ├── screens.json             # Theater/screen records (source of truth)
+│   ├── all_cities_screens.json  # Same schema, used by json_to_sqlite.py if present
+│   ├── config.json               # App title, PLF format legend, glossary
+│   ├── constants.json, icons.json, tooltips.json
+│   └── theater_tech.db            # Generated by data/json_to_sqlite.py — gitignored
 ├── data/
-│   ├── all_cities_screens.json  # Main cinema data (8 cities)
-│   └── screens.json        # Legacy Hyderabad-only data
-├── docs/
-│   ├── market_study_competitive_analysis.md
-│   └── MULTI_CITY_IMPLEMENTATION.md
-├── lib/
-│   └── d3.v7.min.js        # D3.js library
+│   └── json_to_sqlite.py       # Regenerates theater_tech.db from the JSON files above
 └── tests/
-    └── validate_screens.html  # Data validation tool
+    └── quick-validate.mjs      # Row-count sanity check, run by `npm test`
 ```
 
-### Adding a New City
+## ✏️ Updating Theater Data
 
-1. Add city object to `data/all_cities_screens.json`:
+1. Edit `public/data/screens.json` (and `all_cities_screens.json` to keep them in sync — `json_to_sqlite.py` prefers the latter if present, falling back to the former).
+2. Run `npm run build` or `npm test` — both regenerate `public/data/theater_tech.db` automatically via the `prebuild`/`pretest` npm hooks. To regenerate without building, run `python3 data/json_to_sqlite.py` directly.
+3. Add a matching entry to `config.json`'s `legend.plf_formats` if you're introducing a new premium-format category.
 
-```json
-{
-  "id": "cityname",
-  "name": "City Name",
-  "state": "State",
-  "screens": [
-    {
-      "name": "Theater Name",
-      "location": "Area",
-      "width": 70,
-      "height": 40,
-      "color": "#FF0000",
-      "plf_format": "IMAX",
-      "screen_number": 1,
-      "projection": { ... },
-      "sound_system": { ... },
-      ...
-    }
-  ]
-}
-```
-
-2. The city will automatically appear in the dropdown
-3. Validate using `tests/validate_screens.html`
-
-## 🤝 Contributing
-
-Contributions are welcome! You can help by:
-
-- Adding new cities or theaters
-- Updating existing screen specifications
-- Adding photos of actual screens
-- Improving the visualization
-- Reporting bugs or suggesting features
+When sourcing specs, prefer a dedicated theater-listing site over general web copy — several entries in this dataset were found to have fabricated dimensions before being corrected against real sources.
 
 ## 📄 License
 
-This project is open source. Feel free to use, modify, and distribute.
-
-## 🙏 Acknowledgments
-
-- Data compiled from IMAX official listings, PVR INOX announcements, and cinema enthusiast communities
-- D3.js community for excellent visualization library
-- Reddit r/imax community for technical insights and data verification
-
----
-
-**Made with 🎬 for movie lovers across India**
+ISC — see `package.json`.

@@ -1,5 +1,12 @@
 # Phase 1: Critical Data Validation - Implementation Complete
 
+> **⚠️ Note (see project history):** the schema files described below now live
+> under `src/schemas/` (moved during the Vite migration), not `app/schemas/`.
+> They're bundled and importable, but nothing in the running app currently
+> calls their cross-field validation rules (`Validator.validateAllFiles()` is
+> unused) — `npm test` only checks table row counts, not field-level schema
+> conformance. Treat the validation coverage described here as aspirational.
+
 ## Overview
 Phase 1 implements critical data validation using JSON schemas for all application data files.
 

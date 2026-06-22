@@ -1,73 +1,15 @@
 # Tests Directory
 
-This directory contains development and testing utilities for the Hyderabad Cinema Technology Comparison application.
+## Active test
 
-## Test Files
+- **`quick-validate.mjs`** — the only test actually run by CI/the pre-commit hook (`npm test` / `npm run validate`). Connects to `public/data/theater_tech.db` and checks that the `screens`, `config`, `constants`, `tooltips`, and `icons` tables have rows. It's a sanity check, not a correctness check — it doesn't validate field values or schema conformance.
 
-### JavaScript Test Files
-- `simple-test.js` - Basic D3.js interaction testing
-- `simple-test-2.js` - Additional D3.js functionality tests
-- `simple-test-3.js` - Extended D3.js testing scenarios
-- `test-mouse-events.js` - Mouse event handling tests
-- `test-syntax.js` - JavaScript syntax validation tests
-- `validate_screens.js` - **NEW:** JavaScript data validation library (replacement for Python validator)
+## Legacy scripts
 
-### HTML Test Files
-- `test-emoji.html` - Emoji rendering test for UI components
-- `validate_screens.html` - **NEW:** Browser-based data validation interface
+The rest of this directory (`browser_test.js`, `data-validation-test.js`, `test_app_loading.js`, `test_network*.js`, `test_scaling.js`, `validate_runtime.js`, `validate_screens.js`, the `*.html` debug pages, etc.) predates the Vite migration. They were written as CommonJS scripts (`require(...)`) for the old `app/`-based static site and reference paths that no longer exist. With `"type": "module"` in `package.json`, plain `.js` files now default to ES modules, so `require()` in these files will throw — **they no longer run as-is**.
 
-## Purpose
+They're kept for reference rather than deleted, but treat them as historical, not as working tests. If you need browser-based testing, prefer driving the actual `dist/` build with Playwright instead of resurrecting these.
 
-These files were created during development to:
-- Test D3.js functionality and syntax
-- Validate mouse event handling
-- Check emoji rendering compatibility
-- Isolate and debug specific code sections
-- Ensure proper JavaScript syntax before integration
+## Adding a real test
 
-## Data Validation Tools
-
-### `validate_screens.js` & `validate_screens.html`
-**Purpose:** JavaScript-based data validation replacing the deprecated Python script.
-
-**Features:**
-- Browser-compatible validation (no Python dependency)
-- Real-time validation feedback
-- Detailed error reporting with error types
-- Support for file URLs and direct JSON text input
-- Validation summary with error breakdown
-
-**Usage:**
-```bash
-# Open browser interface
-open tests/validate_screens.html
-
-# Or use programmatically in JavaScript
-import { ScreenValidator } from './validate_screens.js';
-const result = await ScreenValidator.validateFile('../data/screens.json');
-```
-
-**Validation Types:**
-- `missing_field` - Required fields are absent
-- `type_error` - Field has wrong data type
-- `business_logic` - Values don't meet business rules
-- `duplicate` - Same screen appears multiple times
-- `file_error` - Issues loading the file
-- `parse_error` - Invalid JSON syntax
-
-## Usage
-
-These test files are standalone and can be run individually for debugging purposes. They are not part of the main application and are kept separate for development reference.
-
-The validation tools (`validate_screens.js` and `validate_screens.html`) are production-ready replacements for the deprecated Python validator.
-
-## Maintenance
-
-When adding new test files, follow the naming convention:
-- `test-[feature].js` for feature-specific tests
-- `simple-test-[number].js` for general functionality tests
-- `[feature]-test.html` for HTML-specific tests
-
-For validation tools:
-- `validate_[feature].js` for validation libraries
-- `validate_[feature].html` for validation interfaces
+Add assertions to `quick-validate.mjs` directly, or introduce a proper test runner — there isn't one configured yet.

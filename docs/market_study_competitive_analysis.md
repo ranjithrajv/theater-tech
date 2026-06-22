@@ -3,6 +3,12 @@
 
 ---
 
+> **⚠️ Correction (see project history):** this analysis assumes 8-city coverage
+> that was never actually backed by real data — see
+> `docs/MULTI_CITY_IMPLEMENTATION.md`. The app currently covers Hyderabad only,
+> with 21 real, sourced theaters. Treat the city-coverage figures below as
+> aspirational, not current.
+
 ## Executive Summary
 
 **Theater-Tech** is a specialized data visualization tool that compares cinema screen technologies, dimensions, and specifications across theaters in **8 major metro cities in India**. The tool targets movie enthusiasts ("cinephiles") who want to make informed decisions about which theater and format offers the best viewing experience.
