@@ -1,0 +1,25 @@
+{
+    "name": "India Cinema Technology Comparison",
+    "short_name": "Cinema Tech",
+    "description": "Visual comparison of cinema screens with dimensions and premium large format technologies",
+    "start_url": "/theater-tech/",
+    "display": "standalone",
+    "background_color": "#1a1a1a",
+    "theme_color": "#1a1a1a",
+    "orientation": "landscape",
+    "categories": ["entertainment", "technology"],
+    "icons": [
+        {
+            "src": "/theater-tech/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/theater-tech/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

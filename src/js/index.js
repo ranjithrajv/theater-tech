@@ -117,6 +117,18 @@ window.addEventListener('unhandledrejection', (event) => {
     // Could send to error monitoring service
 });
 
+// ===== SERVICE WORKER REGISTRATION =====
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/theater-tech/sw.js').then(reg => {
+            console.log('✅ Service Worker registered:', reg.scope);
+        }).catch(err => {
+            console.warn('⚠️ Service Worker registration failed:', err);
+        });
+    });
+}
+
 // ===== START APPLICATION =====
 
 // Initialize when DOM is ready
