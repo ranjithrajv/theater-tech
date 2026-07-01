@@ -117,7 +117,6 @@ if (typeof window !== 'undefined') {
 if (typeof global !== 'undefined') {
     global.ScreenValidator = ScreenValidator;
 }
-    },
 
     // Type checking utilities
     isValidType(value, expectedType) {

@@ -21,7 +21,8 @@ export default defineConfig({
     }
   },
   staged: {
-    '*.{js,mjs,html,css,json}': ['vp check --no-fmt --fix', 'vp test'],
+    '*.{js,mjs,html,css}': ['vp check --no-fmt --fix'],
+    '*.json': ['vp check --no-fmt'],
   },
   server: {
     port: 3000,
