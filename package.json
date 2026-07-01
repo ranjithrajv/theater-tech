@@ -10,8 +10,9 @@
     "preview": "vp preview",
     "check": "vp check",
     "pretest": "python3 data/json_to_sqlite.py",
-    "test": "node tests/quick-validate.mjs",
+    "test": "node tests/validate-schema.mjs && node tests/quick-validate.mjs",
     "validate": "node tests/quick-validate.mjs",
+    "validate:schema": "node tests/validate-schema.mjs",
     "prepare": "husky"
   },
   "repository": {

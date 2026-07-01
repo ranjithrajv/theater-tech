@@ -21,6 +21,7 @@ import * as d3 from 'd3';
 import { UIComponents } from './ui-components.js';
 import { Visualization } from './visualization.js';
 import { SizeUtils, debounce } from './utils.js';
+import { Filters } from './filters.js';
 
 // Ensure UIManager is available or stubbed
 if (typeof window.UIManager === 'undefined') {
@@ -433,10 +434,34 @@ class Application {
             // Load all cities data and populate selector
             await this.loadAllCitiesData();
 
+            this.setupFilters();
+
             console.log('✅ All systems initialized');
         } else {
             throw new Error('Required systems not available');
         }
+    }
+
+    setupFilters() {
+        Filters.init('#filter-bar');
+        Filters.setData(this.data.screens);
+
+        Filters.onChange((filteredData) => {
+            if (this.vizMode === 'screen-size') {
+                Visualization.initialize(filteredData);
+            } else if (this.vizMode === 'seating') {
+                Visualization.initializeSeatingChart(
+                    [...filteredData].sort((a, b) => b.seating_capacity - a.seating_capacity)
+                );
+            } else if (this.vizMode === 'sound') {
+                Visualization.initializeSoundChart(
+                    [...filteredData].map(s => ({
+                        ...s,
+                        channelCount: parseFloat(s.sound_system?.channels) || 0
+                    })).sort((a, b) => b.channelCount - a.channelCount)
+                );
+            }
+        });
     }
 
     /**
@@ -821,7 +846,9 @@ class Application {
             // Update page title and description
             this.updatePageTitle(city);
 
-            // Recreate visualization with new data
+            // Reset filters and recreate visualization
+            Filters.setData(this.data.screens);
+            Filters.reset();
             this.createVisualization();
 
             console.log(`✅ City selected: ${city.name} with ${city.screens.length} screens`);

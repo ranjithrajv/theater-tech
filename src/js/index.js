@@ -12,6 +12,7 @@ import { Config } from './config.js';
 import './utils.js';
 import './templates.js';
 import './tooltips.js';
+import './filters.js';
 import { App } from './core.js';
 import { UIComponents } from './ui-components.js';
 import { Visualization } from './visualization.js';

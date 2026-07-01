@@ -36,6 +36,9 @@ jobs:
       - name: Install Dependencies
         run: npm install # Or use 'vp install' if 'vp' is globally available and set up
 
+      - name: Validate JSON Schemas
+        run: node tests/validate-schema.mjs
+
       - name: Build Project
         run: npm run build # This should now execute 'vp build' from package.json
 
