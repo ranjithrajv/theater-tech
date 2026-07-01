@@ -1536,5 +1536,634 @@
         "last_verified": "2024-06"
       }
     ]
+  },
+  {
+    "name": "PVR ICON Phoenix Palladium",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Lower Parel",
+    "width": 68.0,
+    "height": 36.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 380,
+    "note": "Flagship PVR ICON at Palladium; one of Mumbai's most premium screens",
+    "chain": "PVR",
+    "theater_name": "ICON Phoenix Palladium",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 38000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "11.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.7
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PLF standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Premium PVR ICON flagship at Phoenix Palladium"
+      }
+    ]
+  },
+  {
+    "name": "INOX Megaplex",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Inorbit Mall, Malad",
+    "width": 62.0,
+    "height": 32.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 1,
+    "seating_capacity": 420,
+    "note": "One of India's largest multiplexes with ScreenX and MX4D",
+    "chain": "INOX",
+    "theater_name": "Megaplex",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true,
+      "4d_effects": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure_Limited",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship INOX Megaplex at Inorbit Mall Malad"
+      }
+    ]
+  },
+  {
+    "name": "Miraj IMAX",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Wadala",
+    "width": 72.0,
+    "height": 40.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Mumbai's commercial IMAX screen; operated by Miraj Cinemas",
+    "chain": "Miraj",
+    "theater_name": "IMAX Wadala",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Mumbai IMAX at Wadala; also known as Carnival IMAX previously"
+      }
+    ]
+  },
+  {
+    "name": "PVR Phoenix Market City",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Kurla",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#8B5CF6",
+    "plf_format": "EPIQ",
+    "screen_number": 7,
+    "seating_capacity": 340,
+    "note": "PVR's EPIQ premium screen at Phoenix Market City with 4DX",
+    "chain": "PVR",
+    "theater_name": "Phoenix Market City",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true,
+      "4d_effects": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (EPIQ standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR Phoenix Marketcity Kurla with EPIQ and 4DX"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Viviana",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Thane",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 300,
+    "note": "Major multiplex at Viviana Mall; features 4DX screen",
+    "chain": "Cinepolis",
+    "theater_name": "Viviana",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true,
+      "4d_effects": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis Viviana Mall Thane with 4DX"
+      }
+    ]
+  },
+  {
+    "name": "Maratha Mandir",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Mumbai Central",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 900,
+    "note": "Heritage single-screen; famously ran Dilwale Dulhania Le Jayenge for 26+ years; recently digitized",
+    "chain": "Maratha Mandir",
+    "theater_name": "Maratha Mandir",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Silver Screen",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (70mm single-screen standard)",
+        "url": "https://en.wikipedia.org/wiki/Maratha_Mandir",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage single-screen, iconic for DDLJ run; recently renovated with Laser projection"
+      }
+    ]
+  },
+  {
+    "name": "PVR ICON Infiniti",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Andheri (W)",
+    "width": 56.0,
+    "height": 30.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 310,
+    "note": "Premium PVR ICON at Infiniti Mall Andheri; Laser projection + Dolby Atmos",
+    "chain": "PVR",
+    "theater_name": "ICON Infiniti",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR ICON standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR ICON premium screen at Infiniti Mall Andheri West"
+      }
+    ]
+  },
+  {
+    "name": "INOX R-City",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Ghatkopar",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Major INOX multiplex at R-City Mall; one of Ghatkopar's largest",
+    "chain": "INOX",
+    "theater_name": "R-City",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.3
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX multiplex at R-City Mall Ghatkopar"
+      }
+    ]
+  },
+  {
+    "name": "Liberty Cinema",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Marine Lines",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#D97706",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 600,
+    "note": "Heritage art deco single-screen; holds cultural landmark status",
+    "chain": "Liberty",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "https://en.wikipedia.org/wiki/Liberty_Cinema",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage art deco cinema; occasionally used for film festivals"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Seawoods",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Navi Mumbai",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 6,
+    "seating_capacity": 280,
+    "note": "Large multiplex at Seawoods Grand Central Mall, Navi Mumbai",
+    "chain": "Cinepolis",
+    "theater_name": "Seawoods",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis multiplex at Seawoods Nexus, Navi Mumbai"
+      }
+    ]
+  },
+  {
+    "name": "PVR Oberoi Mall",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Goregaon (E)",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 260,
+    "note": "PVR ICON at Oberoi Mall; premium multiplex in Goregaon",
+    "chain": "PVR",
+    "theater_name": "Oberoi Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-15C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR ICON at Oberoi Mall, Goregaon East"
+      }
+    ]
+  },
+  {
+    "name": "INOX Metro",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Marine Lines",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#DC2626",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 240,
+    "note": "Heritage cinema converted to multiplex; Marine Lines landmark",
+    "chain": "INOX",
+    "theater_name": "Metro",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage conversion)",
+        "url": "https://en.wikipedia.org/wiki/Metro_INOX_Cinemas",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Metro cinema converted to multiplex by INOX"
+      }
+    ]
+  },
+  {
+    "name": "PVR Juhu",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Juhu",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#0891B2",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 230,
+    "note": "Popular PVR multiplex in the heart of Juhu",
+    "chain": "PVR",
+    "theater_name": "Dynamix Juhu",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 15000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Dynamix, Juhu"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Anupam",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Goregaon (E)",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Large screen at Miraj Anupam Cinemas, Goregaon East",
+    "chain": "Miraj",
+    "theater_name": "Anupam",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Anupam Cinemas, Goregaon East"
+      }
+    ]
   }
 ]

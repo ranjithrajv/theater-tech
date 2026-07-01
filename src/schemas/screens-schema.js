@@ -770,7 +770,10 @@ const ScreensSchema = {
                        'Banjara Hills', 'Jubilee Hills', 'Kondapur', 'KPHB', 'Kavadiguda',
                        'Dilsukhnagar', 'Kukatpally', 'Malkajgiri', 'Secunderabad', 'Himayatnagar',
                        'Koramangala', 'Majestic', 'Jayanagar', 'Whitefield', 'Malleshwaram',
-                       'Mysore Road', 'Yeshwanthpur', 'Indiranagar', 'Parappana Agrahara'],
+                       'Mysore Road', 'Yeshwanthpur', 'Indiranagar', 'Parappana Agrahara',
+                       'Lower Parel', 'Inorbit Mall, Malad', 'Wadala', 'Kurla', 'Thane',
+                       'Mumbai Central', 'Andheri (W)', 'Ghatkopar', 'Marine Lines',
+                       'Navi Mumbai', 'Goregaon (E)', 'Juhu'],
                 validate: (value) => {
                     if (!value || typeof value !== 'string') return 'Location is required';
                     return true;
