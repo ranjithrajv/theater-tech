@@ -2796,5 +2796,1960 @@
         "notes": "PVR at DLF Promenade Vasant Kunj with ICE screen"
       }
     ]
+  },
+  {
+    "name": "Sathyam Cinemas",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Royapettah",
+    "width": 72.0,
+    "height": 38.0,
+    "color": "#E63946",
+    "plf_format": "Superplex",
+    "screen_number": 1,
+    "seating_capacity": 460,
+    "note": "Iconic Chennai multiplex; flagship Sathyam main screen",
+    "chain": "Sathyam",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 38000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Chennai premium multiplex)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship Sathyam main screen in Royapettah; one of Chennai's largest"
+      }
+    ]
+  },
+  {
+    "name": "PVR IMAX VR Mall",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Anna Nagar",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Chennai's only commercial IMAX screen at VR Mall",
+    "chain": "PVR",
+    "theater_name": "VR Mall IMAX",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "IMAX with Laser at VR Mall, Anna Nagar"
+      }
+    ]
+  },
+  {
+    "name": "Luxe Cinemas",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Velachery",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 320,
+    "note": "Premium multiplex at Velachery; mostly Laser projection",
+    "chain": "PVR",
+    "theater_name": "Luxe Velachery",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-30C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Luxe standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR Luxe premium multiplex at Velachery"
+      }
+    ]
+  },
+  {
+    "name": "INOX Marina",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Teynampet",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 310,
+    "note": "INOX multiplex at Ward 92, Teynampet",
+    "chain": "INOX",
+    "theater_name": "Marina",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX Marina multiplex at Teynampet"
+      }
+    ]
+  },
+  {
+    "name": "PVR Grand Galada",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Pallavaram",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#8B5CF6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 350,
+    "note": "Large PVR multiplex at Grand Galada, Pallavaram",
+    "chain": "PVR",
+    "theater_name": "Grand Galada",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Grand Galada, Pallavaram"
+      }
+    ]
+  },
+  {
+    "name": "Woodlands Theatre",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Egmore",
+    "width": 62.0,
+    "height": 32.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 700,
+    "note": "Heritage single-screen in Egmore; recently digitized with Laser",
+    "chain": "Woodlands",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Woodlands Theatre, Egmore; digital upgrade with Laser projection"
+      }
+    ]
+  },
+  {
+    "name": "Rohini Silver Screens",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Koyambedu",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 300,
+    "note": "Popular multiplex in Koyambedu; known for large screens",
+    "chain": "Rohini",
+    "theater_name": "Silver Screens",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Rohini standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Rohini Silver Screens multiplex at Koyambedu"
+      }
+    ]
+  },
+  {
+    "name": "PVR Heritage",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Egmore",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "PVR multiplex at Heritage RSL ECR, Egmore",
+    "chain": "PVR",
+    "theater_name": "Heritage",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Heritage RSL ECR, Egmore"
+      }
+    ]
+  },
+  {
+    "name": "Odion Cinemas",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "OMR",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 270,
+    "note": "Popular multiplex on OMR for South Chennai audiences",
+    "chain": "Odion",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Odion standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Odion Cinemas multiplex on OMR, Chennai"
+      }
+    ]
+  },
+  {
+    "name": "PVR Ampa",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Ampa Skywalk, Aminjikarai",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 260,
+    "note": "PVR multiplex at Ampa Skywalk Mall",
+    "chain": "PVR",
+    "theater_name": "Ampa Skywalk",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Ampa Skywalk Mall, Aminjikarai"
+      }
+    ]
+  },
+  {
+    "name": "AGS Cinemas",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Villivakkam",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#84CC16",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "Popular AGS multiplex in North Chennai",
+    "chain": "AGS",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (AGS standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "AGS Cinemas multiplex at Villivakkam, North Chennai"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Ega",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Egmore",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 280,
+    "note": "Cinepolis at Ega Theatre complex, Egmore",
+    "chain": "Cinepolis",
+    "theater_name": "Ega",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis multiplex at Ega Theatre complex, Egmore"
+      }
+    ]
+  },
+  {
+    "name": "PVR IMAX South City",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "South City Mall",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Kolkata's only commercial IMAX screen at South City Mall",
+    "chain": "PVR",
+    "theater_name": "South City IMAX",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "IMAX with Laser at South City Mall, Kolkata"
+      }
+    ]
+  },
+  {
+    "name": "INOX City Centre II",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Salt Lake",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 1,
+    "seating_capacity": 380,
+    "note": "Flagship INOX multiplex at City Centre Salt Lake; one of Kolkata's largest screens",
+    "chain": "INOX",
+    "theater_name": "City Centre II",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX flagship at City Centre, Salt Lake; one of Kolkata's largest screens"
+      }
+    ]
+  },
+  {
+    "name": "PVR Avani",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Gariahat",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 320,
+    "note": "Major PVR multiplex at Avani Riverside Mall, Gariahat",
+    "chain": "PVR",
+    "theater_name": "Avani",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Avani Riverside Mall, Gariahat"
+      }
+    ]
+  },
+  {
+    "name": "Nandan",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Lakeside",
+    "width": 52.0,
+    "height": 28.0,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 500,
+    "note": "Government cultural cinema; premier venue for Kolkata International Film Festival",
+    "chain": "Nandan",
+    "theater_name": "West Bengal Film Centre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (government cultural venue)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Nandan cultural cinema, Lakeside; KIFF venue"
+      }
+    ]
+  },
+  {
+    "name": "INOX Metropolis",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Hiland Park, Rajarhat",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 300,
+    "note": "INOX multiplex in Hiland Park, New Town",
+    "chain": "INOX",
+    "theater_name": "Metropolis",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX Metropolis at Hiland Park, Rajarhat New Town"
+      }
+    ]
+  },
+  {
+    "name": "PVR Diamond Plaza",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Dunlop",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "PVR multiplex at Diamond Plaza Mall, North Kolkata",
+    "chain": "PVR",
+    "theater_name": "Diamond Plaza",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Diamond Plaza, Dunlop, North Kolkata"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Acropolis",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Rajarhat",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 280,
+    "note": "Cinepolis multiplex at Acropolis Mall, Rajarhat",
+    "chain": "Cinepolis",
+    "theater_name": "Acropolis",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Acropolis Mall, Rajarhat, Kolkata"
+      }
+    ]
+  },
+  {
+    "name": "Priya Cinema",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Hatibagan",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 450,
+    "note": "Heritage single-screen in Hatibagan; renovated with digital projection",
+    "chain": "Priya",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Priya Cinema in Hatibagan, North Kolkata; digital upgrade done"
+      }
+    ]
+  },
+  {
+    "name": "INOX Quest",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Mani Square, Salt Lake",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 300,
+    "note": "INOX Quest at Mani Square Mall, Salt Lake",
+    "chain": "INOX",
+    "theater_name": "Quest",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX Quest at Mani Square Mall, Salt Lake, Kolkata"
+      }
+    ]
+  },
+  {
+    "name": "PVR Maunam",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": "Ballygunge",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 270,
+    "note": "PVR multiplex at Maunam Ballygunge",
+    "chain": "PVR",
+    "theater_name": "Maunam",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Ballygunge Maunam, Kolkata"
+      }
+    ]
+  },
+  {
+    "name": "PVR ICON Phoenix",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Viman Nagar",
+    "width": 68.0,
+    "height": 36.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 6,
+    "seating_capacity": 380,
+    "note": "PVR ICON flagship at Phoenix Marketcity; Pune's most premium screen",
+    "chain": "PVR",
+    "theater_name": "ICON Phoenix",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 38000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "11.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.7
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR ICON standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR ICON flagship at Phoenix Marketcity, Viman Nagar"
+      }
+    ]
+  },
+  {
+    "name": "INOX Westend",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Bund Garden Road",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 360,
+    "note": "Premium INOX multiplex in Central Pune; one of the city's largest screens",
+    "chain": "INOX",
+    "theater_name": "Westend",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX Westend premium multiplex at Bund Garden Road, Pune"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Seasons",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Hadapsar",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 6,
+    "seating_capacity": 320,
+    "note": "Cinepolis multiplex at Seasons Mall; largest in Hadapsar",
+    "chain": "Cinepolis",
+    "theater_name": "Seasons",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis multiplex at Seasons Mall, Hadapsar"
+      }
+    ]
+  },
+  {
+    "name": "PVR Kumar Pacific",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "SB Road",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "PVR multiplex at Kumar Pacific Mall, SB Road",
+    "chain": "PVR",
+    "theater_name": "Kumar Pacific",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Kumar Pacific Mall, SB Road, Pune"
+      }
+    ]
+  },
+  {
+    "name": "City Pride",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Kothrud",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "Popular multiplex in Kothrud; a Pune institution",
+    "chain": "City Pride",
+    "theater_name": "Kothrud",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (City Pride standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "City Pride multiplex at Kothrud, Pune"
+      }
+    ]
+  },
+  {
+    "name": "E-square",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Baner",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "E-square multiplex at Baner; popular with Hinjawadi IT crowd",
+    "chain": "E-square",
+    "theater_name": "Baner",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (E-square standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "E-square multiplex at Baner, Pune"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Inorbit",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Wagholi",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 260,
+    "note": "Cinepolis multiplex at Inorbit Mall, Wagholi",
+    "chain": "Cinepolis",
+    "theater_name": "Inorbit",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.3
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Inorbit Mall, Wagholi, Pune"
+      }
+    ]
+  },
+  {
+    "name": "PVR Bund Garden",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Bund Garden Road",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 250,
+    "note": "PVR multiplex in Central Pune near the iconic Bund Garden",
+    "chain": "PVR",
+    "theater_name": "Bund Garden",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "SP4K-15C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Bund Garden Road, Central Pune"
+      }
+    ]
+  },
+  {
+    "name": "INOX Pavillion",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "SB Road",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 290,
+    "note": "INOX multiplex at Pavillion Mall, SB Road",
+    "chain": "INOX",
+    "theater_name": "Pavillion",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX multiplex at Pavillion Mall, SB Road, Pune"
+      }
+    ]
+  },
+  {
+    "name": "Alka Talkies",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Sadashiv Peth",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 650,
+    "note": "Heritage single-screen in Sadashiv Peth; Marathi cinema landmark",
+    "chain": "Alka",
+    "theater_name": "Talkies",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Alka Talkies in Sadashiv Peth; iconic Marathi cinema venue"
+      }
+    ]
+  },
+  {
+    "name": "PVR Nitesh HUB",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Kharadi",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#84CC16",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 260,
+    "note": "PVR multiplex at Nitesh HUB, Kharadi; serves East Pune IT corridor",
+    "chain": "PVR",
+    "theater_name": "Nitesh HUB",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Nitesh HUB, Kharadi, Pune"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Pimple Nilakh",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#F97316",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 280,
+    "note": "Miraj multiplex in Pimple Nilakh; serves North Pune",
+    "chain": "Miraj",
+    "theater_name": "Pimple Nilakh",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.3
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas multiplex at Pimple Nilakh, North Pune"
+      }
+    ]
+  },
+  {
+    "name": "PVR Ahmedabad One",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Vastrapur",
+    "width": 62.0,
+    "height": 33.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 7,
+    "seating_capacity": 360,
+    "note": "Flagship PVR at Ahmedabad One Mall; one of Ahmedabad's largest screens",
+    "chain": "PVR",
+    "theater_name": "Ahmedabad One",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Ahmedabad One Mall, Vastrapur; one of Ahmedabad's largest screens"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Ahmedabad One",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Vastrapur",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Cinepolis multiplex at Ahmedabad One Mall",
+    "chain": "Cinepolis",
+    "theater_name": "Ahmedabad One",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis multiplex at Ahmedabad One Mall, Vastrapur"
+      }
+    ]
+  },
+  {
+    "name": "City Gold Multiplex",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Navrangpura",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 320,
+    "note": "Popular City Gold multiplex in Navrangpura; Ahmedabad institution",
+    "chain": "City Gold",
+    "theater_name": "Navrangpura",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (City Gold standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "City Gold multiplex at Navrangpura, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "INOX Multiplex",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Gurukul Road",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#3B82F6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 300,
+    "note": "INOX multiplex at Gurukul Road; one of Ahmedabad's first multiplexes",
+    "chain": "INOX",
+    "theater_name": "Gurukul",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX multiplex at Gurukul Road, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "PVR Acropolis",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Thaltej",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 290,
+    "note": "PVR multiplex at Acropolis Mall, Thaltej",
+    "chain": "PVR",
+    "theater_name": "Acropolis",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Acropolis Mall, Thaltej, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "Rajhans Cinemas",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Drive-in Road",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "Rajhans Cinemas at Drive-in Road; popular family multiplex",
+    "chain": "Rajhans",
+    "theater_name": "Drive-in",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Rajhans standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Rajhans Cinemas at Drive-in Road, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "Wide Angle",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Satellite",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 270,
+    "note": "Popular multiplex in Satellite; known for good projection quality",
+    "chain": "Wide Angle",
+    "theater_name": "Satellite",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Wide Angle standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Wide Angle multiplex at Satellite, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis AlphaOne",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Vastrapur",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at AlphaOne Mall, Vastrapur",
+    "chain": "Cinepolis",
+    "theater_name": "AlphaOne",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at AlphaOne Mall, Vastrapur, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "City Gold Kheda",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Kheda",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 260,
+    "note": "City Gold multiplex serving the Kheda area",
+    "chain": "City Gold",
+    "theater_name": "Kheda",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (City Gold standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "City Gold multiplex at Kheda, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "Fun Republic",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "SG Highway",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#84CC16",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 300,
+    "note": "Fun Republic multiplex; historic Ahmedabad venue now with Laser projection",
+    "chain": "Fun Republic",
+    "theater_name": "Ahmedabad",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Fun Republic standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Fun Republic multiplex on SG Highway, Ahmedabad"
+      }
+    ]
   }
 ]

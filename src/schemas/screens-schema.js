@@ -776,7 +776,18 @@ const ScreensSchema = {
                        'Navi Mumbai', 'Goregaon (E)', 'Juhu',
                        'Saket', 'Vasant Vihar', 'Connaught Place', 'Janakpuri',
                        'Asaf Ali Road', 'Dwarka', 'Chanakyapuri', 'Vasant Kunj',
-                       'MG Road', 'Sector 30', 'Sector 32', 'Sector 18'],
+                       'MG Road', 'Sector 30', 'Sector 32', 'Sector 18',
+                       'Royapettah', 'Anna Nagar', 'Velachery', 'Teynampet',
+                       'Pallavaram', 'Egmore', 'Koyambedu', 'OMR',
+                       'Ampa Skywalk, Aminjikarai', 'Villivakkam',
+                       'South City Mall', 'Salt Lake', 'Gariahat', 'Lakeside',
+                       'Hiland Park, Rajarhat', 'Dunlop', 'Rajarhat',
+                       'Hatibagan', 'Mani Square, Salt Lake', 'Ballygunge',
+                       'Viman Nagar', 'Bund Garden Road', 'Hadapsar', 'SB Road',
+                       'Kothrud', 'Baner', 'Wagholi', 'Sadashiv Peth', 'Kharadi',
+                       'Pimple Nilakh',
+                       'Vastrapur', 'Navrangpura', 'Gurukul Road', 'Thaltej',
+                       'Drive-in Road', 'Satellite', 'Kheda', 'SG Highway'],
                 validate: (value) => {
                     if (!value || typeof value !== 'string') return 'Location is required';
                     return true;
