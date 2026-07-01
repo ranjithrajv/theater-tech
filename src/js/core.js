@@ -789,7 +789,7 @@ class Application {
             // Populate city selector
             this.populateCitySelector();
 
-            // Load saved city or default to All Cities
+            // Load saved city or default to All India
             const savedCity = localStorage.getItem('selectedCity');
             const defaultCity = savedCity && this.availableCities.find(c => c.id === savedCity)
                 ? savedCity
@@ -816,10 +816,10 @@ class Application {
         // Clear existing options
         selector.innerHTML = '';
 
-        // Add All Cities option
+        // Add All India option
         const allOption = document.createElement('option');
         allOption.value = '__all__';
-        allOption.textContent = '🏙️ All Cities';
+        allOption.textContent = '🇮🇳 All India';
         selector.appendChild(allOption);
 
         // Add city options
@@ -855,7 +855,7 @@ class Application {
                 const selector = document.getElementById('city-selector');
                 if (selector) selector.value = '__all__';
 
-                this.updatePageTitle({ name: 'All Cities', state: '', screens: this.data.screens });
+                this.updatePageTitle({ name: 'All India', state: '', screens: this.data.screens });
 
                 Filters.setData(this.data.screens);
                 Filters.reset();
@@ -907,12 +907,12 @@ class Application {
         const legendTitleEl = document.getElementById('legend-title');
         const attributionEl = document.getElementById('data-attribution');
 
-        const isAll = city.name === 'All Cities';
-        const cityName = isAll ? 'All Cities' : city.name;
+        const isAll = city.name === 'All India';
+        const cityName = isAll ? 'All India' : city.name;
 
         if (titleEl) {
             titleEl.textContent = isAll
-                ? 'India Cinema Technology Comparison — All Cities'
+                ? 'India Cinema Technology Comparison — All India'
                 : `${cityName} Cinema Technology Comparison`;
         }
 
@@ -924,7 +924,7 @@ class Application {
 
         if (legendTitleEl) {
             legendTitleEl.textContent = isAll
-                ? '🎬 All Cities Cinema Technology Comparison Legend'
+                ? '🎬 All India Cinema Technology Comparison Legend'
                 : `🎬 ${cityName} Cinema Technology Comparison Legend`;
         }
 
@@ -935,7 +935,7 @@ class Application {
         }
 
         document.title = isAll
-            ? 'India Cinema Technology Comparison — All Cities'
+            ? 'India Cinema Technology Comparison — All India'
             : `${cityName} Cinema Technology Comparison`;
     }
 
