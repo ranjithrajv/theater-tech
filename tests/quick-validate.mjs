@@ -6,8 +6,7 @@
 
 import { open } from 'sqlite'; // Using node-sqlite3 for simplicity in Node.js environment
 import sqlite3 from 'sqlite3';
-import { readFileSync } from 'fs';
-import path from 'path';
+
 
 const dbPath = './public/data/theater_tech.db';
 let db;

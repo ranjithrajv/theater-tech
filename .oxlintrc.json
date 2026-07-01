@@ -17,6 +17,7 @@
     "func-style": "off",
     "sort-imports": "off",
     "no-magic-numbers": "off",
-    "no-shadow": "warn"
+    "no-shadow": "warn",
+    "consistent-function-scoping": "off"
   }
 }

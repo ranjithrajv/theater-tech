@@ -196,7 +196,7 @@ async function init() {
     dots.on('mouseenter', function(e, d) {
         d3.select(this).select('.city-dot')
             .transition().duration(200)
-            .attr('r', r => getRadius(d.count, maxCount) * 1.2);
+            .attr('r', _r => getRadius(d.count, maxCount) * 1.2);
         d3.select(this).select('.city-glow')
             .transition().duration(200)
             .attr('opacity', 0.3);
@@ -218,7 +218,7 @@ async function init() {
     .on('mouseleave', function(e, d) {
         d3.select(this).select('.city-dot')
             .transition().duration(200)
-            .attr('r', r => getRadius(d.count, maxCount));
+            .attr('r', _r => getRadius(d.count, maxCount));
         d3.select(this).select('.city-glow')
             .transition().duration(200)
             .attr('opacity', 0.15);

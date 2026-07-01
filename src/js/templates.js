@@ -1,7 +1,7 @@
 import { SizeUtils } from './utils.js';
 
 const LegacyTemplateUtils = {
-    createComparisonCard(screen, index) {
+    createComparisonCard(screen, _index) {
         const area = Math.round(screen.width * screen.height);
         const sizeCategory = SizeUtils ? SizeUtils.getSizeCategory(screen.width, screen.height) : 'Unknown';
         const projection = screen.projection || {};
