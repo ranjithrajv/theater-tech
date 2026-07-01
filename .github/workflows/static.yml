@@ -39,6 +39,9 @@ jobs:
       - name: Validate JSON Schemas
         run: node tests/validate-schema.mjs
 
+      - name: Rebuild SQLite Database
+        run: python3 data/json_to_sqlite.py
+
       - name: Build Project
         run: npm run build # This should now execute 'vp build' from package.json
 

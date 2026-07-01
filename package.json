@@ -7,7 +7,7 @@
     "dev": "vp dev",
     "prebuild": "python3 data/json_to_sqlite.py",
     "build": "vp build",
-    "preview": "vp preview",
+    "prebuild": "python3 data/json_to_sqlite.py",
     "check": "vp check",
     "pretest": "python3 data/json_to_sqlite.py",
     "test": "node tests/validate-schema.mjs && node tests/quick-validate.mjs",
