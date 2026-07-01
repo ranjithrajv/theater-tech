@@ -13,6 +13,7 @@ Each source entry has these fields stored in the `screen_sources` table:
 | `published_date` | TEXT | Date of publication |
 | `confidence` | TEXT | One of: `verified`, `verified (article)`, `estimated` |
 | `notes` | TEXT | Free-text notes about data provenance |
+| `last_verified` | TEXT | Date of last verification (e.g., `2024-06`). Screens with `last_verified` older than 6 months are visually flagged as stale in the chart. |
 
 ## Credibility Scale
 
@@ -67,7 +68,27 @@ FROM screens s
 LEFT JOIN screen_sources ss ON s.id = ss.screen_id;
 ```
 
-## How to Contribute Verified Data
+## PLF Format Standards
+
+PLF (Premium Large Format) standards are stored in `constants.json` under `plfStandards` and loaded into the `constants` DB table. These provide typical dimensions and specs for each format, used as reference when estimating screen data.
+
+| Format | Typical Size | Sound | Seats |
+|---|---|---|---|
+| PCX | 90-105 × 55-65 ft | Dolby Atmos 11.1 | 600-650 |
+| PXL | 75-85 × 38-45 ft | Dolby Atmos 11.1 | 450-550 |
+| IMAX | 65-75 × 35-40 ft | IMAX 12ch | 300-400 |
+| Superplex | 55-65 × 28-34 ft | Dolby Atmos 7.1 | 300-400 |
+| EPIQ | 50-60 × 26-32 ft | Dolby Atmos 7.1 | 280-350 |
+| LUX | 48-58 × 24-30 ft | Dolby Atmos 7.1 | 250-350 |
+| 70mm | 65-80 × 30-40 ft | Dolby Digital 5.1 | 800-1200 |
+| Standard | 40-55 × 20-28 ft | Dolby Digital 5.1/7.1 | 200-300 |
+
+## Verifying Data
+
+Screens with `last_verified` older than **6 months** are shown with:
+- Dashed red border in the chart
+- Reduced opacity (0.45 vs 0.7)
+- ⚠ Stale badge in the sidebar details panel
 
 1. Find an authoritative source (theater website, BookMyShow listing, press release, or direct measurement)
 2. Open a PR adding a new entry to the screen's `sources` array

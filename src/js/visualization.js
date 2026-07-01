@@ -13,6 +13,16 @@
 
 import * as d3 from 'd3';
 
+function isStale(lastVerified) {
+    if (!lastVerified) return true;
+    const parts = lastVerified.split('-');
+    if (parts.length < 2) return true;
+    const ver = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1);
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+    return ver < sixMonthsAgo;
+}
+
 class VisualizationManager {
     constructor() {
         this.svg = null;
@@ -184,9 +194,10 @@ class VisualizationManager {
             .attr("width", d => scales.x(d.seating_capacity))
             .attr("height", scales.y.bandwidth())
             .attr("fill", d => d.color)
-            .attr("stroke", "white")
-            .attr("stroke-width", 1)
-            .attr("opacity", 0.7)
+            .attr("stroke", d => isStale(d.last_verified) ? '#ff6b6b' : 'white')
+            .attr("stroke-width", d => isStale(d.last_verified) ? 2 : 1)
+            .attr("stroke-dasharray", d => isStale(d.last_verified) ? '4,3' : 'none')
+            .attr("opacity", d => isStale(d.last_verified) ? 0.45 : 0.7)
             .attr("data-theater", d => d.name)
             .attr("data-screen", d => d.screen_number);
 
@@ -331,9 +342,10 @@ class VisualizationManager {
             .attr("class", "screen-rect sound-ring")
             .attr("d", d3.arc().innerRadius(d => d.inner).outerRadius(d => d.outer).startAngle(0).endAngle(d => d.endAngle))
             .attr("fill", d => d.color)
-            .attr("stroke", "white")
-            .attr("stroke-width", 1)
-            .attr("opacity", 0.8)
+            .attr("stroke", d => isStale(d.last_verified) ? '#ff6b6b' : 'white')
+            .attr("stroke-width", d => isStale(d.last_verified) ? 2 : 1)
+            .attr("stroke-dasharray", d => isStale(d.last_verified) ? '4,3' : 'none')
+            .attr("opacity", d => isStale(d.last_verified) ? 0.5 : 0.8)
             .attr("data-theater", d => d.name)
             .attr("data-screen", d => d.screen_number);
 
@@ -508,24 +520,22 @@ class VisualizationManager {
             .append("rect")
             .attr("x", 0)
             .attr("y", d => {
-                // Use the y-axis scale to position screens correctly in feet
                 const yPos = scales.y(d.height);
                 return yPos;
             })
             .attr("width", d => {
-                // Use the x-axis scale to size screens correctly in feet
                 const screenWidth = scales.x(d.width) - scales.x(0);
                 return screenWidth;
             })
             .attr("height", d => {
-                // Use the y-axis scale to size screens correctly in feet
                 const screenHeight = scales.y(0) - scales.y(d.height);
                 return screenHeight;
             })
             .attr("fill", d => d.color)
-            .attr("stroke", "white")
-            .attr("stroke-width", 1)
-            .attr("opacity", 0.7)
+            .attr("stroke", d => isStale(d.last_verified) ? '#ff6b6b' : 'white')
+            .attr("stroke-width", d => isStale(d.last_verified) ? 2 : 1)
+            .attr("stroke-dasharray", d => isStale(d.last_verified) ? '4,3' : 'none')
+            .attr("opacity", d => isStale(d.last_verified) ? 0.45 : 0.7)
             .attr("class", "screen-rect")
             .attr("data-theater", d => d.name)
             .attr("data-screen", d => d.screen_number);

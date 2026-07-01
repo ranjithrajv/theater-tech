@@ -158,6 +158,21 @@ const LegacyTemplateUtils = {
         const screenSurface = screenData.screen_surface || {};
         const contentSupport = screenData.content_support || {};
 
+        const isStale = (lv) => {
+            if (!lv) return true;
+            const parts = lv.split('-');
+            if (parts.length < 2) return true;
+            const ver = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1);
+            const sixMonthsAgo = new Date();
+            sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+            return ver < sixMonthsAgo;
+        };
+
+        const stale = isStale(screenData.last_verified);
+        const staleBadge = stale
+            ? '<span class="stale-badge" style="display:inline-block;font-size:10px;color:#ff6b6b;border:1px dashed #ff6b6b;padding:1px 6px;border-radius:3px;margin-left:6px;">⚠ Stale</span>'
+            : '<span class="stale-badge" style="display:inline-block;font-size:10px;color:#4ade80;padding:1px 6px;border-radius:3px;margin-left:6px;">✓ Verified</span>';
+
         const contentTags = [];
         if (contentSupport['3d_capability']) contentTags.push('3D');
         if (contentSupport['hdr_support']) contentTags.push('HDR');
@@ -170,7 +185,7 @@ const LegacyTemplateUtils = {
                 <div class="screen-header">
                     <span class="screen-format-badge" style="background: ${screenData.color}">${screenData.plf_format}</span>
                     <div>
-                        <div class="screen-name">${screenData.name}</div>
+                        <div class="screen-name">${screenData.name} ${staleBadge}</div>
                         <div class="screen-location">Screen ${screenData.screen_number} \u2022 ${screenData.location}</div>
                     </div>
                 </div>

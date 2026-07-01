@@ -58,5 +58,88 @@
     "constants": "../data/constants.json",
     "icons": "../data/icons.json",
     "tooltips": "../data/tooltips.json"
+  },
+  "plfStandards": {
+    "PCX": {
+      "name": "Prasads CineXperience",
+      "width_ft": "90-105",
+      "height_ft": "55-65",
+      "brightness_lumens": 45000,
+      "sound": "Dolby Atmos 11.1",
+      "typical_seats": "600-650",
+      "description": "Proprietary large-format by Prasads; among India's biggest screens"
+    },
+    "PXL": {
+      "name": "PVR Xtra Large",
+      "width_ft": "75-85",
+      "height_ft": "38-45",
+      "brightness_lumens": 55000,
+      "sound": "Dolby Atmos 11.1",
+      "typical_seats": "450-550",
+      "description": "PVR's flagship large-screen PLF; premium seating"
+    },
+    "IMAX": {
+      "name": "IMAX with Laser",
+      "width_ft": "65-75",
+      "height_ft": "35-40",
+      "brightness_lumens": 45000,
+      "sound": "IMAX 12-channel",
+      "typical_seats": "300-400",
+      "description": "IMAX's commercial laser projection; proprietary sound"
+    },
+    "Superplex": {
+      "name": "Superplex",
+      "width_ft": "55-65",
+      "height_ft": "28-34",
+      "brightness_lumens": 32000,
+      "sound": "Dolby Atmos 7.1",
+      "typical_seats": "300-400",
+      "description": "PVR INOX's premium large-screen format"
+    },
+    "EPIQ": {
+      "name": "EPIQ",
+      "width_ft": "50-60",
+      "height_ft": "26-32",
+      "brightness_lumens": 30000,
+      "sound": "Dolby Atmos 7.1",
+      "typical_seats": "280-350",
+      "description": "PVR's premium format with enhanced image quality"
+    },
+    "LUX": {
+      "name": "LUXE",
+      "width_ft": "48-58",
+      "height_ft": "24-30",
+      "brightness_lumens": 28000,
+      "sound": "Dolby Atmos 7.1",
+      "typical_seats": "250-350",
+      "description": "Cinepolis luxury format; recliner seating"
+    },
+    "70mm": {
+      "name": "70mm",
+      "width_ft": "65-80",
+      "height_ft": "30-40",
+      "brightness_lumens": 25000,
+      "sound": "Dolby Digital 5.1",
+      "typical_seats": "800-1200",
+      "description": "Heritage large-format single screens; classic film projection origins"
+    },
+    "Standard": {
+      "name": "Standard Multiplex",
+      "width_ft": "40-55",
+      "height_ft": "20-28",
+      "brightness_lumens": 18000,
+      "sound": "Dolby Digital 5.1/7.1",
+      "typical_seats": "200-300",
+      "description": "Typical multiplex screen with digital projection"
+    },
+    "Dolby Cinema": {
+      "name": "Dolby Cinema",
+      "width_ft": "55-65",
+      "height_ft": "28-34",
+      "brightness_lumens": 35000,
+      "sound": "Dolby Atmos",
+      "typical_seats": "300-400",
+      "description": "Dolby's end-to-end premium cinema experience"
+    }
   }
 }

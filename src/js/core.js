@@ -319,6 +319,10 @@ class Application {
                 content_support[row.feature] = !!row.value; // Ensure boolean
             });
 
+            // Fetch earliest last_verified date from sources
+            const sourceResults = this.queryDB(`SELECT MIN(last_verified) as last_verified FROM screen_sources WHERE screen_id = ${screen_id}`);
+            const lastVerified = sourceResults.length > 0 ? sourceResults[0].last_verified : null;
+
             return {
                 ...s, // Include remaining fields like name, location, color, etc.
                 id: undefined, // Remove id if not needed in app data
@@ -327,11 +331,29 @@ class Application {
                 projection,
                 sound_system: sound,
                 screen_surface: surface,
-                content_support
+                content_support,
+                last_verified: lastVerified
             };
         });
     }
-    
+
+    renderPlfStandards() {
+        const container = document.getElementById('plf-standards-table');
+        if (!container) return;
+        const standards = window.AppConstants?.plfStandards;
+        if (!standards) {
+            container.textContent = 'Loading...';
+            return;
+        }
+        let html = '<table style="width:100%; border-collapse: collapse;">';
+        html += '<tr style="border-bottom: 1px solid #444;"><th style="text-align:left;padding:3px 6px;color:#ffd60a;">Format</th><th style="text-align:left;padding:3px 6px;color:#ffd60a;">Screen Size</th><th style="text-align:left;padding:3px 6px;color:#ffd60a;">Sound</th><th style="text-align:left;padding:3px 6px;color:#ffd60a;">Seats</th></tr>';
+        Object.entries(standards).forEach(([key, fmt]) => {
+            html += `<tr style="border-bottom: 1px solid #333;"><td style="padding:3px 6px;font-weight:bold;">${key}</td><td style="padding:3px 6px;">${fmt.width_ft}×${fmt.height_ft} ft</td><td style="padding:3px 6px;">${fmt.sound}</td><td style="padding:3px 6px;">${fmt.typical_seats}</td></tr>`;
+        });
+        html += '</table>';
+        container.innerHTML = html;
+    }
+
     /**
      * Process raw data from tooltips table.
      */
@@ -435,6 +457,7 @@ class Application {
             await this.loadAllCitiesData();
 
             this.setupFilters();
+            this.renderPlfStandards();
 
             console.log('✅ All systems initialized');
         } else {

@@ -98,6 +98,7 @@ Every screen must include a `sources` array with at least one entry describing d
 | `published_date` | optional | When the source was published |
 | `confidence` | required | `verified`, `verified (article)`, or `estimated` |
 | `notes` | recommended | Free-text notes about data provenance |
+| `last_verified` | required | Date of last verification (e.g., `2024-06` or `2024-06-15`) |
 
 - Non-LED screens must have `projection.brightness_lumens`
 - LED screens must have `projection.brightness_nits` instead

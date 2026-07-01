@@ -57,6 +57,7 @@ function validateScreens(screens) {
         if (s.sources) {
             s.sources.forEach((src, si) => {
                 softCheck(typeof src.confidence === 'string', `${tag} sources[${si}] missing confidence`, errors);
+                softCheck(typeof src.last_verified === 'string', `${tag} sources[${si}] missing last_verified`, errors);
             });
         }
 

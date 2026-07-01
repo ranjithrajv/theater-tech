@@ -131,6 +131,7 @@ def create_database(db_path):
             published_date TEXT,
             confidence TEXT,
             notes TEXT,
+            last_verified TEXT,
             FOREIGN KEY (screen_id) REFERENCES screens (id)
         )
     """)
@@ -335,8 +336,8 @@ def insert_screens_data(conn, screens_data):
         for src in screen.get("sources", []):
             cursor.execute(
                 """
-                INSERT INTO screen_sources (screen_id, url, publisher, published_date, confidence, notes)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO screen_sources (screen_id, url, publisher, published_date, confidence, notes, last_verified)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
                 (
                     screen_id,
@@ -345,6 +346,7 @@ def insert_screens_data(conn, screens_data):
                     src.get("published_date"),
                     src.get("confidence"),
                     src.get("notes"),
+                    src.get("last_verified"),
                 ),
             )
 
