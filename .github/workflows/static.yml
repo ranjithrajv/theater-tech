@@ -18,41 +18,71 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          cache: true
+      - run: vp install
+      - run: vp check
+      - run: vp lint --type-aware
+
+  test:
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          cache: true
+      - run: vp install
+      - run: vp test
+      - run: python3 data/json_to_sqlite.py
+      - run: node tests/validate-schema.mjs
+      - run: node tests/quick-validate.mjs
+
   build-and-deploy:
     runs-on: ubuntu-latest
+    needs: test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@v1
         with:
-          node-version: '20' # Use the Node.js version from your package.json or a compatible version
-          cache: 'npm' # Cache npm dependencies
+          cache: true
+      - run: vp install
+      - run: python3 data/json_to_sqlite.py
+      - run: vp build
 
-      - name: Install Dependencies
-        run: npm install # Or use 'vp install' if 'vp' is globally available and set up
+      - name: Verify built assets
+        run: |
+          for page in index.html india.html seating.html sound.html; do
+            if [ ! -f "dist/$page" ]; then
+              echo "FAIL: dist/$page missing"; exit 1;
+            fi
+            echo "OK: dist/$page exists"
+          done
+          for asset in $(grep -oP 'href="\K[^"]+\.css' dist/index.html); do
+            if [ ! -f "dist/${asset#/theater-tech/}" ]; then
+              echo "FAIL: $asset missing"; exit 1;
+            fi
+            echo "OK: $asset"
+          done
+          for asset in $(grep -oP 'src="\K[^"]+\.js' dist/*.html | grep -v data:); do
+            file="dist/${asset#/theater-tech/}";
+            if [ ! -f "$file" ]; then
+              echo "FAIL: $asset missing"; exit 1;
+            fi
+            echo "OK: $asset"
+          done
+          echo "All assets verified"
 
-      - name: Validate JSON Schemas
-        run: node tests/validate-schema.mjs
-
-      - name: Rebuild SQLite Database
-        run: python3 data/json_to_sqlite.py
-
-      - name: Build Project
-        run: npm run build # This should now execute 'vp build' from package.json
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Upload the build output directory
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          path: ./dist
+      - uses: actions/deploy-pages@v4

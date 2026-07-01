@@ -1,1 +1,3 @@
-npm test
+vp staged
+vp check --no-fmt --fix
+vp test

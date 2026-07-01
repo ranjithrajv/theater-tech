@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev",
-    "prebuild": "python3 data/json_to_sqlite.py",
     "build": "vp build",
     "prebuild": "python3 data/json_to_sqlite.py",
     "check": "vp check",
@@ -13,7 +12,7 @@
     "test": "node tests/validate-schema.mjs && node tests/quick-validate.mjs",
     "validate": "node tests/quick-validate.mjs",
     "validate:schema": "node tests/validate-schema.mjs",
-    "prepare": "husky"
+    "postinstall": "vp config"
   },
   "repository": {
     "type": "git",
@@ -30,7 +29,6 @@
   },
   "devDependencies": {
     "@sqlite.org/sqlite-wasm": "^3.53.0-build1",
-    "husky": "^9.1.7",
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1",
     "vite-plugin-wasm": "^3.6.0",
