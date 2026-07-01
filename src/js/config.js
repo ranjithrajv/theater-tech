@@ -23,7 +23,7 @@ class ConfigManager {
      * Initialize configuration system
      * @param {Object} options - Initialization options
      */
-    async initialize(options = {}) {
+    async initialize(_options = {}) {
         console.log('⚙️ Initializing configuration system...');
 
         // Set defaults

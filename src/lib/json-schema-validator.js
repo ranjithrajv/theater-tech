@@ -62,7 +62,7 @@ class JSONSchemaValidator {
         this.validateField(data, schema, path, errors, options);
     }
 
-    validateField(value, schema, path, errors, options) {
+    validateField(value, schema, path, errors, _options) {
         if (schema.type && !this.checkType(value, schema.type)) {
             errors.push({ error: `Expected type ${schema.type}, got ${typeof value}`, path, expected: schema.type, received: typeof value, constraint: 'type' });
             return;

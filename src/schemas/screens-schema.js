@@ -756,7 +756,7 @@ const ScreensSchema = {
                 maxLength: 100,
                 validate: (value) => {
                     if (!value || typeof value !== 'string') return 'Screen name is required';
-                    if (!/^[A-Za-z0-9\s\-\'\.]+$/.test(value)) {
+                    if (!/^[A-Za-z0-9\s\-'.]+$/.test(value)) {
                         return 'Screen name contains invalid characters';
                     }
                     return true;

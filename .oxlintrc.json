@@ -1,15 +1,16 @@
 {
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn"],
   "categories": {
     "correctness": "error",
     "suspicious": "error",
     "perf": "off",
-    "style": "off"
+    "style": "off",
+    "restriction": "off"
   },
   "rules": {
     "unicorn/no-array-sort": "off",
-    "unicorn/prefer-global-this": "off",
-    "unicorn/no-array-for-each": "off",
-    "preserve-caught-error": "off",
+    "unicorn/consistent-function-scoping": "off",
     "no-await-in-loop": "off",
     "id-length": "off",
     "max-params": "off",
@@ -18,6 +19,11 @@
     "sort-imports": "off",
     "no-magic-numbers": "off",
     "no-shadow": "warn",
-    "consistent-function-scoping": "off"
+    "preserve-caught-error": "off",
+    "no-useless-escape": "warn",
+    "no-new": "off"
+  },
+  "env": {
+    "builtin": true
   }
 }
