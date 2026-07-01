@@ -34,7 +34,10 @@ function validateScreens(screens) {
 
     screens.forEach((s, i) => {
         const tag = `[${i}] "${s.name || '?'}"`;
+        softCheck(typeof s.city === 'string' && s.city.length > 0, `${tag} missing city`, errors);
+        softCheck(typeof s.state === 'string' && s.state.length > 0, `${tag} missing state`, errors);
         softCheck(s.name && typeof s.name === 'string', `${tag} missing/invalid name`, errors);
+        softCheck(Array.isArray(s.sources) && s.sources.length > 0, `${tag} missing sources array`, errors);
         softCheck(s.location && typeof s.location === 'string', `${tag} missing/invalid location`, errors);
         softCheck(typeof s.width === 'number' && s.width > 0, `${tag} invalid width`, errors);
         softCheck(typeof s.height === 'number' && s.height > 0, `${tag} invalid height`, errors);
@@ -50,6 +53,12 @@ function validateScreens(screens) {
         softCheck(validSoundFormats.includes(snd.format), `${tag} unknown sound format "${snd.format}"`, errors);
 
         softCheck(typeof s.seating_capacity === 'number' && s.seating_capacity > 0, `${tag} invalid seating_capacity`, errors);
+
+        if (s.sources) {
+            s.sources.forEach((src, si) => {
+                softCheck(typeof src.confidence === 'string', `${tag} sources[${si}] missing confidence`, errors);
+            });
+        }
 
         if (s.chain || s.theater_name) {
             softCheck(s.chain && s.theater_name, `${tag} chain and theater_name must be both present or both omitted`, errors);

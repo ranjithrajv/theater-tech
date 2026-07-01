@@ -31,7 +31,18 @@
     "content_support": {
       "3d_capability": true,
       "hdr_support": true
-    }
+    },
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "India's Largest Screen"
+      }
+    ]
   },
   {
     "name": "AMB Cinemas",
@@ -61,7 +72,18 @@
       "material": "Premium Screen",
       "gain": 1.5
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Ultra Premium Large Format"
+      }
+    ]
   },
   {
     "name": "PVR Inorbit",
@@ -92,7 +114,18 @@
       "material": "White Matte",
       "gain": 1.2
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Premium Large Format"
+      }
+    ]
   },
   {
     "name": "Devi 70mm",
@@ -125,7 +158,18 @@
     },
     "content_support": {
       "3d_capability": true
-    }
+    },
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Heritage Cinema"
+      }
+    ]
   },
   {
     "name": "PVR Cyberabad",
@@ -159,7 +203,18 @@
       "3d_capability": true,
       "hdr_support": true,
       "hfr_support": true
-    }
+    },
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Modern Multiplex"
+      }
+    ]
   },
   {
     "name": "Asian Jyothi",
@@ -190,7 +245,18 @@
       "material": "Premium Screen",
       "gain": 1.3
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Premium Experience"
+      }
+    ]
   },
   {
     "name": "Carnival Cinemas",
@@ -221,7 +287,18 @@
       "material": "White Matte",
       "gain": 1.1
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Value Multiplex"
+      }
+    ]
   },
   {
     "name": "Sandhya 70mm",
@@ -251,7 +328,18 @@
       "material": "Silver Screen",
       "gain": 1.5
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Traditional Cinema"
+      }
+    ]
   },
   {
     "name": "PVR Kukatpally",
@@ -282,7 +370,18 @@
       "material": "Acoustic Transparent",
       "gain": 1.4
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Suburban Multiplex"
+      }
+    ]
   },
   {
     "name": "INOX GVK One",
@@ -312,7 +411,18 @@
       "material": "Premium Screen",
       "gain": 1.3
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Luxury Mall Cinema"
+      }
+    ]
   },
   {
     "name": "Cinepolis Lulu",
@@ -348,7 +458,18 @@
       "4d_effects": true,
       "hdr_support": true,
       "hfr_support": true
-    }
+    },
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Luxury Experience"
+      }
+    ]
   },
   {
     "name": "Sunshine Cinemas",
@@ -379,7 +500,18 @@
       "material": "White Matte",
       "gain": 1.0
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Budget-Friendly Cinema"
+      }
+    ]
   },
   {
     "name": "Allu Cinemas",
@@ -412,7 +544,18 @@
     },
     "content_support": {
       "hdr_support": true
-    }
+    },
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Asia's largest Dolby Cinema screen; Hyderabad's second-biggest screen overall after Prasads PCX"
+      }
+    ]
   },
   {
     "name": "Bramaramba 70mm",
@@ -442,7 +585,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Single-screen heritage theater"
+      }
+    ]
   },
   {
     "name": "Sree Ramulu 70mm",
@@ -473,7 +627,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Renovated single-screen heritage theater"
+      }
+    ]
   },
   {
     "name": "Mythri Vimal 70mm",
@@ -503,7 +668,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Renovated single-screen heritage theater"
+      }
+    ]
   },
   {
     "name": "Viswanath 70mm",
@@ -533,7 +709,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Single-screen heritage theater"
+      }
+    ]
   },
   {
     "name": "AAA Cinemas",
@@ -564,7 +751,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Flagship Scope screen"
+      }
+    ]
   },
   {
     "name": "INOX Ashoka One",
@@ -594,7 +792,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Flagship screen"
+      }
+    ]
   },
   {
     "name": "Aparna Cinemas",
@@ -625,7 +834,18 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Flagship Scope screen"
+      }
+    ]
   },
   {
     "name": "Sudarshan 35mm",
@@ -656,6 +876,630 @@
       "material": null,
       "gain": null
     },
-    "content_support": {}
+    "content_support": {},
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Project author (hand-researched)",
+        "url": "",
+        "published_date": "",
+        "notes": "Renovated single-screen heritage theater"
+      }
+    ]
+  },
+  {
+    "name": "PVR Forum",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Koramangala",
+    "width": 82.0,
+    "height": 42.0,
+    "color": "#E63946",
+    "plf_format": "PXL",
+    "screen_number": 6,
+    "seating_capacity": 520,
+    "note": "PVR INOX flagship megaplex screen at Forum Mall",
+    "chain": "PVR",
+    "theater_name": "Forum",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 55000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "11.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Perforated White",
+      "gain": 1.8
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (PLF standard",
+        "notes": "PXL \u2248 80\u00d740ft, 500+ seats)",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "Urvashi Theatre",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Majestic",
+    "width": 72.0,
+    "height": 35.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 950,
+    "note": "Heritage single-screen; renovated with Laser projection",
+    "chain": "Urvashi",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-35B",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 40000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Silver Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (heritage 70mm single-screen, ~70\u00d735ft, 950 seats from known capacity)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "INOX Central",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Jayanagar",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#1D3557",
+    "plf_format": "Superplex",
+    "screen_number": 4,
+    "seating_capacity": 350,
+    "note": "Premium large format screen at INOX Jayanagar",
+    "chain": "INOX",
+    "theater_name": "Central",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.5
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (Superplex standard \u2248 55-60\u00d730ft)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Vega",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Whitefield",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#DB2777",
+    "plf_format": "LUX",
+    "screen_number": 5,
+    "seating_capacity": 280,
+    "note": "Luxury format at Vega City Mall",
+    "chain": "Cinepolis",
+    "theater_name": "Vega",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.7
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true,
+      "hfr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (LUX format, mid-size premium screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "PVR Phoenix",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Whitefield",
+    "width": 56.0,
+    "height": 30.0,
+    "color": "#457B9D",
+    "plf_format": "EPIQ",
+    "screen_number": 7,
+    "seating_capacity": 310,
+    "note": "EPIQ premium screen at Phoenix Marketcity",
+    "chain": "PVR",
+    "theater_name": "Phoenix",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": null,
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (EPIQ standard, typical PVR premium screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "Galaxy Cinemas",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Parappana Agrahara",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#264653",
+    "plf_format": "Superplex",
+    "screen_number": 2,
+    "seating_capacity": 380,
+    "note": "Large format screen at Galaxy Paradise",
+    "chain": "Galaxy",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated (Superplex, typical large-format multiplex)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "Mantri Square",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Malleshwaram",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 220,
+    "note": "Mid-size screen at Mantri Square Mall",
+    "chain": "PVR",
+    "theater_name": "Mantri Square",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": null,
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated (Standard multiplex screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "Gopalan Cinemas",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Mysore Road",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#0D9488",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 260,
+    "note": "Value multiplex on Mysore Road",
+    "chain": "Gopalan",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated (Standard multiplex screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "V Cinemas",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Yeshwanthpur",
+    "width": 55.0,
+    "height": 29.0,
+    "color": "#BE123C",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Popular destination for mass-market releases",
+    "chain": "V Cinemas",
+    "theater_name": "Yeshwanthpur",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated (Standard multiplex screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "INOX Garuda",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Indiranagar",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 210,
+    "note": "Boutique multiplex in Indiranagar",
+    "chain": "INOX",
+    "theater_name": "Garuda",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-15C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 15000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated (Standard boutique multiplex screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "PVR VR Bengaluru",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Whitefield",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#E11D48",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Bangalore's IMAX screen with Laser projection",
+    "chain": "PVR",
+    "theater_name": "VR Bengaluru",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (IMAX with Laser standard \u2248 70\u00d738ft, 350 seats)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "PVR Orion Mall",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Rajajinagar",
+    "width": 62.0,
+    "height": 33.0,
+    "color": "#0EA5E9",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 400,
+    "note": "PVR's premium superplex screen at Orion Mall",
+    "chain": "PVR",
+    "theater_name": "Orion Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true,
+      "hfr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (Superplex, PVR flagship at Orion Mall)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Fun Republic",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Yelahanka",
+    "width": 50.0,
+    "height": 27.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 6,
+    "seating_capacity": 250,
+    "note": "North Bangalore's largest multiplex",
+    "chain": "Cinepolis",
+    "theater_name": "Fun Republic",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (Standard Cinepolis multiplex screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
+  },
+  {
+    "name": "INOX Shantiniketan",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Whitefield",
+    "width": 52.0,
+    "height": 28.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "Flagship INOX multiplex in Whitefield",
+    "chain": "INOX",
+    "theater_name": "Shantiniketan",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated (Standard INOX multiplex screen)",
+        "notes": "",
+        "publisher": "Estimated (no verified source)",
+        "url": "",
+        "published_date": ""
+      }
+    ]
   }
 ]

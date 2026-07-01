@@ -17,6 +17,8 @@ Each screen entry in `screens.json` requires these fields:
 ```json
 {
   "name": "PVR Forum",
+  "city": "Bangalore",
+  "state": "Karnataka",
   "location": "Koramangala",
   "width": 62.0,
   "height": 32.0,
@@ -54,8 +56,10 @@ Each screen entry in `screens.json` requires these fields:
 ### Required Fields
 
 | Field | Type | Notes |
-|---|---|---|
+|---|---|---|---|
 | `name` | string | Full theater/screen name |
+| `city` | string | City name |
+| `state` | string | State name |
 | `location` | string | Area/neighborhood |
 | `width` | number | Screen width in feet |
 | `height` | number | Screen height in feet |
@@ -70,6 +74,30 @@ Each screen entry in `screens.json` requires these fields:
 | `theater_name` | string | Specific theater name (required with `chain`) |
 
 ### Validation Rules
+
+### Sources Array
+
+Every screen must include a `sources` array with at least one entry describing data provenance:
+
+```json
+"sources": [
+  {
+    "url": "https://www.pvrcinemas.com/...",
+    "publisher": "PVR Cinemas",
+    "published_date": "2024-06",
+    "confidence": "verified",
+    "notes": "Official listing from PVR website"
+  }
+]
+```
+
+| Field | Required | Description |
+|---|---|---|
+| `url` | recommended | Source URL |
+| `publisher` | recommended | Publishing organization or person |
+| `published_date` | optional | When the source was published |
+| `confidence` | required | `verified`, `verified (article)`, or `estimated` |
+| `notes` | recommended | Free-text notes about data provenance |
 
 - Non-LED screens must have `projection.brightness_lumens`
 - LED screens must have `projection.brightness_nits` instead

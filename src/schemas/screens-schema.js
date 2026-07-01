@@ -768,7 +768,9 @@ const ScreensSchema = {
                 example: 'NTR Marg',
                 enum: ['NTR Marg', 'Gachibowli', 'Madhapur', 'RTC X Roads', 'Hi-Tech City',
                        'Banjara Hills', 'Jubilee Hills', 'Kondapur', 'KPHB', 'Kavadiguda',
-                       'Dilsukhnagar', 'Kukatpally', 'Malkajgiri', 'Secunderabad', 'Himayatnagar'],
+                       'Dilsukhnagar', 'Kukatpally', 'Malkajgiri', 'Secunderabad', 'Himayatnagar',
+                       'Koramangala', 'Majestic', 'Jayanagar', 'Whitefield', 'Malleshwaram',
+                       'Mysore Road', 'Yeshwanthpur', 'Indiranagar', 'Parappana Agrahara'],
                 validate: (value) => {
                     if (!value || typeof value !== 'string') return 'Location is required';
                     return true;

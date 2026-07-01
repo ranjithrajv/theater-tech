@@ -744,18 +744,21 @@ class Application {
         console.log('🏙️ Loading all cities data...');
 
         try {
-            // The only screen data that exists today is Hyderabad's, with no
-            // per-screen city field — group everything under one city entry
-            // rather than grouping by theater_name (which produced bogus
-            // "cities" like individual theaters/neighborhoods).
-            this.availableCities = (this.data.screens && this.data.screens.length > 0)
-                ? [{
-                    id: 'hyderabad',
-                    name: 'Hyderabad',
-                    state: 'Telangana',
-                    screens: this.data.screens
-                }]
-                : [];
+            const cityMap = {};
+            (this.data.screens || []).forEach(s => {
+                const cityName = s.city || 'Unknown';
+                if (!cityMap[cityName]) {
+                    cityMap[cityName] = {
+                        id: cityName.toLowerCase().replace(/\s+/g, '-'),
+                        name: cityName,
+                        state: s.state || '',
+                        screens: []
+                    };
+                }
+                cityMap[cityName].screens.push(s);
+            });
+
+            this.availableCities = Object.values(cityMap);
 
             console.log(`✅ Loaded ${this.availableCities.length} cities`);
             console.log('Available cities:', this.availableCities.map(c => c.name));
@@ -763,17 +766,13 @@ class Application {
             // Populate city selector
             this.populateCitySelector();
 
-            // Load first city by default or from localStorage
+            // Load saved city or default to All Cities
             const savedCity = localStorage.getItem('selectedCity');
             const defaultCity = savedCity && this.availableCities.find(c => c.id === savedCity)
                 ? savedCity
-                : (this.availableCities.length > 0 ? this.availableCities[0].id : null);
+                : '__all__';
 
-            if (defaultCity) {
-                await this.selectCity(defaultCity);
-            } else {
-                console.warn('No default city found or selected.');
-            }
+            await this.selectCity(defaultCity);
 
         } catch (error) {
             console.error('❌ Failed to load cities data:', error);
@@ -794,11 +793,11 @@ class Application {
         // Clear existing options
         selector.innerHTML = '';
 
-        // Add default option
-        const defaultOption = document.createElement('option');
-        defaultOption.value = '';
-        defaultOption.textContent = 'Select a city...';
-        selector.appendChild(defaultOption);
+        // Add All Cities option
+        const allOption = document.createElement('option');
+        allOption.value = '__all__';
+        allOption.textContent = '🏙️ All Cities';
+        selector.appendChild(allOption);
 
         // Add city options
         this.availableCities.forEach(city => {
@@ -826,13 +825,30 @@ class Application {
         console.log(`🎯 Selecting city: ${cityId}`);
 
         try {
+            if (cityId === '__all__') {
+                this.state.currentCity = '__all__';
+                this.data.screens = this.availableCities.flatMap(c => c.screens);
+
+                const selector = document.getElementById('city-selector');
+                if (selector) selector.value = '__all__';
+
+                this.updatePageTitle({ name: 'All Cities', state: '', screens: this.data.screens });
+
+                Filters.setData(this.data.screens);
+                Filters.reset();
+                this.createVisualization();
+
+                console.log(`✅ Showing all ${this.data.screens.length} screens across ${this.availableCities.length} cities`);
+                return;
+            }
+
             const city = this.availableCities.find(c => c.id === cityId);
             if (!city) {
                 throw new Error(`City not found: ${cityId}`);
             }
 
             this.state.currentCity = cityId;
-            this.data.screens = city.screens; // Use the screens associated with this city
+            this.data.screens = city.screens;
 
             // Save selection to localStorage
             localStorage.setItem('selectedCity', cityId);
@@ -868,24 +884,36 @@ class Application {
         const legendTitleEl = document.getElementById('legend-title');
         const attributionEl = document.getElementById('data-attribution');
 
+        const isAll = city.name === 'All Cities';
+        const cityName = isAll ? 'All Cities' : city.name;
+
         if (titleEl) {
-            titleEl.textContent = `${city.name} Cinema Technology Comparison`;
+            titleEl.textContent = isAll
+                ? 'India Cinema Technology Comparison — All Cities'
+                : `${cityName} Cinema Technology Comparison`;
         }
 
         if (descEl) {
-            descEl.textContent = `Visual comparison of ${city.name}'s biggest cinema screens with their dimensions and premium large format (PLF) technologies`;
+            descEl.textContent = isAll
+                ? `Visual comparison of cinema screens across ${this.availableCities.length} Indian cities with their dimensions, projection, and sound technologies`
+                : `Visual comparison of ${cityName}'s biggest cinema screens with their dimensions and premium large format (PLF) technologies`;
         }
 
         if (legendTitleEl) {
-            legendTitleEl.textContent = `🎬 ${city.name} Cinema Technology Comparison Legend`;
+            legendTitleEl.textContent = isAll
+                ? '🎬 All Cities Cinema Technology Comparison Legend'
+                : `🎬 ${cityName} Cinema Technology Comparison Legend`;
         }
 
         if (attributionEl) {
-            attributionEl.textContent = `Compare ${city.name}'s cinema technology landscape including screens, projectors, and sound systems.`;
+            attributionEl.textContent = isAll
+                ? `Compare cinema technology across ${this.availableCities.map(c => c.name).join(', ')} including screens, projectors, and sound systems.`
+                : `Compare ${cityName}'s cinema technology landscape including screens, projectors, and sound systems.`;
         }
 
-        // Update document title
-        document.title = `${city.name} Cinema Technology Comparison`;
+        document.title = isAll
+            ? 'India Cinema Technology Comparison — All Cities'
+            : `${cityName} Cinema Technology Comparison`;
     }
 
     /**

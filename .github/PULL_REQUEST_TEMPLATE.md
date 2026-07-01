@@ -13,6 +13,7 @@
 ## Data Checklist
 
 - [ ] Added/modified screens follow the format in `CONTRIBUTING.md`
+- [ ] Each screen has `city` and `state` fields
 - [ ] All required fields are present for each screen
 - [ ] `npm run validate:schema` passes
 - [ ] `npm run test` passes

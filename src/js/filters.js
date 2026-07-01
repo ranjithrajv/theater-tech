@@ -1,6 +1,7 @@
 class FilterManager {
     constructor() {
         this.filters = {
+            city: [],
             plf_format: [],
             projection_type: [],
             sound_format: [],
@@ -38,6 +39,9 @@ class FilterManager {
     collectFilterValues() {
         if (!this.container) return;
 
+        const cityEls = this.container.querySelectorAll('input[name="city"]:checked');
+        this.filters.city = Array.from(cityEls).map(el => el.value);
+
         const plfEls = this.container.querySelectorAll('input[name="plf_format"]:checked');
         this.filters.plf_format = Array.from(plfEls).map(el => el.value);
 
@@ -59,6 +63,9 @@ class FilterManager {
 
     applyFilters() {
         this.filteredScreens = this.allScreens.filter(screen => {
+            if (this.filters.city.length > 0 &&
+                !this.filters.city.includes(screen.city)) return false;
+
             if (this.filters.plf_format.length > 0 &&
                 !this.filters.plf_format.includes(screen.plf_format)) return false;
 
@@ -81,7 +88,9 @@ class FilterManager {
                 const name = (screen.name || '').toLowerCase();
                 const chain = (screen.chain || '').toLowerCase();
                 const location = (screen.location || '').toLowerCase();
-                if (!name.includes(q) && !chain.includes(q) && !location.includes(q)) return false;
+                const city = (screen.city || '').toLowerCase();
+                const theater = (screen.theater_name || '').toLowerCase();
+                if (!name.includes(q) && !chain.includes(q) && !location.includes(q) && !city.includes(q) && !theater.includes(q)) return false;
             }
 
             return true;
@@ -131,6 +140,7 @@ class FilterManager {
     render() {
         if (!this.container) return;
 
+        const cities = this.getUniqueValues('city');
         const plfFormats = this.getUniqueValues('plf_format');
         const projTypes = this.getUniqueValues('projection_type');
         const soundFormats = this.getUniqueValues('sound_format');
@@ -138,6 +148,17 @@ class FilterManager {
         this.container.innerHTML = `
             <div class="filter-bar">
                 <div class="filter-row">
+                    <div class="filter-group">
+                        <label class="filter-group-label">City</label>
+                        <div class="filter-checkboxes">
+                            ${cities.map(f => `
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" name="city" value="${f}" />
+                                    <span>${f}</span>
+                                </label>
+                            `).join('')}
+                        </div>
+                    </div>
                     <div class="filter-group">
                         <label class="filter-group-label">Search</label>
                         <input type="text" id="filter-search" class="filter-input" placeholder="Search theaters..." />
