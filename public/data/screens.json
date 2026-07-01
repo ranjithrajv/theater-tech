@@ -2165,5 +2165,636 @@
         "notes": "Miraj Anupam Cinemas, Goregaon East"
       }
     ]
+  },
+  {
+    "name": "PVR ICON Select CITYWALK",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Saket",
+    "width": 66.0,
+    "height": 35.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 6,
+    "seating_capacity": 360,
+    "note": "PVR ICON flagship at Select CITYWALK; premium Laser + Atmos; also houses Delhi's IMAX",
+    "chain": "PVR",
+    "theater_name": "ICON Select CITYWALK",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 38000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "11.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.7
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR ICON standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship PVR ICON at Select CITYWALK Saket; IMAX screen also at this venue"
+      }
+    ]
+  },
+  {
+    "name": "PVR Priya",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Vasant Vihar",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#0EA5E9",
+    "plf_format": "EPIQ",
+    "screen_number": 1,
+    "seating_capacity": 320,
+    "note": "Iconic single-screen converted to premium EPIQ format by PVR; IMAX-capable",
+    "chain": "PVR",
+    "theater_name": "Priya",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (EPIQ standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Priya cinema, Vasant Vihar; renovated with EPIQ + IMAX Laser"
+      }
+    ]
+  },
+  {
+    "name": "PVR Rivoli",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Connaught Place",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 290,
+    "note": "Heritage cinema at Connaught Place; operated by PVR with modern projection",
+    "chain": "PVR",
+    "theater_name": "Rivoli",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage CP conversion)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Rivoli cinema at Connaught Place operated by PVR"
+      }
+    ]
+  },
+  {
+    "name": "INOX Janak Place",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Janakpuri",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Largest multiplex in West Delhi at District Centre Janakpuri",
+    "chain": "INOX",
+    "theater_name": "Janak Place",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship INOX at Janakpuri District Centre, West Delhi"
+      }
+    ]
+  },
+  {
+    "name": "Delite Cinema",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Asaf Ali Road",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 800,
+    "note": "Heritage single-screen landmark; one of Delhi's oldest operating cinemas with recent digital upgrade",
+    "chain": "Delite",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage single-screen at Asaf Ali Road; still operational with digital projection"
+      }
+    ]
+  },
+  {
+    "name": "PVR Vegas Dwarka",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Dwarka",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#14B8A6",
+    "plf_format": "Superplex",
+    "screen_number": 8,
+    "seating_capacity": 340,
+    "note": "12-screen PVR megaplex at Vegas Mall Dwarka; features LUXE and 4DX",
+    "chain": "PVR",
+    "theater_name": "Vegas Dwarka",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-30C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR Vegas Mall Dwarka megaplex with LUXE and 4DX screens"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis DLF Avenue",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Saket",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "Cinepolis multiplex at DLF Avenue Saket; features Onyx 3D LED screen",
+    "chain": "Cinepolis",
+    "theater_name": "DLF Avenue",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true,
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at DLF Avenue Saket; India's first Onyx 3D LED screen was installed here"
+      }
+    ]
+  },
+  {
+    "name": "PVR ECX Chanakyapuri",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Chanakyapuri",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 260,
+    "note": "PVR at DLF Chanakyapuri; features 4DX screen",
+    "chain": "PVR",
+    "theater_name": "ECX Chanakyapuri",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR ECX at DLF Chanakyapuri with 4DX screen"
+      }
+    ]
+  },
+  {
+    "name": "PVR ICON Ambience Mall",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "location": "MG Road",
+    "width": 64.0,
+    "height": 34.0,
+    "color": "#D946EF",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 370,
+    "note": "PVR ICON premium screen at Ambience Mall; one of Gurgaon's largest screens",
+    "chain": "PVR",
+    "theater_name": "ICON Ambience Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-60L",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 38000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Acoustic Transparent",
+      "gain": 1.7
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR ICON standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR ICON premium multiplex at Ambience Mall, Gurgaon"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis City Centre",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "location": "Sector 30",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 6,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at DLF City Centre; one of Gurgaon's most popular multiplexes",
+    "chain": "Cinepolis",
+    "theater_name": "DLF City Centre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinepolis",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at DLF City Centre, Sector 30, Gurgaon"
+      }
+    ]
+  },
+  {
+    "name": "PVR Logix City Centre",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "location": "Sector 32",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#F97316",
+    "plf_format": "Superplex",
+    "screen_number": 7,
+    "seating_capacity": 330,
+    "note": "Flagship PVR multiplex at Logix City Centre; Noida's largest PVR",
+    "chain": "PVR",
+    "theater_name": "Logix City Centre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Logix City Centre, Noida Sector 32"
+      }
+    ]
+  },
+  {
+    "name": "INOX Waves",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "location": "Sector 18",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#0891B2",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "INOX multiplex at Waves Mall; Noida's premium shopping & entertainment destination",
+    "chain": "INOX",
+    "theater_name": "Waves",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure_Limited",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX multiplex at Waves Mall, Noida Sector 18"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis DLF Mall of India",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "location": "Sector 18",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#DC2626",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 300,
+    "note": "Cinepolis multiplex at DLF Mall of India; Noida's largest mall with premium screens",
+    "chain": "Cinepolis",
+    "theater_name": "DLF Mall of India",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinepolis",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at DLF Mall of India, Noida Sector 18"
+      }
+    ]
+  },
+  {
+    "name": "PVR Promenade",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Vasant Kunj",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#84CC16",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 270,
+    "note": "PVR at DLF Promenade Vasant Kunj; features ICE immersive sound screen",
+    "chain": "PVR",
+    "theater_name": "Promenade",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.3
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at DLF Promenade Vasant Kunj with ICE screen"
+      }
+    ]
   }
 ]

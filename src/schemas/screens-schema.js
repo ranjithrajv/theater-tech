@@ -773,7 +773,10 @@ const ScreensSchema = {
                        'Mysore Road', 'Yeshwanthpur', 'Indiranagar', 'Parappana Agrahara',
                        'Lower Parel', 'Inorbit Mall, Malad', 'Wadala', 'Kurla', 'Thane',
                        'Mumbai Central', 'Andheri (W)', 'Ghatkopar', 'Marine Lines',
-                       'Navi Mumbai', 'Goregaon (E)', 'Juhu'],
+                       'Navi Mumbai', 'Goregaon (E)', 'Juhu',
+                       'Saket', 'Vasant Vihar', 'Connaught Place', 'Janakpuri',
+                       'Asaf Ali Road', 'Dwarka', 'Chanakyapuri', 'Vasant Kunj',
+                       'MG Road', 'Sector 30', 'Sector 32', 'Sector 18'],
                 validate: (value) => {
                     if (!value || typeof value !== 'string') return 'Location is required';
                     return true;
