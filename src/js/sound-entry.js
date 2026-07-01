@@ -11,8 +11,6 @@ import './templates.js';
 import './tooltips.js';
 import './filters.js';
 import { App } from './core.js';
-import { UIComponents } from './ui-components.js';
-import { Visualization } from './visualization.js';
 
 async function initializeApplication() {
     console.log('🚀 Starting sound system comparison...');
