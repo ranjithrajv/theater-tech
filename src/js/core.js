@@ -12,11 +12,8 @@
  * - Configuration management
  */
 
-import { Config } from './config.js';
 import initSqlJs from 'sql.js';
 import sqlWasmUrl from 'sql.js/dist/sql-wasm.wasm?url';
-import { Validator } from './data-validator.js';
-import { SchemaRegistry } from '../schemas/schema-registry.js';
 import * as d3 from 'd3';
 import { UIComponents } from './ui-components.js';
 import { Visualization } from './visualization.js';

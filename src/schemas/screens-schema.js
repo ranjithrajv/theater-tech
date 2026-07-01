@@ -318,19 +318,19 @@ function validateScreenConsistency(screen) {
     }
 
     // Screen size area validation
-    const area = ValidationUtils.calculateArea(screen.width, screen.height);
-    if (area < 500) {
+    const screenArea = ValidationUtils.calculateArea(screen.width, screen.height);
+    if (screenArea < 500) {
         errors.push({
             code: 'AREA_TOO_SMALL',
             severity: VALIDATION_SEVERITY.ERROR,
-            message: `Screen area (${area} ft²) is below minimum (500 ft²)`
+            message: `Screen area (${screenArea} ft²) is below minimum (500 ft²)`
         });
     }
-    if (area > 10000) {
+    if (screenArea > 10000) {
         errors.push({
             code: 'AREA_TOO_LARGE',
             severity: VALIDATION_SEVERITY.ERROR,
-            message: `Screen area (${area} ft²) exceeds maximum (10,000 ft²)`
+            message: `Screen area (${screenArea} ft²) exceeds maximum (10,000 ft²)`
         });
     }
 
@@ -352,11 +352,11 @@ function validateScreenConsistency(screen) {
                 message: `${formatReqs.name} format requires minimum height of ${formatReqs.minHeight}ft (current: ${screen.height}ft)`
             });
         }
-        if (area < formatReqs.minArea) {
+        if (screenArea < formatReqs.minArea) {
             errors.push({
                 code: 'AREA_BELOW_MIN',
                 severity: VALIDATION_SEVERITY.ERROR,
-                message: `${formatReqs.name} format requires minimum area of ${formatReqs.minArea}ft² (current: ${area}ft²)`
+                message: `${formatReqs.name} format requires minimum area of ${formatReqs.minArea}ft² (current: ${screenArea}ft²)`
             });
         }
 
@@ -520,7 +520,7 @@ function validateScreenConsistency(screen) {
 
     // Seating capacity validation with format-adjusted ranges
     if (screen.seating_capacity) {
-        const densityResult = ValidationUtils.calculateSeatingDensity(screen.seating_capacity, area, screen.plf_format);
+        const densityResult = ValidationUtils.calculateSeatingDensity(screen.seating_capacity, screenArea, screen.plf_format);
         if (!densityResult.valid) {
             errors.push({
                 code: 'SEATING_DENSITY_INVALID',

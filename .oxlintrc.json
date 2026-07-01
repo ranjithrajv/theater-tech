@@ -4,5 +4,19 @@
     "suspicious": "error",
     "perf": "off",
     "style": "off"
+  },
+  "rules": {
+    "unicorn/no-array-sort": "off",
+    "unicorn/prefer-global-this": "off",
+    "unicorn/no-array-for-each": "off",
+    "preserve-caught-error": "off",
+    "no-await-in-loop": "off",
+    "id-length": "off",
+    "max-params": "off",
+    "max-statements": "off",
+    "func-style": "off",
+    "sort-imports": "off",
+    "no-magic-numbers": "off",
+    "no-shadow": "warn"
   }
 }

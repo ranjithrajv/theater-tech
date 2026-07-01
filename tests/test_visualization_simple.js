@@ -12,8 +12,8 @@ global.document = {
 
 try {
     // Load data files
-    const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/config.json'), 'utf8'));
-    const constants = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/constants.json'), 'utf8'));
+    const _config = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/config.json'), 'utf8'));
+    const _constants = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/constants.json'), 'utf8'));
     const screens = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/screens.json'), 'utf8'));
 
     console.log('✅ Data files loaded');

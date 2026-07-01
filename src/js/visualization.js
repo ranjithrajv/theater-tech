@@ -38,7 +38,7 @@ class VisualizationManager {
      * @param {Array} data - Screen data to visualize
      * @param {Object} options - Visualization options
      */
-    initialize(data, options = {}) {
+    initialize(data, _options = {}) {
         console.log('📊 Initializing visualization...');
         console.log('Data received:', data ? data.length : 'no data');
 
@@ -556,7 +556,7 @@ class VisualizationManager {
      * @param {Array} data - Screen data
      */
     renderLabels(data) {
-        const { scales, dimensions } = this;
+        const { scales } = this;
         const sortedData = [...data].sort((a, b) => (b.width * b.height) - (a.width * a.height));
 
         // Theater names

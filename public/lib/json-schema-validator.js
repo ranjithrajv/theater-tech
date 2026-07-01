@@ -132,7 +132,7 @@ class JSONSchemaValidator {
      * Validate a single field
      * @private
      */
-    validateField(value, schema, path, errors, options) {
+    validateField(value, schema, path, errors, _options) {
         // Type validation
         if (schema.type && !this.checkType(value, schema.type)) {
             errors.push({
