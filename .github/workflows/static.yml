@@ -69,12 +69,12 @@ jobs:
             fi
             echo "OK: $asset"
           done
-          for asset in $(grep -rhP 'src="\K[^"]+\.js' dist/*.html | grep -v data:); do
-            file="dist/${asset#/theater-tech/}";
-            if [ ! -f "$file" ]; then
-              echo "FAIL: $asset missing"; exit 1;
-            fi
-            echo "OK: $asset"
+          for html in dist/*.html; do
+            for asset in $(grep -ohP '(href|src)="\K(/theater-tech/assets/[^"]+)' "$html"); do
+              file="dist/${asset#/theater-tech/}";
+              if [ ! -f "$file" ]; then echo "FAIL: $asset missing in $html"; exit 1; fi
+              echo "OK: $asset"
+            done
           done
           echo "All assets verified"
 
