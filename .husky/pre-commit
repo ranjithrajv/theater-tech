@@ -4,5 +4,11 @@ vp build
 for page in index.html india.html seating.html sound.html; do
   if [ ! -f "dist/$page" ]; then echo "FAIL: dist/$page missing"; exit 1; fi
 done
-echo "Build assets verified"
+for asset in $(grep -oP 'href="\K[^"]+\.css' dist/index.html); do
+  if [ ! -f "dist/${asset#/theater-tech/}" ]; then echo "FAIL: $asset missing"; exit 1; fi
+done
+for asset in $(grep -oP 'src="\K[^"]+\.js' dist/*.html | grep -v data:); do
+  file="dist/${asset#/theater-tech/}"; if [ ! -f "$file" ]; then echo "FAIL: $asset missing"; exit 1; fi
+done
+echo "All assets verified"
 vp test
