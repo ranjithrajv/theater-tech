@@ -11,7 +11,8 @@ export default defineConfig({
       input: {
         main: './index.html', // Entry point for the application
         seating: './seating.html', // Seating capacity comparison page
-        sound: './sound.html' // Sound system comparison page
+        sound: './sound.html', // Sound system comparison page
+        india: './india.html' // India map visualization page
       },
       // Handle WASM files
       plugins: [
@@ -21,7 +22,12 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true
+    open: true,
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost',
+      port: 3000,
+    }
   },
   // Configure Vite to copy the SQLite DB file to the public directory
   // Vite's default behavior with publicDir might handle this, but explicit copy is safer.

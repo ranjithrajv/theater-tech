@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>India Cinema Heatmap — Theater Tech Comparison</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/style-mobile.css">
+    <script type="module" src="/src/js/india-map.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-area">
+            <main id="main-content">
+                <div id="map-container" class="map-container"></div>
+            </main>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="branding">
+                    <div class="logo">
+                        <img src="/src/assets/images/logo.svg" alt="Logo" onerror="this.style.display='none'">
+                        <span>India Cinema Technology</span>
+                    </div>
+                </div>
+                <nav class="nav-links">
+                    <a href="/theater-tech/" class="nav-link">📐 Screen Size</a>
+                    <a href="/theater-tech/seating.html" class="nav-link">💺 Seating</a>
+                    <a href="/theater-tech/sound.html" class="nav-link">🔊 Sound</a>
+                    <a href="/theater-tech/india.html" class="nav-link active">🇮🇳 India Map</a>
+                </nav>
+                <h2 id="page-title">India Cinema Heatmap</h2>
+                <p id="page-description">Geographic distribution of cinema screens across India</p>
+                <div class="sidebar-body">
+                    <div id="map-legend" class="map-legend"></div>
+                    <div id="city-detail" class="city-detail"></div>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="usage-info" style="font-size:12px;color:#ccc;border-top:1px solid #555;padding-top:10px;">
+                        <span id="data-attribution"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
