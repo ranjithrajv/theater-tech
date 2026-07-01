@@ -5365,5 +5365,3129 @@
         "notes": "Heritage Rahul Theatre in Sadashiv Peth, Pune; digital upgrade done"
       }
     ]
+  },
+  {
+    "name": "PVR Jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "MI Road",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 340,
+    "note": "Flagship PVR on MI Road; Jaipur's largest multiplex",
+    "chain": "PVR",
+    "theater_name": "Jaipur",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship PVR multiplex on MI Road, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Vaishali Nagar",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "Vaishali Nagar",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "Cinepolis multiplex at Vaishali Nagar; popular premium venue",
+    "chain": "Cinepolis",
+    "theater_name": "Vaishali Nagar",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Vaishali Nagar, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "INOX Janpath",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "Janpath",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#3B82F6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "INOX multiplex at Janpath, near MI Road",
+    "chain": "INOX",
+    "theater_name": "Janpath",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX multiplex at Janpath, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "Rajmandir Cinema",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "MI Road",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 700,
+    "note": "Iconic heritage single-screen; a Jaipur landmark since 1976",
+    "chain": "Rajmandir",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Rajmandir Cinema on MI Road; iconic Jaipur landmark"
+      }
+    ]
+  },
+  {
+    "name": "PVR Crystal Palm",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "Crystal Palm Mall",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "PVR multiplex at Crystal Palm Mall",
+    "chain": "PVR",
+    "theater_name": "Crystal Palm",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Crystal Palm Mall, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "Lal Kothi",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "Miraj multiplex at Lal Kothi, Jaipur",
+    "chain": "Miraj",
+    "theater_name": "Lal Kothi",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas at Lal Kothi, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis World Trade Park",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "World Trade Park",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 260,
+    "note": "Cinepolis multiplex at World Trade Park, Jaipur",
+    "chain": "Cinepolis",
+    "theater_name": "World Trade Park",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at World Trade Park, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "GT Central Cinemas",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "location": "GT Central Mall",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#84CC16",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 250,
+    "note": "GT Central Cinemas at GT Central Mall, Jaipur",
+    "chain": "GT Central",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 15000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (GT Central standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "GT Central Cinemas at GT Central Mall, Jaipur"
+      }
+    ]
+  },
+  {
+    "name": "PVR Phoenix Lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Phoenix Palassio",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 7,
+    "seating_capacity": 360,
+    "note": "Flagship PVR at Phoenix Palassio Mall; Lucknow's largest multiplex",
+    "chain": "PVR",
+    "theater_name": "Phoenix Palassio",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Phoenix Palassio Mall, Lucknow; city's largest multiplex"
+      }
+    ]
+  },
+  {
+    "name": "INOX Riverside",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Riverside Mall",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "INOX multiplex at Riverside Mall, Gomti Nagar",
+    "chain": "INOX",
+    "theater_name": "Riverside",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at Riverside Mall, Gomti Nagar, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Wave",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Wave Mall",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "Cinepolis at Wave Mall, Gomti Nagar",
+    "chain": "Cinepolis",
+    "theater_name": "Wave",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Wave Mall, Gomti Nagar, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "PVR Sahu",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Hazratganj",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "PVR multiplex in Hazratganj, Lucknow's historic shopping district",
+    "chain": "PVR",
+    "theater_name": "Sahu",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Sahu, Hazratganj, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Sahara Mall",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "Miraj multiplex at Sahara Mall, Lucknow",
+    "chain": "Miraj",
+    "theater_name": "Sahara Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas at Sahara Mall, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "INOX SRS Lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "SRS Mall",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "INOX multiplex at SRS Mall, Lucknow",
+    "chain": "INOX",
+    "theater_name": "SRS",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at SRS Mall, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "Wave Cinemas",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Wave Mall",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 260,
+    "note": "Wave Cinemas signature screen at Wave Mall",
+    "chain": "Wave",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Wave standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Wave Cinemas at Wave Mall, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "PVR Fun Republic",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "location": "Fun Republic Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "PVR multiplex at Fun Republic Mall, Gomti Nagar",
+    "chain": "PVR",
+    "theater_name": "Fun Republic",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Fun Republic Mall, Gomti Nagar, Lucknow"
+      }
+    ]
+  },
+  {
+    "name": "PVR Oberon",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Oberon Mall",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 340,
+    "note": "Flagship PVR at Oberon Mall; Kochi's premium multiplex",
+    "chain": "PVR",
+    "theater_name": "Oberon",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Oberon Mall, Kochi; city's premium multiplex"
+      }
+    ]
+  },
+  {
+    "name": "INOX Lulu Mall",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Lulu Mall",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 6,
+    "seating_capacity": 380,
+    "note": "INOX Megaplex at Lulu Mall; one of India's largest multiplexes",
+    "chain": "INOX",
+    "theater_name": "Lulu Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "9.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Megaplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX Megaplex at Lulu Mall; one of India's largest multiplexes"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Centre Square",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Centre Square Mall",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "Cinepolis multiplex at Centre Square Mall",
+    "chain": "Cinepolis",
+    "theater_name": "Centre Square",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Centre Square Mall, Kochi"
+      }
+    ]
+  },
+  {
+    "name": "Shenoys Cinemas",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "MG Road",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 550,
+    "note": "Heritage single-screen-turned-multiplex on MG Road; a Kochi institution",
+    "chain": "Shenoys",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage conversion)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Shenoys Cinemas on MG Road, Kochi; heritage venue with modern projection"
+      }
+    ]
+  },
+  {
+    "name": "Kairali Sree",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Kaloor",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 650,
+    "note": "Kairali Sree theatre complex; known for large Malayalam movie releases",
+    "chain": "Kairali",
+    "theater_name": "Sree",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Kairali standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Kairali Sree theatre complex at Kaloor, Kochi"
+      }
+    ]
+  },
+  {
+    "name": "PVR Forum Kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Forum Mall",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "PVR multiplex at Forum Mall, Kochi",
+    "chain": "PVR",
+    "theater_name": "Forum",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Forum Mall, Kochi"
+      }
+    ]
+  },
+  {
+    "name": "Padma Cinema",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Padma Junction",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 450,
+    "note": "Heritage single-screen at Padma Junction; local landmark",
+    "chain": "Padma",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Padma Cinema at Padma Junction, Kochi; heritage single-screen"
+      }
+    ]
+  },
+  {
+    "name": "Cinemax",
+    "city": "Kochi",
+    "state": "Kerala",
+    "location": "Chittoor Road",
+    "width": 44.0,
+    "height": 23.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 250,
+    "note": "Cinemax multiplex on Chittoor Road, Kochi",
+    "chain": "Cinemax",
+    "theater_name": "Kochi",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 15000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinemax standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinemax on Chittoor Road, Kochi"
+      }
+    ]
+  },
+  {
+    "name": "INOX Treasure Island",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Treasure Island Mall",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 340,
+    "note": "Flagship INOX at Treasure Island Mall; Indore's premium multiplex",
+    "chain": "INOX",
+    "theater_name": "Treasure Island",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at Treasure Island Mall, Indore; city's premium multiplex"
+      }
+    ]
+  },
+  {
+    "name": "PVR Magneto",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Magneto Mall",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 4,
+    "seating_capacity": 320,
+    "note": "PVR multiplex at Magneto Mall, Indore",
+    "chain": "PVR",
+    "theater_name": "Magneto",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Magneto Mall, Indore"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Malhar Mega",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Malhar Mega Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at Malhar Mega Mall",
+    "chain": "Cinepolis",
+    "theater_name": "Malhar Mega",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Malhar Mega Mall, Indore"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Central Mall",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "Miraj multiplex at Central Mall, Indore",
+    "chain": "Miraj",
+    "theater_name": "Central Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas at Central Mall, Indore"
+      }
+    ]
+  },
+  {
+    "name": "INOX Central",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Central Mall",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 270,
+    "note": "INOX multiplex at Central Mall, Indore",
+    "chain": "INOX",
+    "theater_name": "Central",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at Central Mall, Indore"
+      }
+    ]
+  },
+  {
+    "name": "PVR Phoenix Citadel",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Phoenix Citadel Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 290,
+    "note": "PVR multiplex at Phoenix Citadel Mall",
+    "chain": "PVR",
+    "theater_name": "Phoenix Citadel",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Phoenix Citadel Mall, Indore"
+      }
+    ]
+  },
+  {
+    "name": "Carnival Cinemas",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "location": "Rau",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 260,
+    "note": "Carnival Cinemas in Rau, Indore outskirts",
+    "chain": "Carnival",
+    "theater_name": "Rau",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 15000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Carnival standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Carnival Cinemas in Rau, Indore"
+      }
+    ]
+  },
+  {
+    "name": "INOX DB City",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "location": "DB City Mall",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Flagship INOX at DB City Mall; Bhopal's largest multiplex",
+    "chain": "INOX",
+    "theater_name": "DB City",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at DB City Mall, Bhopal; city's largest multiplex"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Aura",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "location": "Aura Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at Aura Mall, Bhopal",
+    "chain": "Cinepolis",
+    "theater_name": "Aura",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Aura Mall, Bhopal"
+      }
+    ]
+  },
+  {
+    "name": "PVR Prince",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "location": "Bhopal",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "PVR multiplex at Prince Mall, Bhopal",
+    "chain": "PVR",
+    "theater_name": "Prince",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Prince Mall, Bhopal"
+      }
+    ]
+  },
+  {
+    "name": "Alpana Cinema",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "location": "New Market",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 400,
+    "note": "Heritage single-screen in New Market; Bhopal institution",
+    "chain": "Alpana",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Alpana Cinema in New Market, Bhopal"
+      }
+    ]
+  },
+  {
+    "name": "INOX SRS Bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "location": "SRS Mall",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 260,
+    "note": "INOX multiplex at SRS Mall, Bhopal",
+    "chain": "INOX",
+    "theater_name": "SRS Bhopal",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at SRS Mall, Bhopal"
+      }
+    ]
+  },
+  {
+    "name": "Carnival Cinemas",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "location": "Hoshangabad Road",
+    "width": 44.0,
+    "height": 23.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 250,
+    "note": "Carnival Cinemas on Hoshangabad Road",
+    "chain": "Carnival",
+    "theater_name": "Bhopal",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 14000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Carnival standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Carnival Cinemas on Hoshangabad Road, Bhopal"
+      }
+    ]
+  },
+  {
+    "name": "PVR Elante",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "location": "Elante Mall",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 7,
+    "seating_capacity": 350,
+    "note": "Flagship PVR at Elante Mall; Chandigarh's largest multiplex",
+    "chain": "PVR",
+    "theater_name": "Elante",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Elante Mall, Chandigarh; city's largest multiplex"
+      }
+    ]
+  },
+  {
+    "name": "INOX Elante",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "location": "Elante Mall",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 320,
+    "note": "INOX multiplex at Elante Mall alongside PVR",
+    "chain": "INOX",
+    "theater_name": "Elante",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at Elante Mall, Chandigarh"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Centra",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "location": "Sector 26",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at Centra Mall, Sector 26",
+    "chain": "Cinepolis",
+    "theater_name": "Centra",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Centra Mall, Sector 26, Chandigarh"
+      }
+    ]
+  },
+  {
+    "name": "PVR Plaza",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "location": "Sector 17",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 380,
+    "note": "Heritage PVR at Sector 17 Plaza; Chandigarh landmark",
+    "chain": "PVR",
+    "theater_name": "Plaza",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage conversion)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR Plaza at Sector 17; historic Chandigarh cinema"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "location": "Sector 35",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "Miraj multiplex in Sector 35, Chandigarh",
+    "chain": "Miraj",
+    "theater_name": "Sector 35",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas in Sector 35, Chandigarh"
+      }
+    ]
+  },
+  {
+    "name": "PVR Mohali",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "location": "Phase 3B2",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "PVR multiplex at Mohali; serves the greater Chandigarh region",
+    "chain": "PVR",
+    "theater_name": "Mohali",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Mohali, Chandigarh region"
+      }
+    ]
+  },
+  {
+    "name": "PVR VR Surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "VR Mall",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 6,
+    "seating_capacity": 340,
+    "note": "Flagship PVR at VR Mall; Surat's largest multiplex",
+    "chain": "PVR",
+    "theater_name": "VR Surat",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at VR Mall, Surat; city's largest multiplex"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Rahul Raj",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "Rahul Raj Mall",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "Cinepolis at Rahul Raj Mall, Surat",
+    "chain": "Cinepolis",
+    "theater_name": "Rahul Raj",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Rahul Raj Mall, Surat"
+      }
+    ]
+  },
+  {
+    "name": "INOX Raj Empire",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "Raj Empire Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#3B82F6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "INOX multiplex at Raj Empire Mall, Surat",
+    "chain": "INOX",
+    "theater_name": "Raj Empire",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at Raj Empire Mall, Surat"
+      }
+    ]
+  },
+  {
+    "name": "City Gold Multiplex",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "City Gold Mall",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "City Gold multiplex at City Gold Mall, Surat",
+    "chain": "City Gold",
+    "theater_name": "Surat",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (City Gold standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "City Gold multiplex at City Gold Mall, Surat"
+      }
+    ]
+  },
+  {
+    "name": "PVR Valentine",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "Valentine Mall",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "PVR multiplex at Valentine Mall, Surat",
+    "chain": "PVR",
+    "theater_name": "Valentine",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "SP4K-15C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Valentine Mall, Surat"
+      }
+    ]
+  },
+  {
+    "name": "Raghuleela Cinemas",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "Raghuleela Mall",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 260,
+    "note": "Raghuleela Cinemas at Raghuleela Mall, Surat",
+    "chain": "Raghuleela",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 15000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Raghuleela standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Raghuleela Cinemas at Raghuleela Mall, Surat"
+      }
+    ]
+  },
+  {
+    "name": "INOX Sitabuldi",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "location": "Sitabuldi",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Flagship INOX at Sitabuldi; Nagpur's largest multiplex",
+    "chain": "INOX",
+    "theater_name": "Sitabuldi",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship INOX at Sitabuldi, Nagpur; city's largest multiplex"
+      }
+    ]
+  },
+  {
+    "name": "PVR Empress",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "location": "Empress Mall",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "PVR multiplex at Empress City Mall, Nagpur",
+    "chain": "PVR",
+    "theater_name": "Empress",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Empress City Mall, Nagpur"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Eternity",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "location": "Eternity Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at Eternity Mall, Nagpur",
+    "chain": "Cinepolis",
+    "theater_name": "Eternity",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Eternity Mall, Nagpur"
+      }
+    ]
+  },
+  {
+    "name": "PVR Mumbai Nagar",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "location": "Mumbai Nagar",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "PVR multiplex in Mumbai Nagar, Nagpur",
+    "chain": "PVR",
+    "theater_name": "Mumbai Nagar",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex in Mumbai Nagar, Nagpur"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "location": "Dharampeth",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "Miraj multiplex in Dharampeth, Nagpur",
+    "chain": "Miraj",
+    "theater_name": "Dharampeth",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas in Dharampeth, Nagpur"
+      }
+    ]
+  },
+  {
+    "name": "Nagpur Cineplex",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "location": "Civil Lines",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Heritage single-screen in Civil Lines; Nagpur's iconic cinema",
+    "chain": "Cineplex",
+    "theater_name": "Nagpur",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Cineplex in Civil Lines, Nagpur; landmark venue"
+      }
+    ]
+  },
+  {
+    "name": "PVR Cinemas",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Brookefields Mall",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#F59E0B",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Flagship PVR at Brookefields Mall; Coimbatore's premium multiplex",
+    "chain": "PVR",
+    "theater_name": "Brookefields",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Brookefields Mall, Coimbatore; city's premium multiplex"
+      }
+    ]
+  },
+  {
+    "name": "INOX Coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Fun Republic Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#3B82F6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "INOX multiplex at Fun Republic Mall",
+    "chain": "INOX",
+    "theater_name": "Fun Republic",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX at Fun Republic Mall, Coimbatore"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Prozone",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Prozone Mall",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "Cinepolis multiplex at Prozone Mall, Coimbatore",
+    "chain": "Cinepolis",
+    "theater_name": "Prozone",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Prozone Mall, Coimbatore"
+      }
+    ]
+  },
+  {
+    "name": "KG Cinemas",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "KG Campus",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 380,
+    "note": "KG Cinemas; one of Coimbatore's oldest and largest cinema venues",
+    "chain": "KG",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (KG standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "KG Cinemas, Coimbatore; one of the oldest cinema venues"
+      }
+    ]
+  },
+  {
+    "name": "Sathyam Cinemas",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Sathyam Mall",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "Sathyam Cinemas multiplex at Sathyam Mall",
+    "chain": "Sathyam",
+    "theater_name": "Coimbatore",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Sathyam standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Sathyam Cinemas at Sathyam Mall, Coimbatore"
+      }
+    ]
+  },
+  {
+    "name": "Sree Devi Cinemas",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Gandhipuram",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 350,
+    "note": "Sree Devi Cinemas; popular multiplex in Gandhipuram",
+    "chain": "Sree Devi",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Sree Devi standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Sree Devi Cinemas in Gandhipuram, Coimbatore"
+      }
+    ]
+  },
+  {
+    "name": "INOX Vizag",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "location": "Vizag",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Flagship INOX at Vizag; largest multiplex in the city",
+    "chain": "INOX",
+    "theater_name": "Vizag",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship INOX multiplex, Visakhapatnam; city's largest"
+      }
+    ]
+  },
+  {
+    "name": "PVR Central Vizag",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "location": "Central Mall",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "PVR multiplex at Central Mall, Vizag",
+    "chain": "PVR",
+    "theater_name": "Central",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Central Mall, Visakhapatnam"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Varun Beach",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "location": "Varun Beach Mall",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex at Varun Beach Mall, Vizag",
+    "chain": "Cinepolis",
+    "theater_name": "Varun Beach",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Varun Beach Mall, Visakhapatnam"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "location": "Miraj Mall",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "Miraj multiplex; one of Vizag's most popular cinema destinations",
+    "chain": "Miraj",
+    "theater_name": "Vizag",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas, Visakhapatnam"
+      }
+    ]
+  },
+  {
+    "name": "Sree Venkateswara Cinemas",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "location": "Dwaraka Nagar",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 350,
+    "note": "Well-known cinema in Dwaraka Nagar; Vizag institution",
+    "chain": "Sree Venkateswara",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Sree Venkateswara standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Sree Venkateswara Cinemas, Dwaraka Nagar, Vizag"
+      }
+    ]
+  },
+  {
+    "name": "INOX Guwahati",
+    "city": "Guwahati",
+    "state": "Assam",
+    "location": "Guwahati",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#3B82F6",
+    "plf_format": "Superplex",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Flagship INOX multiplex; Guwahati's and Northeast India's largest multiplex",
+    "chain": "INOX",
+    "theater_name": "Guwahati",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Flagship INOX, Guwahati; Northeast India's largest multiplex"
+      }
+    ]
+  },
+  {
+    "name": "PVR Guwahati",
+    "city": "Guwahati",
+    "state": "Assam",
+    "location": "Guwahati",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 300,
+    "note": "PVR multiplex in Guwahati; the first PVR in Northeast India",
+    "chain": "PVR",
+    "theater_name": "Guwahati",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex, Guwahati; first PVR in Northeast India"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Guwahati",
+    "city": "Guwahati",
+    "state": "Assam",
+    "location": "Guwahati",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "Cinepolis multiplex in Guwahati",
+    "chain": "Cinepolis",
+    "theater_name": "Guwahati",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis multiplex, Guwahati"
+      }
+    ]
+  },
+  {
+    "name": "Miraj Cinemas",
+    "city": "Guwahati",
+    "state": "Assam",
+    "location": "Guwahati",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 280,
+    "note": "Miraj Cinemas; popular multiplex in Guwahati",
+    "chain": "Miraj",
+    "theater_name": "Guwahati",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Miraj standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Miraj Cinemas, Guwahati"
+      }
+    ]
+  },
+  {
+    "name": "Anuradha Cinema",
+    "city": "Guwahati",
+    "state": "Assam",
+    "location": "Guwahati",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 400,
+    "note": "Heritage single-screen in Guwahati; one of Assam's oldest operating cinemas",
+    "chain": "Anuradha",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Anuradha Cinema, Guwahati; one of Assam's oldest cinemas"
+      }
+    ]
   }
 ]
