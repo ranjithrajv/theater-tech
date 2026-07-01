@@ -2,7 +2,7 @@
   "categories": {
     "correctness": "error",
     "suspicious": "error",
-    "perf": "warn",
-    "style": "warn"
+    "perf": "off",
+    "style": "off"
   }
 }
