@@ -4751,5 +4751,619 @@
         "notes": "Fun Republic multiplex on SG Highway, Ahmedabad"
       }
     ]
+  },
+  {
+    "name": "PVR VR Mall",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Anna Nagar",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#F59E0B",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 310,
+    "note": "PVR multiplex at VR Mall alongside the IMAX; premium Laser screens",
+    "chain": "PVR",
+    "theater_name": "VR Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-25C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at VR Mall, Anna Nagar; alongside the IMAX screen"
+      }
+    ]
+  },
+  {
+    "name": "PVR Phoenix Marketcity",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Velachery",
+    "width": 60.0,
+    "height": 32.0,
+    "color": "#8B5CF6",
+    "plf_format": "Superplex",
+    "screen_number": 6,
+    "seating_capacity": 350,
+    "note": "PVR Superplex at Phoenix Marketcity; one of Chennai's newest and largest multiplexes",
+    "chain": "PVR",
+    "theater_name": "Phoenix Marketcity",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 32000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR Superplex standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR at Phoenix Marketcity, Velachery; one of Chennai's newest megaplexes"
+      }
+    ]
+  },
+  {
+    "name": "Ganga Cinemas",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Kolathur",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#14B8A6",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 500,
+    "note": "Major multiplex in North Chennai; known for large single screens converted to multiplex",
+    "chain": "Ganga",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2315-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Ganga standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Ganga Cinemas multiplex at Kolathur, North Chennai"
+      }
+    ]
+  },
+  {
+    "name": "Albert Theatre",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Mount Road",
+    "width": 54.0,
+    "height": 28.0,
+    "color": "#92400E",
+    "plf_format": "70mm",
+    "screen_number": 1,
+    "seating_capacity": 600,
+    "note": "Heritage single-screen on Mount Road; a Chennai institution now with digital projection",
+    "chain": "Albert",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Albert Theatre on Mount Road; single-screen landmark with digital upgrade"
+      }
+    ]
+  },
+  {
+    "name": "Kamala Cinemas",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Avadi",
+    "width": 56.0,
+    "height": 29.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 350,
+    "note": "Popular multiplex serving the Avadi region of North-West Chennai",
+    "chain": "Kamala",
+    "theater_name": "Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Kamala standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Kamala Cinemas multiplex at Avadi, North-West Chennai"
+      }
+    ]
+  },
+  {
+    "name": "PVR Ripples",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Vadapalani",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "PVR multiplex at Ripples Mall, Vadapalani; popular with central Chennai audiences",
+    "chain": "PVR",
+    "theater_name": "Ripples",
+    "projection": {
+      "type": "Lamp",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.0
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Ripples Mall, Vadapalani, Chennai"
+      }
+    ]
+  },
+  {
+    "name": "Ega Theatre",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Egmore",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#D946EF",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 400,
+    "note": "Heritage single-screen theatre in Egmore; now houses Cinepolis Ega within the campus",
+    "chain": "Ega",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Ega Theatre in Egmore; original screen within the Ega complex"
+      }
+    ]
+  },
+  {
+    "name": "Devi Theatre",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Parry's",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#84CC16",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 500,
+    "note": "Heritage single-screen in Parry's; serves North Chennai audiences",
+    "chain": "Devi",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "NEC",
+      "model": "NC1201C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Devi Theatre at Parry's, North Chennai; digital upgrade done"
+      }
+    ]
+  },
+  {
+    "name": "Cinepolis Phoenix",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Viman Nagar",
+    "width": 58.0,
+    "height": 30.0,
+    "color": "#EC4899",
+    "plf_format": "Standard",
+    "screen_number": 5,
+    "seating_capacity": 330,
+    "note": "Cinepolis multiplex at Phoenix Marketcity alongside the PVR ICON",
+    "chain": "Cinepolis",
+    "theater_name": "Phoenix",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP4415-RGB",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 28000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.5
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (Cinepolis standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Cinepolis at Phoenix Marketcity, Viman Nagar, Pune"
+      }
+    ]
+  },
+  {
+    "name": "E-square Pimple Nilakh",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Pimple Nilakh",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#7C3AED",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 290,
+    "note": "E-square multiplex in Pimple Nilakh; serves the North Pune corridor",
+    "chain": "E-square",
+    "theater_name": "Pimple Nilakh",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (E-square standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "E-square multiplex at Pimple Nilakh, North Pune"
+      }
+    ]
+  },
+  {
+    "name": "City Pride Satara Road",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Satara Road",
+    "width": 50.0,
+    "height": 26.0,
+    "color": "#8B5CF6",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 280,
+    "note": "City Pride multiplex on Satara Road; serves South Pune",
+    "chain": "City Pride",
+    "theater_name": "Satara Road",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (City Pride standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "City Pride multiplex on Satara Road, South Pune"
+      }
+    ]
+  },
+  {
+    "name": "INOX SGS Mall",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Hadapsar",
+    "width": 48.0,
+    "height": 25.0,
+    "color": "#6366F1",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 270,
+    "note": "INOX multiplex at SGS Mall, Hadapsar; serves East Pune",
+    "chain": "INOX",
+    "theater_name": "SGS Mall",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Christie",
+      "model": "CP2215",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (INOX standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "INOX multiplex at SGS Mall, Hadapsar, Pune"
+      }
+    ]
+  },
+  {
+    "name": "PVR Amanora",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Hadapsar",
+    "width": 52.0,
+    "height": 27.0,
+    "color": "#0EA5E9",
+    "plf_format": "Standard",
+    "screen_number": 4,
+    "seating_capacity": 290,
+    "note": "PVR multiplex at Amanora Town Centre, Hadapsar",
+    "chain": "PVR",
+    "theater_name": "Amanora",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "SP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 22000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.3
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (PVR standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR multiplex at Amanora Town Centre, Hadapsar, Pune"
+      }
+    ]
+  },
+  {
+    "name": "Rahul Theatre",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "location": "Sadashiv Peth",
+    "width": 46.0,
+    "height": 24.0,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "Heritage single-screen in Sadashiv Peth; recently renovated with digital projection",
+    "chain": "Rahul",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Epson",
+      "model": "L1755U",
+      "aspect_ratio": "1.78:1",
+      "brightness_lumens": 16000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.1
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (heritage single-screen)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Heritage Rahul Theatre in Sadashiv Peth, Pune; digital upgrade done"
+      }
+    ]
   }
 ]
