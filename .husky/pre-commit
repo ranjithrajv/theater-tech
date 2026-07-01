@@ -1,2 +1,8 @@
 vp check --no-fmt --fix
+vp lint --type-aware
+vp build
+for page in index.html india.html seating.html sound.html; do
+  if [ ! -f "dist/$page" ]; then echo "FAIL: dist/$page missing"; exit 1; fi
+done
+echo "Build assets verified"
 vp test
