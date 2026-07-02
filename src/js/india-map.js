@@ -310,16 +310,18 @@ async function init() {
 
         const legendEl = document.getElementById('map-legend');
         if (legendEl) {
+            legendEl.innerHTML = '<div style="font-size:11px;color:#ffd60a;margin-bottom:4px;font-weight:600;">Screen Density</div>';
             const legendSvg = d3.select(legendEl)
                 .append('svg')
                 .attr('width', '100%')
-                .attr('height', 50);
+                .attr('height', 75);
 
             const legendG = legendSvg.append('g')
-                .attr('transform', 'translate(10, 10)');
+                .attr('transform', 'translate(8, 5)');
 
             const steps = [1, Math.ceil(maxCount * 0.25), Math.ceil(maxCount * 0.5), Math.ceil(maxCount * 0.75), maxCount];
-            const legendData = steps.map((v, i) => ({ value: v, color: getColor(v, maxCount), x: i * 50 }));
+            const barW = Math.min(50, (legendEl.clientWidth - 30) / steps.length);
+            const legendData = steps.map((v, i) => ({ value: v, color: getColor(v, maxCount), x: i * barW }));
 
             legendG.selectAll('.legend-bar')
                 .data(legendData)
@@ -327,31 +329,56 @@ async function init() {
                 .append('rect')
                 .attr('x', d => d.x)
                 .attr('y', 0)
-                .attr('width', 50)
-                .attr('height', 12)
-                .attr('fill', d => d.color);
+                .attr('width', barW - 2)
+                .attr('height', 18)
+                .attr('fill', d => d.color)
+                .attr('rx', 2);
 
             legendG.selectAll('.legend-label')
                 .data(legendData)
                 .enter()
                 .append('text')
-                .attr('x', d => d.x + 25)
-                .attr('y', 28)
+                .attr('x', d => d.x + (barW - 2) / 2)
+                .attr('y', 32)
                 .attr('text-anchor', 'middle')
-                .attr('fill', '#aaa')
-                .style('font-size', '9px')
+                .attr('fill', '#ccc')
+                .style('font-size', '11px')
                 .text(d => d.value);
+
+            legendSvg.append('text')
+                .attr('x', 8)
+                .attr('y', 50)
+                .attr('fill', '#888')
+                .style('font-size', '10px')
+                .text('Low → High');
+        }
+
+        const detailEl = document.getElementById('city-detail');
+        if (detailEl && detailEl.innerHTML.trim() === '') {
+            const top5 = cities.slice(0, 5);
+            detailEl.innerHTML = `
+                <div style="border-top:1px solid #444;padding-top:10px;margin-top:10px;">
+                    <h3 style="color:#ffd60a;margin:0 0 8px;font-size:13px;">Top Cities</h3>
+                    <table style="width:100%;font-size:12px;">
+                        ${top5.map((c, i) => `
+                        <tr>
+                            <td style="padding:3px 0;color:#ccc;">${i + 1}. ${c.city}</td>
+                            <td style="text-align:right;color:#ffd60a;">${c.count}</td>
+                        </tr>`).join('')}
+                    </table>
+                    <p style="font-size:11px;color:#666;margin:8px 0 0;">Click any city dot on the map for full details</p>
+                </div>`;
         }
 
         const total = screens.length;
         const citiesCount = cities.length;
         const attr = document.getElementById('data-attribution');
-        if (attr) attr.textContent = `${total} screens across ${citiesCount} cities`;
+        if (attr) attr.innerHTML = `<strong>${total}</strong> screens · <strong>${citiesCount}</strong> cities · Zoom: scroll · Pan: drag`;
 
         const title = document.getElementById('page-title');
         if (title) title.textContent = 'India Cinema Heatmap';
         const desc = document.getElementById('page-description');
-        if (desc) desc.textContent = `${total} screens · ${citiesCount} cities · ${cities.map(c => c.city).join(', ')}`;
+        if (desc) desc.textContent = `${total} screens · ${citiesCount} cities`;
         document.title = 'India Cinema Heatmap — Theater Tech Comparison';
 
         hideStatus();
