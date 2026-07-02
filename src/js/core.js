@@ -17,6 +17,7 @@ import sqlWasmUrl from 'sql.js/dist/sql-wasm.wasm?url';
 import * as d3 from 'd3';
 import { UIComponents } from './ui-components.js';
 import { Visualization } from './visualization.js';
+import './data-validator.js';
 import { SizeUtils, debounce } from './utils.js';
 import { Filters } from './filters.js';
 
