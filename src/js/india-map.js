@@ -44,17 +44,27 @@ function hideStatus() {
     if (el) el.classList.add('hidden');
 }
 
+async function fetchWithRetry(url, retries = 2) {
+    for (let i = 0; i <= retries; i++) {
+        try {
+            const resp = await fetch(url);
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            return await resp.json();
+        } catch (err) {
+            if (i === retries) throw err;
+            await new Promise(r => setTimeout(r, 1000 * (i + 1)));
+        }
+    }
+}
+
 async function loadScreens() {
     try {
-        const resp = await fetch('/theater-tech/data/all_cities_screens.json');
-        return await resp.json();
+        return await fetchWithRetry('/theater-tech/data/all_cities_screens.json');
     } catch {
         try {
-            const resp = await fetch('/theater-tech/public/data/screens.json');
-            return await resp.json();
+            return await fetchWithRetry('/theater-tech/public/data/screens.json');
         } catch {
-            const resp = await fetch('/data/screens.json');
-            return await resp.json();
+            return await fetchWithRetry('/data/screens.json');
         }
     }
 }
@@ -142,8 +152,7 @@ async function init() {
 
     try {
         setStatus('Loading India map boundaries...');
-        const geojsonResp = await fetch('/theater-tech/data/india-states.json');
-        const india = await geojsonResp.json();
+        const india = await fetchWithRetry('/theater-tech/data/india-states.json');
 
         setStatus('Loading theater data...');
         const screens = await loadScreens();
