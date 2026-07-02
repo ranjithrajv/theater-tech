@@ -25,6 +25,7 @@
     "d3": "^7.9.0",
     "dotenv": "^17.3.1",
     "pg": "^8.20.0",
+    "puppeteer-core": "^25.3.0",
     "sql.js": "^1.14.1"
   },
   "devDependencies": {
