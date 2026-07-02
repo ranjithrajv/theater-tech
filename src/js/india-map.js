@@ -24,11 +24,30 @@ const CITY_COORDS = {
     'Guwahati': [91.7362, 26.1445]
 };
 
+const CITY_COORDS_ALT = {
+    'Delhi': [77.22, 28.63],
+    'Gurgaon': [77.04, 28.47],
+    'Noida': [77.33, 28.57],
+};
+
+function setStatus(msg, isError) {
+    const el = document.getElementById('map-status');
+    const text = document.getElementById('status-text');
+    if (!el) return;
+    if (isError) { el.classList.add('error'); } else { el.classList.remove('error'); }
+    el.classList.remove('hidden');
+    if (text) text.textContent = msg;
+}
+
+function hideStatus() {
+    const el = document.getElementById('map-status');
+    if (el) el.classList.add('hidden');
+}
+
 async function loadScreens() {
     try {
         const resp = await fetch('/theater-tech/data/all_cities_screens.json');
-        const screens = await resp.json();
-        return screens;
+        return await resp.json();
     } catch {
         try {
             const resp = await fetch('/theater-tech/public/data/screens.json');
@@ -51,13 +70,27 @@ function aggregateByCity(screens) {
         cities[city].formats.add(s.plf_format);
         cities[city].totalSeating += s.seating_capacity || 0;
     });
-    return Object.values(cities).map(c => ({
+    let result = Object.values(cities).map(c => ({
         ...c,
         chains: c.chains.size,
         formats: [...c.formats].sort(),
         avgSeating: Math.round(c.totalSeating / c.count),
         coords: CITY_COORDS[c.city] || null
     })).filter(c => c.coords).sort((a, b) => b.count - a.count);
+
+    const threshold = 45;
+    for (let i = 0; i < result.length; i++) {
+        for (let j = i + 1; j < result.length; j++) {
+            const a = result[i].coords, b = result[j].coords;
+            if (!a || !b) continue;
+            const dx = (a[0] - b[0]) * Math.cos((a[1] + b[1]) / 2 * Math.PI / 180) * 111320;
+            const dy = (a[1] - b[1]) * 111320;
+            if (Math.sqrt(dx * dx + dy * dy) < threshold * 1000 && CITY_COORDS_ALT[result[i].city]) {
+                result[i].coords = CITY_COORDS_ALT[result[i].city];
+            }
+        }
+    }
+    return result;
 }
 
 function getColor(count, maxCount) {
@@ -78,16 +111,17 @@ async function init() {
     const container = document.getElementById('map-container');
     if (!container) return;
 
-    const width = container.clientWidth || 900;
-    const height = Math.max(window.innerHeight - 20, 600);
+    let width = container.clientWidth || 900;
+    let height = Math.max(window.innerHeight - 20, 600);
 
     const svg = d3.select(container)
         .append('svg')
         .attr('width', width)
         .attr('height', height)
-        .style('background', '#0a0a1a');
+        .style('background', '#0a0a1a')
+        .style('cursor', 'grab');
 
-    const g = svg.append('g');
+    const zoomGroup = svg.append('g');
 
     const projection = d3.geoMercator()
         .center([78.5, 22.5])
@@ -96,208 +130,251 @@ async function init() {
 
     const pathGenerator = d3.geoPath().projection(projection);
 
-    // Load GeoJSON
-    const geojsonResp = await fetch('/theater-tech/data/india-states.json');
-    const india = await geojsonResp.json();
-
-    // Render states
-    g.selectAll('.state')
-        .data(india.features)
-        .enter()
-        .append('path')
-        .attr('class', 'state')
-        .attr('d', pathGenerator)
-        .attr('fill', '#1a2744')
-        .attr('stroke', '#4a7abf')
-        .attr('stroke-width', 1)
-        .attr('stroke-opacity', 0.8);
-
-    // Load and aggregate screens
-    const screens = await loadScreens();
-    const cities = aggregateByCity(screens);
-    const maxCount = cities[0]?.count || 1;
-
-    // Glow filter
-    const defs = svg.append('defs');
-    const filter = defs.append('filter').attr('id', 'glow');
-    filter.append('feGaussianBlur').attr('stdDeviation', 3).attr('result', 'coloredBlur');
-    const merge = filter.append('feMerge');
-    merge.append('feMergeNode').attr('in', 'coloredBlur');
-    merge.append('feMergeNode').attr('in', 'SourceGraphic');
-
-    // Render heatmap dots
-    const dots = g.selectAll('.city-dot')
-        .data(cities)
-        .enter()
-        .append('g')
-        .attr('class', 'city-group')
-        .attr('transform', d => {
-            const p = projection(d.coords);
-            return `translate(${p[0]}, ${p[1]})`;
+    const zoom = d3.zoom()
+        .scaleExtent([1, 8])
+        .on('zoom', event => {
+            zoomGroup.attr('transform', event.transform);
         });
 
-    // Outer glow circle
-    dots.append('circle')
-        .attr('class', 'city-glow')
-        .attr('r', d => getRadius(d.count, maxCount) * 1.8)
-        .attr('fill', d => getColor(d.count, maxCount))
-        .attr('opacity', 0.15)
-        .attr('filter', 'url(#glow)');
+    svg.call(zoom);
+    svg.on('mousedown.zoom', () => svg.style('cursor', 'grabbing'));
+    svg.on('mouseup.zoom', () => svg.style('cursor', 'grab'));
 
-    // Main dot
-    dots.append('circle')
-        .attr('class', 'city-dot')
-        .attr('r', d => getRadius(d.count, maxCount))
-        .attr('fill', d => getColor(d.count, maxCount))
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 1.5)
-        .attr('opacity', 0.9)
-        .style('cursor', 'pointer');
+    try {
+        setStatus('Loading India map boundaries...');
+        const geojsonResp = await fetch('/theater-tech/data/india-states.json');
+        const india = await geojsonResp.json();
 
-    // City label
-    dots.append('text')
-        .attr('class', 'city-label')
-        .attr('dy', d => -getRadius(d.count, maxCount) - 6)
-        .attr('text-anchor', 'middle')
-        .attr('fill', '#fff')
-        .style('font-size', '11px')
-        .style('font-weight', '600')
-        .style('text-shadow', '0 1px 3px rgba(0,0,0,0.8)')
-        .style('pointer-events', 'none')
-        .text(d => d.city);
+        setStatus('Loading theater data...');
+        const screens = await loadScreens();
+        const cities = aggregateByCity(screens);
+        const maxCount = cities[0]?.count || 1;
 
-    // Screen count label
-    dots.append('text')
-        .attr('class', 'city-count')
-        .attr('dy', 4)
-        .attr('text-anchor', 'middle')
-        .attr('fill', '#fff')
-        .style('font-size', '10px')
-        .style('font-weight', 'bold')
-        .style('pointer-events', 'none')
-        .text(d => d.count);
+        zoomGroup.selectAll('.state')
+            .data(india.features)
+            .enter()
+            .append('path')
+            .attr('class', 'state')
+            .attr('d', pathGenerator)
+            .attr('fill', '#1a2744')
+            .attr('stroke', '#4a7abf')
+            .attr('stroke-width', 1)
+            .attr('stroke-opacity', 0.8);
 
-    // Tooltip
-    const tooltip = d3.select(container)
-        .append('div')
-        .attr('class', 'map-tooltip')
-        .style('position', 'absolute')
-        .style('background', 'rgba(20,20,40,0.95)')
-        .style('border', '1px solid #ffd60a')
-        .style('border-radius', '6px')
-        .style('padding', '10px 14px')
-        .style('color', '#fff')
-        .style('font-size', '12px')
-        .style('pointer-events', 'none')
-        .style('opacity', 0)
-        .style('z-index', 100)
-        .style('max-width', '260px');
+        const defs = svg.append('defs');
+        const filter = defs.append('filter').attr('id', 'glow');
+        filter.append('feGaussianBlur').attr('stdDeviation', 3).attr('result', 'coloredBlur');
+        const merge = filter.append('feMerge');
+        merge.append('feMergeNode').attr('in', 'coloredBlur');
+        merge.append('feMergeNode').attr('in', 'SourceGraphic');
 
-    dots.on('mouseenter', function(e, d) {
-        d3.select(this).select('.city-dot')
-            .transition().duration(200)
-            .attr('r', _r => getRadius(d.count, maxCount) * 1.2);
-        d3.select(this).select('.city-glow')
-            .transition().duration(200)
-            .attr('opacity', 0.3);
+        const dots = zoomGroup.selectAll('.city-group')
+            .data(cities)
+            .enter()
+            .append('g')
+            .attr('class', 'city-group')
+            .attr('transform', d => {
+                const p = projection(d.coords);
+                return `translate(${p[0]}, ${p[1]})`;
+            })
+            .attr('tabindex', '0')
+            .attr('role', 'button')
+            .attr('aria-label', d => `${d.city}: ${d.count} screens`)
+            .style('cursor', 'pointer')
+            .style('outline', 'none');
 
-        tooltip
-            .style('opacity', 1)
-            .html(`<strong style="color:#ffd60a;font-size:14px;">${d.city}</strong>
+        dots.append('circle')
+            .attr('class', 'city-glow')
+            .attr('r', d => getRadius(d.count, maxCount) * 1.8)
+            .attr('fill', d => getColor(d.count, maxCount))
+            .attr('opacity', 0.15)
+            .attr('filter', 'url(#glow)');
+
+        dots.append('circle')
+            .attr('class', 'city-dot')
+            .attr('r', d => getRadius(d.count, maxCount))
+            .attr('fill', d => getColor(d.count, maxCount))
+            .attr('stroke', '#fff')
+            .attr('stroke-width', 1.5)
+            .attr('opacity', 0.9);
+
+        dots.append('text')
+            .attr('class', 'city-label')
+            .attr('dy', d => -getRadius(d.count, maxCount) - 6)
+            .attr('text-anchor', 'middle')
+            .attr('fill', '#fff')
+            .style('font-size', '11px')
+            .style('font-weight', '600')
+            .style('text-shadow', '0 1px 3px rgba(0,0,0,0.8)')
+            .style('pointer-events', 'none')
+            .text(d => d.city);
+
+        dots.append('text')
+            .attr('class', 'city-count')
+            .attr('dy', 4)
+            .attr('text-anchor', 'middle')
+            .attr('fill', '#fff')
+            .style('font-size', '10px')
+            .style('font-weight', 'bold')
+            .style('pointer-events', 'none')
+            .text(d => d.count);
+
+        const tooltip = d3.select(container)
+            .append('div')
+            .attr('class', 'map-tooltip')
+            .style('position', 'absolute')
+            .style('background', 'rgba(20,20,40,0.95)')
+            .style('border', '1px solid #ffd60a')
+            .style('border-radius', '6px')
+            .style('padding', '10px 14px')
+            .style('color', '#fff')
+            .style('font-size', '12px')
+            .style('pointer-events', 'none')
+            .style('opacity', 0)
+            .style('z-index', 100)
+            .style('max-width', '260px');
+
+        function showTooltip(e, d) {
+            const rect = container.getBoundingClientRect();
+            let left = e.clientX - rect.left + 12;
+            let top = e.clientY - rect.top - 10;
+            if (left + 260 > rect.width) left = rect.width - 270;
+            if (top < 0) top = 0;
+            tooltip.style('opacity', 1).style('left', left + 'px').style('top', top + 'px')
+                .html(`<strong style="color:#ffd60a;font-size:14px;">${d.city}</strong>
                 <br>📍 ${d.count} screens
                 <br>💺 ${d.avgSeating} avg seats
                 <br>🏢 ${d.chains} chains
                 <br>🎬 ${d.formats.slice(0,4).join(', ')}${d.formats.length > 4 ? '...' : ''}`);
-    })
-    .on('mousemove', function(e) {
-        const rect = container.getBoundingClientRect();
-        tooltip
-            .style('left', (e.clientX - rect.left + 12) + 'px')
-            .style('top', (e.clientY - rect.top - 10) + 'px');
-    })
-    .on('mouseleave', function(e, d) {
-        d3.select(this).select('.city-dot')
-            .transition().duration(200)
-            .attr('r', _r => getRadius(d.count, maxCount));
-        d3.select(this).select('.city-glow')
-            .transition().duration(200)
-            .attr('opacity', 0.15);
-        tooltip.style('opacity', 0);
-    });
-
-    dots.on('click', function(e, d) {
-        const detail = document.getElementById('city-detail');
-        if (detail) {
-            detail.innerHTML = `
-                <div style="border-top:1px solid #444;padding-top:10px;margin-top:10px;">
-                    <h3 style="color:#ffd60a;margin:0 0 8px;">${d.city}</h3>
-                    <table style="width:100%;font-size:12px;">
-                        <tr><td style="padding:2px 0;color:#aaa;">Screens</td><td style="text-align:right;">${d.count}</td></tr>
-                        <tr><td style="padding:2px 0;color:#aaa;">Avg Seating</td><td style="text-align:right;">${d.avgSeating}</td></tr>
-                        <tr><td style="padding:2px 0;color:#aaa;">Chains</td><td style="text-align:right;">${d.chains}</td></tr>
-                        <tr><td style="padding:2px 0;color:#aaa;">Formats</td><td style="text-align:right;">${d.formats.length}</td></tr>
-                    </table>
-                </div>`;
         }
-    });
 
-    // Legend
-    const legendEl = document.getElementById('map-legend');
-    if (legendEl) {
-        const legendSvg = d3.select(legendEl)
-            .append('svg')
-            .attr('width', '100%')
-            .attr('height', 50);
+        function showCityDetail(d) {
+            const detail = document.getElementById('city-detail');
+            if (detail) {
+                detail.innerHTML = `
+                    <div style="border-top:1px solid #444;padding-top:10px;margin-top:10px;">
+                        <h3 style="color:#ffd60a;margin:0 0 8px;">${d.city}</h3>
+                        <table style="width:100%;font-size:12px;">
+                            <tr><td style="padding:2px 0;color:#aaa;">Screens</td><td style="text-align:right;">${d.count}</td></tr>
+                            <tr><td style="padding:2px 0;color:#aaa;">Avg Seating</td><td style="text-align:right;">${d.avgSeating}</td></tr>
+                            <tr><td style="padding:2px 0;color:#aaa;">Chains</td><td style="text-align:right;">${d.chains}</td></tr>
+                            <tr><td style="padding:2px 0;color:#aaa;">Formats</td><td style="text-align:right;">${d.formats.length}</td></tr>
+                        </table>
+                    </div>`;
+            }
+        }
 
-        const legendG = legendSvg.append('g')
-            .attr('transform', 'translate(10, 10)');
+        function onMouseEnter(e, d) {
+            d3.select(this).select('.city-dot')
+                .transition().duration(200)
+                .attr('r', getRadius(d.count, maxCount) * 1.2);
+            d3.select(this).select('.city-glow')
+                .transition().duration(200)
+                .attr('opacity', 0.3);
+            showTooltip(e, d);
+        }
 
-        const steps = [1, Math.ceil(maxCount * 0.25), Math.ceil(maxCount * 0.5), Math.ceil(maxCount * 0.75), maxCount];
-        const legendData = steps.map((v, i) => ({ value: v, color: getColor(v, maxCount), x: i * 50 }));
+        function onMouseLeave(e, d) {
+            d3.select(this).select('.city-dot')
+                .transition().duration(200)
+                .attr('r', getRadius(d.count, maxCount));
+            d3.select(this).select('.city-glow')
+                .transition().duration(200)
+                .attr('opacity', 0.15);
+            tooltip.style('opacity', 0);
+        }
 
-        legendG.selectAll('.legend-bar')
-            .data(legendData)
-            .enter()
-            .append('rect')
-            .attr('x', d => d.x)
-            .attr('y', 0)
-            .attr('width', 50)
-            .attr('height', 12)
-            .attr('fill', d => d.color);
+        dots.on('mouseenter', onMouseEnter)
+            .on('mousemove', function(e, d) {
+                showTooltip(e, d);
+            })
+            .on('mouseleave', onMouseLeave)
+            .on('click', function(e, d) {
+                showCityDetail(d);
+            })
+            .on('keydown', function(e, d) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    showCityDetail(d);
+                }
+            });
 
-        legendG.selectAll('.legend-label')
-            .data(legendData)
-            .enter()
-            .append('text')
-            .attr('x', d => d.x + 25)
-            .attr('y', 28)
-            .attr('text-anchor', 'middle')
-            .attr('fill', '#aaa')
-            .style('font-size', '9px')
-            .text(d => d.value);
+        const legendEl = document.getElementById('map-legend');
+        if (legendEl) {
+            const legendSvg = d3.select(legendEl)
+                .append('svg')
+                .attr('width', '100%')
+                .attr('height', 50);
+
+            const legendG = legendSvg.append('g')
+                .attr('transform', 'translate(10, 10)');
+
+            const steps = [1, Math.ceil(maxCount * 0.25), Math.ceil(maxCount * 0.5), Math.ceil(maxCount * 0.75), maxCount];
+            const legendData = steps.map((v, i) => ({ value: v, color: getColor(v, maxCount), x: i * 50 }));
+
+            legendG.selectAll('.legend-bar')
+                .data(legendData)
+                .enter()
+                .append('rect')
+                .attr('x', d => d.x)
+                .attr('y', 0)
+                .attr('width', 50)
+                .attr('height', 12)
+                .attr('fill', d => d.color);
+
+            legendG.selectAll('.legend-label')
+                .data(legendData)
+                .enter()
+                .append('text')
+                .attr('x', d => d.x + 25)
+                .attr('y', 28)
+                .attr('text-anchor', 'middle')
+                .attr('fill', '#aaa')
+                .style('font-size', '9px')
+                .text(d => d.value);
+        }
+
+        const total = screens.length;
+        const citiesCount = cities.length;
+        const attr = document.getElementById('data-attribution');
+        if (attr) attr.textContent = `${total} screens across ${citiesCount} cities`;
+
+        const title = document.getElementById('page-title');
+        if (title) title.textContent = 'India Cinema Heatmap';
+        const desc = document.getElementById('page-description');
+        if (desc) desc.textContent = `${total} screens · ${citiesCount} cities · ${cities.map(c => c.city).join(', ')}`;
+        document.title = 'India Cinema Heatmap — Theater Tech Comparison';
+
+        hideStatus();
+
+        window.addEventListener('resize', () => {
+            const newWidth = container.clientWidth;
+            const newHeight = Math.max(window.innerHeight - 20, 600);
+            svg.attr('width', newWidth).attr('height', newHeight);
+            projection.scale(newWidth * 0.22).translate([newWidth * 0.52, newHeight * 0.52]);
+            zoomGroup.selectAll('.state').attr('d', pathGenerator);
+        });
+
+        const toggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.querySelector('.main-container .sidebar');
+        if (toggle && sidebar) {
+            toggle.addEventListener('click', () => {
+                sidebar.classList.toggle('open');
+                toggle.textContent = sidebar.classList.contains('open') ? '✕' : '☰';
+            });
+            document.addEventListener('click', e => {
+                if (window.innerWidth <= 768 && sidebar.classList.contains('open') &&
+                    !sidebar.contains(e.target) && e.target !== toggle) {
+                    sidebar.classList.remove('open');
+                    toggle.textContent = '☰';
+                }
+            });
+        }
+
+    } catch (err) {
+        console.error('India map initialization failed:', err);
+        setStatus('Failed to load map. Please refresh or try again later.', true);
     }
-
-    // Attribution
-    const total = screens.length;
-    const citiesCount = cities.length;
-    const attr = document.getElementById('data-attribution');
-    if (attr) attr.textContent = `${total} screens across ${citiesCount} cities`;
-
-    // Page metadata
-    const title = document.getElementById('page-title');
-    if (title) title.textContent = 'India Cinema Heatmap';
-    const desc = document.getElementById('page-description');
-    if (desc) desc.textContent = `${total} screens · ${citiesCount} cities · ${cities.map(c => c.city).join(', ')}`;
-    document.title = 'India Cinema Heatmap — Theater Tech Comparison';
-
-    // Resize
-    window.addEventListener('resize', () => {
-        const newWidth = container.clientWidth;
-        const newHeight = Math.max(window.innerHeight - 20, 600);
-        svg.attr('width', newWidth).attr('height', newHeight);
-        projection.scale(newWidth * 0.22).translate([newWidth * 0.52, newHeight * 0.52]);
-        g.selectAll('.state').attr('d', pathGenerator);
-    });
 }
 
 document.addEventListener('DOMContentLoaded', init);
