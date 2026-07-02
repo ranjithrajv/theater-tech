@@ -314,13 +314,14 @@ async function init() {
             const legendSvg = d3.select(legendEl)
                 .append('svg')
                 .attr('width', '100%')
-                .attr('height', 75);
+                .attr('height', 90);
 
             const legendG = legendSvg.append('g')
                 .attr('transform', 'translate(8, 5)');
 
             const steps = [1, Math.ceil(maxCount * 0.25), Math.ceil(maxCount * 0.5), Math.ceil(maxCount * 0.75), maxCount];
-            const barW = Math.min(50, (legendEl.clientWidth - 30) / steps.length);
+            const legWidth = legendEl.clientWidth || 260;
+            const barW = Math.max(30, (legWidth - 30) / steps.length);
             const legendData = steps.map((v, i) => ({ value: v, color: getColor(v, maxCount), x: i * barW }));
 
             legendG.selectAll('.legend-bar')
@@ -347,7 +348,7 @@ async function init() {
 
             legendSvg.append('text')
                 .attr('x', 8)
-                .attr('y', 50)
+                .attr('y', 56)
                 .attr('fill', '#888')
                 .style('font-size', '10px')
                 .text('Low → High');
