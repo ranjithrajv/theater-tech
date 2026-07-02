@@ -45,6 +45,26 @@ const PLF_FORMAT_REQUIREMENTS = {
         description: 'IMAX - Premium large format with immersive experience',
         allowedContentSupport: ['3d_capability', 'hdr_support']
     },
+    'IMAX GT': {
+        name: 'IMAX GT',
+        minWidth: 75,
+        minHeight: 50,
+        minArea: 3750,
+        maxWidth: 150,
+        maxHeight: 100,
+        maxArea: 15000,
+        allowedProjectionTypes: ['Laser', 'IMAX Laser', 'IMAX GT Laser', 'Film'],
+        allowedResolutions: ['IMAX Digital', 'IMAX GT', 'IMAX 70mm', '4K'],
+        minBrightnessLumens: 40000,
+        maxBrightnessLumens: 100000,
+        requiredSoundFormats: ['IMAX'],
+        minChannels: 6,
+        maxChannels: 16,
+        requiredScreenSurface: true,
+        allowedScreenMaterials: ['Perforated White', 'Premium Screen', 'Silver Screen', 'Curved Screen', 'Dome Screen'],
+        description: 'IMAX Grand Theatre - GT Laser dome; 1.43:1 aspect ratio',
+        allowedContentSupport: ['3d_capability', 'hdr_support']
+    },
     'PCX': {
         name: 'PCX',
         minWidth: 80,
@@ -217,7 +237,7 @@ const ValidationUtils = {
     },
 
     calculateSeatingDensity: (seating, area, plfFormat) => {
-        const isPremiumLarge = ['IMAX', 'PCX', 'Superplex'].includes(plfFormat);
+        const isPremiumLarge = ['IMAX', 'IMAX GT', 'PCX', 'Superplex'].includes(plfFormat);
         const minDensity = isPremiumLarge ? 0.05 : 0.1;
         const maxDensity = 1.5;
         const density = seating / area;
@@ -852,7 +872,7 @@ const ScreensSchema = {
                 type: 'string',
                 description: 'Premium Large Format type',
                 example: 'PCX',
-                enum: ['PCX', 'Superplex', 'PXL', 'EPIQ', 'LUX', 'Standard', '70mm', 'IMAX', 'RPX', 'Dolby Cinema', 'MX4D', 'Prime', 'Grand', 'Big Screen'],
+                enum: ['PCX', 'Superplex', 'PXL', 'EPIQ', 'LUX', 'Standard', '70mm', 'IMAX', 'IMAX GT', 'RPX', 'Dolby Cinema', 'MX4D', 'Prime', 'Grand', 'Big Screen'],
                 validate: (value) => {
                     if (!value || typeof value !== 'string') return 'PLF format is required';
                     return true;
@@ -877,7 +897,7 @@ const ScreensSchema = {
                 properties: {
                     type: {
                         type: 'string',
-                        enum: ['Laser', 'LED', 'Film', 'Lamp', 'IMAX Laser', 'RealD Laser', 'Xenon Lamp'],
+                        enum: ['Laser', 'LED', 'Film', 'Lamp', 'IMAX Laser', 'IMAX GT Laser', 'RealD Laser', 'Xenon Lamp'],
                         validate: (value) => {
                             if (!value || typeof value !== 'string') return 'Projection type is required';
                             return true;
@@ -885,7 +905,7 @@ const ScreensSchema = {
                     },
                     resolution: {
                         type: 'string',
-                        enum: ['4K', '2K', '8K', '70mm Film', 'HD', 'Ultra HD', 'IMAX Digital', 'IMAX 70mm', 'RealD 3D'],
+                        enum: ['4K', '2K', '8K', '70mm Film', 'HD', 'Ultra HD', 'IMAX Digital', 'IMAX GT', 'IMAX 70mm', 'RealD 3D'],
                         validate: (value) => {
                             if (!value || typeof value !== 'string') return 'Resolution is required';
                             return true;

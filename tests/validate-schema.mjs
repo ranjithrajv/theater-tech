@@ -27,9 +27,9 @@ function validateScreens(screens) {
     const errors = [];
     console.log('\nValidating screens.json...');
 
-    const validPLF = ['PCX', 'Superplex', 'PXL', 'EPIQ', 'LUX', 'Standard', '70mm', '35mm', 'IMAX', 'Dolby Cinema', 'MX4D', 'Prime', 'Grand', 'Big Screen'];
-    const validProjTypes = ['Laser', 'LED', 'Film', 'Lamp', 'IMAX Laser', 'RealD Laser', 'Xenon Lamp'];
-    const validResolutions = ['4K', '2K', '8K', '70mm Film', 'HD', 'Ultra HD', 'IMAX Digital', 'IMAX 70mm', 'RealD 3D'];
+    const validPLF = ['PCX', 'Superplex', 'PXL', 'EPIQ', 'LUX', 'Standard', '70mm', '35mm', 'IMAX', 'IMAX GT', 'Dolby Cinema', 'MX4D', 'Prime', 'Grand', 'Big Screen'];
+    const validProjTypes = ['Laser', 'LED', 'Film', 'Lamp', 'IMAX Laser', 'IMAX GT Laser', 'RealD Laser', 'Xenon Lamp'];
+    const validResolutions = ['4K', '2K', '8K', '70mm Film', 'HD', 'Ultra HD', 'IMAX Digital', 'IMAX GT', 'IMAX 70mm', 'RealD 3D'];
     const validSoundFormats = ['Dolby Atmos', 'Dolby Digital', 'Digital Sound', 'Analog Surround', 'DTS:X', 'IMAX', 'THX'];
 
     screens.forEach((s, i) => {
