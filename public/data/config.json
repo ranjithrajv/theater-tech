@@ -57,6 +57,22 @@
         "ideal_experience": "Heritage single-screen halls modernized with laser projection and Dolby Atmos"
       },
       {
+        "format": "IMAX",
+        "name": "IMAX with Laser",
+        "description": "Commercial IMAX",
+        "color": "#EF4444",
+        "best_for": ["Blockbuster action movies", "Sci-fi epics", "Films shot with IMAX-certified cameras"],
+        "ideal_experience": "IMAX with Laser projection and proprietary 12-channel sound - the gold standard for commercial large-format cinema"
+      },
+      {
+        "format": "IMAX GT",
+        "name": "IMAX Grand Theatre",
+        "description": "India's Largest IMAX",
+        "color": "#E11D48",
+        "best_for": ["Documentaries", "Educational films", "Immersive large-format experiences"],
+        "ideal_experience": "IMAX GT Laser dome with 1.43:1 aspect ratio - the ultimate large-format immersion"
+      },
+      {
         "format": "Dolby Cinema",
         "name": "Dolby Cinema",
         "description": "Asia's Largest Dolby Screen",

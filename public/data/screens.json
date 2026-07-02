@@ -1538,6 +1538,52 @@
     ]
   },
   {
+    "name": "PVR IMAX Nexus",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Koramangala",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "IMAX with Laser at Nexus Mall Koramangala; South Bangalore's IMAX",
+    "chain": "PVR",
+    "theater_name": "Nexus Koramangala IMAX",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX with Laser standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR IMAX with Laser at Nexus Mall, Koramangala, Bangalore"
+      }
+    ]
+  },
+  {
     "name": "PVR ICON Phoenix Palladium",
     "city": "Mumbai",
     "state": "Maharashtra",
@@ -2167,35 +2213,35 @@
     ]
   },
   {
-    "name": "PVR ICON Select CITYWALK",
-    "city": "Delhi",
-    "state": "Delhi",
-    "location": "Saket",
-    "width": 66.0,
-    "height": 35.0,
-    "color": "#F59E0B",
-    "plf_format": "Standard",
-    "screen_number": 6,
-    "seating_capacity": 360,
-    "note": "PVR ICON flagship at Select CITYWALK; premium Laser + Atmos; also houses Delhi's IMAX",
+    "name": "PVR IMAX Jio World Plaza",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "BKC",
+    "width": 72.0,
+    "height": 40.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 380,
+    "note": "Premium IMAX with Laser at Jio World Centre BKC; Mumbai's newest IMAX",
     "chain": "PVR",
-    "theater_name": "ICON Select CITYWALK",
+    "theater_name": "Jio World Plaza IMAX",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Barco",
-      "model": "DP4K-60L",
+      "type": "IMAX Laser",
+      "resolution": "IMAX GT",
+      "brand": "IMAX",
+      "model": "IMAX with Laser GT",
       "aspect_ratio": "1.90:1",
-      "brightness_lumens": 38000
+      "brightness_lumens": 50000
     },
     "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "11.1",
-      "brand": null
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
     },
     "screen_surface": {
-      "material": "Acoustic Transparent",
-      "gain": 1.7
+      "material": "Premium Screen",
+      "gain": 2.0
     },
     "content_support": {
       "3d_capability": true,
@@ -2204,44 +2250,44 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR ICON standard)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "publisher": "Estimated (IMAX with Laser premium standard)",
+        "url": "",
         "published_date": "",
         "last_verified": "2024-06",
-        "notes": "Flagship PVR ICON at Select CITYWALK Saket; IMAX screen also at this venue"
+        "notes": "PVR IMAX with Laser at Jio World Centre, BKC, Mumbai"
       }
     ]
   },
   {
-    "name": "PVR Priya",
-    "city": "Delhi",
-    "state": "Delhi",
-    "location": "Vasant Vihar",
-    "width": 58.0,
-    "height": 30.0,
-    "color": "#0EA5E9",
-    "plf_format": "EPIQ",
+    "name": "PVR IMAX Phoenix",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Lower Parel",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
     "screen_number": 1,
-    "seating_capacity": 320,
-    "note": "Iconic single-screen converted to premium EPIQ format by PVR; IMAX-capable",
+    "seating_capacity": 350,
+    "note": "IMAX with Laser at Phoenix Market City, Lower Parel",
     "chain": "PVR",
-    "theater_name": "Priya",
+    "theater_name": "Phoenix Lower Parel IMAX",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Christie",
-      "model": "CP4415-RGB",
-      "aspect_ratio": "1.85:1",
-      "brightness_lumens": 32000
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
     },
     "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "7.1",
-      "brand": null
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 1.6
+      "gain": 2.0
     },
     "content_support": {
       "3d_capability": true,
@@ -2250,11 +2296,103 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (EPIQ standard)",
+        "publisher": "Estimated (IMAX with Laser standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR IMAX with Laser at Phoenix Market City, Lower Parel, Mumbai"
+      }
+    ]
+  },
+  {
+    "name": "PVR IMAX Select CITYWALK",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Saket",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 6,
+    "seating_capacity": 350,
+    "note": "Delhi's flagship IMAX with Laser at Select CITYWALK, Saket",
+    "chain": "PVR",
+    "theater_name": "Select CITYWALK IMAX",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX with Laser standard)",
         "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
         "published_date": "",
         "last_verified": "2024-06",
-        "notes": "Heritage Priya cinema, Vasant Vihar; renovated with EPIQ + IMAX Laser"
+        "notes": "PVR IMAX with Laser at Select CITYWALK, Saket, Delhi"
+      }
+    ]
+  },
+  {
+    "name": "PVR IMAX Priya",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Vasant Vihar",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 340,
+    "note": "Heritage Priya cinema converted to IMAX with Laser; Vasant Vihar landmark",
+    "chain": "PVR",
+    "theater_name": "Priya IMAX",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX with Laser standard)",
+        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "PVR IMAX Priya, Vasant Vihar; heritage conversion to IMAX with Laser"
       }
     ]
   },
@@ -2391,35 +2529,35 @@
     ]
   },
   {
-    "name": "PVR Vegas Dwarka",
+    "name": "PVR IMAX Vegas Dwarka",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Dwarka",
-    "width": 58.0,
-    "height": 30.0,
-    "color": "#14B8A6",
-    "plf_format": "Superplex",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
     "screen_number": 8,
-    "seating_capacity": 340,
-    "note": "12-screen PVR megaplex at Vegas Mall Dwarka; features LUXE and 4DX",
+    "seating_capacity": 350,
+    "note": "IMAX with Laser screen at Vegas Mall Dwarka; flagship PVR megaplex",
     "chain": "PVR",
-    "theater_name": "Vegas Dwarka",
+    "theater_name": "Vegas IMAX",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Barco",
-      "model": "SP4K-30C",
-      "aspect_ratio": "1.85:1",
-      "brightness_lumens": 30000
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
     },
     "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "9.1",
-      "brand": null
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 1.5
+      "gain": 2.0
     },
     "content_support": {
       "3d_capability": true,
@@ -2428,11 +2566,11 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
+        "publisher": "Estimated (IMAX with Laser standard)",
         "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
         "published_date": "",
         "last_verified": "2024-06",
-        "notes": "PVR Vegas Mall Dwarka megaplex with LUXE and 4DX screens"
+        "notes": "PVR IMAX with Laser at Vegas Mall, Dwarka, Delhi"
       }
     ]
   },
@@ -2526,35 +2664,35 @@
     ]
   },
   {
-    "name": "PVR ICON Ambience Mall",
+    "name": "PVR IMAX Ambience Mall",
     "city": "Gurgaon",
     "state": "Haryana",
     "location": "MG Road",
-    "width": 64.0,
-    "height": 34.0,
-    "color": "#D946EF",
-    "plf_format": "Superplex",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
     "screen_number": 5,
-    "seating_capacity": 370,
-    "note": "PVR ICON premium screen at Ambience Mall; one of Gurgaon's largest screens",
+    "seating_capacity": 350,
+    "note": "IMAX with Laser at Ambience Mall; Gurgaon's largest screen",
     "chain": "PVR",
-    "theater_name": "ICON Ambience Mall",
+    "theater_name": "Ambience IMAX",
     "projection": {
-      "type": "Laser",
-      "resolution": "4K",
-      "brand": "Barco",
-      "model": "DP4K-60L",
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
       "aspect_ratio": "1.90:1",
-      "brightness_lumens": 38000
+      "brightness_lumens": 45000
     },
     "sound_system": {
-      "format": "Dolby Atmos",
-      "channels": "9.1",
-      "brand": null
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
     },
     "screen_surface": {
-      "material": "Acoustic Transparent",
-      "gain": 1.7
+      "material": "Premium Screen",
+      "gain": 2.0
     },
     "content_support": {
       "3d_capability": true,
@@ -2563,11 +2701,11 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR ICON standard)",
+        "publisher": "Estimated (IMAX with Laser standard)",
         "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
-        "notes": "PVR ICON premium multiplex at Ambience Mall, Gurgaon"
+        "notes": "PVR IMAX with Laser at Ambience Mall, Gurgaon"
       }
     ]
   },
@@ -3327,6 +3465,52 @@
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis multiplex at Ega Theatre complex, Egmore"
+      }
+    ]
+  },
+  {
+    "name": "Palazzo IMAX",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "Vadapalani",
+    "width": 70.0,
+    "height": 38.0,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "IMAX with Laser at Palazzo Vadapalani; Chennai's second IMAX screen",
+    "chain": "Palazzo",
+    "theater_name": "Vadapalani IMAX",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX with Laser standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Palazzo IMAX with Laser at Vadapalani, Chennai"
       }
     ]
   },
@@ -4749,6 +4933,52 @@
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Fun Republic multiplex on SG Highway, Ahmedabad"
+      }
+    ]
+  },
+  {
+    "name": "Gujarat Science City IMAX",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": "Science City, Sola",
+    "width": 95.0,
+    "height": 66.0,
+    "color": "#E11D48",
+    "plf_format": "IMAX GT",
+    "screen_number": 1,
+    "seating_capacity": 300,
+    "note": "India's largest IMAX screen; IMAX GT Laser dome; documentaries only",
+    "chain": "Science City",
+    "theater_name": "IMAX Dome",
+    "projection": {
+      "type": "IMAX GT Laser",
+      "resolution": "IMAX GT",
+      "brand": "IMAX",
+      "model": "IMAX GT Laser",
+      "aspect_ratio": "1.43:1",
+      "brightness_lumens": 50000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Dome Screen",
+      "gain": 2.0
+    },
+    "content_support": {
+      "3d_capability": false,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Estimated (IMAX GT dome standard)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2024-06",
+        "notes": "Gujarat Science City IMAX Dome; India's largest IMAX screen; documentaries only"
       }
     ]
   },

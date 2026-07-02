@@ -78,6 +78,15 @@
       "typical_seats": "450-550",
       "description": "PVR's flagship large-screen PLF; premium seating"
     },
+    "IMAX GT": {
+      "name": "IMAX with GT Laser",
+      "width_ft": "80-100",
+      "height_ft": "55-70",
+      "brightness_lumens": 50000,
+      "sound": "IMAX 12-channel",
+      "typical_seats": "250-400",
+      "description": "IMAX Grand Theatre format; 1.43:1 aspect ratio; GT Laser dome projection"
+    },
     "IMAX": {
       "name": "IMAX with Laser",
       "width_ft": "65-75",
