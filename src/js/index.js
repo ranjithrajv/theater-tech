@@ -8,6 +8,7 @@
  * modular application architecture.
  */
 
+import './layout.js';
 import { Config } from './config.js';
 import './utils.js';
 import './templates.js';

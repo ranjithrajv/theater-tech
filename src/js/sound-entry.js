@@ -5,6 +5,7 @@
  * sound-channel-count bar chart instead of the to-scale screen-size chart.
  */
 
+import './layout.js';
 import { Config } from './config.js';
 import './utils.js';
 import './templates.js';
