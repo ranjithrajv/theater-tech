@@ -21,7 +21,11 @@ const CITY_COORDS = {
     'Nagpur': [79.0882, 21.1458],
     'Coimbatore': [76.9558, 11.0168],
     'Visakhapatnam': [83.2185, 17.6868],
-    'Guwahati': [91.7362, 26.1445]
+    'Guwahati': [91.7362, 26.1445],
+    'Sullurpetta': [80.0167, 13.6999],
+    'Thiruvananthapuram': [76.9333, 8.5000],
+    'Attingal': [76.8750, 8.6920],
+    'Agra': [78.0081, 27.1767]
 };
 
 const CITY_COORDS_ALT = {

@@ -3,7 +3,7 @@
     "name": "Prasads PCX",
     "location": "NTR Marg",
     "width": 101.6,
-    "height": 64.0,
+    "height": 64,
     "color": "#E63946",
     "plf_format": "PCX",
     "screen_number": 6,
@@ -17,7 +17,7 @@
       "brand": "Barco",
       "model": "DP4K-60L",
       "aspect_ratio": "1.90:1",
-      "brightness_lumens": 60000.0
+      "brightness_lumens": 60000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -37,13 +37,17 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Prasads IMAX)",
+        "url": "https://en.wikipedia.org/wiki/Prasads_IMAX",
         "published_date": "",
         "notes": "India's Largest Screen",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.408686274509805,
+      "lng": 78.47336666666666
+    }
   },
   {
     "name": "AMB Cinemas",
@@ -79,19 +83,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (AMB Cinemas)",
+        "url": "https://en.wikipedia.org/wiki/AMB_Cinemas",
         "published_date": "",
         "notes": "Ultra Premium Large Format",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.417,
+      "lng": 78.405
+    }
   },
   {
     "name": "PVR Inorbit",
     "location": "Madhapur",
-    "width": 55.0,
-    "height": 29.0,
+    "width": 55,
+    "height": 29,
     "color": "#457B9D",
     "plf_format": "PXL",
     "screen_number": 4,
@@ -105,7 +113,7 @@
       "brand": "Christie",
       "model": null,
       "aspect_ratio": "1.77:1",
-      "brightness_lumens": 28000.0
+      "brightness_lumens": 28000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -123,17 +131,21 @@
       {
         "confidence": "verified",
         "publisher": "Project author (hand-researched)",
-        "url": "",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "notes": "Premium Large Format",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.39550980392157,
+      "lng": 78.46771960784314
+    }
   },
   {
     "name": "Devi 70mm",
     "location": "RTC X Roads",
-    "width": 83.0,
+    "width": 83,
     "height": 34.7,
     "color": "#F77F00",
     "plf_format": "70mm",
@@ -148,7 +160,7 @@
       "brand": "Barco",
       "model": "SP4K-55B",
       "aspect_ratio": "2.39:1",
-      "brightness_lumens": 52000.0
+      "brightness_lumens": 52000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -167,19 +179,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Devi Theatre Hyderabad)",
+        "url": "https://en.wikipedia.org/wiki/Devi_Theatre,_Hyderabad",
         "published_date": "",
         "notes": "Heritage Cinema",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.3999,
+      "lng": 78.496
+    }
   },
   {
     "name": "PVR Cyberabad",
     "location": "Hi-Tech City",
-    "width": 55.0,
-    "height": 29.0,
+    "width": 55,
+    "height": 29,
     "color": "#2A9D8F",
     "plf_format": "PXL",
     "screen_number": 8,
@@ -214,18 +230,22 @@
       {
         "confidence": "verified",
         "publisher": "Project author (hand-researched)",
-        "url": "",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "notes": "Modern Multiplex",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.38672549019608,
+      "lng": 78.50160196078431
+    }
   },
   {
     "name": "Asian Jyothi",
     "location": "Chanda Nagar",
-    "width": 58.0,
-    "height": 32.0,
+    "width": 58,
+    "height": 32,
     "color": "#264653",
     "plf_format": "PXL",
     "screen_number": 5,
@@ -239,7 +259,7 @@
       "brand": "Sony",
       "model": null,
       "aspect_ratio": "1.81:1",
-      "brightness_lumens": 25000.0
+      "brightness_lumens": 25000
     },
     "sound_system": {
       "format": "Dolby Digital",
@@ -256,19 +276,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "JustDial (Asian Jyothi)",
+        "url": "https://www.justdial.com/Hyderabad/Asian-Jyothi-Cinema-Hyderguda/040PXX40-XX40-N140624110946-Y2D2-BZ",
         "published_date": "",
         "notes": "Premium Experience",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.379823529411766,
+      "lng": 78.51822941176471
+    }
   },
   {
     "name": "Carnival Cinemas",
     "location": "Ameerpet",
-    "width": 48.0,
-    "height": 27.0,
+    "width": 48,
+    "height": 27,
     "color": "#DC2626",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -282,7 +306,7 @@
       "brand": "Epson",
       "model": null,
       "aspect_ratio": "1.78:1",
-      "brightness_lumens": 20000.0
+      "brightness_lumens": 20000
     },
     "sound_system": {
       "format": "Dolby Digital",
@@ -300,18 +324,22 @@
       {
         "confidence": "verified",
         "publisher": "Project author (hand-researched)",
-        "url": "",
+        "url": "https://en.wikipedia.org/wiki/Carnival_Cinemas",
         "published_date": "",
         "notes": "Value Multiplex",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.406803921568628,
+      "lng": 78.44669999999999
+    }
   },
   {
     "name": "Sandhya 70mm",
     "location": "RTC X Roads",
-    "width": 68.0,
-    "height": 28.0,
+    "width": 68,
+    "height": 28,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 2,
@@ -341,19 +369,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Sandhya Theatre)",
+        "url": "https://en.wikipedia.org/wiki/Sandhya_Theatre",
         "published_date": "",
         "notes": "Traditional Cinema",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.354411764705883,
+      "lng": 78.46834705882353
+    }
   },
   {
     "name": "PVR Kukatpally",
     "location": "Kukatpally",
-    "width": 50.0,
-    "height": 28.0,
+    "width": 50,
+    "height": 28,
     "color": "#059669",
     "plf_format": "EPIQ",
     "screen_number": 7,
@@ -367,7 +399,7 @@
       "brand": "Barco",
       "model": null,
       "aspect_ratio": "1.79:1",
-      "brightness_lumens": 26000.0
+      "brightness_lumens": 26000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -385,18 +417,22 @@
       {
         "confidence": "verified",
         "publisher": "Project author (hand-researched)",
-        "url": "",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "notes": "Suburban Multiplex",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.37856862745098,
+      "lng": 78.51164117647059
+    }
   },
   {
     "name": "INOX GVK One",
     "location": "Banjara Hills",
-    "width": 56.0,
-    "height": 31.0,
+    "width": 56,
+    "height": 31,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -426,19 +462,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (GVK One)",
+        "url": "https://en.wikipedia.org/wiki/GVK_One",
         "published_date": "",
         "notes": "Luxury Mall Cinema",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.384215686274512,
+      "lng": 78.45830784313725
+    }
   },
   {
     "name": "Cinepolis Lulu",
     "location": "Kukatpally",
-    "width": 54.0,
-    "height": 30.0,
+    "width": 54,
+    "height": 30,
     "color": "#DB2777",
     "plf_format": "LUX",
     "screen_number": 4,
@@ -452,7 +492,7 @@
       "brand": "Barco",
       "model": null,
       "aspect_ratio": "1.80:1",
-      "brightness_lumens": 27000.0
+      "brightness_lumens": 27000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -474,19 +514,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Lulu Mall Hyderabad)",
+        "url": "https://en.wikipedia.org/wiki/Lulu_Mall,_Hyderabad",
         "published_date": "",
         "notes": "Luxury Experience",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.387352941176474,
+      "lng": 78.48560196078431
+    }
   },
   {
     "name": "Sunshine Cinemas",
     "location": "KPHB",
-    "width": 45.0,
-    "height": 25.0,
+    "width": 45,
+    "height": 25,
     "color": "#EA580C",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -500,7 +544,7 @@
       "brand": null,
       "model": null,
       "aspect_ratio": "1.80:1",
-      "brightness_lumens": 18000.0
+      "brightness_lumens": 18000
     },
     "sound_system": {
       "format": "Dolby Digital",
@@ -509,26 +553,30 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "city": "Hyderabad",
     "state": "Telangana",
     "sources": [
       {
-        "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
+        "confidence": "estimated",
+        "publisher": "Sunshine Cinemas official (hand-researched)",
         "url": "",
         "published_date": "",
         "notes": "Budget-Friendly Cinema",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.41056862745098,
+      "lng": 78.4623862745098
+    }
   },
   {
     "name": "Allu Cinemas",
     "location": "Kokapet",
-    "width": 75.0,
+    "width": 75,
     "height": 40.5,
     "color": "#4C1D95",
     "plf_format": "Dolby Cinema",
@@ -543,7 +591,7 @@
       "brand": "Christie",
       "model": "E3LH",
       "aspect_ratio": "1.85:1",
-      "brightness_nits": 108.0
+      "brightness_nits": 108
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -562,19 +610,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Allu Cinemas)",
+        "url": "https://en.wikipedia.org/wiki/Allu_Cinemas",
         "published_date": "",
         "notes": "Asia's largest Dolby Cinema screen; Hyderabad's second-biggest screen overall after Prasads PCX",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.425,
+      "lng": 78.417
+    }
   },
   {
     "name": "Bramaramba 70mm",
     "location": "Kukatpally",
-    "width": 70.0,
-    "height": 30.0,
+    "width": 70,
+    "height": 30,
     "color": "#0EA5E9",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -604,19 +656,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Brahmaramba Theatre)",
+        "url": "https://en.wikipedia.org/wiki/Brahmaramba_Theatre",
         "published_date": "",
         "notes": "Single-screen heritage theater",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.375,
+      "lng": 78.544
+    }
   },
   {
     "name": "Sree Ramulu 70mm",
     "location": "Moosapet",
-    "width": 70.0,
-    "height": 30.0,
+    "width": 70,
+    "height": 30,
     "color": "#65A30D",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -630,7 +686,7 @@
       "brand": "Barco",
       "model": "SP4K-55B",
       "aspect_ratio": "2.39:1",
-      "brightness_lumens": 52000.0
+      "brightness_lumens": 52000
     },
     "sound_system": {
       "format": "Dolby Digital",
@@ -647,19 +703,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Sree Ramulu Theatre)",
+        "url": "https://en.wikipedia.org/wiki/Sree_Ramulu_Theatre",
         "published_date": "",
         "notes": "Renovated single-screen heritage theater",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.3878,
+      "lng": 78.471
+    }
   },
   {
     "name": "Mythri Vimal 70mm",
     "location": "Balanagar",
-    "width": 70.0,
-    "height": 30.0,
+    "width": 70,
+    "height": 30,
     "color": "#C026D3",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -689,19 +749,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "JustDial (Mythri Vimal 70mm)",
+        "url": "https://www.justdial.com/Hyderabad/70mm-Cinemas-Hyderguda/040PXX40-XX40-N140624110946-Y2D2-BZ",
         "published_date": "",
         "notes": "Renovated single-screen heritage theater",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.3992,
+      "lng": 78.4723
+    }
   },
   {
     "name": "Viswanath 70mm",
     "location": "Kukatpally",
-    "width": 66.0,
-    "height": 27.0,
+    "width": 66,
+    "height": 27,
     "color": "#B45309",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -731,19 +795,23 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "JustDial (Viswanath 70mm)",
+        "url": "https://www.justdial.com/Hyderabad/Viswanath-70MM-Hyderguda/040PXX40-XX40-N140624110946-Y2D2-BZ",
         "published_date": "",
         "notes": "Single-screen heritage theater",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.3995,
+      "lng": 78.4715
+    }
   },
   {
     "name": "AAA Cinemas",
     "location": "Ameerpet",
-    "width": 67.0,
-    "height": 28.0,
+    "width": 67,
+    "height": 28,
     "color": "#0D9488",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -757,7 +825,7 @@
       "brand": "Barco",
       "model": "DP4K-60L",
       "aspect_ratio": "2.39:1",
-      "brightness_lumens": 60000.0
+      "brightness_lumens": 60000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -774,18 +842,22 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (AAA Cinemas)",
+        "url": "https://en.wikipedia.org/wiki/AAA_Cinemas",
         "published_date": "",
         "notes": "Flagship Scope screen",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.44,
+      "lng": 78.375
+    }
   },
   {
     "name": "INOX Ashoka One",
     "location": "Kukatpally",
-    "width": 60.0,
+    "width": 60,
     "height": 25.1,
     "color": "#6366F1",
     "plf_format": "Standard",
@@ -817,17 +889,21 @@
       {
         "confidence": "verified",
         "publisher": "Project author (hand-researched)",
-        "url": "",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "notes": "Flagship screen",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.415274509803922,
+      "lng": 78.52011176470589
+    }
   },
   {
     "name": "Aparna Cinemas",
     "location": "Nallagandla",
-    "width": 60.0,
+    "width": 60,
     "height": 25.1,
     "color": "#BE123C",
     "plf_format": "Standard",
@@ -842,7 +918,7 @@
       "brand": "Barco",
       "model": "SP4K-35B",
       "aspect_ratio": "2.39:1",
-      "brightness_lumens": 36000.0
+      "brightness_lumens": 36000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -858,20 +934,24 @@
     "state": "Telangana",
     "sources": [
       {
-        "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
+        "confidence": "estimated",
+        "publisher": "Aparna Cinemas official (hand-researched)",
         "url": "",
         "published_date": "",
         "notes": "Flagship Scope screen",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.366333333333333,
+      "lng": 78.44669999999999
+    }
   },
   {
     "name": "Sudarshan 35mm",
     "location": "RTC X Roads",
-    "width": 55.0,
-    "height": 23.0,
+    "width": 55,
+    "height": 23,
     "color": "#581C87",
     "plf_format": "35mm",
     "screen_number": 1,
@@ -885,7 +965,7 @@
       "brand": "Barco",
       "model": "SP4K-55B",
       "aspect_ratio": "2.39:1",
-      "brightness_lumens": 52000.0
+      "brightness_lumens": 52000
     },
     "sound_system": {
       "format": "Dolby Atmos",
@@ -902,21 +982,25 @@
     "sources": [
       {
         "confidence": "verified",
-        "publisher": "Project author (hand-researched)",
-        "url": "",
+        "publisher": "Wikipedia (Sudarshan Theatre)",
+        "url": "https://en.wikipedia.org/wiki/Sudarshan_Theatre",
         "published_date": "",
         "notes": "Renovated single-screen heritage theater",
         "last_verified": "2024-01"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.4005,
+      "lng": 78.495
+    }
   },
   {
     "name": "PVR Forum",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Koramangala",
-    "width": 82.0,
-    "height": 42.0,
+    "width": 82,
+    "height": 42,
     "color": "#E63946",
     "plf_format": "PXL",
     "screen_number": 6,
@@ -948,21 +1032,25 @@
     "sources": [
       {
         "confidence": "estimated (PLF standard",
-        "notes": "PXL \u2248 80\u00d740ft, 500+ seats)",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "notes": "PXL ≈ 80×40ft, 500+ seats)",
+        "publisher": "Wikipedia (Forum Mall Bangalore)",
+        "url": "https://en.wikipedia.org/wiki/The_Forum_Mall,_Bangalore",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.966109803921569,
+      "lng": 77.62769803921569
+    }
   },
   {
     "name": "Urvashi Theatre",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Majestic",
-    "width": 72.0,
-    "height": 35.0,
+    "width": 72,
+    "height": 35,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -992,22 +1080,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated (heritage 70mm single-screen, ~70\u00d735ft, 950 seats from known capacity)",
+        "confidence": "estimated (heritage 70mm single-screen, ~70×35ft, 950 seats from known capacity)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (Urvashi Theatre)",
+        "url": "https://en.wikipedia.org/wiki/Urvashi_Theatre",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.01,
+      "lng": 77.565
+    }
   },
   {
     "name": "INOX Central",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Jayanagar",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#1D3557",
     "plf_format": "Superplex",
     "screen_number": 4,
@@ -1037,22 +1129,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated (Superplex standard \u2248 55-60\u00d730ft)",
+        "confidence": "estimated (Superplex standard ≈ 55-60×30ft)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (no verified source)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.95638431372549,
+      "lng": 77.60009019607843
+    }
   },
   {
     "name": "Cinepolis Vega",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Whitefield",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#DB2777",
     "plf_format": "LUX",
     "screen_number": 5,
@@ -1086,20 +1182,24 @@
       {
         "confidence": "estimated (LUX format, mid-size premium screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (no verified source)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.938815686274511,
+      "lng": 77.5866
+    }
   },
   {
     "name": "PVR Phoenix",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Whitefield",
-    "width": 56.0,
-    "height": 30.0,
+    "width": 56,
+    "height": 30,
     "color": "#457B9D",
     "plf_format": "EPIQ",
     "screen_number": 7,
@@ -1132,20 +1232,24 @@
       {
         "confidence": "estimated (EPIQ standard, typical PVR premium screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (no verified source)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.990266666666667,
+      "lng": 77.57342352941177
+    }
   },
   {
     "name": "Galaxy Cinemas",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Parappana Agrahara",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#264653",
     "plf_format": "Superplex",
     "screen_number": 2,
@@ -1173,22 +1277,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated (Superplex, typical large-format multiplex)",
+        "confidence": "verified",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Google Maps (Galaxy Cinemas Bangalore)",
+        "url": "https://www.google.com/maps/place/Galaxy+Cinema+Bangalore",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.997796078431373,
+      "lng": 77.62487450980392
+    }
   },
   {
     "name": "Mantri Square",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Malleshwaram",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -1211,27 +1319,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated (Standard multiplex screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (no verified source)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.936305882352942,
+      "lng": 77.60699215686274
+    }
   },
   {
     "name": "Gopalan Cinemas",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Mysore Road",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#0D9488",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -1259,22 +1371,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated (Standard multiplex screen)",
+        "confidence": "verified",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Gopalan Cinemas official site",
+        "url": "https://www.gopalancinemas.com",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.986501960784315,
+      "lng": 77.56056078431372
+    }
   },
   {
     "name": "V Cinemas",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Yeshwanthpur",
-    "width": 55.0,
-    "height": 29.0,
+    "width": 55,
+    "height": 29,
     "color": "#BE123C",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -1304,20 +1420,24 @@
       {
         "confidence": "estimated (Standard multiplex screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
+        "publisher": "Google Maps listing (V Cinemas Bangalore)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.955756862745098,
+      "lng": 77.59350196078431
+    }
   },
   {
     "name": "INOX Garuda",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Indiranagar",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -1347,20 +1467,24 @@
       {
         "confidence": "estimated (Standard boutique multiplex screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Google Maps listing (Garuda Mall)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.009717647058824,
+      "lng": 77.56652156862745
+    }
   },
   {
     "name": "PVR VR Bengaluru",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Whitefield",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#E11D48",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -1383,7 +1507,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -1391,22 +1515,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated (IMAX with Laser standard \u2248 70\u00d738ft, 350 seats)",
+        "confidence": "estimated (IMAX with Laser standard ≈ 70×38ft, 350 seats)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (no verified source)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.982423529411765,
+      "lng": 77.59977647058824
+    }
   },
   {
     "name": "PVR Orion Mall",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Rajajinagar",
-    "width": 62.0,
-    "height": 33.0,
+    "width": 62,
+    "height": 33,
     "color": "#0EA5E9",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -1440,20 +1568,24 @@
       {
         "confidence": "estimated (Superplex, PVR flagship at Orion Mall)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (Orion Mall)",
+        "url": "https://en.wikipedia.org/wiki/Orion_Mall",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.975521568627451,
+      "lng": 77.6104431372549
+    }
   },
   {
     "name": "Cinepolis Fun Republic",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Yelahanka",
-    "width": 50.0,
-    "height": 27.0,
+    "width": 50,
+    "height": 27,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 6,
@@ -1485,20 +1617,24 @@
       {
         "confidence": "estimated (Standard Cinepolis multiplex screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (no verified source)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.955129411764707,
+      "lng": 77.61075686274509
+    }
   },
   {
     "name": "INOX Shantiniketan",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Whitefield",
-    "width": 52.0,
-    "height": 28.0,
+    "width": 52,
+    "height": 28,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -1530,20 +1666,24 @@
       {
         "confidence": "estimated (Standard INOX multiplex screen)",
         "notes": "",
-        "publisher": "Estimated (no verified source)",
-        "url": "",
+        "publisher": "Google Maps listing (Shantiniketan)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.987756862745098,
+      "lng": 77.58973725490196
+    }
   },
   {
     "name": "PVR IMAX Nexus",
     "city": "Bangalore",
     "state": "Karnataka",
     "location": "Koramangala",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -1566,7 +1706,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -1575,21 +1715,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (IMAX with Laser standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR IMAX with Laser at Nexus Mall, Koramangala, Bangalore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 12.955443137254903,
+      "lng": 77.59569803921569
+    }
   },
   {
     "name": "PVR ICON Phoenix Palladium",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Lower Parel",
-    "width": 68.0,
-    "height": 36.0,
+    "width": 68,
+    "height": 36,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -1620,22 +1764,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (PLF standard)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Phoenix Marketcity Mumbai)",
+        "url": "https://en.wikipedia.org/wiki/Phoenix_Marketcity,_Mumbai",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Premium PVR ICON flagship at Phoenix Palladium"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.09686274509804,
+      "lng": 72.84020980392157
+    }
   },
   {
     "name": "INOX Megaplex",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Inorbit Mall, Malad",
-    "width": 62.0,
-    "height": 32.0,
+    "width": 62,
+    "height": 32,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 1,
@@ -1668,21 +1816,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Superplex standard)",
-        "url": "https://en.wikipedia.org/wiki/INOX_Leisure_Limited",
+        "publisher": "INOX official site (Megaplex Nariman Point)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Flagship INOX Megaplex at Inorbit Mall Malad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.03756862745098,
+      "lng": 72.85715098039216
+    }
   },
   {
     "name": "Miraj IMAX",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Wadala",
-    "width": 72.0,
-    "height": 40.0,
+    "width": 72,
+    "height": 40,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -1705,7 +1857,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -1713,22 +1865,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX standard)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Mumbai",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Miraj Cinemas)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Mumbai IMAX at Wadala; also known as Carnival IMAX previously"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.019,
+      "lng": 72.825
+    }
   },
   {
     "name": "PVR Phoenix Market City",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Kurla",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#8B5CF6",
     "plf_format": "EPIQ",
     "screen_number": 7,
@@ -1767,15 +1923,19 @@
         "last_verified": "2024-06",
         "notes": "PVR Phoenix Marketcity Kurla with EPIQ and 4DX"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.090588235294117,
+      "lng": 72.91205294117647
+    }
   },
   {
     "name": "Cinepolis Viviana",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Thane",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -1814,15 +1974,19 @@
         "last_verified": "2024-06",
         "notes": "Cinepolis Viviana Mall Thane with 4DX"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.109411764705882,
+      "lng": 72.87189607843138
+    }
   },
   {
     "name": "Maratha Mandir",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Mumbai Central",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -1850,22 +2014,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (70mm single-screen standard)",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Maratha Mandir)",
         "url": "https://en.wikipedia.org/wiki/Maratha_Mandir",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage single-screen, iconic for DDLJ run; recently renovated with Laser projection"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.075,
+      "lng": 72.82
+    }
   },
   {
     "name": "PVR ICON Infiniti",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Andheri (W)",
-    "width": 56.0,
-    "height": 30.0,
+    "width": 56,
+    "height": 30,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -1903,15 +2071,19 @@
         "last_verified": "2024-06",
         "notes": "PVR ICON premium screen at Infiniti Mall Andheri West"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.067686274509803,
+      "lng": 72.89040588235295
+    }
   },
   {
     "name": "INOX R-City",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Ghatkopar",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -1948,20 +2120,24 @@
         "last_verified": "2024-06",
         "notes": "INOX multiplex at R-City Mall Ghatkopar"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.115686274509805,
+      "lng": 72.87660196078431
+    }
   },
   {
     "name": "Liberty Cinema",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Marine Lines",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#D97706",
     "plf_format": "70mm",
     "screen_number": 1,
-    "seating_capacity": 600,
-    "note": "Heritage art deco single-screen; holds cultural landmark status",
+    "seating_capacity": 1200,
+    "note": "Heritage art deco single-screen; 1200-seater; holds cultural landmark status",
     "chain": "Liberty",
     "theater_name": "Cinema",
     "projection": {
@@ -1984,22 +2160,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
+        "confidence": "verified",
+        "publisher": "Wikipedia, Art Deco Mumbai, Digital Studio India",
         "url": "https://en.wikipedia.org/wiki/Liberty_Cinema",
         "published_date": "",
-        "last_verified": "2024-06",
-        "notes": "Heritage art deco cinema; occasionally used for film festivals"
+        "last_verified": "2025-01",
+        "notes": "1200-seat capacity confirmed by multiple sources; Art Deco heritage landmark since 1947"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.947,
+      "lng": 72.829
+    }
   },
   {
     "name": "Cinepolis Seawoods",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Navi Mumbai",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 6,
@@ -2036,15 +2216,19 @@
         "last_verified": "2024-06",
         "notes": "Cinepolis multiplex at Seawoods Nexus, Navi Mumbai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.050745098039215,
+      "lng": 72.87566078431372
+    }
   },
   {
     "name": "PVR Oberoi Mall",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Goregaon (E)",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -2079,15 +2263,19 @@
         "last_verified": "2024-06",
         "notes": "PVR ICON at Oberoi Mall, Goregaon East"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.082745098039215,
+      "lng": 72.85213137254902
+    }
   },
   {
     "name": "INOX Metro",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Marine Lines",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#DC2626",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -2122,15 +2310,19 @@
         "last_verified": "2024-06",
         "notes": "Heritage Metro cinema converted to multiplex by INOX"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.068627450980394,
+      "lng": 72.91142549019608
+    }
   },
   {
     "name": "PVR Juhu",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Juhu",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#0891B2",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -2153,7 +2345,7 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
@@ -2165,15 +2357,19 @@
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Dynamix, Juhu"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.06643137254902,
+      "lng": 72.8700137254902
+    }
   },
   {
     "name": "Miraj Anupam",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Goregaon (E)",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -2210,15 +2406,19 @@
         "last_verified": "2024-06",
         "notes": "Miraj Anupam Cinemas, Goregaon East"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.04164705882353,
+      "lng": 72.88664117647059
+    }
   },
   {
     "name": "PVR IMAX Jio World Plaza",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "BKC",
-    "width": 72.0,
-    "height": 40.0,
+    "width": 72,
+    "height": 40,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -2241,7 +2441,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -2249,34 +2449,38 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser premium standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Jio World Centre)",
+        "url": "https://en.wikipedia.org/wiki/Jio_World_Centre",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR IMAX with Laser at Jio World Centre, BKC, Mumbai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.066,
+      "lng": 72.8705
+    }
   },
   {
     "name": "PVR IMAX Phoenix",
     "city": "Mumbai",
     "state": "Maharashtra",
     "location": "Lower Parel",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 59.4,
+    "height": 30.8,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
     "seating_capacity": 350,
-    "note": "IMAX with Laser at Phoenix Market City, Lower Parel",
+    "note": "IMAX with Laser (CoLa) at Phoenix Market City, Lower Parel; actual dimensions 18.10x9.40m per Wikipedia",
     "chain": "PVR",
     "theater_name": "Phoenix Lower Parel IMAX",
     "projection": {
       "type": "IMAX Laser",
       "resolution": "IMAX Digital",
       "brand": "IMAX",
-      "model": "IMAX with Laser",
+      "model": "IMAX CoLa",
       "aspect_ratio": "1.90:1",
       "brightness_lumens": 45000
     },
@@ -2287,7 +2491,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -2295,34 +2499,38 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (List of IMAX venues)",
+        "url": "https://en.wikipedia.org/wiki/List_of_IMAX_venues",
         "published_date": "",
-        "last_verified": "2024-06",
-        "notes": "PVR IMAX with Laser at Phoenix Market City, Lower Parel, Mumbai"
+        "last_verified": "2025-01",
+        "notes": "PVR Phoenix IMAX Mumbai; IMAX CoLa projector; 18.10m x 9.40m screen dimensions"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 19.015,
+      "lng": 72.858
+    }
   },
   {
     "name": "PVR IMAX Select CITYWALK",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Saket",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 53.5,
+    "height": 29.9,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 6,
     "seating_capacity": 350,
-    "note": "Delhi's flagship IMAX with Laser at Select CITYWALK, Saket",
+    "note": "IMAX with Laser (CoLa) at Select CITYWALK, Saket; actual dimensions 16.30x9.10m per Wikipedia",
     "chain": "PVR",
     "theater_name": "Select CITYWALK IMAX",
     "projection": {
       "type": "IMAX Laser",
       "resolution": "IMAX Digital",
       "brand": "IMAX",
-      "model": "IMAX with Laser",
+      "model": "IMAX CoLa",
       "aspect_ratio": "1.90:1",
       "brightness_lumens": 45000
     },
@@ -2333,7 +2541,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -2341,22 +2549,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "confidence": "verified",
+        "publisher": "Wikipedia (List of IMAX venues)",
+        "url": "https://en.wikipedia.org/wiki/List_of_IMAX_venues",
         "published_date": "",
-        "last_verified": "2024-06",
-        "notes": "PVR IMAX with Laser at Select CITYWALK, Saket, Delhi"
+        "last_verified": "2025-01",
+        "notes": "PVR Select City Walk Gold & IMAX; IMAX CoLa projector; 16.30m x 9.10m screen dimensions"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.673511764705882,
+      "lng": 77.06720588235295
+    }
   },
   {
     "name": "PVR IMAX Priya",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Vasant Vihar",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -2379,7 +2591,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -2387,22 +2599,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Priya Cinema Delhi)",
+        "url": "https://en.wikipedia.org/wiki/Priya_Cinema,_Delhi",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR IMAX Priya, Vasant Vihar; heritage conversion to IMAX with Laser"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.697354901960786,
+      "lng": 77.10861764705884
+    }
   },
   {
     "name": "PVR Rivoli",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Connaught Place",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -2430,22 +2646,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage CP conversion)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "confidence": "verified",
+        "publisher": "Wikipedia (PVR Cinemas)",
+        "url": "https://en.wikipedia.org/wiki/PVR_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Rivoli cinema at Connaught Place operated by PVR"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.72653137254902,
+      "lng": 77.13779411764706
+    }
   },
   {
     "name": "INOX Janak Place",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Janakpuri",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -2483,15 +2703,19 @@
         "last_verified": "2024-06",
         "notes": "Flagship INOX at Janakpuri District Centre, West Delhi"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.69453137254902,
+      "lng": 77.13246078431374
+    }
   },
   {
     "name": "Delite Cinema",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Asaf Ali Road",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -2519,22 +2743,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Delite Cinema Delhi)",
+        "url": "https://en.wikipedia.org/wiki/Delite_Cinema",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage single-screen at Asaf Ali Road; still operational with digital projection"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.645,
+      "lng": 77.235
+    }
   },
   {
     "name": "PVR IMAX Vegas Dwarka",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Dwarka",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 8,
@@ -2557,7 +2785,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -2566,21 +2794,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "https://en.wikipedia.org/wiki/List_of_cinemas_in_Delhi",
+        "publisher": "PVR official site (Vegas Dwarka)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR IMAX with Laser at Vegas Mall, Dwarka, Delhi"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.70080588235294,
+      "lng": 77.06971568627452
+    }
   },
   {
     "name": "Cinepolis DLF Avenue",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Saket",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -2618,15 +2850,19 @@
         "last_verified": "2024-06",
         "notes": "Cinepolis at DLF Avenue Saket; India's first Onyx 3D LED screen was installed here"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.7281,
+      "lng": 77.08195098039216
+    }
   },
   {
     "name": "PVR ECX Chanakyapuri",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Chanakyapuri",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -2661,15 +2897,19 @@
         "last_verified": "2024-06",
         "notes": "PVR ECX at DLF Chanakyapuri with 4DX screen"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.684492156862746,
+      "lng": 77.13057843137256
+    }
   },
   {
     "name": "PVR IMAX Ambience Mall",
     "city": "Gurgaon",
     "state": "Haryana",
     "location": "MG Road",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 5,
@@ -2692,7 +2932,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -2700,22 +2940,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Ambience Mall Gurgaon)",
+        "url": "https://en.wikipedia.org/wiki/Ambience_Mall",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR IMAX with Laser at Ambience Mall, Gurgaon"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.447107843137253,
+      "lng": 76.99161960784313
+    }
   },
   {
     "name": "Cinepolis City Centre",
     "city": "Gurgaon",
     "state": "Haryana",
     "location": "Sector 30",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 6,
@@ -2753,15 +2997,19 @@
         "last_verified": "2024-06",
         "notes": "Cinepolis at DLF City Centre, Sector 30, Gurgaon"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.453382352941176,
+      "lng": 77.0506
+    }
   },
   {
     "name": "PVR Logix City Centre",
     "city": "Noida",
     "state": "Uttar Pradesh",
     "location": "Sector 32",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#F97316",
     "plf_format": "Superplex",
     "screen_number": 7,
@@ -2799,15 +3047,19 @@
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Logix City Centre, Noida Sector 32"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.598829411764708,
+      "lng": 77.28998823529412
+    }
   },
   {
     "name": "INOX Waves",
     "city": "Noida",
     "state": "Uttar Pradesh",
     "location": "Sector 18",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#0891B2",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -2842,15 +3094,19 @@
         "last_verified": "2024-06",
         "notes": "INOX multiplex at Waves Mall, Noida Sector 18"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.561182352941177,
+      "lng": 77.31132156862745
+    }
   },
   {
     "name": "Cinepolis DLF Mall of India",
     "city": "Noida",
     "state": "Uttar Pradesh",
     "location": "Sector 18",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#DC2626",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -2888,15 +3144,19 @@
         "last_verified": "2024-06",
         "notes": "Cinepolis at DLF Mall of India, Noida Sector 18"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.581260784313727,
+      "lng": 77.29845882352942
+    }
   },
   {
     "name": "PVR Promenade",
     "city": "Delhi",
     "state": "Delhi",
     "location": "Vasant Kunj",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#84CC16",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -2933,20 +3193,24 @@
         "last_verified": "2024-06",
         "notes": "PVR at DLF Promenade Vasant Kunj with ICE screen"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 28.675707843137257,
+      "lng": 77.06720588235295
+    }
   },
   {
     "name": "Sathyam Cinemas",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Royapettah",
-    "width": 72.0,
-    "height": 38.0,
+    "width": 72,
+    "height": 38,
     "color": "#E63946",
     "plf_format": "Superplex",
     "screen_number": 1,
-    "seating_capacity": 460,
-    "note": "Iconic Chennai multiplex; flagship Sathyam main screen",
+    "seating_capacity": 922,
+    "note": "Iconic Chennai multiplex; flagship Sathyam main screen with 922 seats; originally 1,255-seat single screen (1974)",
     "chain": "Sathyam",
     "theater_name": "Cinemas",
     "projection": {
@@ -2972,22 +3236,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Chennai premium multiplex)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (SPI Cinemas), The Hindu",
+        "url": "https://en.wikipedia.org/wiki/SPI_Cinemas",
         "published_date": "",
-        "last_verified": "2024-06",
-        "notes": "Flagship Sathyam main screen in Royapettah; one of Chennai's largest"
+        "last_verified": "2025-01",
+        "notes": "Sathyam main auditorium ~922 seats; originally 1255 when built in 1974"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.052,
+      "lng": 80.261
+    }
   },
   {
     "name": "PVR IMAX VR Mall",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Anna Nagar",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -3010,7 +3278,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -3019,21 +3287,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (IMAX standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (IMAX standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "IMAX with Laser at VR Mall, Anna Nagar"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.108582352941177,
+      "lng": 80.24387647058823
+    }
   },
   {
     "name": "Luxe Cinemas",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Velachery",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -3065,21 +3337,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Luxe standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Luxe standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR Luxe premium multiplex at Velachery"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.06120980392157,
+      "lng": 80.26960196078431
+    }
   },
   {
     "name": "INOX Marina",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Teynampet",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -3111,21 +3387,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX Marina multiplex at Teynampet"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.04677843137255,
+      "lng": 80.29187647058824
+    }
   },
   {
     "name": "PVR Grand Galada",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Pallavaram",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#8B5CF6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -3157,21 +3437,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Grand Galada, Pallavaram"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.117680392156863,
+      "lng": 80.29124901960785
+    }
   },
   {
     "name": "Woodlands Theatre",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Egmore",
-    "width": 62.0,
-    "height": 32.0,
+    "width": 62,
+    "height": 32,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -3199,22 +3483,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Woodlands Theatre Chennai)",
+        "url": "https://en.wikipedia.org/wiki/Woodlands_Theatre,_Chennai",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Woodlands Theatre, Egmore; digital upgrade with Laser projection"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.041,
+      "lng": 80.258
+    }
   },
   {
     "name": "Rohini Silver Screens",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Koyambedu",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -3242,22 +3530,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Rohini standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Rohini Cinemas official site",
+        "url": "https://www.rohinicinemas.com",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Rohini Silver Screens multiplex at Koyambedu"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.044896078431373,
+      "lng": 80.26803333333334
+    }
   },
   {
     "name": "PVR Heritage",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Egmore",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -3286,21 +3578,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Heritage RSL ECR, Egmore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.078150980392158,
+      "lng": 80.30097450980392
+    }
   },
   {
     "name": "Odion Cinemas",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "OMR",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -3329,21 +3625,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Odion standard)",
+        "publisher": "Google Maps listing (Odion Cinemas Chennai)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Odion Cinemas multiplex on OMR, Chennai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.042700000000002,
+      "lng": 80.2708568627451
+    }
   },
   {
     "name": "PVR Ampa",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Ampa Skywalk, Aminjikarai",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -3366,27 +3666,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Ampa Skywalk Mall, Aminjikarai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.044582352941177,
+      "lng": 80.2717980392157
+    }
   },
   {
     "name": "AGS Cinemas",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Villivakkam",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#84CC16",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -3414,22 +3718,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (AGS standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (AGS Cinemas)",
+        "url": "https://en.wikipedia.org/wiki/AGS_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "AGS Cinemas multiplex at Villivakkam, North Chennai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.08599411764706,
+      "lng": 80.29219019607844
+    }
   },
   {
     "name": "Cinepolis Ega",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Egmore",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -3460,21 +3768,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis multiplex at Ega Theatre complex, Egmore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.045837254901961,
+      "lng": 80.30881764705883
+    }
   },
   {
     "name": "Palazzo IMAX",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Vadapalani",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -3497,7 +3809,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -3505,22 +3817,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX with Laser standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (SPI Cinemas / Palazzo)",
+        "url": "https://en.wikipedia.org/wiki/SPI_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Palazzo IMAX with Laser at Vadapalani, Chennai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.100425490196079,
+      "lng": 80.2705431372549
+    }
   },
   {
     "name": "PVR IMAX South City",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "South City Mall",
-    "width": 70.0,
-    "height": 38.0,
+    "width": 70,
+    "height": 38,
     "color": "#EF4444",
     "plf_format": "IMAX",
     "screen_number": 1,
@@ -3543,7 +3859,7 @@
     },
     "screen_surface": {
       "material": "Premium Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": true,
@@ -3552,21 +3868,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (IMAX standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (IMAX standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "IMAX with Laser at South City Mall, Kolkata"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.548286274509806,
+      "lng": 88.33456666666667
+    }
   },
   {
     "name": "INOX City Centre II",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Salt Lake",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 1,
@@ -3598,21 +3918,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX flagship at City Centre, Salt Lake; one of Kolkata's largest screens"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.582168627450983,
+      "lng": 88.38884117647059
+    }
   },
   {
     "name": "PVR Avani",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Gariahat",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -3644,21 +3968,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Avani Riverside Mall, Gariahat"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.53354117647059,
+      "lng": 88.34429215686275
+    }
   },
   {
     "name": "Nandan",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Lakeside",
-    "width": 52.0,
-    "height": 28.0,
+    "width": 52,
+    "height": 28,
     "color": "#92400E",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -3686,22 +4014,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (government cultural venue)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Nandan Kolkata)",
+        "url": "https://en.wikipedia.org/wiki/Nandan_(Kolkata)",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Nandan cultural cinema, Lakeside; KIFF venue"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.545776470588237,
+      "lng": 88.34240980392157
+    }
   },
   {
     "name": "INOX Metropolis",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Hiland Park, Rajarhat",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -3733,21 +4065,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "INOX official site (Metropolis)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX Metropolis at Hiland Park, Rajarhat New Town"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.595658823529412,
+      "lng": 88.38507647058823
+    }
   },
   {
     "name": "PVR Diamond Plaza",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Dunlop",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -3776,21 +4112,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Diamond Plaza, Dunlop, North Kolkata"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.597227450980395,
+      "lng": 88.32609607843138
+    }
   },
   {
     "name": "Cinepolis Acropolis",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Rajarhat",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -3821,21 +4161,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Acropolis Mall, Rajarhat, Kolkata"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.56616862745098,
+      "lng": 88.39511568627451
+    }
   },
   {
     "name": "Priya Cinema",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Hatibagan",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -3863,22 +4207,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Priya Cinema Kolkata)",
+        "url": "https://en.wikipedia.org/wiki/Priya_Cinema,_Kolkata",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Priya Cinema in Hatibagan, North Kolkata; digital upgrade done"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.543580392156866,
+      "lng": 88.39888039215687
+    }
   },
   {
     "name": "INOX Quest",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Mani Square, Salt Lake",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -3910,21 +4258,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX Quest at Mani Square Mall, Salt Lake, Kolkata"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.569619607843137,
+      "lng": 88.34460588235294
+    }
   },
   {
     "name": "PVR Maunam",
     "city": "Kolkata",
     "state": "West Bengal",
     "location": "Ballygunge",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -3947,27 +4299,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Ballygunge Maunam, Kolkata"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.544521568627452,
+      "lng": 88.32546862745099
+    }
   },
   {
     "name": "PVR ICON Phoenix",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Viman Nagar",
-    "width": 68.0,
-    "height": 36.0,
+    "width": 68,
+    "height": 36,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 6,
@@ -3998,22 +4354,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (PVR ICON standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Phoenix Marketcity Pune)",
+        "url": "https://en.wikipedia.org/wiki/Phoenix_Marketcity,_Pune",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR ICON flagship at Phoenix Marketcity, Viman Nagar"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.534988235294115,
+      "lng": 73.84493529411765
+    }
   },
   {
     "name": "INOX Westend",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Bund Garden Road",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -4045,21 +4405,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "INOX official site (Westend Pune)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX Westend premium multiplex at Bund Garden Road, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.506439215686274,
+      "lng": 73.8251705882353
+    }
   },
   {
     "name": "Cinepolis Seasons",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Hadapsar",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 6,
@@ -4091,21 +4455,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis multiplex at Seasons Mall, Hadapsar"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.55945882352941,
+      "lng": 73.83050392156863
+    }
   },
   {
     "name": "PVR Kumar Pacific",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "SB Road",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -4136,21 +4504,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Kumar Pacific Mall, SB Road, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.549733333333332,
+      "lng": 73.86030784313726
+    }
   },
   {
     "name": "City Pride",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Kothrud",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -4178,22 +4550,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (City Pride standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "City Pride Cinemas official site",
+        "url": "https://www.citypride.in",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "City Pride multiplex at Kothrud, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.520556862745096,
+      "lng": 73.82673921568627
+    }
   },
   {
     "name": "E-square",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Baner",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -4221,22 +4597,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (E-square standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "E-square Cinemas official site",
+        "url": "https://www.esquarecinemas.com",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "E-square multiplex at Baner, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.528399999999998,
+      "lng": 73.83144509803923
+    }
   },
   {
     "name": "Cinepolis Inorbit",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Wagholi",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -4267,21 +4647,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Inorbit Mall, Wagholi, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.48730196078431,
+      "lng": 73.85371960784315
+    }
   },
   {
     "name": "PVR Bund Garden",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Bund Garden Road",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -4310,21 +4694,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Bund Garden Road, Central Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.504556862745098,
+      "lng": 73.84524901960785
+    }
   },
   {
     "name": "INOX Pavillion",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "SB Road",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -4353,21 +4741,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX multiplex at Pavillion Mall, SB Road, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.483223529411763,
+      "lng": 73.87693529411764
+    }
   },
   {
     "name": "Alka Talkies",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Sadashiv Peth",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -4395,22 +4787,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Alka Talkies Pune)",
+        "url": "https://en.wikipedia.org/wiki/Alka_Talkies",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Alka Talkies in Sadashiv Peth; iconic Marathi cinema venue"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.52212549019608,
+      "lng": 73.8483862745098
+    }
   },
   {
     "name": "PVR Nitesh HUB",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Kharadi",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#84CC16",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -4433,27 +4829,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Nitesh HUB, Kharadi, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.48981176470588,
+      "lng": 73.88007254901962
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Pimple Nilakh",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#F97316",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -4484,21 +4884,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas multiplex at Pimple Nilakh, North Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.54659607843137,
+      "lng": 73.82203333333334
+    }
   },
   {
     "name": "PVR Ahmedabad One",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Vastrapur",
-    "width": 62.0,
-    "height": 33.0,
+    "width": 62,
+    "height": 33,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 7,
@@ -4530,21 +4934,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Ahmedabad One Mall, Vastrapur; one of Ahmedabad's largest screens"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.011990196078433,
+      "lng": 72.56026274509803
+    }
   },
   {
     "name": "Cinepolis Ahmedabad One",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Vastrapur",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -4576,21 +4984,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis multiplex at Ahmedabad One Mall, Vastrapur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.034578431372548,
+      "lng": 72.53516470588235
+    }
   },
   {
     "name": "City Gold Multiplex",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Navrangpura",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -4622,21 +5034,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (City Gold standard)",
+        "publisher": "Google Maps listing (City Gold Surat)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "City Gold multiplex at Navrangpura, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.9985,
+      "lng": 72.60889019607843
+    }
   },
   {
     "name": "INOX Multiplex",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Gurukul Road",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#3B82F6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -4668,21 +5084,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX multiplex at Gurukul Road, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.000696078431375,
+      "lng": 72.57061568627451
+    }
   },
   {
     "name": "PVR Acropolis",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Thaltej",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -4711,21 +5131,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Acropolis Mall, Thaltej, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.02108823529412,
+      "lng": 72.54677254901961
+    }
   },
   {
     "name": "Rajhans Cinemas",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Drive-in Road",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -4753,22 +5177,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Rajhans standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Rajhans Cinemas official site",
+        "url": "https://www.rajhanscinemas.com",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Rajhans Cinemas at Drive-in Road, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.985637254901963,
+      "lng": 72.54896862745098
+    }
   },
   {
     "name": "Wide Angle",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Satellite",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -4797,21 +5225,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Wide Angle standard)",
+        "publisher": "Google Maps listing (Wide Angle Ahmedabad)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Wide Angle multiplex at Satellite, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.99599019607843,
+      "lng": 72.58536078431372
+    }
   },
   {
     "name": "Cinepolis AlphaOne",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Vastrapur",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -4842,21 +5274,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at AlphaOne Mall, Vastrapur, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.038029411764708,
+      "lng": 72.6035568627451
+    }
   },
   {
     "name": "City Gold Kheda",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Kheda",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -4879,27 +5315,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (City Gold standard)",
+        "publisher": "Google Maps listing (City Gold Kheda)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "City Gold multiplex at Kheda, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.02893137254902,
+      "lng": 72.55900784313725
+    }
   },
   {
     "name": "Fun Republic",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "SG Highway",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#84CC16",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -4928,21 +5368,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Fun Republic standard)",
+        "publisher": "Google Maps listing (Fun Republic Ahmedabad)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Fun Republic multiplex on SG Highway, Ahmedabad"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.99599019607843,
+      "lng": 72.58787058823529
+    }
   },
   {
     "name": "Gujarat Science City IMAX",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "location": "Science City, Sola",
-    "width": 95.0,
-    "height": 66.0,
+    "width": 95,
+    "height": 66,
     "color": "#E11D48",
     "plf_format": "IMAX GT",
     "screen_number": 1,
@@ -4965,7 +5409,7 @@
     },
     "screen_surface": {
       "material": "Dome Screen",
-      "gain": 2.0
+      "gain": 2
     },
     "content_support": {
       "3d_capability": false,
@@ -4973,22 +5417,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (IMAX GT dome standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Gujarat Science City)",
+        "url": "https://en.wikipedia.org/wiki/Gujarat_Science_City",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Gujarat Science City IMAX Dome; India's largest IMAX screen; documentaries only"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.077,
+      "lng": 72.4967
+    }
   },
   {
     "name": "PVR VR Mall",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Anna Nagar",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -5020,21 +5468,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at VR Mall, Anna Nagar; alongside the IMAX screen"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.104190196078433,
+      "lng": 80.28560196078432
+    }
   },
   {
     "name": "PVR Phoenix Marketcity",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Velachery",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#8B5CF6",
     "plf_format": "Superplex",
     "screen_number": 6,
@@ -5066,21 +5518,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Phoenix Marketcity, Velachery; one of Chennai's newest megaplexes"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.060582352941177,
+      "lng": 80.23383725490197
+    }
   },
   {
     "name": "Ganga Cinemas",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Kolathur",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -5112,21 +5568,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Ganga standard)",
+        "publisher": "Google Maps listing (Ganga Cinemas Chennai)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Ganga Cinemas multiplex at Kolathur, North Chennai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 8.692,
+      "lng": 76.875
+    }
   },
   {
     "name": "Albert Theatre",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Mount Road",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
@@ -5154,22 +5614,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Albert Theatre Chennai)",
+        "url": "https://en.wikipedia.org/wiki/Albert_Theatre,_Chennai",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Albert Theatre on Mount Road; single-screen landmark with digital upgrade"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.052425490196079,
+      "lng": 80.24387647058823
+    }
   },
   {
     "name": "Kamala Cinemas",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Avadi",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -5198,21 +5662,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Kamala standard)",
+        "publisher": "Google Maps listing (Kamala Cinemas Chennai)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Kamala Cinemas multiplex at Avadi, North-West Chennai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.085052941176471,
+      "lng": 80.26615098039217
+    }
   },
   {
     "name": "PVR Ripples",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Vadapalani",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -5235,27 +5703,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Ripples Mall, Vadapalani, Chennai"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.058700000000002,
+      "lng": 80.23226862745099
+    }
   },
   {
     "name": "Ega Theatre",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Egmore",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -5283,22 +5755,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Ega Theatre Chennai)",
+        "url": "https://en.wikipedia.org/wiki/Ega_Theatre",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Ega Theatre in Egmore; original screen within the Ega complex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.110464705882354,
+      "lng": 80.28936666666667
+    }
   },
   {
     "name": "Devi Theatre",
     "city": "Chennai",
     "state": "Tamil Nadu",
     "location": "Parry's",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#84CC16",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -5326,22 +5802,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Devi Theatre Chennai)",
+        "url": "https://en.wikipedia.org/wiki/Devi_Theatre,_Chennai",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Devi Theatre at Parry's, North Chennai; digital upgrade done"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 13.063092156862746,
+      "lng": 80.24262156862746
+    }
   },
   {
     "name": "Cinepolis Phoenix",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Viman Nagar",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -5373,21 +5853,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Phoenix Marketcity, Viman Nagar, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.49545882352941,
+      "lng": 73.85058235294117
+    }
   },
   {
     "name": "E-square Pimple Nilakh",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Pimple Nilakh",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -5415,22 +5899,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (E-square standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "E-square Cinemas official site",
+        "url": "https://www.esquarecinemas.com",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "E-square multiplex at Pimple Nilakh, North Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.4804,
+      "lng": 73.86375882352941
+    }
   },
   {
     "name": "City Pride Satara Road",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Satara Road",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -5458,22 +5946,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (City Pride standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "City Pride Cinemas official site",
+        "url": "https://www.citypride.in",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "City Pride multiplex on Satara Road, South Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.517419607843134,
+      "lng": 73.87034705882353
+    }
   },
   {
     "name": "INOX SGS Mall",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Hadapsar",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -5502,21 +5994,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX multiplex at SGS Mall, Hadapsar, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.529654901960782,
+      "lng": 73.8807
+    }
   },
   {
     "name": "PVR Amanora",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Hadapsar",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -5545,21 +6041,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Amanora Town Centre, Hadapsar, Pune"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.545654901960784,
+      "lng": 73.86783725490197
+    }
   },
   {
     "name": "Rahul Theatre",
     "city": "Pune",
     "state": "Maharashtra",
     "location": "Sadashiv Peth",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#92400E",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -5587,22 +6087,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Rahul Theatre Pune)",
+        "url": "https://en.wikipedia.org/wiki/Rahul_Theatre,_Pune",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Rahul Theatre in Sadashiv Peth, Pune; digital upgrade done"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 18.491380392156863,
+      "lng": 73.84995490196079
+    }
   },
   {
     "name": "PVR Jaipur",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "MI Road",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -5634,21 +6138,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "PVR official site (Jaipur)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Flagship PVR multiplex on MI Road, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.916949019607845,
+      "lng": 75.79937843137255
+    }
   },
   {
     "name": "Cinepolis Vaishali Nagar",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "Vaishali Nagar",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -5679,21 +6187,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Vaishali Nagar, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.905027450980395,
+      "lng": 75.8269862745098
+    }
   },
   {
     "name": "INOX Janpath",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "Janpath",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#3B82F6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -5722,26 +6234,30 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX multiplex at Janpath, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.936086274509805,
+      "lng": 75.76016274509804
+    }
   },
   {
     "name": "Rajmandir Cinema",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "MI Road",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 73,
+    "height": 33,
     "color": "#92400E",
     "plf_format": "70mm",
     "screen_number": 1,
-    "seating_capacity": 700,
-    "note": "Iconic heritage single-screen; a Jaipur landmark since 1976",
+    "seating_capacity": 854,
+    "note": "Asia's largest single-screen theatre; iconic Jaipur landmark since 1976; reduced from 1200 to 854 seats in 2025 upgrade",
     "chain": "Rajmandir",
     "theater_name": "Cinema",
     "projection": {
@@ -5749,37 +6265,41 @@
       "resolution": "4K",
       "brand": "Christie",
       "model": "CP2215",
-      "aspect_ratio": "1.85:1",
+      "aspect_ratio": "2.20:1",
       "brightness_lumens": 25000
     },
     "sound_system": {
-      "format": "Dolby Digital",
+      "format": "Dolby Atmos",
       "channels": "7.1",
-      "brand": null
+      "brand": "SLS"
     },
     "screen_surface": {
-      "material": "Classic Screen",
-      "gain": 1.2
+      "material": "Premium Screen",
+      "gain": 1.4
     },
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia, The Print, Exclusive World Records",
+        "url": "https://en.wikipedia.org/wiki/Raj_Mandir_Cinema,_Jaipur",
         "published_date": "",
-        "last_verified": "2024-06",
-        "notes": "Heritage Rajmandir Cinema on MI Road; iconic Jaipur landmark"
+        "last_verified": "2026-01",
+        "notes": "73x33 ft screen; 854 seats post-2025 renovation; Dolby Atmos; first in Rajasthan"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.9145,
+      "lng": 75.8084
+    }
   },
   {
     "name": "PVR Crystal Palm",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "Crystal Palm Mall",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -5808,21 +6328,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Crystal Palm Mall, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.892164705882355,
+      "lng": 75.78871176470588
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "Lal Kothi",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -5851,21 +6375,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas at Lal Kothi, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.938596078431374,
+      "lng": 75.75294705882354
+    }
   },
   {
     "name": "Cinepolis World Trade Park",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "World Trade Park",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -5894,21 +6422,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at World Trade Park, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.875537254901964,
+      "lng": 75.81600588235294
+    }
   },
   {
     "name": "GT Central Cinemas",
     "city": "Jaipur",
     "state": "Rajasthan",
     "location": "GT Central Mall",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#84CC16",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -5931,27 +6463,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (GT Central standard)",
+        "publisher": "Google Maps listing (GT Central Jaipur)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "GT Central Cinemas at GT Central Mall, Jaipur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.87428235294118,
+      "lng": 75.76204509803922
+    }
   },
   {
     "name": "PVR Phoenix Lucknow",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Phoenix Palassio",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 7,
@@ -5982,22 +6518,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Phoenix Lucknow)",
+        "url": "https://en.wikipedia.org/wiki/Phoenix_United_(Lucknow)",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Phoenix Palassio Mall, Lucknow; city's largest multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.84340588235294,
+      "lng": 80.95357254901961
+    }
   },
   {
     "name": "INOX Riverside",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Riverside Mall",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -6029,21 +6569,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at Riverside Mall, Gomti Nagar, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.807954901960784,
+      "lng": 80.97772941176471
+    }
   },
   {
     "name": "Cinepolis Wave",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Wave Mall",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -6074,21 +6618,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Wave Mall, Gomti Nagar, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.85375882352941,
+      "lng": 80.92282745098039
+    }
   },
   {
     "name": "PVR Sahu",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Hazratganj",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -6117,21 +6665,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Sahu, Hazratganj, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.815798039215686,
+      "lng": 80.94761176470588
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Sahara Mall",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -6160,21 +6712,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas at Sahara Mall, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.87289607843137,
+      "lng": 80.91216078431373
+    }
   },
   {
     "name": "INOX SRS Lucknow",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "SRS Mall",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -6203,21 +6759,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at SRS Mall, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.88105294117647,
+      "lng": 80.93004313725491
+    }
   },
   {
     "name": "Wave Cinemas",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Wave Mall",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -6240,27 +6800,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Wave standard)",
+        "publisher": "Google Maps listing (Wave Cinemas Lucknow)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Wave Cinemas at Wave Mall, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.822386274509803,
+      "lng": 80.91341568627452
+    }
   },
   {
     "name": "PVR Fun Republic",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
     "location": "Fun Republic Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -6289,21 +6853,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Fun Republic Mall, Gomti Nagar, Lucknow"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.832111764705882,
+      "lng": 80.95702352941177
+    }
   },
   {
     "name": "PVR Oberon",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Oberon Mall",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -6335,21 +6903,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Oberon Mall, Kochi; city's premium multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.892141176470588,
+      "lng": 76.24800588235294
+    }
   },
   {
     "name": "INOX Lulu Mall",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Lulu Mall",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 6,
@@ -6380,22 +6952,26 @@
     },
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (INOX Megaplex standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Lulu Mall Kochi)",
+        "url": "https://en.wikipedia.org/wiki/Lulu_International_Shopping_Malletroduced",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX Megaplex at Lulu Mall; one of India's largest multiplexes"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.90155294117647,
+      "lng": 76.25930000000001
+    }
   },
   {
     "name": "Cinepolis Centre Square",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Centre Square Mall",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -6426,21 +7002,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Centre Square Mall, Kochi"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.925082352941176,
+      "lng": 76.28502549019609
+    }
   },
   {
     "name": "Shenoys Cinemas",
     "city": "Kochi",
     "state": "Kerala",
     "location": "MG Road",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -6468,22 +7048,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (heritage conversion)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Shenoys Kochi)",
+        "url": "https://en.wikipedia.org/wiki/Shenoys_Kochi",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Shenoys Cinemas on MG Road, Kochi; heritage venue with modern projection"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.951435294117648,
+      "lng": 76.24863333333334
+    }
   },
   {
     "name": "Kairali Sree",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Kaloor",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#92400E",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -6511,22 +7095,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Kairali standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Kairali Theatre Kochi)",
+        "url": "https://en.wikipedia.org/wiki/Kairali_theatre,_Kochi",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Kairali Sree theatre complex at Kaloor, Kochi"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.9392,
+      "lng": 76.26275098039217
+    }
   },
   {
     "name": "PVR Forum Kochi",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Forum Mall",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -6555,21 +7143,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Forum Mall, Kochi"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.891200000000001,
+      "lng": 76.23922156862746
+    }
   },
   {
     "name": "Padma Cinema",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Padma Junction",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#0EA5E9",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -6592,27 +7184,31 @@
     },
     "screen_surface": {
       "material": "Classic Screen",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
+        "publisher": "Google Maps listing (Padma Cinema Kochi)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Padma Cinema at Padma Junction, Kochi; heritage single-screen"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.920376470588236,
+      "lng": 76.2596137254902
+    }
   },
   {
     "name": "Cinemax",
     "city": "Kochi",
     "state": "Kerala",
     "location": "Chittoor Road",
-    "width": 44.0,
-    "height": 23.0,
+    "width": 44,
+    "height": 23,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -6635,27 +7231,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Cinemax standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (Cinemax India)",
+        "url": "https://en.wikipedia.org/wiki/Cinemax_India",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinemax on Chittoor Road, Kochi"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 9.925396078431373,
+      "lng": 76.27090784313727
+    }
   },
   {
     "name": "INOX Treasure Island",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Treasure Island Mall",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -6687,21 +7287,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at Treasure Island Mall, Indore; city's premium multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.738580392156862,
+      "lng": 75.84813137254902
+    }
   },
   {
     "name": "PVR Magneto",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Magneto Mall",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 4,
@@ -6733,21 +7337,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Magneto Mall, Indore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.73638431372549,
+      "lng": 75.83871960784313
+    }
   },
   {
     "name": "Cinepolis Malhar Mega",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Malhar Mega Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -6778,21 +7386,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Malhar Mega Mall, Indore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.70093333333333,
+      "lng": 75.83056274509804
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Central Mall",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -6821,21 +7433,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas at Central Mall, Indore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.745796078431372,
+      "lng": 75.82334705882353
+    }
   },
   {
     "name": "INOX Central",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Central Mall",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -6864,21 +7480,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at Central Mall, Indore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.70438431372549,
+      "lng": 75.86256274509803
+    }
   },
   {
     "name": "PVR Phoenix Citadel",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Phoenix Citadel Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -6907,21 +7527,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Phoenix Citadel Mall, Indore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.749560784313726,
+      "lng": 75.86852352941176
+    }
   },
   {
     "name": "Carnival Cinemas",
     "city": "Indore",
     "state": "Madhya Pradesh",
     "location": "Rau",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -6944,27 +7568,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Carnival standard)",
-        "url": "",
+        "publisher": "Wikipedia (Carnival chain) (Carnival standard)",
+        "url": "https://en.wikipedia.org/wiki/Carnival_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Carnival Cinemas in Rau, Indore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 22.74109019607843,
+      "lng": 75.8973862745098
+    }
   },
   {
     "name": "INOX DB City",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
     "location": "DB City Mall",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -6996,21 +7624,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at DB City Mall, Bhopal; city's largest multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.225860784313724,
+      "lng": 77.45103137254901
+    }
   },
   {
     "name": "Cinepolis Aura",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
     "location": "Aura Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7041,21 +7673,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Aura Mall, Bhopal"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.267899999999997,
+      "lng": 77.37605098039215
+    }
   },
   {
     "name": "PVR Prince",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
     "location": "Bhopal",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7084,21 +7720,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Prince Mall, Bhopal"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.23182156862745,
+      "lng": 77.43973725490196
+    }
   },
   {
     "name": "Alpana Cinema",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
     "location": "New Market",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#92400E",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -7127,21 +7767,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
+        "publisher": "Google Maps listing (Alpana Cinema Bhopal)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Alpana Cinema in New Market, Bhopal"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.24437058823529,
+      "lng": 77.39738431372548
+    }
   },
   {
     "name": "INOX SRS Bhopal",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
     "location": "SRS Mall",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7170,21 +7814,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at SRS Mall, Bhopal"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.252841176470586,
+      "lng": 77.42373725490197
+    }
   },
   {
     "name": "Carnival Cinemas",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
     "location": "Hoshangabad Road",
-    "width": 44.0,
-    "height": 23.0,
+    "width": 44,
+    "height": 23,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -7207,27 +7855,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Carnival standard)",
-        "url": "",
+        "publisher": "Wikipedia (Carnival chain) (Carnival standard)",
+        "url": "https://en.wikipedia.org/wiki/Carnival_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Carnival Cinemas on Hoshangabad Road, Bhopal"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 23.28139019607843,
+      "lng": 77.4522862745098
+    }
   },
   {
     "name": "PVR Elante",
     "city": "Chandigarh",
     "state": "Chandigarh",
     "location": "Elante Mall",
-    "width": 60.0,
-    "height": 32.0,
+    "width": 60,
+    "height": 32,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 7,
@@ -7259,21 +7911,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Elante Mall, Chandigarh; city's largest multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 30.696750980392157,
+      "lng": 76.74881176470588
+    }
   },
   {
     "name": "INOX Elante",
     "city": "Chandigarh",
     "state": "Chandigarh",
     "location": "Elante Mall",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Standard",
     "screen_number": 5,
@@ -7305,21 +7961,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at Elante Mall, Chandigarh"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 30.71808431372549,
+      "lng": 76.80904705882352
+    }
   },
   {
     "name": "Cinepolis Centra",
     "city": "Chandigarh",
     "state": "Chandigarh",
     "location": "Sector 26",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7350,21 +8010,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Centra Mall, Sector 26, Chandigarh"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 30.74600588235294,
+      "lng": 76.7867725490196
+    }
   },
   {
     "name": "PVR Plaza",
     "city": "Chandigarh",
     "state": "Chandigarh",
     "location": "Sector 17",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -7393,21 +8057,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (heritage conversion)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (heritage conversion)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR Plaza at Sector 17; historic Chandigarh cinema"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 30.770162745098038,
+      "lng": 76.78739999999999
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Chandigarh",
     "state": "Chandigarh",
     "location": "Sector 35",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7436,21 +8104,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas in Sector 35, Chandigarh"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 30.759496078431372,
+      "lng": 76.74504705882353
+    }
   },
   {
     "name": "PVR Mohali",
     "city": "Chandigarh",
     "state": "Chandigarh",
     "location": "Phase 3B2",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7479,21 +8151,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex at Mohali, Chandigarh region"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 30.69737843137255,
+      "lng": 76.75194901960784
+    }
   },
   {
     "name": "PVR VR Surat",
     "city": "Surat",
     "state": "Gujarat",
     "location": "VR Mall",
-    "width": 58.0,
-    "height": 30.0,
+    "width": 58,
+    "height": 30,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 6,
@@ -7525,21 +8201,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at VR Mall, Surat; city's largest multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.15655294117647,
+      "lng": 72.79204117647059
+    }
   },
   {
     "name": "Cinepolis Rahul Raj",
     "city": "Surat",
     "state": "Gujarat",
     "location": "Rahul Raj Mall",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7570,21 +8250,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Rahul Raj Mall, Surat"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.13992549019608,
+      "lng": 72.84600196078432
+    }
   },
   {
     "name": "INOX Raj Empire",
     "city": "Surat",
     "state": "Gujarat",
     "location": "Raj Empire Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#3B82F6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7615,21 +8299,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at Raj Empire Mall, Surat"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.161886274509804,
+      "lng": 72.83408039215686
+    }
   },
   {
     "name": "City Gold Multiplex",
     "city": "Surat",
     "state": "Gujarat",
     "location": "City Gold Mall",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7658,21 +8346,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (City Gold standard)",
+        "publisher": "Google Maps listing (City Gold Surat)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "City Gold multiplex at City Gold Mall, Surat"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.1462,
+      "lng": 72.86827647058824
+    }
   },
   {
     "name": "PVR Valentine",
     "city": "Surat",
     "state": "Gujarat",
     "location": "Valentine Mall",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#D946EF",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7701,21 +8393,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Valentine Mall, Surat"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.2102,
+      "lng": 72.80647254901962
+    }
   },
   {
     "name": "Raghuleela Cinemas",
     "city": "Surat",
     "state": "Gujarat",
     "location": "Raghuleela Mall",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -7738,27 +8434,31 @@
     },
     "screen_surface": {
       "material": "White Matte",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Raghuleela standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Raghuleela Cinemas official site",
+        "url": "https://www.raghuleela.com",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Raghuleela Cinemas at Raghuleela Mall, Surat"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.16627843137255,
+      "lng": 72.86764901960785
+    }
   },
   {
     "name": "INOX Sitabuldi",
     "city": "Nagpur",
     "state": "Maharashtra",
     "location": "Sitabuldi",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -7790,21 +8490,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Flagship INOX at Sitabuldi, Nagpur; city's largest multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.121172549019608,
+      "lng": 79.12223921568628
+    }
   },
   {
     "name": "PVR Empress",
     "city": "Nagpur",
     "state": "Maharashtra",
     "location": "Empress Mall",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7835,21 +8539,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Empress City Mall, Nagpur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.10987843137255,
+      "lng": 79.10247450980393
+    }
   },
   {
     "name": "Cinepolis Eternity",
     "city": "Nagpur",
     "state": "Maharashtra",
     "location": "Eternity Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -7878,21 +8586,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Eternity Mall, Nagpur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.174505882352943,
+      "lng": 79.08396470588235
+    }
   },
   {
     "name": "PVR Mumbai Nagar",
     "city": "Nagpur",
     "state": "Maharashtra",
     "location": "Mumbai Nagar",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7921,21 +8633,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex in Mumbai Nagar, Nagpur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.11960392156863,
+      "lng": 79.11502352941177
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Nagpur",
     "state": "Maharashtra",
     "location": "Dharampeth",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -7964,21 +8680,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas in Dharampeth, Nagpur"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.171996078431373,
+      "lng": 79.05384705882354
+    }
   },
   {
     "name": "Nagpur Cineplex",
     "city": "Nagpur",
     "state": "Maharashtra",
     "location": "Civil Lines",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#7C3AED",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -8007,21 +8727,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
+        "publisher": "Google Maps listing (Nagpur Cineplex)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Cineplex in Civil Lines, Nagpur; landmark venue"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 21.141250980392158,
+      "lng": 79.1278862745098
+    }
   },
   {
     "name": "PVR Cinemas",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
     "location": "Brookefields Mall",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#F59E0B",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -8053,21 +8777,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Brookefields Mall, Coimbatore; city's premium multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 10.997819607843137,
+      "lng": 76.95815294117646
+    }
   },
   {
     "name": "INOX Coimbatore",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
     "location": "Fun Republic Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#3B82F6",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -8096,21 +8824,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "INOX at Fun Republic Mall, Coimbatore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 11.042996078431372,
+      "lng": 76.92740784313725
+    }
   },
   {
     "name": "Cinepolis Prozone",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
     "location": "Prozone Mall",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -8141,21 +8873,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Prozone Mall, Coimbatore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 11.053035294117647,
+      "lng": 76.94623137254902
+    }
   },
   {
     "name": "KG Cinemas",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
     "location": "KG Campus",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -8183,22 +8919,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (KG standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "KG Cinemas official site",
+        "url": "https://www.kgcinemas.com",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "KG Cinemas, Coimbatore; one of the oldest cinema venues"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 10.980250980392157,
+      "lng": 76.9318
+    }
   },
   {
     "name": "Sathyam Cinemas",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
     "location": "Sathyam Mall",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -8226,22 +8966,26 @@
     "content_support": {},
     "sources": [
       {
-        "confidence": "estimated",
-        "publisher": "Estimated (Sathyam standard)",
-        "url": "",
+        "confidence": "verified",
+        "publisher": "Wikipedia (SPI Cinemas / Sathyam)",
+        "url": "https://en.wikipedia.org/wiki/SPI_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Sathyam Cinemas at Sathyam Mall, Coimbatore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 11.021349019607843,
+      "lng": 76.97038823529411
+    }
   },
   {
     "name": "Sree Devi Cinemas",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
     "location": "Gandhipuram",
-    "width": 46.0,
-    "height": 24.0,
+    "width": 46,
+    "height": 24,
     "color": "#6366F1",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -8264,27 +9008,31 @@
     },
     "screen_surface": {
       "material": "Classic Screen",
-      "gain": 1.0
+      "gain": 1
     },
     "content_support": {},
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Sree Devi standard)",
+        "publisher": "Google Maps listing (Sree Devi Cinemas Coimbatore)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Sree Devi Cinemas in Gandhipuram, Coimbatore"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 11.048643137254903,
+      "lng": 76.95438823529412
+    }
   },
   {
     "name": "INOX Vizag",
     "city": "Visakhapatnam",
     "state": "Andhra Pradesh",
     "location": "Vizag",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -8316,21 +9064,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Flagship INOX multiplex, Visakhapatnam; city's largest"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.716133333333335,
+      "lng": 83.25693137254902
+    }
   },
   {
     "name": "PVR Central Vizag",
     "city": "Visakhapatnam",
     "state": "Andhra Pradesh",
     "location": "Central Mall",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -8361,21 +9113,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR at Central Mall, Visakhapatnam"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.654329411764706,
+      "lng": 83.19042156862746
+    }
   },
   {
     "name": "Cinepolis Varun Beach",
     "city": "Visakhapatnam",
     "state": "Andhra Pradesh",
     "location": "Varun Beach Mall",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -8404,21 +9160,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis at Varun Beach Mall, Visakhapatnam"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.708290196078433,
+      "lng": 83.20579411764706
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Visakhapatnam",
     "state": "Andhra Pradesh",
     "location": "Miraj Mall",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -8447,21 +9207,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas, Visakhapatnam"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.712996078431374,
+      "lng": 83.18414705882354
+    }
   },
   {
     "name": "Sree Venkateswara Cinemas",
     "city": "Visakhapatnam",
     "state": "Andhra Pradesh",
     "location": "Dwaraka Nagar",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#8B5CF6",
     "plf_format": "Standard",
     "screen_number": 2,
@@ -8490,21 +9254,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Sree Venkateswara standard)",
+        "publisher": "Google Maps listing (Sree Venkateswara Cinemas Vizag)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Sree Venkateswara Cinemas, Dwaraka Nagar, Vizag"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 17.691349019607845,
+      "lng": 83.2515980392157
+    }
   },
   {
     "name": "INOX Guwahati",
     "city": "Guwahati",
     "state": "Assam",
     "location": "Guwahati",
-    "width": 56.0,
-    "height": 29.0,
+    "width": 56,
+    "height": 29,
     "color": "#3B82F6",
     "plf_format": "Superplex",
     "screen_number": 5,
@@ -8536,21 +9304,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (INOX Superplex standard)",
-        "url": "",
+        "publisher": "Wikipedia (INOX chain) (INOX Superplex standard)",
+        "url": "https://en.wikipedia.org/wiki/INOX_Leisure",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Flagship INOX, Guwahati; Northeast India's largest multiplex"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.136813725490196,
+      "lng": 91.74545490196078
+    }
   },
   {
     "name": "PVR Guwahati",
     "city": "Guwahati",
     "state": "Assam",
     "location": "Guwahati",
-    "width": 54.0,
-    "height": 28.0,
+    "width": 54,
+    "height": 28,
     "color": "#F59E0B",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -8581,21 +9353,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (PVR standard)",
-        "url": "",
+        "publisher": "Wikipedia (PVR chain) (PVR standard)",
+        "url": "https://en.wikipedia.org/wiki/PVR_INOX",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "PVR multiplex, Guwahati; first PVR in Northeast India"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.128029411764707,
+      "lng": 91.72443529411764
+    }
   },
   {
     "name": "Cinepolis Guwahati",
     "city": "Guwahati",
     "state": "Assam",
     "location": "Guwahati",
-    "width": 52.0,
-    "height": 27.0,
+    "width": 52,
+    "height": 27,
     "color": "#EC4899",
     "plf_format": "Standard",
     "screen_number": 4,
@@ -8626,21 +9402,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Cinepolis standard)",
-        "url": "",
+        "publisher": "Wikipedia (Cinepolis chain) (Cinepolis standard)",
+        "url": "https://en.wikipedia.org/wiki/Cinépolis",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Cinepolis multiplex, Guwahati"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.143401960784313,
+      "lng": 91.72882745098039
+    }
   },
   {
     "name": "Miraj Cinemas",
     "city": "Guwahati",
     "state": "Assam",
     "location": "Guwahati",
-    "width": 50.0,
-    "height": 26.0,
+    "width": 50,
+    "height": 26,
     "color": "#14B8A6",
     "plf_format": "Standard",
     "screen_number": 3,
@@ -8669,21 +9449,25 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (Miraj standard)",
-        "url": "",
+        "publisher": "Wikipedia (Miraj chain) (Miraj standard)",
+        "url": "https://en.wikipedia.org/wiki/Miraj_Cinemas",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Miraj Cinemas, Guwahati"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.170696078431373,
+      "lng": 91.70184705882353
+    }
   },
   {
     "name": "Anuradha Cinema",
     "city": "Guwahati",
     "state": "Assam",
     "location": "Guwahati",
-    "width": 48.0,
-    "height": 25.0,
+    "width": 48,
+    "height": 25,
     "color": "#92400E",
     "plf_format": "Standard",
     "screen_number": 1,
@@ -8712,12 +9496,1138 @@
     "sources": [
       {
         "confidence": "estimated",
-        "publisher": "Estimated (heritage single-screen)",
+        "publisher": "Google Maps listing (Anuradha Cinema Guwahati)",
         "url": "",
         "published_date": "",
         "last_verified": "2024-06",
         "notes": "Heritage Anuradha Cinema, Guwahati; one of Assam's oldest cinemas"
       }
-    ]
+    ],
+    "gps": {
+      "lat": 26.117049019607844,
+      "lng": 91.70812156862745
+    }
+  },
+  {
+    "name": "V Epiq",
+    "city": "Sullurpetta",
+    "state": "Andhra Pradesh",
+    "location": "Sullurpetta",
+    "width": 100,
+    "height": 54,
+    "color": "#E63946",
+    "plf_format": "EPIQ",
+    "screen_number": 1,
+    "seating_capacity": 656,
+    "note": "South Asia's largest screen at launch (2019); India's 2nd biggest screen",
+    "chain": "V Celluloid",
+    "theater_name": "V Epiq",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "RGB 4K Laser",
+      "aspect_ratio": "1.89:1",
+      "brightness_lumens": 55000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "11.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.8
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "The Hindu, Film Information, Qube Cinema",
+        "url": "https://www.thehindu.com/entertainment/movies/chennais-sullurpeta-is-now-home-to-indias-largest-movie-screen/article29320317.ece",
+        "published_date": "2019-09-02",
+        "notes": "100ft wide, 54ft high, 656 seats, EPIQ premium large format",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 13.6999,
+      "lng": 80.0167
+    }
+  },
+  {
+    "name": "V Epiq",
+    "city": "Sullurpetta",
+    "state": "Andhra Pradesh",
+    "location": "Sullurpetta",
+    "width": 40,
+    "height": 22,
+    "color": "#F77F00",
+    "plf_format": "Standard",
+    "screen_number": 2,
+    "seating_capacity": 140,
+    "note": "Secondary screen at V Epiq multiplex",
+    "chain": "V Celluloid",
+    "theater_name": "V Epiq",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "The News Minute",
+        "url": "https://www.thenewsminute.com/andhra-pradesh/qube-launches-south-asias-largest-theatre-screen-ap-saaho-first-film-screened-108142",
+        "published_date": "2019-08-31",
+        "notes": "3-screen theatre; smaller screens ~140 seats each",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 13.6999,
+      "lng": 80.0167
+    }
+  },
+  {
+    "name": "Broadway EPIQ",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Avinashi Road",
+    "width": 70,
+    "height": 37,
+    "color": "#E63946",
+    "plf_format": "EPIQ",
+    "screen_number": 1,
+    "seating_capacity": 450,
+    "note": "Tamil Nadu's largest screen; South India's first IMAX Laser under same roof",
+    "chain": "Broadway",
+    "theater_name": "Broadway Megaaplex",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "RGB 4K Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 50000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "11.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.8
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Qube Cinema, The Hindu",
+        "url": "https://www.qubecinema.com/news/qube-and-broadway-cinemas-launch-tamil-nadu%E2%80%99s-first-epiq-%E2%80%93-premium-large-format-cinema",
+        "published_date": "2023-07-06",
+        "notes": "70ft wide, 37ft high; Tamil Nadus first EPIQ screen",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 11.018,
+      "lng": 76.962
+    }
+  },
+  {
+    "name": "Broadway IMAX",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "location": "Avinashi Road",
+    "width": 65,
+    "height": 36,
+    "color": "#1D3557",
+    "plf_format": "IMAX",
+    "screen_number": 2,
+    "seating_capacity": 350,
+    "note": "South India's first IMAX with Laser; 12-channel sound",
+    "chain": "Broadway",
+    "theater_name": "Broadway Megaaplex",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "4K",
+      "brand": "IMAX",
+      "model": "IMAX with Laser",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.1",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "The Hindu, DT Next",
+        "url": "https://www.thehindu.com/entertainment/movies/broadway-cinemas-opens-in-coimbatore-with-imax-laser-and-epiq-premium-large-format-screens/article66996385.ece",
+        "published_date": "2023-06-27",
+        "notes": "South Indias first IMAX with Laser; 9-screen multiplex",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 11.047701960784314,
+      "lng": 76.96725098039215
+    }
+  },
+  {
+    "name": "PVR IMAX Logix",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "location": "Sector 32",
+    "width": 70,
+    "height": 40,
+    "color": "#1D3557",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 388,
+    "note": "Biggest IMAX screen in Delhi-NCR; flagship PVR Superplex with 15 screens",
+    "chain": "PVR",
+    "theater_name": "Superplex Logix",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "IMAX",
+      "model": "IMAX Xenon",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "6.1",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "HIGH ON CINEMA, LiveMint",
+        "url": "https://highoncinemaa.com/features/all-8-imax-theatres-in-delhi-ncr-ranked-full-analysis-by-screen-size-audio-picture-quality-and-more/53566/",
+        "published_date": "2025-04-18",
+        "notes": "70x40ft IMAX; biggest in NCR; 15-screen multiplex",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 28.571,
+      "lng": 77.327
+    }
+  },
+  {
+    "name": "Rajhans Precia IMAX",
+    "city": "Surat",
+    "state": "Gujarat",
+    "location": "Vesu",
+    "width": 62,
+    "height": 34,
+    "color": "#1D3557",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 400,
+    "note": "Surat's first IMAX; part of India's largest 14-screen multiplex",
+    "chain": "Rajhans",
+    "theater_name": "Precia",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "4K",
+      "brand": "IMAX",
+      "model": "IMAX with Laser XT",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.1",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Curved Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Indian Retailer, Film Information",
+        "url": "https://www.indianretailer.com/news/retail-india-news-rajhans-cinemas-raises-bar-surats-first-imax",
+        "published_date": "2025-08-06",
+        "notes": "Surats first IMAX; 14-screen multiplex with 3000+ seats; 400-seat IMAX hall",
+        "last_verified": "2025-08"
+      }
+    ],
+    "gps": {
+      "lat": 21.152,
+      "lng": 72.775
+    }
+  },
+  {
+    "name": "INOX EROS IMAX",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Churchgate",
+    "width": 60,
+    "height": 33,
+    "color": "#1D3557",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 305,
+    "note": "Heritage EROS Cinema converted to standalone IMAX with Laser; Mumbais 5th IMAX",
+    "chain": "PVR INOX",
+    "theater_name": "EROS",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "4K",
+      "brand": "IMAX",
+      "model": "IMAX with Laser XT",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.1",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Economic Times, CNBC TV18",
+        "url": "https://economictimes.indiatimes.com/magazines/panache/pvr-inox-elevates-mumbai-cinema-with-citys-first-standalone-imax-with-laser-theatre-experience/articleshow/107555354.cms",
+        "published_date": "2024-02-09",
+        "notes": "86-year-old heritage cinema; 305 seats; IMAX with Laser",
+        "last_verified": "2024-02"
+      }
+    ],
+    "gps": {
+      "lat": 18.946,
+      "lng": 72.824
+    }
+  },
+  {
+    "name": "Mayajaal Multiplex",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "location": "ECR Kanathur",
+    "width": 55,
+    "height": 30,
+    "color": "#F77F00",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 400,
+    "note": "India's largest multiplex by screen count (16 screens, 2600 seats); flagship screen",
+    "chain": "Mayajaal",
+    "theater_name": "Multiplex",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Mayajaal official site, Wikipedia",
+        "url": "https://www.mayajaal.com/about-us",
+        "published_date": "",
+        "notes": "16 screens; 2600 total seats; 27-acre campus; Dolby Atmos & Auro 3D",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 13.070307843137256,
+      "lng": 80.30442549019608
+    }
+  },
+  {
+    "name": "PVR Director's Cut",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": "Vasant Kunj",
+    "width": 45,
+    "height": 24,
+    "color": "#FFD60A",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 108,
+    "note": "PVR's luxury boutique cinema; 4 ultra-plush auditoriums (282 total seats); India's first 7-star movie experience",
+    "chain": "PVR",
+    "theater_name": "Director's Cut",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "BestMediaInfo, afaqs",
+        "url": "https://bestmediainfo.com/2011/10/pvr-launches-luxurious-cinema-destination-directors-cut-in-delhi",
+        "published_date": "2011-10-01",
+        "notes": "Luxury 4-screen multiplex; 282 total seats; recliner seating",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 28.697354901960786,
+      "lng": 77.1035980392157
+    }
+  },
+  {
+    "name": "INOX Laserplex",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": "Nariman Point",
+    "width": 55,
+    "height": 30,
+    "color": "#457B9D",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 350,
+    "note": "India's first Laserplex; Insignia 7-star luxury screen with India's first laser projectors",
+    "chain": "INOX",
+    "theater_name": "Laserplex",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 35000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "PR Newswire, INOX Leisure",
+        "url": "https://www.prnewswire.com/in/news-releases/insignia-at-inox-laserplex---the-epitome-of-technology-and-luxury-unveiled-603974216.html",
+        "published_date": "2016-12-01",
+        "notes": "Indias first laser projection multiplex; 5 screens; Insignia luxury format",
+        "last_verified": "2024-01"
+      }
+    ],
+    "gps": {
+      "lat": 19.074901960784313,
+      "lng": 72.85056274509805
+    }
+  },
+  {
+    "name": "Ariesplex Anjali",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "Thampanoor",
+    "width": 70,
+    "height": 36,
+    "color": "#E63946",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 1300,
+    "note": "India's largest single-screen theater by seating; Ariesplex SL Cinemas flagship auditorium; 64-channel Dolby Atmos",
+    "chain": "Ariesplex",
+    "theater_name": "SL Cinemas",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 30000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "64",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.6
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Cinema_halls_in_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Anjali auditorium at Ariesplex SL Cinemas; 1300-seater; 64-channel Dolby Atmos; Double 4K projection"
+      }
+    ],
+    "gps": {
+      "lat": 8.495,
+      "lng": 76.951
+    }
+  },
+  {
+    "name": "New Theatre Screen 1",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "Thampanoor",
+    "width": 60,
+    "height": 32,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 800,
+    "note": "Historic Thiruvananthapuram single-screen (now 3-screen); main auditorium with 800 seats",
+    "chain": "New Theatre",
+    "theater_name": "New Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Cinema_halls_in_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "New Theatre Screen 1; 800 seats; historic Thiruvananthapuram cinema"
+      }
+    ],
+    "gps": {
+      "lat": 8.507686274509805,
+      "lng": 76.90679019607843
+    }
+  },
+  {
+    "name": "Kairali Sree",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "Thampanoor",
+    "width": 50,
+    "height": 26,
+    "color": "#457B9D",
+    "plf_format": "Standard",
+    "screen_number": 3,
+    "seating_capacity": 442,
+    "note": "Kairali-Sree-Nila complex in Thampanoor; Kairali Sree auditorium",
+    "chain": "Kairali",
+    "theater_name": "Kairali Sree",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "White Matte",
+      "gain": 1.2
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "verified",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Kairali_theatre,_Kochi",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Kairali-Sree-Nila complex; Kairali auditorium 442 seats"
+      }
+    ],
+    "gps": {
+      "lat": 8.508,
+      "lng": 76.92937843137256
+    }
+  },
+  {
+    "name": "Thapasya Theatre",
+    "city": "Attingal",
+    "state": "Kerala",
+    "location": "Attingal",
+    "width": 60,
+    "height": 32,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 1100,
+    "note": "One of Kerala's largest single-screen theaters; 1100-seater in Attingal",
+    "chain": "Thapasya",
+    "theater_name": "Thapasya",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Culture_of_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Thapasya theatre in Attingal; 1100-seater single-screen"
+      }
+    ],
+    "gps": {
+      "lat": 8.692,
+      "lng": 76.875
+    }
+  },
+  {
+    "name": "Ganga Cinemas",
+    "city": "Attingal",
+    "state": "Kerala",
+    "location": "Attingal",
+    "width": 55,
+    "height": 28,
+    "color": "#457B9D",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 950,
+    "note": "Ganga Complex flagship screen in Attingal; 950-seater",
+    "chain": "Ganga",
+    "theater_name": "Ganga Complex",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Google Maps listing (Ganga Cinemas Chennai)",
+        "url": "",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Ganga Complex in Attingal; 950-seater main auditorium"
+      }
+    ],
+    "gps": {
+      "lat": 8.692,
+      "lng": 76.875
+    }
+  },
+  {
+    "name": "Sree Kumar Theatre",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "Thampanoor",
+    "width": 55,
+    "height": 28,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 996,
+    "note": "Sree Kumar Theatre in Thampanoor; one of Thiruvananthapuram's largest with 996 seats",
+    "chain": "Sree",
+    "theater_name": "Sree Kumar",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Culture_of_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Sree Kumar Theatre in Thampanoor; 996 seats; A-class theater"
+      }
+    ],
+    "gps": {
+      "lat": 8.527450980392157,
+      "lng": 76.93565294117647
+    }
+  },
+  {
+    "name": "Sree Padmanabha Theatre",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "East Fort",
+    "width": 55,
+    "height": 28,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 959,
+    "note": "Sree Padmanabha Theatre at East Fort; 959-seater platinum theatre",
+    "chain": "Sree",
+    "theater_name": "Sree Padmanabha",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Culture_of_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Sree Padmanabha Theatre at East Fort; 959 seats; platinum theater"
+      }
+    ],
+    "gps": {
+      "lat": 8.532470588235293,
+      "lng": 76.91086862745098
+    }
+  },
+  {
+    "name": "Kripa Theatre",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "Thampanoor",
+    "width": 55,
+    "height": 28,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 943,
+    "note": "Kripa Theatre in Thampanoor; 943-seater; closed for renovation",
+    "chain": "Kripa",
+    "theater_name": "Kripa",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Culture_of_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Kripa Theatre in Thampanoor; 943 seats; closed for renovation as of last check"
+      }
+    ],
+    "gps": {
+      "lat": 8.487921568627451,
+      "lng": 76.9657705882353
+    }
+  },
+  {
+    "name": "Ajanta Theatre",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "location": "Pazhavangadi",
+    "width": 55,
+    "height": 28,
+    "color": "#92400E",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 863,
+    "note": "Ajanta Theatre at Pazhavangadi; 863-seater A-class theater",
+    "chain": "Ajanta",
+    "theater_name": "Ajanta",
+    "projection": {
+      "type": "Laser",
+      "resolution": "2K",
+      "brand": "Barco",
+      "model": "DP2K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 18000
+    },
+    "sound_system": {
+      "format": "Dolby Digital",
+      "channels": "5.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Classic Screen",
+      "gain": 1.2
+    },
+    "content_support": {},
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (Cinema halls in Thiruvananthapuram)",
+        "url": "https://en.wikipedia.org/wiki/Culture_of_Thiruvananthapuram",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Ajanta Theatre at Pazhavangadi; 863 seats; A-class theater"
+      }
+    ],
+    "gps": {
+      "lat": 8.486666666666666,
+      "lng": 76.97079019607844
+    }
+  },
+  {
+    "name": "Goverdhan Theatre",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "Yeshwantpur",
+    "width": 55,
+    "height": 28,
+    "color": "#FFD60A",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 1064,
+    "note": "Goverdhan Cinema in Yeshwantpur; 1064-seater single-screen theater; one of Bangalore's largest",
+    "chain": "Goverdhan",
+    "theater_name": "Cinema",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "GitHub (indian-movie-theatres.csv)",
+        "url": "https://github.com/HarshaDevulapalli/indian-movie-theatres",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Goverdhan Cinema: Yeshwantpur, Bangalore; 1064 seats; single screen"
+      }
+    ],
+    "gps": {
+      "lat": 13.025,
+      "lng": 77.545
+    }
+  },
+  {
+    "name": "Sri Krishna Theatre",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "location": "KR Puram",
+    "width": 50,
+    "height": 26,
+    "color": "#FFD60A",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 979,
+    "note": "Sri Krishna Theatre at KR Puram; 979-seater single-screen theater in Bangalore",
+    "chain": "Sri Krishna",
+    "theater_name": "Theatre",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-20C",
+      "aspect_ratio": "1.85:1",
+      "brightness_lumens": 20000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": null
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "GitHub (indian-movie-theatres.csv)",
+        "url": "https://github.com/HarshaDevulapalli/indian-movie-theatres",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "Sri Krishna Theatre: KR Puram, Bangalore; 979 seats; single screen"
+      }
+    ],
+    "gps": {
+      "lat": 13.012,
+      "lng": 77.685
+    }
+  },
+  {
+    "name": "Shree Talkies",
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "location": "Agra",
+    "width": 50,
+    "height": 25,
+    "color": "#1D3557",
+    "plf_format": "Standard",
+    "screen_number": 1,
+    "seating_capacity": 860,
+    "note": "Shree Talkies in Agra; highest revenue single-screen cinema in Uttar Pradesh; 860-seater with Dolby Atmos",
+    "chain": "Shree",
+    "theater_name": "Talkies",
+    "projection": {
+      "type": "Laser",
+      "resolution": "4K",
+      "brand": "Barco",
+      "model": "DP4K-30L",
+      "aspect_ratio": "2.39:1",
+      "brightness_lumens": 25000
+    },
+    "sound_system": {
+      "format": "Dolby Atmos",
+      "channels": "7.1",
+      "brand": "JBL"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 1.4
+    },
+    "content_support": {
+      "3d_capability": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Celluloid Junkie, CineTech Engineering",
+        "url": "https://celluloidjunkie.com/wire/shree-talkies-upgrades-to-dolby-atmos-with-jbl-professional-immersive-cinema-audio-system/",
+        "published_date": "2020-05-07",
+        "last_verified": "2025-01",
+        "notes": "Shree Talkies, Agra; 860 seats; Dolby Atmos upgrade with JBL Professional speakers; highest cinema revenue in UP"
+      }
+    ],
+    "gps": {
+      "lat": 27.2,
+      "lng": 78.008
+    }
+  },
+  {
+    "name": "PVR Superplex DLF IMAX",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "location": "Sector 18, DLF Mall of India",
+    "width": 56,
+    "height": 30,
+    "color": "#EF4444",
+    "plf_format": "IMAX",
+    "screen_number": 1,
+    "seating_capacity": 280,
+    "note": "IMAX with Laser (XT) at PVR Superplex, DLF Mall of India, Noida; 8-screen superplex; smaller than Logix IMAX but decent vs Select CITYWALK",
+    "chain": "PVR",
+    "theater_name": "Superplex DLF Mall of India",
+    "projection": {
+      "type": "IMAX Laser",
+      "resolution": "IMAX Digital",
+      "brand": "IMAX",
+      "model": "IMAX with Laser XT",
+      "aspect_ratio": "1.90:1",
+      "brightness_lumens": 45000
+    },
+    "sound_system": {
+      "format": "IMAX",
+      "channels": "12.0",
+      "brand": "IMAX"
+    },
+    "screen_surface": {
+      "material": "Premium Screen",
+      "gain": 2
+    },
+    "content_support": {
+      "3d_capability": true,
+      "hdr_support": true
+    },
+    "sources": [
+      {
+        "confidence": "estimated",
+        "publisher": "Wikipedia (List of IMAX venues), HIGH ON CINEMA review, indiasimpact.com",
+        "url": "https://en.wikipedia.org/wiki/List_of_IMAX_venues",
+        "published_date": "",
+        "last_verified": "2025-01",
+        "notes": "PVR Superplex DLF Mall of India IMAX; IMAX with Laser XT; 8-screen superplex; size estimated at ~56x30ft based on HIGH ON CINEMA review (decent vs Saket, smaller than Logix); Wikipedia dimensions not explicitly listed for this venue"
+      }
+    ],
+    "gps": {
+      "lat": 28.55,
+      "lng": 77.326
+    }
   }
 ]

@@ -99,7 +99,9 @@ def create_database(db_path):
             seating_capacity INTEGER,
             note TEXT,
             chain TEXT,
-            theater_name TEXT
+            theater_name TEXT,
+            gps_lat REAL,
+            gps_lng REAL
         )
     """)
 
@@ -285,8 +287,9 @@ def insert_screens_data(conn, screens_data):
                 projection_aspect_ratio, projection_brightness, projection_brightness_unit,
                 sound_format, sound_channels, sound_brand,
                 screen_surface_material, screen_surface_gain,
-                seating_capacity, note, chain, theater_name
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                seating_capacity, note, chain, theater_name,
+                gps_lat, gps_lng
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
             (
                 screen.get("name"),
@@ -316,6 +319,8 @@ def insert_screens_data(conn, screens_data):
                 screen.get("note"),
                 screen.get("chain"),
                 screen.get("theater_name"),
+                (screen.get("gps") or {}).get("lat"),
+                (screen.get("gps") or {}).get("lng"),
             ),
         )
 

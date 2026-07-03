@@ -75,6 +75,15 @@ function validateScreens(screens) {
     });
     softCheck(dupes.length === 0, `duplicate screens: ${dupes.join(', ')}`, errors);
 
+    // GPS coordinate validation
+    screens.forEach(s => {
+        const tag = `[${s.name}]`;
+        softCheck(s.gps && typeof s.gps.lat === 'number' && s.gps.lat >= -90 && s.gps.lat <= 90,
+                  `${tag} GPS lat invalid (must be number between -90 and 90)`, errors);
+        softCheck(s.gps && typeof s.gps.lng === 'number' && s.gps.lng >= -180 && s.gps.lng <= 180,
+                  `${tag} GPS lng invalid (must be number between -180 and 180)`, errors);
+    });
+
     if (errors.length === 0) console.log('  PASSED');
     else errors.forEach(e => console.error('  FAIL:', e));
     return errors.length;

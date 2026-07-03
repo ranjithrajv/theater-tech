@@ -130,9 +130,9 @@ const PLF_FORMAT_REQUIREMENTS = {
         minWidth: 45,
         minHeight: 28,
         minArea: 1260,
-        maxWidth: 80,
-        maxHeight: 50,
-        maxArea: 4000,
+        maxWidth: 110,
+        maxHeight: 60,
+        maxArea: 6600,
         allowedProjectionTypes: ['Laser', 'LED'],
         allowedResolutions: ['2K', '4K'],
         minBrightness: { laser: 20000, led: 400 },
@@ -665,13 +665,64 @@ function validateScreenConsistency(screen) {
         }
     }
 
+    // GPS coordinate validation
+    if (!screen.gps) {
+        errors.push({
+            code: 'GPS_MISSING',
+            severity: VALIDATION_SEVERITY.ERROR,
+            message: 'GPS coordinates are required (lat, lng)'
+        });
+    } else {
+        if (typeof screen.gps.lat !== 'number' || isNaN(screen.gps.lat)) {
+            errors.push({
+                code: 'GPS_INVALID_LAT',
+                severity: VALIDATION_SEVERITY.ERROR,
+                message: 'GPS lat must be a valid number'
+            });
+        } else if (screen.gps.lat < -90 || screen.gps.lat > 90) {
+            errors.push({
+                code: 'GPS_LAT_OUT_OF_RANGE',
+                severity: VALIDATION_SEVERITY.ERROR,
+                message: `GPS latitude ${screen.gps.lat} is out of range (-90 to 90)`
+            });
+        }
+
+        if (typeof screen.gps.lng !== 'number' || isNaN(screen.gps.lng)) {
+            errors.push({
+                code: 'GPS_INVALID_LNG',
+                severity: VALIDATION_SEVERITY.ERROR,
+                message: 'GPS lng must be a valid number'
+            });
+        } else if (screen.gps.lng < -180 || screen.gps.lng > 180) {
+            errors.push({
+                code: 'GPS_LNG_OUT_OF_RANGE',
+                severity: VALIDATION_SEVERITY.ERROR,
+                message: `GPS longitude ${screen.gps.lng} is out of range (-180 to 180)`
+            });
+        }
+
+        // Warn if coordinates are outside India's bounding box
+        if (typeof screen.gps.lat === 'number' && typeof screen.gps.lng === 'number' &&
+            !isNaN(screen.gps.lat) && !isNaN(screen.gps.lng)) {
+            if (screen.gps.lat < 6 || screen.gps.lat > 37 ||
+                screen.gps.lng < 68 || screen.gps.lng > 97) {
+                warnings.push({
+                    code: 'GPS_OUTSIDE_INDIA',
+                    severity: VALIDATION_SEVERITY.WARNING,
+                    message: `GPS coordinates (${screen.gps.lat}, ${screen.gps.lng}) appear to be outside India`,
+                    suggestion: 'Verify coordinates are within India\'s bounding box (lat 6-37, lng 68-97)'
+                });
+            }
+        }
+    }
+
     // Return structured result
     return {
         valid: errors.length === 0,
         errors,
         warnings,
         info,
-        summary: errors.length === 0 
+        summary: errors.length === 0
             ? 'All validations passed'
             : `Found ${errors.length} error(s) and ${warnings.length} warning(s)`
     };
@@ -763,7 +814,7 @@ const ScreensSchema = {
     },
     itemSchema: {
         type: 'object',
-        required: ['name', 'location', 'width', 'height', 'color', 'plf_format', 'screen_number', 'projection', 'sound_system'],
+        required: ['name', 'location', 'width', 'height', 'color', 'plf_format', 'screen_number', 'projection', 'sound_system', 'gps'],
         validate: (screen) => {
             return validateScreenConsistency(screen);
         },
@@ -961,7 +1012,36 @@ const ScreensSchema = {
             seating_capacity: { type: 'number' },
             note: { type: 'string' },
             chain: { type: 'string' },
-            theater_name: { type: 'string' }
+            theater_name: { type: 'string' },
+            gps: {
+                type: 'object',
+                description: 'GPS coordinates of the theater location',
+                required: ['lat', 'lng'],
+                properties: {
+                    lat: {
+                        type: 'number',
+                        description: 'Latitude in decimal degrees',
+                        min: -90,
+                        max: 90,
+                        validate: (value) => {
+                            if (typeof value !== 'number' || isNaN(value)) return 'GPS latitude must be a number';
+                            if (value < -90 || value > 90) return 'GPS latitude must be between -90 and 90';
+                            return true;
+                        }
+                    },
+                    lng: {
+                        type: 'number',
+                        description: 'Longitude in decimal degrees',
+                        min: -180,
+                        max: 180,
+                        validate: (value) => {
+                            if (typeof value !== 'number' || isNaN(value)) return 'GPS longitude must be a number';
+                            if (value < -180 || value > 180) return 'GPS longitude must be between -180 and 180';
+                            return true;
+                        }
+                    }
+                }
+            }
         }
     }
 };

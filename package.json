@@ -34,5 +34,6 @@
     "sqlite3": "^6.0.1",
     "vite-plugin-wasm": "^3.6.0",
     "vite-plus": "latest"
-  }
+  },
+  "packageManager": "npm@11.18.0"
 }
