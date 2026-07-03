@@ -21,7 +21,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: voidzero-dev/setup-vp@v1
         with:
           cache: true
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: check
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: voidzero-dev/setup-vp@v1
         with:
           cache: true
@@ -47,7 +47,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: voidzero-dev/setup-vp@v1
         with:
           cache: true
