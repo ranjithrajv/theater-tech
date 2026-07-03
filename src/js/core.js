@@ -787,13 +787,8 @@ class Application {
             // Populate city selector
             this.populateCitySelector();
 
-            // Load saved city or default to All India
-            const savedCity = localStorage.getItem('selectedCity');
-            const defaultCity = savedCity && this.availableCities.find(c => c.id === savedCity)
-                ? savedCity
-                : '__all__';
-
-            await this.selectCity(defaultCity);
+            // Always default to All India on page load
+            await this.selectCity('__all__');
 
         } catch (error) {
             console.error('❌ Failed to load cities data:', error);
@@ -870,9 +865,6 @@ class Application {
 
             this.state.currentCity = cityId;
             this.data.screens = city.screens;
-
-            // Save selection to localStorage
-            localStorage.setItem('selectedCity', cityId);
 
             // Update selector
             const selector = document.getElementById('city-selector');
