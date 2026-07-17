@@ -98,9 +98,19 @@ function footerHtml(cfg) {
         <span style="display: inline-block; width: 10px; height: 10px; background: #555; border: 1px solid white; margin: 0 4px 0 12px; vertical-align: middle; opacity: 0.5;"></span>
         Faded = stale data
     </div>
+    <div class="source-tier-legend" style="font-size: 11px; color: #999; padding-top: 4px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <span style="color: #aaa; font-weight: 600;">Source Tiers:</span>
+        <span><span class="source-tier-badge source-tier-primary" style="font-size: 9px;">Primary</span> Official chain / press</span>
+        <span><span class="source-tier-badge source-tier-secondary" style="font-size: 9px;">News</span> News articles</span>
+        <span><span class="source-tier-badge source-tier-listing" style="font-size: 9px;">Listing</span> Booking / directories</span>
+    </div>
     <details class="plf-standards" style="margin-top: 8px; font-size: 11px; color: #999; cursor: pointer;">
         <summary style="color: #ffd60a;">📏 PLF Format Standards Reference</summary>
         <div id="plf-standards-table" style="margin-top: 6px; font-size: 10px;"></div>
+    </details>
+    <details class="methodology-section" id="methodology-section" style="margin-top: 8px; font-size: 11px; color: #999; cursor: pointer;">
+        <summary style="color: #ffd60a;">📊 Methodology & Source Quality</summary>
+        <div id="methodology-content" style="margin-top: 6px;"></div>
     </details>`;
 }
 

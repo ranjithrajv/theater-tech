@@ -12,16 +12,7 @@
  */
 
 import * as d3 from 'd3';
-
-function isStale(lastVerified) {
-    if (!lastVerified) return true;
-    const parts = lastVerified.split('-');
-    if (parts.length < 2) return true;
-    const ver = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1);
-    const sixMonthsAgo = new Date();
-    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-    return ver < sixMonthsAgo;
-}
+import { isStale } from './sources.js';
 
 class VisualizationManager {
     constructor() {
@@ -593,6 +584,40 @@ class VisualizationManager {
                     console.warn('SizeUtils not available for size category:', error);
                     return 'N/A';
                 }
+            });
+
+        // Source tier indicator dots (top-right corner of each rectangle)
+        const TIER_COLORS = { primary: '#4ade80', secondary: '#38bdf8', listing: '#fbbf24' };
+        const getBestTier = (sources) => {
+            if (!sources || sources.length === 0) return null;
+            if (sources.some(s => s.tier === 'primary')) return 'primary';
+            if (sources.some(s => s.tier === 'secondary')) return 'secondary';
+            return 'listing';
+        };
+
+        this.svg.selectAll(".source-tier-dot")
+            .data(sortedData)
+            .enter()
+            .append("circle")
+            .attr("class", "source-tier-dot")
+            .attr("cx", d => scales.x(d.width) - 8)
+            .attr("cy", d => scales.y(d.height) + 8)
+            .attr("r", 4)
+            .attr("fill", d => {
+                const tier = getBestTier(d.sources);
+                return tier ? TIER_COLORS[tier] : '#666';
+            })
+            .attr("stroke", "rgba(0,0,0,0.4)")
+            .attr("stroke-width", 1)
+            .attr("opacity", 0.9)
+            .style("cursor", "pointer")
+            .append("title")
+            .text(d => {
+                const srcs = d.sources || [];
+                if (srcs.length === 0) return 'No sources';
+                const tiers = { primary: 0, secondary: 0, listing: 0 };
+                srcs.forEach(s => { tiers[s.tier || 'secondary']++; });
+                return `Sources: ${srcs.length} (${tiers.primary} primary, ${tiers.secondary} news, ${tiers.listing} listing)`;
             });
     }
 

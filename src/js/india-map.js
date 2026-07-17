@@ -79,12 +79,18 @@ function aggregateByCity(screens) {
     const cities = {};
     screens.forEach(s => {
         const city = s.city || 'Unknown';
-        if (!cities[city]) cities[city] = { city, count: 0, screens: [], chains: new Set(), formats: new Set(), totalSeating: 0 };
+        if (!cities[city]) cities[city] = { city, count: 0, screens: [], chains: new Set(), formats: new Set(), totalSeating: 0, totalSources: 0, tierCounts: { primary: 0, secondary: 0, listing: 0 } };
         cities[city].count++;
         cities[city].screens.push(s);
         if (s.chain) cities[city].chains.add(s.chain);
         cities[city].formats.add(s.plf_format);
         cities[city].totalSeating += s.seating_capacity || 0;
+        const srcs = s.sources || [];
+        cities[city].totalSources += srcs.length;
+        srcs.forEach(src => {
+            const tier = src.tier || 'secondary';
+            cities[city].tierCounts[tier]++;
+        });
     });
     let result = Object.values(cities).map(c => ({
         ...c,
@@ -137,6 +143,8 @@ function showCityDetail(d) {
                     <tr><td style="padding:2px 0;color:#aaa;">Avg Seating</td><td style="text-align:right;">${d.avgSeating}</td></tr>
                     <tr><td style="padding:2px 0;color:#aaa;">Chains</td><td style="text-align:right;">${d.chains}</td></tr>
                     <tr><td style="padding:2px 0;color:#aaa;">Formats</td><td style="text-align:right;">${d.formats.length}</td></tr>
+                    <tr><td style="padding:2px 0;color:#aaa;">Sources</td><td style="text-align:right;">${d.totalSources}</td></tr>
+                    <tr><td style="padding:2px 0;color:#aaa;">Source Tiers</td><td style="text-align:right;"><span style="color:#4ade80;">${d.tierCounts.primary} primary</span> · <span style="color:#38bdf8;">${d.tierCounts.secondary} news</span> · <span style="color:#fbbf24;">${d.tierCounts.listing} listing</span></td></tr>
                 </table>
             </div>`;
     }
@@ -220,7 +228,8 @@ async function init() {
                 <br>📍 ${d.count} screens
                 <br>💺 ${d.avgSeating} avg seats
                 <br>🏢 ${d.chains} chains
-                <br>🎬 ${d.formats.slice(0, 4).join(', ')}${d.formats.length > 4 ? '...' : ''}`,
+                <br>🎬 ${d.formats.slice(0, 4).join(', ')}${d.formats.length > 4 ? '...' : ''}
+                <br>📚 ${d.totalSources} sources <span style="color:#4ade80;">●</span>${d.tierCounts.primary} <span style="color:#38bdf8;">●</span>${d.tierCounts.secondary} <span style="color:#fbbf24;">●</span>${d.tierCounts.listing}`,
                 {
                     className: 'india-map-tooltip',
                     direction: 'top',

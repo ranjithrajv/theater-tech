@@ -1,4 +1,5 @@
 import { SizeUtils } from './utils.js';
+import { renderSourcesSection, isStale } from './sources.js';
 
 const LegacyTemplateUtils = {
     createComparisonCard(screen, _index) {
@@ -158,16 +159,6 @@ const LegacyTemplateUtils = {
         const screenSurface = screenData.screen_surface || {};
         const contentSupport = screenData.content_support || {};
 
-        const isStale = (lv) => {
-            if (!lv) return true;
-            const parts = lv.split('-');
-            if (parts.length < 2) return true;
-            const ver = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1);
-            const sixMonthsAgo = new Date();
-            sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-            return ver < sixMonthsAgo;
-        };
-
         const stale = isStale(screenData.last_verified);
         const staleBadge = stale
             ? '<span class="stale-badge" style="display:inline-block;font-size:10px;color:#ff6b6b;border:1px dashed #ff6b6b;padding:1px 6px;border-radius:3px;margin-left:6px;">⚠ Stale</span>'
@@ -283,6 +274,8 @@ const LegacyTemplateUtils = {
                 <div class="screen-note">
                     \uD83D\uDCDD ${screenData.note}
                 </div>` : ''}
+
+                ${renderSourcesSection(screenData.sources)}
             </div>
         `;
     }

@@ -132,6 +132,7 @@ def create_database(db_path):
             publisher TEXT,
             published_date TEXT,
             confidence TEXT,
+            tier TEXT,
             notes TEXT,
             last_verified TEXT,
             FOREIGN KEY (screen_id) REFERENCES screens (id)
@@ -257,6 +258,57 @@ def insert_icons_data(conn, icons_data):
     conn.commit()
 
 
+LISTING_HOSTS = [
+    "bookmyshow.com", "paytm.com", "insider.in",
+    "justdial.com", "sulekha.com", "yellowpages.in", "grotal.com",
+    "google.com", "goo.gl", "maps.app.goo.gl",
+    "linkedin.com", "glassdoor.com",
+    "twitter.com", "x.com", "facebook.com", "instagram.com",
+    "youtube.com", "reddit.com",
+    "zomato.com",
+]
+
+CHAIN_DOMAINS = [
+    "pvr.in", "pvr cinemas.com", "inoxmovies.com", "inox.co.in",
+    "cinepolis.in", "cinepolis.co.in", "carnivalcinemas.com",
+    "vrcenters.com", "gopalan.com", "mantri.in",
+    "prasadsofficial.com", "prasadsimax.com",
+]
+
+PRIMARY_HINTS = [
+    "newsroom", "news.", "/news", "press", "media",
+    "prnewswire", "businesswire", "newsfile",
+]
+
+
+def classify_source_tier(url, confidence=None):
+    """Classify a source URL into a credibility tier."""
+    if not url:
+        if confidence == "verified":
+            return "primary"
+        if confidence == "estimated":
+            return "listing"
+        return "secondary"
+
+    from urllib.parse import urlparse
+    try:
+        host = urlparse(url).hostname or ""
+        host = host.replace("www.", "", 1)
+    except Exception:
+        return "secondary"
+
+    lower = url.lower()
+
+    if any(host == h or host.endswith("." + h) for h in LISTING_HOSTS):
+        return "listing"
+    if any(host == d or host.endswith("." + d) for d in CHAIN_DOMAINS):
+        return "primary"
+    if any(h in lower for h in PRIMARY_HINTS):
+        return "primary"
+
+    return "secondary"
+
+
 def insert_screens_data(conn, screens_data):
     """Insert screens data into the database"""
     cursor = conn.cursor()
@@ -339,10 +391,13 @@ def insert_screens_data(conn, screens_data):
 
         # Insert sources
         for src in screen.get("sources", []):
+            tier = src.get("tier") or classify_source_tier(
+                src.get("url"), src.get("confidence")
+            )
             cursor.execute(
                 """
-                INSERT INTO screen_sources (screen_id, url, publisher, published_date, confidence, notes, last_verified)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO screen_sources (screen_id, url, publisher, published_date, confidence, tier, notes, last_verified)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """,
                 (
                     screen_id,
@@ -350,6 +405,7 @@ def insert_screens_data(conn, screens_data):
                     src.get("publisher"),
                     src.get("published_date"),
                     src.get("confidence"),
+                    tier,
                     src.get("notes"),
                     src.get("last_verified"),
                 ),

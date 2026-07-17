@@ -1,6 +1,6 @@
 # Data Sources & Credibility
 
-This project compares cinema screen technologies across Indian cities. Every screen entry includes a `sources` array stored in both JSON (`screens.json`) and a dedicated `screen_sources` table in the SQLite database.
+This project compares cinema screen technologies across Indian cities. Every screen entry includes a `sources` array stored in both JSON (`all_cities_screens.json`) and a dedicated `screen_sources` table in the SQLite database.
 
 ## Schema
 
@@ -12,6 +12,7 @@ Each source entry has these fields stored in the `screen_sources` table:
 | `publisher` | TEXT | Publishing organization / person |
 | `published_date` | TEXT | Date of publication |
 | `confidence` | TEXT | One of: `verified`, `verified (article)`, `estimated` |
+| `tier` | TEXT | Credibility tier: `primary`, `secondary`, or `listing` |
 | `notes` | TEXT | Free-text notes about data provenance |
 | `last_verified` | TEXT | Date of last verification (e.g., `2024-06`). Screens with `last_verified` older than 6 months are visually flagged as stale in the chart. |
 
@@ -22,6 +23,20 @@ Each source entry has these fields stored in the `screen_sources` table:
 | **verified** | Specs confirmed from official source or direct inquiry |
 | **verified (article)** | Specs reported in a news article or press release |
 | **estimated** | Specs derived from PLF standards, chain averages, or known capacity |
+
+## Source Tiers
+
+Each source is classified into a tier based on the publisher and URL:
+
+| Tier | Label | Color | Meaning |
+|---|---|---|---|
+| `primary` | Primary | Green | Official theater chain sites (PVR, INOX, Cinepolis), press releases, official filings |
+| `secondary` | News | Blue | Independent news outlets (Times of India, The Hindu, etc.), review sites, Wikipedia |
+| `listing` | Listing | Gray | Booking platforms (BookMyShow), directories (JustDial, Google Maps), social media |
+
+Tier classification is automatic based on URL pattern matching. The classification logic is in `src/js/sources.js` (runtime) and `data/json_to_sqlite.py` (build time).
+
+**Why tiers matter:** A screen with only `listing` tier sources needs independent verification. Screens with at least one `primary` source have the strongest credibility.
 
 ## Hyderabad (21 screens)
 
@@ -63,7 +78,7 @@ Every Bangalore screen needs confirmation from an authoritative source:
 Sources are loaded from the `screen_sources` table and joined to screens by `screen_id`. To query:
 
 ```sql
-SELECT s.name, ss.url, ss.publisher, ss.confidence
+SELECT s.name, ss.url, ss.publisher, ss.confidence, ss.tier
 FROM screens s
 LEFT JOIN screen_sources ss ON s.id = ss.screen_id;
 ```
@@ -93,5 +108,6 @@ Screens with `last_verified` older than **6 months** are shown with:
 1. Find an authoritative source (theater website, BookMyShow listing, press release, or direct measurement)
 2. Open a PR adding a new entry to the screen's `sources` array
 3. Include the URL, publisher, date, confidence level, and any notes
+4. The `tier` field will be auto-classified from the URL if not provided
 
 See `CONTRIBUTING.md` for the full data format.

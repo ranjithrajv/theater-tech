@@ -12,6 +12,7 @@
  */
 
 import * as d3 from 'd3';
+import { renderSourcesSection, renderSourceCountBadge } from './sources.js';
 
 class UIComponentsManager {
     constructor() {
@@ -526,6 +527,25 @@ class UIComponentsManager {
             });
         }
 
+        // Sources
+        rows.push({
+            label: 'Sources',
+            values: this.state.selectedScreens.map(s => {
+                const srcs = s.sources || [];
+                const tiers = { primary: 0, secondary: 0, listing: 0 };
+                srcs.forEach(src => {
+                    const tier = src.tier || 'secondary';
+                    tiers[tier]++;
+                });
+                if (srcs.length === 0) return '<span class="value" style="color: #ef4444;">None</span>';
+                const parts = [];
+                if (tiers.primary) parts.push(`<span style="color: #4ade80;">${tiers.primary} primary</span>`);
+                if (tiers.secondary) parts.push(`<span style="color: #38bdf8;">${tiers.secondary} news</span>`);
+                if (tiers.listing) parts.push(`<span style="color: #94a3b8;">${tiers.listing} listing</span>`);
+                return `<span class="value">${srcs.length} (${parts.join(', ')})</span>`;
+            })
+        });
+
         return rows.map(row => `
             <tr>
                 <td class="field-label">${row.label}</td>
@@ -558,7 +578,7 @@ class UIComponentsManager {
                 <div class="screen-header">
                     <span class="screen-format-badge" style="background: ${screenData.color}">${screenData.plf_format}</span>
                     <div>
-                        <div class="screen-name">${screenData.name}</div>
+                        <div class="screen-name">${screenData.name} ${renderSourceCountBadge(screenData.sources)}</div>
                         <div class="screen-location">Screen ${screenData.screen_number} • ${screenData.location}</div>
                         ${screenData.chain ? `<div class="screen-chain">${screenData.chain} ${screenData.theater_name || ''}</div>` : ''}
                     </div>
@@ -655,6 +675,17 @@ class UIComponentsManager {
                         ${contentTags.map(tag => `<span class="content-tag">${tag}</span>`).join('')}
                     </div>
                 </div>
+
+                ${renderSourcesSection(screenData.sources)}
+
+                ${screenData.last_verified ? `
+                <div class="detail-section">
+                    <div class="detail-title">✅ Verification</div>
+                    <div class="detail-row">
+                        <span class="detail-row-label">Last verified</span>
+                        <span class="detail-row-value">${screenData.last_verified}</span>
+                    </div>
+                </div>` : ''}
 
                 ${screenData.note ? `<div class="screen-note">📝 ${screenData.note}</div>` : ''}
             </div>

@@ -20,6 +20,7 @@ import { Visualization } from './visualization.js';
 import './data-validator.js';
 import { SizeUtils, debounce } from './utils.js';
 import { Filters } from './filters.js';
+import { getSourceTier } from './sources.js';
 
 // Ensure UIManager is available or stubbed
 if (typeof window.UIManager === 'undefined') {
@@ -317,9 +318,26 @@ class Application {
                 content_support[row.feature] = !!row.value; // Ensure boolean
             });
 
-            // Fetch earliest last_verified date from sources
-            const sourceResults = this.queryDB(`SELECT MIN(last_verified) as last_verified FROM screen_sources WHERE screen_id = ${screen_id}`);
-            const lastVerified = sourceResults.length > 0 ? sourceResults[0].last_verified : null;
+            // Fetch full source records with tiers
+            const sourceResults = this.queryDB(
+                `SELECT url, publisher, published_date, confidence, tier, notes, last_verified FROM screen_sources WHERE screen_id = ${screen_id}`
+            );
+            const sources = sourceResults.map(row => {
+                const tier = row.tier || getSourceTier({ url: row.url, confidence: row.confidence });
+                return {
+                    url: row.url || undefined,
+                    publisher: row.publisher || undefined,
+                    published_date: row.published_date || undefined,
+                    confidence: row.confidence || undefined,
+                    tier,
+                    notes: row.notes || undefined,
+                    last_verified: row.last_verified || undefined,
+                };
+            });
+            // Earliest last_verified across all sources
+            const lastVerified = sources.length > 0
+                ? sources.map(s => s.last_verified).filter(Boolean).sort()[0] || null
+                : null;
 
             return {
                 ...s, // Include remaining fields like name, location, color, etc.
@@ -330,6 +348,8 @@ class Application {
                 sound_system: sound,
                 screen_surface: surface,
                 content_support,
+                sources,
+                sourceCount: sources.length,
                 last_verified: lastVerified
             };
         });
@@ -350,6 +370,148 @@ class Application {
         });
         html += '</table>';
         container.innerHTML = html;
+    }
+
+    renderMethodology() {
+        const container = document.getElementById('methodology-content');
+        if (!container || !this.data.screens) return;
+
+        const screens = this.data.screens;
+        const total = screens.length;
+        const tiers = { primary: 0, secondary: 0, listing: 0 };
+        let totalSources = 0;
+        let withSources = 0;
+        let staleCount = 0;
+        const staleScreens = [];
+        const publisherCounts = new Map();
+
+        screens.forEach(s => {
+            const srcs = s.sources || [];
+            if (srcs.length > 0) withSources++;
+            totalSources += srcs.length;
+
+            srcs.forEach(src => {
+                const tier = src.tier || 'secondary';
+                tiers[tier]++;
+                const pub = (src.publisher || 'Unknown').replace(/\s*\(.*?\)/g, '').trim();
+                const existing = publisherCounts.get(pub) || { count: 0, url: src.url };
+                existing.count++;
+                publisherCounts.set(pub, existing);
+            });
+
+            const isScreenStale = !s.last_verified || (() => {
+                const parts = s.last_verified.split('-');
+                if (parts.length < 2) return true;
+                const ver = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1);
+                const threshold = new Date();
+                threshold.setMonth(threshold.getMonth() - 6);
+                return ver < threshold;
+            })();
+            if (isScreenStale) {
+                staleCount++;
+                staleScreens.push(s);
+            }
+        });
+
+        const screensWithPrimary = screens.filter(s =>
+            (s.sources || []).some(src => src.tier === 'primary')
+        ).length;
+
+        // Publisher distribution (top 10)
+        const sortedPublishers = [...publisherCounts.entries()]
+            .sort(([, a], [, b]) => b.count - a.count)
+            .slice(0, 10);
+        const maxPubCount = sortedPublishers[0]?.[1].count ?? 1;
+
+        const publisherBars = sortedPublishers.map(([name, { count, url }]) => `
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                <span style="color:#ccc;font-size:10px;width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${name}">${name}</span>
+                <div style="flex:1;height:12px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;">
+                    <div style="height:100%;background:rgba(56,189,248,0.35);border-radius:2px;width:${(count / maxPubCount) * 100}%;"></div>
+                </div>
+                <span style="color:#888;font-size:10px;width:20px;text-align:right;">${count}</span>
+            </div>
+        `).join('');
+
+        // Stale screens list (top 15)
+        const staleList = staleScreens.slice(0, 15).map(s => {
+            const lv = s.last_verified || 'never';
+            return `<span style="display:inline-block;padding:2px 6px;margin:2px;border:1px solid rgba(239,68,68,0.3);border-radius:3px;font-size:10px;color:#fca5a5;background:rgba(239,68,68,0.08);" title="Last verified: ${lv}">${s.name} <span style="color:#666;">·</span> ${lv}</span>`;
+        }).join('');
+        const staleOverflow = staleScreens.length > 15 ? `<span style="color:#888;font-size:10px;"> +${staleScreens.length - 15} more</span>` : '';
+
+        // City breakdown
+        const cityStats = {};
+        screens.forEach(s => {
+            const city = s.city || 'Unknown';
+            if (!cityStats[city]) cityStats[city] = { total: 0, stale: 0 };
+            cityStats[city].total++;
+        });
+        staleScreens.forEach(s => {
+            const city = s.city || 'Unknown';
+            if (cityStats[city]) cityStats[city].stale++;
+        });
+
+        const now = new Date();
+        const lastUpdated = now.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+
+        container.innerHTML = `
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px;">
+                <div style="background:rgba(255,255,255,0.03);padding:8px;border-radius:4px;text-align:center;">
+                    <div style="color:#ffd60a;font-size:18px;font-weight:700;">${total}</div>
+                    <div style="color:#888;font-size:10px;">Total screens</div>
+                </div>
+                <div style="background:rgba(74,222,128,0.1);padding:8px;border-radius:4px;text-align:center;">
+                    <div style="color:#4ade80;font-size:18px;font-weight:700;">${screensWithPrimary}</div>
+                    <div style="color:#888;font-size:10px;">Verified (primary)</div>
+                </div>
+                <div style="background:rgba(239,68,68,0.1);padding:8px;border-radius:4px;text-align:center;">
+                    <div style="color:#ef4444;font-size:18px;font-weight:700;">${staleCount}</div>
+                    <div style="color:#888;font-size:10px;">Stale (>6mo)</div>
+                </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
+                <div style="background:rgba(74,222,128,0.08);padding:6px 8px;border-radius:4px;">
+                    <div style="color:#4ade80;font-weight:600;">${tiers.primary}</div>
+                    <div style="color:#888;font-size:10px;">Primary sources</div>
+                </div>
+                <div style="background:rgba(56,189,248,0.08);padding:6px 8px;border-radius:4px;">
+                    <div style="color:#38bdf8;font-weight:600;">${tiers.secondary}</div>
+                    <div style="color:#888;font-size:10px;">News sources</div>
+                </div>
+                <div style="background:rgba(148,163,184,0.08);padding:6px 8px;border-radius:4px;">
+                    <div style="color:#94a3b8;font-weight:600;">${tiers.listing}</div>
+                    <div style="color:#888;font-size:10px;">Listing sources</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:4px;">
+                    <div style="color:#ffd60a;font-weight:600;">${totalSources}</div>
+                    <div style="color:#888;font-size:10px;">Total sources</div>
+                </div>
+            </div>
+
+            <div style="border-top:1px solid #333;padding-top:8px;margin-bottom:8px;">
+                <div style="color:#aaa;font-size:11px;font-weight:600;margin-bottom:6px;">Source Distribution by Publisher</div>
+                ${publisherBars}
+            </div>
+
+            <div style="border-top:1px solid #333;padding-top:8px;margin-bottom:8px;">
+                <div style="color:#aaa;font-size:11px;font-weight:600;margin-bottom:6px;">Screens Needing Verification (${staleCount})</div>
+                <div style="display:flex;flex-wrap:wrap;gap:2px;">
+                    ${staleList || '<span style="color:#666;font-size:10px;">All screens verified within 6 months.</span>'}
+                    ${staleOverflow}
+                </div>
+            </div>
+
+            <div style="border-top:1px solid #333;padding-top:8px;font-size:10px;color:#666;">
+                <div>Avg sources per screen: <strong style="color:#ccc;">${total > 0 ? (totalSources / total).toFixed(1) : 0}</strong></div>
+                <div>Screens with sources: <strong style="color:#ccc;">${withSources}/${total}</strong> (${total > 0 ? Math.round(withSources / total * 100) : 0}%)</div>
+                <div style="margin-top:6px;padding-top:6px;border-top:1px solid #333;">
+                    <strong style="color:#aaa;">Suggested citation:</strong> India Cinema Technology Comparison, ${now.getFullYear()}. <span style="color:#38bdf8;">theater-tech</span>
+                    <br>Last updated: ${lastUpdated}
+                </div>
+            </div>
+        `;
     }
 
     /**
@@ -456,6 +618,7 @@ class Application {
 
             this.setupFilters();
             this.renderPlfStandards();
+            this.renderMethodology();
 
             console.log('✅ All systems initialized');
         } else {
